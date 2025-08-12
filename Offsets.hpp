@@ -12,7 +12,7 @@ namespace Offsets {
 		}
 
 		namespace AkAmbientSound {
-			constexpr uintptr_t Bitfields_0270 = 0x0270;  // Multiple: bAutoPlay, StopWhenOwnerIsDestroyed, bIsPlaying
+			constexpr uintptr_t Bitfields_0270 = 0x0270;  // Multiple: StopWhenOwnerIsDestroyed, bAutoPlay, bIsPlaying
 			constexpr uintptr_t PlayEvent = 0x0278;
 		}
 
@@ -66,7 +66,7 @@ namespace Offsets {
 			constexpr uintptr_t VfTable_FObjectDestructionSubscriber = 0x0060;
 			constexpr uintptr_t LevelEnvironments = 0x0068;
 			constexpr uintptr_t ActorEnvironments = 0x0078;
-			constexpr uintptr_t Bitfields_0088 = 0x0088;  // Multiple: bLevelDirty, bActorEnvironmentDirty
+			constexpr uintptr_t Bitfields_0088 = 0x0088;  // Multiple: bActorEnvironmentDirty, bLevelDirty
 		}
 
 		namespace AkMusicAnalysis {
@@ -286,7 +286,7 @@ namespace Offsets {
 			constexpr uintptr_t HelpWebLink = 0x0080;
 			constexpr uintptr_t HelpParamNames = 0x0090;
 			constexpr uintptr_t HelpParamDescriptions = 0x00A0;
-			constexpr uintptr_t Bitfields_00B0 = 0x00B0;  // Multiple: IsServer, IsClient, IsEditor, LogToConsole, ShowErrorCount
+			constexpr uintptr_t Bitfields_00B0 = 0x00B0;  // Multiple: IsClient, IsEditor, IsServer, LogToConsole, ShowErrorCount
 		}
 
 		namespace Component {
@@ -304,7 +304,7 @@ namespace Offsets {
 
 		namespace DebugDrawer {
 			constexpr uintptr_t DefaultTextColor = 0x0060;
-			constexpr uintptr_t Bitfields_0064 = 0x0064;  // Multiple: bSilent, bPrintActorsInline
+			constexpr uintptr_t Bitfields_0064 = 0x0064;  // Multiple: bPrintActorsInline, bSilent
 			constexpr uintptr_t Indentation = 0x0068;
 			constexpr uintptr_t IndentationString = 0x0070;
 			constexpr uintptr_t PrintedObjects = 0x0080;
@@ -364,18 +364,18 @@ namespace Offsets {
 			constexpr uintptr_t ContextClass = 0x0078;
 			constexpr uintptr_t Description = 0x0080;
 			constexpr uintptr_t Formats = 0x0090;
-			constexpr uintptr_t Bitfields_00A0 = 0x00A0;  // Multiple: bCreateNew, bEditAfterNew, bEditorImport, bText, bAssetNameMatchesPackageName
+			constexpr uintptr_t Bitfields_00A0 = 0x00A0;  // Multiple: bAssetNameMatchesPackageName, bCreateNew, bEditAfterNew, bEditorImport, bText
 			constexpr uintptr_t AutoPriority = 0x00A4;
 			constexpr uintptr_t ValidGameNames = 0x00A8;
 		}
 
 		namespace FeatureSystem {
 			constexpr uintptr_t UnknownData00 = 0x0060;
-			constexpr uintptr_t Bitfields_0068 = 0x0068;  // Multiple: Prime, Matchmaking, PrivateMatch, SplitscreenMatch, SplitscreenJoin, SeasonMode, Tutorial, Garage, Options, ReplaySaves, MainMenu, MidgameMenu, Party, PsyNetParty, Achievements, Stats, Leaderboards, XP, Chat, TrainingDifficulties, Spectator, CrossPlatformPrivateMatch, Lan, PlayerReporting, OnlineServices, RemoveCrossPlatformProducts
-			constexpr uintptr_t Bitfields_006C = 0x006C;  // Multiple: ProductValidation, MapPrefs, PreMatchLobby, Challenges, AntiAddiction, TrainingEditor, VoiceChat, SplitScreen, Clubs, FilterContent, EncryptContent, EsportsCamera, OnlineXP, ClanforgeReservation, UserSettingObserver, Metrics, EOSMetrics, MusicPlaylistSelection, SpecialEvents, PlayerBannerCustomization, SecureUDP, PsyNet, OnlinePlayerStorage, LocalSaveData, CrowdV2, ChatBan, BacktraceCrashDumps, SpotifyButton
-			constexpr uintptr_t Bitfields_0070 = 0x0070;  // Multiple: SeasonRewards, FaceIt, KnockOut, OnlinePlayerTitles, RestrictByRegion, FirstTimeExperience, RLBot, UserBugReport, SteamInput, ReplayFXControls, ESportsShop, MatchHistory, DynamicRangeAudioSettings, QuickPlay, NewsPanelV2, Blueprints, RocketBucks, Tritip, DiscordRichPresence, SupportACreator, CinematicIntro
-			constexpr uintptr_t Bitfields_0074 = 0x0074;  // Multiple: TinyCrowd, CrumbTrail, XPGatedPlaylists, TradeInV2, Football, RumbleSelection, UndersizedParty, StreamerSafeAudio, FreeplayCommands, Rumble_BM, PlayerReportingV2, BlogScheduling, EOSVoice, QuickPostMatchRequeue, TrainingNavigation, TrainingManipulation, FilterByColor, Scoreboard, DynamicMapEvents, NameplateBoost, EOSGameClips, DynamicLogos, XETagging, PlayMenuV4, DemoUpgrades, QuickChatTimeStamp
-			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: SoccarPong, OnlineFreeplay, MatchmakingSubRegion, CrossbarSFX, RugbyIteration, ChallengesV2, PossessionExpanded, RocketPassUpgrades, PentathlonTournaments, ViralItem, ThankYouMessage
+			constexpr uintptr_t Bitfields_0068 = 0x0068;  // Multiple: Achievements, Chat, CrossPlatformPrivateMatch, Garage, Lan, Leaderboards, MainMenu, Matchmaking, MidgameMenu, OnlineServices, Options, Party, PlayerReporting, Prime, PrivateMatch, PsyNetParty, RemoveCrossPlatformProducts, ReplaySaves, SeasonMode, Spectator, SplitscreenJoin, SplitscreenMatch, Stats, TrainingDifficulties, Tutorial, XP
+			constexpr uintptr_t Bitfields_006C = 0x006C;  // Multiple: AntiAddiction, BacktraceCrashDumps, Challenges, ChatBan, ClanforgeReservation, Clubs, CrowdV2, EOSMetrics, EncryptContent, EsportsCamera, FilterContent, LocalSaveData, MapPrefs, Metrics, MusicPlaylistSelection, OnlinePlayerStorage, OnlineXP, PlayerBannerCustomization, PreMatchLobby, ProductValidation, PsyNet, SecureUDP, SpecialEvents, SplitScreen, SpotifyButton, TrainingEditor, UserSettingObserver, VoiceChat
+			constexpr uintptr_t Bitfields_0070 = 0x0070;  // Multiple: Blueprints, CinematicIntro, DiscordRichPresence, DynamicRangeAudioSettings, ESportsShop, FaceIt, FirstTimeExperience, KnockOut, MatchHistory, NewsPanelV2, OnlinePlayerTitles, QuickPlay, RLBot, ReplayFXControls, RestrictByRegion, RocketBucks, SeasonRewards, SteamInput, SupportACreator, Tritip, UserBugReport
+			constexpr uintptr_t Bitfields_0074 = 0x0074;  // Multiple: BlogScheduling, CrumbTrail, DemoUpgrades, DynamicLogos, DynamicMapEvents, EOSGameClips, EOSVoice, FilterByColor, Football, FreeplayCommands, NameplateBoost, PlayMenuV4, PlayerReportingV2, QuickChatTimeStamp, QuickPostMatchRequeue, RumbleSelection, Rumble_BM, Scoreboard, StreamerSafeAudio, TinyCrowd, TradeInV2, TrainingManipulation, TrainingNavigation, UndersizedParty, XETagging, XPGatedPlaylists
+			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: ChallengesV2, CrossbarSFX, MatchmakingSubRegion, OnlineFreeplay, PentathlonTournaments, PossessionExpanded, RocketPassUpgrades, RugbyIteration, SoccarPong, ThankYouMessage, ViralItem
 			constexpr uintptr_t UnknownData01 = 0x007C;
 		}
 
@@ -606,10 +606,10 @@ namespace Offsets {
 			constexpr uintptr_t Owner = 0x00D8;
 			constexpr uintptr_t Base = 0x00E0;
 			constexpr uintptr_t Timers = 0x00E8;
-			constexpr uintptr_t Bitfields_00F8 = 0x00F8;  // Multiple: bStatic, bHidden, bHiddenSelf, bNoDelete, bDeleteMe, bTicked, bOnlyOwnerSee, bTickIsDisabled, bWorldGeometry, bIgnoreRigidBodyPawns, bOrientOnSlope, bIgnoreEncroachers, bPushedByEncroachers, bDestroyedByInterpActor, bRouteBeginPlayEvenIfStatic, bIsMoving, bAlwaysEncroachCheck, bHasAlternateTargetLocation, bCanStepUpOn, bNetTemporary, bOnlyRelevantToOwner, bNetDirty, bAlwaysRelevant, bReplicateInstigator, bReplicateMovement, bSkipActorPropertyReplication, bUpdateSimulatedPosition, bTearOff, bOnlyDirtyReplication, bAllowFluidSurfaceInteraction, bDemoRecording, bDemoOwner
-			constexpr uintptr_t Bitfields_00FC = 0x00FC;  // Multiple: bForceDemoRelevant, bNetInitialRotation, bReplicateRigidBodyLocation, bKillDuringLevelTransition, bExchangedRoles, bConsiderAllStaticMeshComponentsForStreaming, bDebug, bPostRenderIfNotVisible, bForceNetUpdate, bForcePacketUpdate, bPendingNetUpdate, bHardAttach, bIgnoreBaseRotation, bShadowParented, bSkipAttachedMoves, bCanBeAdheredTo, bCanBeFrictionedTo, bGameRelevant, bMovable, bShouldBaseAtStartup, bPendingDelete, bCanTeleport, bAlwaysTick, bBlocksNavigation, BlockRigidBody, bCollideWhenPlacing, bCollideActors, bCollideWorld, bCollideComplex, bBlockActors, bBlocksTeleport, bMoveIgnoresDestruction
-			constexpr uintptr_t Bitfields_0100 = 0x0100;  // Multiple: bProjectileMoveSingleBlocking, bNoEncroachCheck, bCollideAsEncroacher, bPhysRigidBodyOutOfWorldCheck, bComponentOutsideWorld, bForceOctreeSNFilter, bForceOctreeMNFilter, bRigidBodyWasAwake, bCallRigidBodyWakeEvents, bBounce, bJustTeleported, bEnableMobileTouch, bNetInitial, bNetOwner, bHiddenEd, bEditable, bHiddenEdGroup, bHiddenEdLayer, bHiddenEdCustom, bHiddenEdTemporary, bHiddenEdLevel, bHiddenEdScene, bHiddenEdNoPhysics, bEdShouldSnap, bTempEditor, bPathColliding, bPathTemp, bScriptInitialized, bLockLocation, bForceAllowKismetModification, bDedicatedServerRelevant, bLockedFromEditorDeletion
-			constexpr uintptr_t Bitfields_0104 = 0x0104;  // Multiple: bComponentsDirty, bUpdateComponentsIfEmpty, bDebugEffectIsRelevant
+			constexpr uintptr_t Bitfields_00F8 = 0x00F8;  // Multiple: bAllowFluidSurfaceInteraction, bAlwaysEncroachCheck, bAlwaysRelevant, bCanStepUpOn, bDeleteMe, bDemoOwner, bDemoRecording, bDestroyedByInterpActor, bHasAlternateTargetLocation, bHidden, bHiddenSelf, bIgnoreEncroachers, bIgnoreRigidBodyPawns, bIsMoving, bNetDirty, bNetTemporary, bNoDelete, bOnlyDirtyReplication, bOnlyOwnerSee, bOnlyRelevantToOwner, bOrientOnSlope, bPushedByEncroachers, bReplicateInstigator, bReplicateMovement, bRouteBeginPlayEvenIfStatic, bSkipActorPropertyReplication, bStatic, bTearOff, bTickIsDisabled, bTicked, bUpdateSimulatedPosition, bWorldGeometry
+			constexpr uintptr_t Bitfields_00FC = 0x00FC;  // Multiple: BlockRigidBody, bAlwaysTick, bBlockActors, bBlocksNavigation, bBlocksTeleport, bCanBeAdheredTo, bCanBeFrictionedTo, bCanTeleport, bCollideActors, bCollideComplex, bCollideWhenPlacing, bCollideWorld, bConsiderAllStaticMeshComponentsForStreaming, bDebug, bExchangedRoles, bForceDemoRelevant, bForceNetUpdate, bForcePacketUpdate, bGameRelevant, bHardAttach, bIgnoreBaseRotation, bKillDuringLevelTransition, bMovable, bMoveIgnoresDestruction, bNetInitialRotation, bPendingDelete, bPendingNetUpdate, bPostRenderIfNotVisible, bReplicateRigidBodyLocation, bShadowParented, bShouldBaseAtStartup, bSkipAttachedMoves
+			constexpr uintptr_t Bitfields_0100 = 0x0100;  // Multiple: bBounce, bCallRigidBodyWakeEvents, bCollideAsEncroacher, bComponentOutsideWorld, bDedicatedServerRelevant, bEdShouldSnap, bEditable, bEnableMobileTouch, bForceAllowKismetModification, bForceOctreeMNFilter, bForceOctreeSNFilter, bHiddenEd, bHiddenEdCustom, bHiddenEdGroup, bHiddenEdLayer, bHiddenEdLevel, bHiddenEdNoPhysics, bHiddenEdScene, bHiddenEdTemporary, bJustTeleported, bLockLocation, bLockedFromEditorDeletion, bNetInitial, bNetOwner, bNoEncroachCheck, bPathColliding, bPathTemp, bPhysRigidBodyOutOfWorldCheck, bProjectileMoveSingleBlocking, bRigidBodyWasAwake, bScriptInitialized, bTempEditor
+			constexpr uintptr_t Bitfields_0104 = 0x0104;  // Multiple: bComponentsDirty, bDebugEffectIsRelevant, bUpdateComponentsIfEmpty
 			constexpr uintptr_t SkelMeshCompTickTag = 0x0108;
 			constexpr uintptr_t NetTag = 0x010C;
 			constexpr uintptr_t NetUpdateTime = 0x0110;
@@ -660,7 +660,7 @@ namespace Offsets {
 			constexpr uintptr_t BulletSceneGroup = 0x0080;
 			constexpr uintptr_t Scene = 0x0088;
 			constexpr uintptr_t Owner = 0x0090;
-			constexpr uintptr_t Bitfields_0098 = 0x0098;  // Multiple: bAttached, bTickInEditor, bNeedsReattach, bNeedsUpdateTransform
+			constexpr uintptr_t Bitfields_0098 = 0x0098;  // Multiple: bAttached, bNeedsReattach, bNeedsUpdateTransform, bTickInEditor
 			constexpr uintptr_t TickGroup = 0x009C;
 		}
 
@@ -729,7 +729,7 @@ namespace Offsets {
 		namespace ActorFactoryDynamicSM {
 			constexpr uintptr_t StaticMesh = 0x00A0;
 			constexpr uintptr_t DrawScale3D = 0x00A8;
-			constexpr uintptr_t Bitfields_00B4 = 0x00B4;  // Multiple: bNoEncroachCheck, bNotifyRigidBodyCollision, bBlockRigidBody, bUseCompartment, bCastDynamicShadow
+			constexpr uintptr_t Bitfields_00B4 = 0x00B4;  // Multiple: bBlockRigidBody, bCastDynamicShadow, bNoEncroachCheck, bNotifyRigidBodyCollision, bUseCompartment
 			constexpr uintptr_t CollisionType = 0x00B8;
 		}
 
@@ -778,7 +778,7 @@ namespace Offsets {
 		namespace ActorFactoryPhysicsAsset {
 			constexpr uintptr_t PhysicsAsset = 0x00A0;
 			constexpr uintptr_t SkeletalMesh = 0x00A8;
-			constexpr uintptr_t Bitfields_00B0 = 0x00B0;  // Multiple: bStartAwake, bDamageAppliesImpulse, bNotifyRigidBodyCollision, bUseCompartment, bCastDynamicShadow
+			constexpr uintptr_t Bitfields_00B0 = 0x00B0;  // Multiple: bCastDynamicShadow, bDamageAppliesImpulse, bNotifyRigidBodyCollision, bStartAwake, bUseCompartment
 			constexpr uintptr_t InitialVelocity = 0x00B4;
 			constexpr uintptr_t DrawScale3D = 0x00C0;
 		}
@@ -792,7 +792,7 @@ namespace Offsets {
 		}
 
 		namespace ActorFactoryRigidBody {
-			constexpr uintptr_t Bitfields_00C0 = 0x00C0;  // Multiple: bStartAwake, bDamageAppliesImpulse, bLocalSpaceInitialVelocity, bEnableStayUprightSpring
+			constexpr uintptr_t Bitfields_00C0 = 0x00C0;  // Multiple: bDamageAppliesImpulse, bEnableStayUprightSpring, bLocalSpaceInitialVelocity, bStartAwake
 			constexpr uintptr_t InitialVelocity = 0x00C4;
 			constexpr uintptr_t AdditionalVelocity = 0x00D0;
 			constexpr uintptr_t InitialAngularVelocity = 0x00D8;
@@ -890,7 +890,7 @@ namespace Offsets {
 		}
 
 		namespace AnalyticEventsBase {
-			constexpr uintptr_t Bitfields_0088 = 0x0088;  // Multiple: bSessionInProgress, bAutoStartSession
+			constexpr uintptr_t Bitfields_0088 = 0x0088;  // Multiple: bAutoStartSession, bSessionInProgress
 			constexpr uintptr_t SessionPauseThresholdSec = 0x008C;
 			constexpr uintptr_t UserId = 0x0090;
 		}
@@ -906,7 +906,7 @@ namespace Offsets {
 		}
 
 		namespace AnimNode {
-			constexpr uintptr_t Bitfields_0090 = 0x0090;  // Multiple: bRelevant, bJustBecameRelevant, bTickDuringPausedAnims, bEditorOnly, bDisableCaching, bCallScriptEventOnInit, bCallScriptEventOnBecomeRelevant, bCallScriptEventOnCeaseRelevant
+			constexpr uintptr_t Bitfields_0090 = 0x0090;  // Multiple: bCallScriptEventOnBecomeRelevant, bCallScriptEventOnCeaseRelevant, bCallScriptEventOnInit, bDisableCaching, bEditorOnly, bJustBecameRelevant, bRelevant, bTickDuringPausedAnims
 			constexpr uintptr_t NodeTickTag = 0x0094;
 			constexpr uintptr_t NodeInitTag = 0x0098;
 			constexpr uintptr_t NodeEndEventTick = 0x009C;
@@ -931,7 +931,7 @@ namespace Offsets {
 		namespace AnimNodeAimOffset {
 			constexpr uintptr_t Aim = 0x0148;
 			constexpr uintptr_t AngleOffset = 0x0150;
-			constexpr uintptr_t Bitfields_0158 = 0x0158;  // Multiple: bForceAimDir, bBakeFromAnimations, bPassThroughWhenNotRendered, bSynchronizeNodesInEditor
+			constexpr uintptr_t Bitfields_0158 = 0x0158;  // Multiple: bBakeFromAnimations, bForceAimDir, bPassThroughWhenNotRendered, bSynchronizeNodesInEditor
 			constexpr uintptr_t PassThroughAtOrAboveLOD = 0x015C;
 			constexpr uintptr_t ForcedAimDir = 0x0160;
 			constexpr uintptr_t RequiredBones = 0x0168;
@@ -972,7 +972,7 @@ namespace Offsets {
 
 		namespace AnimNodeBlendByProperty {
 			constexpr uintptr_t PropertyName = 0x0170;
-			constexpr uintptr_t Bitfields_0178 = 0x0178;  // Multiple: bUseOwnersBase, bForceUpdate, bUseSpecificBlendTimes, bSynchronizeNodesInEditor
+			constexpr uintptr_t Bitfields_0178 = 0x0178;  // Multiple: bForceUpdate, bSynchronizeNodesInEditor, bUseOwnersBase, bUseSpecificBlendTimes
 			constexpr uintptr_t CachedPropertyName = 0x017C;
 			constexpr uintptr_t CachedFloatProperty = 0x0188;
 			constexpr uintptr_t CachedBoolProperty = 0x0190;
@@ -1010,7 +1010,7 @@ namespace Offsets {
 			constexpr uintptr_t TargetWeight = 0x0148;
 			constexpr uintptr_t BlendTimeToGo = 0x0158;
 			constexpr uintptr_t ActiveChildIndex = 0x015C;
-			constexpr uintptr_t Bitfields_0160 = 0x0160;  // Multiple: bPlayActiveChild, bForceChildFullWeightWhenBecomingRelevant, bSkipBlendWhenNotRendered
+			constexpr uintptr_t Bitfields_0160 = 0x0160;  // Multiple: bForceChildFullWeightWhenBecomingRelevant, bPlayActiveChild, bSkipBlendWhenNotRendered
 			constexpr uintptr_t SliderPosition = 0x0164;
 			constexpr uintptr_t EditorActiveChildIndex = 0x0168;
 		}
@@ -1072,7 +1072,7 @@ namespace Offsets {
 		namespace AnimNodeSequence {
 			constexpr uintptr_t AnimSeqName = 0x0130;
 			constexpr uintptr_t Rate = 0x0138;
-			constexpr uintptr_t Bitfields_013C = 0x013C;  // Multiple: bPlaying, bLooping, bCauseActorAnimEnd, bCauseActorAnimPlay, bZeroRootRotation, bZeroRootTranslation, bDisableWarningWhenAnimNotFound, bNoNotifies, bForceRefposeWhenNotPlaying, bIsIssuingNotifies, bForceAlwaysSlave, bSynchronize, bReverseSync, bShowTimeLineSlider, bLoopCameraAnim, bRandomizeCameraAnimLoopStartTime, bEditorOnlyAddRefPoseToAdditiveAnimation, bCheckForFinishAnimEarly, bBlendingOut
+			constexpr uintptr_t Bitfields_013C = 0x013C;  // Multiple: bBlendingOut, bCauseActorAnimEnd, bCauseActorAnimPlay, bCheckForFinishAnimEarly, bDisableWarningWhenAnimNotFound, bEditorOnlyAddRefPoseToAdditiveAnimation, bForceAlwaysSlave, bForceRefposeWhenNotPlaying, bIsIssuingNotifies, bLoopCameraAnim, bLooping, bNoNotifies, bPlaying, bRandomizeCameraAnimLoopStartTime, bReverseSync, bShowTimeLineSlider, bSynchronize, bZeroRootRotation, bZeroRootTranslation
 			constexpr uintptr_t CurrentTime = 0x0140;
 			constexpr uintptr_t PreviousTime = 0x0144;
 			constexpr uintptr_t EndTime = 0x0148;
@@ -1114,7 +1114,7 @@ namespace Offsets {
 		}
 
 		namespace AnimNodeSlot {
-			constexpr uintptr_t Bitfields_0148 = 0x0148;  // Multiple: bIsPlayingCustomAnim, bEarlyAnimEndNotify, bSkipBlendWhenNotRendered, bAdditiveAnimationsOverrideSource, bIsBeingUsedByInterpGroup, bDontAddToAlwaysTickArray
+			constexpr uintptr_t Bitfields_0148 = 0x0148;  // Multiple: bAdditiveAnimationsOverrideSource, bDontAddToAlwaysTickArray, bEarlyAnimEndNotify, bIsBeingUsedByInterpGroup, bIsPlayingCustomAnim, bSkipBlendWhenNotRendered
 			constexpr uintptr_t PendingBlendOutTime = 0x014C;
 			constexpr uintptr_t CustomChildIndex = 0x0150;
 			constexpr uintptr_t TargetChildIndex = 0x0154;
@@ -1184,7 +1184,7 @@ namespace Offsets {
 
 		namespace AnimNotify_PlayParticleEffect {
 			constexpr uintptr_t PSTemplate = 0x0068;
-			constexpr uintptr_t Bitfields_0070 = 0x0070;  // Multiple: bIsExtremeContent, bAttach, bPreview, bSkipIfOwnerIsHidden
+			constexpr uintptr_t Bitfields_0070 = 0x0070;  // Multiple: bAttach, bIsExtremeContent, bPreview, bSkipIfOwnerIsHidden
 			constexpr uintptr_t PSNonExtremeContentTemplate = 0x0078;
 			constexpr uintptr_t SocketName = 0x0080;
 			constexpr uintptr_t BoneName = 0x0088;
@@ -1220,7 +1220,7 @@ namespace Offsets {
 		namespace AnimNotify_Trails {
 			constexpr uintptr_t PSTemplate = 0x0068;
 			constexpr uintptr_t SampledSkeletalMesh = 0x0070;
-			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bIsExtremeContent, bPreview, bPreviewForceExplicit, bSkipIfOwnerIsHidden, bResampleRequired
+			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bIsExtremeContent, bPreview, bPreviewForceExplicit, bResampleRequired, bSkipIfOwnerIsHidden
 			constexpr uintptr_t FirstEdgeSocketName = 0x007C;
 			constexpr uintptr_t ControlPointSocketName = 0x0084;
 			constexpr uintptr_t SecondEdgeSocketName = 0x008C;
@@ -1267,7 +1267,7 @@ namespace Offsets {
 			constexpr uintptr_t SequenceLength = 0x0098;
 			constexpr uintptr_t NumFrames = 0x009C;
 			constexpr uintptr_t RateScale = 0x00A0;
-			constexpr uintptr_t Bitfields_00A4 = 0x00A4;  // Multiple: bNoLoopingInterpolation, bIsAdditive, bAdditiveBuiltLooping, bDoNotOverrideCompression, bHasBeenUsed, bWasCompressedWithoutTranslations
+			constexpr uintptr_t Bitfields_00A4 = 0x00A4;  // Multiple: bAdditiveBuiltLooping, bDoNotOverrideCompression, bHasBeenUsed, bIsAdditive, bNoLoopingInterpolation, bWasCompressedWithoutTranslations
 			constexpr uintptr_t RawAnimData = 0x00A8;
 			constexpr uintptr_t RawAnimationData = 0x00B8;
 			constexpr uintptr_t TranslationData = 0x00C8;
@@ -1309,7 +1309,7 @@ namespace Offsets {
 
 		namespace AnimTree {
 			constexpr uintptr_t AnimTreeTemplate = 0x0148;
-			constexpr uintptr_t Bitfields_0150 = 0x0150;  // Multiple: bEnablePooling, bUseSavedPose, bBeingEdited, bParentNodeArrayBuilt, bRebuildAnimTickArray
+			constexpr uintptr_t Bitfields_0150 = 0x0150;  // Multiple: bBeingEdited, bEnablePooling, bParentNodeArrayBuilt, bRebuildAnimTickArray, bUseSavedPose
 			constexpr uintptr_t AnimGroups = 0x0158;
 			constexpr uintptr_t PrioritizedSkelBranches = 0x0168;
 			constexpr uintptr_t ComposePrePassBoneNames = 0x0178;
@@ -1349,7 +1349,7 @@ namespace Offsets {
 
 		namespace AnimationCompressionAlgorithm_Automatic {
 			constexpr uintptr_t MaxEndEffectorError = 0x0078;
-			constexpr uintptr_t Bitfields_007C = 0x007C;  // Multiple: bTryFixedBitwiseCompression, bTryPerTrackBitwiseCompression, bTryLinearKeyRemovalCompression, bTryIntervalKeyRemoval, bRunCurrentDefaultCompressor, bAutoReplaceIfExistingErrorTooGreat, bRaiseMaxErrorToExisting
+			constexpr uintptr_t Bitfields_007C = 0x007C;  // Multiple: bAutoReplaceIfExistingErrorTooGreat, bRaiseMaxErrorToExisting, bRunCurrentDefaultCompressor, bTryFixedBitwiseCompression, bTryIntervalKeyRemoval, bTryLinearKeyRemovalCompression, bTryPerTrackBitwiseCompression
 		}
 
 		namespace AnimationCompressionAlgorithm_BitwiseCompressOnly {
@@ -1366,7 +1366,7 @@ namespace Offsets {
 			constexpr uintptr_t MaxAngleDiffBitwise = 0x00A0;
 			constexpr uintptr_t AllowedRotationFormats = 0x00A8;
 			constexpr uintptr_t AllowedTranslationFormats = 0x00B8;
-			constexpr uintptr_t Bitfields_00C8 = 0x00C8;  // Multiple: bResampleAnimation, bUseAdaptiveError, bUseOverrideForEndEffectors, bUseAdaptiveError2
+			constexpr uintptr_t Bitfields_00C8 = 0x00C8;  // Multiple: bResampleAnimation, bUseAdaptiveError, bUseAdaptiveError2, bUseOverrideForEndEffectors
 			constexpr uintptr_t ResampledFramerate = 0x00CC;
 			constexpr uintptr_t MinKeysForResampling = 0x00D0;
 			constexpr uintptr_t TrackHeightBias = 0x00D4;
@@ -1391,7 +1391,7 @@ namespace Offsets {
 			constexpr uintptr_t MinEffectorDiff = 0x0084;
 			constexpr uintptr_t EffectorDiffSocket = 0x0088;
 			constexpr uintptr_t ParentKeyScale = 0x008C;
-			constexpr uintptr_t Bitfields_0090 = 0x0090;  // Multiple: bRetarget, bActuallyFilterLinearKeys
+			constexpr uintptr_t Bitfields_0090 = 0x0090;  // Multiple: bActuallyFilterLinearKeys, bRetarget
 		}
 
 		namespace AnimationCompressionAlgorithm_RemoveTrivialKeys {
@@ -1416,7 +1416,7 @@ namespace Offsets {
 			constexpr uintptr_t MApexAsset = 0x00C0;
 			constexpr uintptr_t Materials = 0x00C8;
 			constexpr uintptr_t ApexClothingLibrary = 0x00D8;
-			constexpr uintptr_t Bitfields_00E0 = 0x00E0;  // Multiple: bUseHardwareCloth, bFallbackSkinning, bSlowStart, bRecomputeNormals, bAllowAdaptiveTargetFrequency, bResetAfterTeleport, bUseLocalSpaceSimulation, bHasUniqueAssetMaterialNames, IgnoreInitialTrigger
+			constexpr uintptr_t Bitfields_00E0 = 0x00E0;  // Multiple: IgnoreInitialTrigger, bAllowAdaptiveTargetFrequency, bFallbackSkinning, bHasUniqueAssetMaterialNames, bRecomputeNormals, bResetAfterTeleport, bSlowStart, bUseHardwareCloth, bUseLocalSpaceSimulation
 			constexpr uintptr_t UVChannelForTangentUpdate = 0x00E4;
 			constexpr uintptr_t MaxDistanceBlendTime = 0x00E8;
 			constexpr uintptr_t ContinuousRotationThreshold = 0x00EC;
@@ -1456,7 +1456,7 @@ namespace Offsets {
 			constexpr uintptr_t MApexAsset = 0x00B0;
 			constexpr uintptr_t Materials = 0x00B8;
 			constexpr uintptr_t FractureMaterials = 0x00C8;
-			constexpr uintptr_t Bitfields_00D8 = 0x00D8;  // Multiple: bPlaySingleFractureMaterialEffect, bHasUniqueAssetMaterialNames, bDynamic
+			constexpr uintptr_t Bitfields_00D8 = 0x00D8;  // Multiple: bDynamic, bHasUniqueAssetMaterialNames, bPlaySingleFractureMaterialEffect
 			constexpr uintptr_t DefaultPhysMaterial = 0x00E0;
 			constexpr uintptr_t MDestructibleThumbnailComponent = 0x00E8;
 			constexpr uintptr_t CrumbleEmitterName = 0x00F0;
@@ -1504,10 +1504,10 @@ namespace Offsets {
 			constexpr uintptr_t SoundCue = 0x00A0;
 			constexpr uintptr_t CueFirstNode = 0x00A8;
 			constexpr uintptr_t InstanceParameters = 0x00B0;
-			constexpr uintptr_t Bitfields_00C0 = 0x00C0;  // Multiple: bUseOwnerLocation, bAutoPlay, bAutoDestroy, bStopWhenOwnerDestroyed, bShouldRemainActiveIfDropped, bWasOccluded, bSuppressSubtitles, bWasPlaying, bAllowSpatialization, bFinished, bApplyRadioFilter, bRadioFilterSelected, bPreviewComponent, bIgnoreForFlushing
+			constexpr uintptr_t Bitfields_00C0 = 0x00C0;  // Multiple: bAllowSpatialization, bApplyRadioFilter, bAutoDestroy, bAutoPlay, bFinished, bIgnoreForFlushing, bPreviewComponent, bRadioFilterSelected, bShouldRemainActiveIfDropped, bStopWhenOwnerDestroyed, bSuppressSubtitles, bUseOwnerLocation, bWasOccluded, bWasPlaying
 			constexpr uintptr_t StereoBleed = 0x00C4;
 			constexpr uintptr_t LFEBleed = 0x00C8;
-			constexpr uintptr_t Bitfields_00CC = 0x00CC;  // Multiple: bEQFilterApplied, bAlwaysPlay, bIsUISound, bIsMusic, bReverb, bCenterChannelOnly, bIsCachedInPool
+			constexpr uintptr_t Bitfields_00CC = 0x00CC;  // Multiple: bAlwaysPlay, bCenterChannelOnly, bEQFilterApplied, bIsCachedInPool, bIsMusic, bIsUISound, bReverb
 			constexpr uintptr_t WaveInstances = 0x00D0;
 			constexpr uintptr_t SoundNodeData = 0x00E0;
 			constexpr uintptr_t UnknownData00 = 0x00F0;
@@ -1618,7 +1618,7 @@ namespace Offsets {
 		}
 
 		namespace AutoTestManager {
-			constexpr uintptr_t Bitfields_0268 = 0x0268;  // Multiple: bAutomatedPerfTesting, bAutoContinueToNextRound, bUsingAutomatedTestingMapList, bAutomatedTestingWithOpen, bExitOnCyclesComplete, bCheckingForFragmentation, bCheckingForMemLeaks, bDoingASentinelRun, bSentinelStreamingLevelStillLoading
+			constexpr uintptr_t Bitfields_0268 = 0x0268;  // Multiple: bAutoContinueToNextRound, bAutomatedPerfTesting, bAutomatedTestingWithOpen, bCheckingForFragmentation, bCheckingForMemLeaks, bDoingASentinelRun, bExitOnCyclesComplete, bSentinelStreamingLevelStillLoading, bUsingAutomatedTestingMapList
 			constexpr uintptr_t AutomatedPerfRemainingTime = 0x026C;
 			constexpr uintptr_t AutomatedTestingMapIndex = 0x0270;
 			constexpr uintptr_t AutomatedMapTestingList = 0x0278;
@@ -1664,7 +1664,7 @@ namespace Offsets {
 			constexpr uintptr_t CsgOper = 0x0268;
 			constexpr uintptr_t BrushColor = 0x026C;
 			constexpr uintptr_t PolyFlags = 0x0270;
-			constexpr uintptr_t Bitfields_0274 = 0x0274;  // Multiple: bColored, bSolidWhenSelected, bPlaceableFromClassBrowser
+			constexpr uintptr_t Bitfields_0274 = 0x0274;  // Multiple: bColored, bPlaceableFromClassBrowser, bSolidWhenSelected
 			constexpr uintptr_t Brush = 0x0278;
 			constexpr uintptr_t BrushComponent = 0x0280;
 			constexpr uintptr_t SavedSelections = 0x0288;
@@ -1683,7 +1683,7 @@ namespace Offsets {
 			constexpr uintptr_t PCOwner = 0x0268;
 			constexpr uintptr_t CameraStyle = 0x0270;
 			constexpr uintptr_t DefaultFOV = 0x0278;
-			constexpr uintptr_t Bitfields_027C = 0x027C;  // Multiple: bLockedFOV, bConstrainAspectRatio, bEnableFading, bFadeAudio, bForceDisableTemporalAA, bEnableColorScaling, bEnableColorScaleInterp, bUseClientSideCameraUpdates, bDebugClientSideCamera, bShouldSendClientSideCameraUpdate
+			constexpr uintptr_t Bitfields_027C = 0x027C;  // Multiple: bConstrainAspectRatio, bDebugClientSideCamera, bEnableColorScaleInterp, bEnableColorScaling, bEnableFading, bFadeAudio, bForceDisableTemporalAA, bLockedFOV, bShouldSendClientSideCameraUpdate, bUseClientSideCameraUpdates
 			constexpr uintptr_t LockedFOV = 0x0280;
 			constexpr uintptr_t ConstrainedAspectRatio = 0x0284;
 			constexpr uintptr_t DefaultAspectRatio = 0x0288;
@@ -1721,7 +1721,7 @@ namespace Offsets {
 		}
 
 		namespace CameraActor {
-			constexpr uintptr_t Bitfields_0268 = 0x0268;  // Multiple: bConstrainAspectRatio, bCamOverridePostProcess
+			constexpr uintptr_t Bitfields_0268 = 0x0268;  // Multiple: bCamOverridePostProcess, bConstrainAspectRatio
 			constexpr uintptr_t AspectRatio = 0x026C;
 			constexpr uintptr_t FOVAngle = 0x0270;
 			constexpr uintptr_t CamOverridePostProcessAlpha = 0x0274;
@@ -1745,7 +1745,7 @@ namespace Offsets {
 			constexpr uintptr_t CamAnim = 0x0060;
 			constexpr uintptr_t InterpGroupInst = 0x0068;
 			constexpr uintptr_t CurTime = 0x0070;
-			constexpr uintptr_t Bitfields_0074 = 0x0074;  // Multiple: bLooping, bFinished, bAutoReleaseWhenFinished, bBlendingIn, bBlendingOut
+			constexpr uintptr_t Bitfields_0074 = 0x0074;  // Multiple: bAutoReleaseWhenFinished, bBlendingIn, bBlendingOut, bFinished, bLooping
 			constexpr uintptr_t BlendInTime = 0x0078;
 			constexpr uintptr_t BlendOutTime = 0x007C;
 			constexpr uintptr_t CurBlendInTime = 0x0080;
@@ -1766,7 +1766,7 @@ namespace Offsets {
 		}
 
 		namespace CameraModifier {
-			constexpr uintptr_t Bitfields_0060 = 0x0060;  // Multiple: bDisabled, bPendingDisable, bExclusive, bDebug
+			constexpr uintptr_t Bitfields_0060 = 0x0060;  // Multiple: bDebug, bDisabled, bExclusive, bPendingDisable
 			constexpr uintptr_t CameraOwner = 0x0068;
 			constexpr uintptr_t Priority = 0x0070;
 			constexpr uintptr_t AlphaInTime = 0x0074;
@@ -1781,7 +1781,7 @@ namespace Offsets {
 		}
 
 		namespace CameraShake {
-			constexpr uintptr_t Bitfields_0060 = 0x0060;  // Multiple: bSingleInstance, bRandomAnimSegment
+			constexpr uintptr_t Bitfields_0060 = 0x0060;  // Multiple: bRandomAnimSegment, bSingleInstance
 			constexpr uintptr_t OscillationDuration = 0x0064;
 			constexpr uintptr_t OscillationBlendInTime = 0x0068;
 			constexpr uintptr_t OscillationBlendOutTime = 0x006C;
@@ -1898,7 +1898,7 @@ namespace Offsets {
 			constexpr uintptr_t HistoryBot = 0x011C;
 			constexpr uintptr_t HistoryCur = 0x0120;
 			constexpr uintptr_t History = 0x0128;
-			constexpr uintptr_t Bitfields_0228 = 0x0228;  // Multiple: bNavigatingHistory, bCaptureKeyInput, bCtrl, bEnableUI, bAutoCompleteLocked, bRequireCtrlToNavigateAutoComplete, bIsRuntimeAutoCompleteUpToDate
+			constexpr uintptr_t Bitfields_0228 = 0x0228;  // Multiple: bAutoCompleteLocked, bCaptureKeyInput, bCtrl, bEnableUI, bIsRuntimeAutoCompleteUpToDate, bNavigatingHistory, bRequireCtrlToNavigateAutoComplete
 			constexpr uintptr_t TypedStr = 0x0230;
 			constexpr uintptr_t TypedStrPos = 0x0240;
 			constexpr uintptr_t ManualAutoCompleteList = 0x0248;
@@ -1921,7 +1921,7 @@ namespace Offsets {
 			constexpr uintptr_t PlayerReplicationInfo = 0x0288;
 			constexpr uintptr_t PlayerNum = 0x0290;
 			constexpr uintptr_t NextController = 0x0298;
-			constexpr uintptr_t Bitfields_02A0 = 0x02A0;  // Multiple: bIsPlayer, bGodMode, bSoaking, bSlowerZAcquire, bNotifyPostLanded, bNotifyApex, bOverrideSearchStart, bAdvancedTactics, bCanDoSpecial, bAdjusting, bPreparingMove, bForceStrafe, bLOSflag, bSkipExtraLOSChecks, bNotifyFallingHitWall, bEarlyOutOfSighTestsForSameType, bPreciseDestination, bSeeFriendly, bUsingPathLanes
+			constexpr uintptr_t Bitfields_02A0 = 0x02A0;  // Multiple: bAdjusting, bAdvancedTactics, bCanDoSpecial, bEarlyOutOfSighTestsForSameType, bForceStrafe, bGodMode, bIsPlayer, bLOSflag, bNotifyApex, bNotifyFallingHitWall, bNotifyPostLanded, bOverrideSearchStart, bPreciseDestination, bPreparingMove, bSeeFriendly, bSkipExtraLOSChecks, bSlowerZAcquire, bSoaking, bUsingPathLanes
 			constexpr uintptr_t bFire = 0x02A4;
 			constexpr uintptr_t bAltFire = 0x02A5;
 			constexpr uintptr_t MinHitWall = 0x02A8;
@@ -1982,7 +1982,7 @@ namespace Offsets {
 		}
 
 		namespace CoverLink {
-			constexpr uintptr_t Bitfields_0388 = 0x0388;  // Multiple: GLOBAL_bUseSlotMarkers, bDisabled, bClaimAllSlots, bAutoSort, bAutoAdjust, bCircular, bLooped, bPlayerOnly, bDynamicCover, bFractureOnTouch, bDebug_FireLinks, bDebug_ExposedLinks, bDebug_CoverGen, bDoAutoSlotDensityFixup
+			constexpr uintptr_t Bitfields_0388 = 0x0388;  // Multiple: GLOBAL_bUseSlotMarkers, bAutoAdjust, bAutoSort, bCircular, bClaimAllSlots, bDebug_CoverGen, bDebug_ExposedLinks, bDebug_FireLinks, bDisabled, bDoAutoSlotDensityFixup, bDynamicCover, bFractureOnTouch, bLooped, bPlayerOnly
 			constexpr uintptr_t LeanTraceDist = 0x038C;
 			constexpr uintptr_t Slots = 0x0390;
 			constexpr uintptr_t DynamicLinkInfos = 0x03A0;
@@ -2040,7 +2040,7 @@ namespace Offsets {
 			constexpr uintptr_t CollisionHeight = 0x0258;
 			constexpr uintptr_t CollisionRadius = 0x025C;
 			constexpr uintptr_t CylinderColor = 0x0260;
-			constexpr uintptr_t Bitfields_0264 = 0x0264;  // Multiple: bDrawBoundingBox, bDrawNonColliding, bAlwaysRenderIfSelected
+			constexpr uintptr_t Bitfields_0264 = 0x0264;  // Multiple: bAlwaysRenderIfSelected, bDrawBoundingBox, bDrawNonColliding
 		}
 
 		namespace DOFAndBloomEffect {
@@ -2120,7 +2120,7 @@ namespace Offsets {
 			constexpr uintptr_t HitNormal = 0x02B4;
 			constexpr uintptr_t HitTangent = 0x02C0;
 			constexpr uintptr_t HitBinormal = 0x02CC;
-			constexpr uintptr_t Bitfields_02D8 = 0x02D8;  // Multiple: bNoClip, bStaticDecal, bProjectOnBackfaces, bProjectOnHidden, bProjectOnBSP, bProjectOnStaticMeshes, bProjectOnSkeletalMeshes, bProjectOnTerrain, bProjectOnOwner, bFlipBackfaceDirection, bMovableDecal, bHasBeenAttached, bDecalMaterialSetAtRunTime
+			constexpr uintptr_t Bitfields_02D8 = 0x02D8;  // Multiple: bDecalMaterialSetAtRunTime, bFlipBackfaceDirection, bHasBeenAttached, bMovableDecal, bNoClip, bProjectOnBSP, bProjectOnBackfaces, bProjectOnHidden, bProjectOnOwner, bProjectOnSkeletalMeshes, bProjectOnStaticMeshes, bProjectOnTerrain, bStaticDecal
 			constexpr uintptr_t HitComponent = 0x02E0;
 			constexpr uintptr_t HitBone = 0x02E8;
 			constexpr uintptr_t HitNodeIndex = 0x02F0;
@@ -2316,7 +2316,7 @@ namespace Offsets {
 			constexpr uintptr_t BoxColor = 0x0258;
 			constexpr uintptr_t BoxMaterial = 0x0260;
 			constexpr uintptr_t BoxExtent = 0x0268;
-			constexpr uintptr_t Bitfields_0274 = 0x0274;  // Multiple: bDrawWireBox, bDrawLitBox, bDrawOnlyIfSelected
+			constexpr uintptr_t Bitfields_0274 = 0x0274;  // Multiple: bDrawLitBox, bDrawOnlyIfSelected, bDrawWireBox
 		}
 
 		namespace DrawCapsuleComponent {
@@ -2324,7 +2324,7 @@ namespace Offsets {
 			constexpr uintptr_t CapsuleMaterial = 0x0260;
 			constexpr uintptr_t CapsuleHeight = 0x0268;
 			constexpr uintptr_t CapsuleRadius = 0x026C;
-			constexpr uintptr_t Bitfields_0270 = 0x0270;  // Multiple: bDrawWireCapsule, bDrawLitCapsule, bDrawOnlyIfSelected
+			constexpr uintptr_t Bitfields_0270 = 0x0270;  // Multiple: bDrawLitCapsule, bDrawOnlyIfSelected, bDrawWireCapsule
 		}
 
 		namespace DrawConeComponent {
@@ -2342,7 +2342,7 @@ namespace Offsets {
 			constexpr uintptr_t CylinderHeight = 0x0270;
 			constexpr uintptr_t CylinderHeightOffset = 0x0274;
 			constexpr uintptr_t CylinderSides = 0x0278;
-			constexpr uintptr_t Bitfields_027C = 0x027C;  // Multiple: bDrawWireCylinder, bDrawLitCylinder, bDrawOnlyIfSelected
+			constexpr uintptr_t Bitfields_027C = 0x027C;  // Multiple: bDrawLitCylinder, bDrawOnlyIfSelected, bDrawWireCylinder
 		}
 
 		namespace DrawFrustumComponent {
@@ -2377,7 +2377,7 @@ namespace Offsets {
 			constexpr uintptr_t SphereMaterial = 0x0260;
 			constexpr uintptr_t SphereRadius = 0x0268;
 			constexpr uintptr_t SphereSides = 0x026C;
-			constexpr uintptr_t Bitfields_0270 = 0x0270;  // Multiple: bDrawWireSphere, bDrawLitSphere, bDrawOnlyIfSelected
+			constexpr uintptr_t Bitfields_0270 = 0x0270;  // Multiple: bDrawLitSphere, bDrawOnlyIfSelected, bDrawWireSphere
 		}
 
 		namespace DwTriovizImplEffect {
@@ -2405,7 +2405,7 @@ namespace Offsets {
 			constexpr uintptr_t AmbientGlow = 0x00FC;
 			constexpr uintptr_t LightDistance = 0x010C;
 			constexpr uintptr_t ShadowDistance = 0x0110;
-			constexpr uintptr_t Bitfields_0114 = 0x0114;  // Multiple: bCastShadows, bCompositeShadowsFromDynamicLights, bForceCompositeAllLights, bAffectedBySmallDynamicLights, bUseBooleanEnvironmentShadowing, bShadowFromEnvironment, bDynamic, bSynthesizeDirectionalLight, bSynthesizeSHLight, bRequiresNonLatentUpdates, bTraceFromClosestBoundsPoint, bIsCharacterLightEnvironment, bOverrideOwnerLightingChannels, bAlwaysInfluencedByDominantDirectionalLight
+			constexpr uintptr_t Bitfields_0114 = 0x0114;  // Multiple: bAffectedBySmallDynamicLights, bAlwaysInfluencedByDominantDirectionalLight, bCastShadows, bCompositeShadowsFromDynamicLights, bDynamic, bForceCompositeAllLights, bIsCharacterLightEnvironment, bOverrideOwnerLightingChannels, bRequiresNonLatentUpdates, bShadowFromEnvironment, bSynthesizeDirectionalLight, bSynthesizeSHLight, bTraceFromClosestBoundsPoint, bUseBooleanEnvironmentShadowing
 			constexpr uintptr_t ModShadowFadeoutTime = 0x0118;
 			constexpr uintptr_t ModShadowFadeoutExponent = 0x011C;
 			constexpr uintptr_t MaxModulatedShadowColor = 0x0120;
@@ -2452,7 +2452,7 @@ namespace Offsets {
 		namespace Emitter {
 			constexpr uintptr_t ParticleSystemComponent = 0x0268;
 			constexpr uintptr_t LightEnvironment = 0x0270;
-			constexpr uintptr_t Bitfields_0278 = 0x0278;  // Multiple: bDestroyOnSystemFinish, bPostUpdateTickGroup, bCurrentlyActive
+			constexpr uintptr_t Bitfields_0278 = 0x0278;  // Multiple: bCurrentlyActive, bDestroyOnSystemFinish, bPostUpdateTickGroup
 		}
 
 		namespace EmitterCameraLensEffectBase {
@@ -2571,8 +2571,8 @@ namespace Offsets {
 			constexpr uintptr_t ProcBuildingLODLightingTexelsPerWorldUnit = 0x0444;
 			constexpr uintptr_t MaxProcBuildingLODColorTextureSize = 0x0448;
 			constexpr uintptr_t MaxProcBuildingLODLightingTextureSize = 0x044C;
-			constexpr uintptr_t Bitfields_0450 = 0x0450;  // Multiple: UseProcBuildingLODTextureCropping, ForcePowerOfTwoProcBuildingLODTextures, bCombineSimilarMappings, bRenderLightMapDensityGrayscale, bScreenshotRequested, bUseSound, bUseBackgroundLevelStreaming, bSubtitlesEnabled, bSubtitlesForcedOff, bSmoothFrameRate, bCheckForMultiplePawnsSpawnedInAFrame, bShouldGenerateSimpleLightmaps, bForceStaticTerrain, bForceCPUSkinning, bUsePostProcessEffects, bOnScreenKismetWarnings, bEnableKismetLogging, bAllowMatureLanguage, bDisablePhysXHardwareSupport, bEnablePhysX, bPauseOnLossOfFocus, bCheckParticleRenderSize, bEnableColorClear, bEnableSwitchRenderMode, bShowAllHiddenObjects, bAreConstraintsDirty, bHasPendingGlobalReattach, bEnableOnScreenDebugMessages, bEnableOnScreenDebugMessagesDisplay, bSuppressMapWarnings, bCookSeparateSharedMPGameContent, bUseRecastNavMesh
-			constexpr uintptr_t Bitfields_0454 = 0x0454;  // Multiple: bDisableAILogging, bUseNormalMapsForSimpleLightMaps, bStartWithMatineeCapture, bCompressMatineeCapture, bLockReadOnlyLevels
+			constexpr uintptr_t Bitfields_0450 = 0x0450;  // Multiple: ForcePowerOfTwoProcBuildingLODTextures, UseProcBuildingLODTextureCropping, bAllowMatureLanguage, bAreConstraintsDirty, bCheckForMultiplePawnsSpawnedInAFrame, bCheckParticleRenderSize, bCombineSimilarMappings, bCookSeparateSharedMPGameContent, bDisablePhysXHardwareSupport, bEnableColorClear, bEnableKismetLogging, bEnableOnScreenDebugMessages, bEnableOnScreenDebugMessagesDisplay, bEnablePhysX, bEnableSwitchRenderMode, bForceCPUSkinning, bForceStaticTerrain, bHasPendingGlobalReattach, bOnScreenKismetWarnings, bPauseOnLossOfFocus, bRenderLightMapDensityGrayscale, bScreenshotRequested, bShouldGenerateSimpleLightmaps, bShowAllHiddenObjects, bSmoothFrameRate, bSubtitlesEnabled, bSubtitlesForcedOff, bSuppressMapWarnings, bUseBackgroundLevelStreaming, bUsePostProcessEffects, bUseRecastNavMesh, bUseSound
+			constexpr uintptr_t Bitfields_0454 = 0x0454;  // Multiple: bCompressMatineeCapture, bDisableAILogging, bLockReadOnlyLevels, bStartWithMatineeCapture, bUseNormalMapsForSimpleLightMaps
 			constexpr uintptr_t MaxRMSDForCombiningMappings = 0x0458;
 			constexpr uintptr_t ImageReflectionTextureSize = 0x045C;
 			constexpr uintptr_t LightingOnlyBrightness = 0x0460;
@@ -2801,7 +2801,7 @@ namespace Offsets {
 		}
 
 		namespace FluidInfluenceComponent {
-			constexpr uintptr_t Bitfields_0258 = 0x0258;  // Multiple: bActive, RaindropFillEntireFluid, bIsToggleTriggered
+			constexpr uintptr_t Bitfields_0258 = 0x0258;  // Multiple: RaindropFillEntireFluid, bActive, bIsToggleTriggered
 			constexpr uintptr_t FluidActor = 0x0260;
 			constexpr uintptr_t InfluenceType = 0x0268;
 			constexpr uintptr_t MaxDistance = 0x026C;
@@ -2836,7 +2836,7 @@ namespace Offsets {
 			constexpr uintptr_t FluidMaterial = 0x0258;
 			constexpr uintptr_t LightMapResolution = 0x0260;
 			constexpr uintptr_t LightmassSettings = 0x0264;
-			constexpr uintptr_t Bitfields_0280 = 0x0280;  // Multiple: EnableSimulation, EnableDetail, bTiling, bPause, bShowSimulationNormals, bShowSimulationPosition, bShowDetailNormals, bShowDetailPosition, bShowFluidSimulation, bShowFluidDetail, bTestRipple, bTestRippleCenterOnDetail
+			constexpr uintptr_t Bitfields_0280 = 0x0280;  // Multiple: EnableDetail, EnableSimulation, bPause, bShowDetailNormals, bShowDetailPosition, bShowFluidDetail, bShowFluidSimulation, bShowSimulationNormals, bShowSimulationPosition, bTestRipple, bTestRippleCenterOnDetail, bTiling
 			constexpr uintptr_t SimulationQuadsX = 0x0284;
 			constexpr uintptr_t SimulationQuadsY = 0x0288;
 			constexpr uintptr_t GridSpacing = 0x028C;
@@ -2901,7 +2901,7 @@ namespace Offsets {
 		namespace FogVolumeDensityComponent {
 			constexpr uintptr_t FogMaterial = 0x00A0;
 			constexpr uintptr_t DefaultFogVolumeMaterial = 0x00A8;
-			constexpr uintptr_t Bitfields_00B0 = 0x00B0;  // Multiple: bEnabled, bAffectsTranslucency, bOnlyAffectsTranslucency
+			constexpr uintptr_t Bitfields_00B0 = 0x00B0;  // Multiple: bAffectsTranslucency, bEnabled, bOnlyAffectsTranslucency
 			constexpr uintptr_t SimpleLightColor = 0x00B4;
 			constexpr uintptr_t ApproxFogLightColor = 0x00C4;
 			constexpr uintptr_t StartDistance = 0x00D4;
@@ -2950,7 +2950,7 @@ namespace Offsets {
 			constexpr uintptr_t NumCharacters = 0x0198;
 			constexpr uintptr_t MaxCharHeight = 0x01A0;
 			constexpr uintptr_t ScalingFactor = 0x01B0;
-			constexpr uintptr_t Bitfields_01B4 = 0x01B4;  // Multiple: bMapUppercaseToLowercase, bMapLowercaseToUppercase
+			constexpr uintptr_t Bitfields_01B4 = 0x01B4;  // Multiple: bMapLowercaseToUppercase, bMapUppercaseToLowercase
 			constexpr uintptr_t VerticalOffsetOverride = 0x01B8;
 		}
 
@@ -3010,7 +3010,7 @@ namespace Offsets {
 			constexpr uintptr_t ComponentBaseResources = 0x0300;
 			constexpr uintptr_t ReleaseResourcesFence = 0x0308;
 			constexpr uintptr_t VisibleFragments = 0x0310;
-			constexpr uintptr_t Bitfields_0320 = 0x0320;  // Multiple: bVisibilityHasChanged, bVisibilityReset, bInitialVisibilityValue, bUseDynamicIndexBuffer, bUseDynamicIBWithHiddenFragments
+			constexpr uintptr_t Bitfields_0320 = 0x0320;  // Multiple: bInitialVisibilityValue, bUseDynamicIBWithHiddenFragments, bUseDynamicIndexBuffer, bVisibilityHasChanged, bVisibilityReset
 			constexpr uintptr_t NumResourceIndices = 0x0324;
 			constexpr uintptr_t bResetStaticMesh = 0x0328;
 		}
@@ -3060,7 +3060,7 @@ namespace Offsets {
 			constexpr uintptr_t FracturedStaticMeshComponent = 0x0270;
 			constexpr uintptr_t SkinnedComponent = 0x0278;
 			constexpr uintptr_t ChunkHealth = 0x0280;
-			constexpr uintptr_t Bitfields_0290 = 0x0290;  // Multiple: bHasShownMissingSoundWarning, bBreakChunksOnActorTouch, bShouldSaveForCheckpoint
+			constexpr uintptr_t Bitfields_0290 = 0x0290;  // Multiple: bBreakChunksOnActorTouch, bHasShownMissingSoundWarning, bShouldSaveForCheckpoint
 			constexpr uintptr_t ChunkHealthScale = 0x0294;
 			constexpr uintptr_t OverrideFragmentDestroyEffects = 0x0298;
 			constexpr uintptr_t FractureCullMinDistance = 0x02A8;
@@ -3075,7 +3075,7 @@ namespace Offsets {
 		namespace FracturedStaticMeshComponent {
 			constexpr uintptr_t FragmentNeighborsVisible = 0x0330;
 			constexpr uintptr_t VisibleBox = 0x0340;
-			constexpr uintptr_t Bitfields_035C = 0x035C;  // Multiple: bUseSkinnedRendering, bUseVisibleVertsForBounds, bTopFragmentsRootNonDestroyable, bBottomFragmentsRootNonDestroyable
+			constexpr uintptr_t Bitfields_035C = 0x035C;  // Multiple: bBottomFragmentsRootNonDestroyable, bTopFragmentsRootNonDestroyable, bUseSkinnedRendering, bUseVisibleVertsForBounds
 			constexpr uintptr_t TopBottomFragmentDistThreshold = 0x0360;
 			constexpr uintptr_t LoseChunkOutsideMaterialOverride = 0x0368;
 			constexpr uintptr_t FragmentBoundsMaxZ = 0x0370;
@@ -3086,7 +3086,7 @@ namespace Offsets {
 		namespace FracturedStaticMeshPart {
 			constexpr uintptr_t DestroyPartRadiusFactor = 0x02F0;
 			constexpr uintptr_t BaseFracturedMeshActor = 0x02F8;
-			constexpr uintptr_t Bitfields_0300 = 0x0300;  // Multiple: bHasBeenRecycled, bChangeRBChannelWhenAsleep, bCompositeThatExplodesOnImpact
+			constexpr uintptr_t Bitfields_0300 = 0x0300;  // Multiple: bChangeRBChannelWhenAsleep, bCompositeThatExplodesOnImpact, bHasBeenRecycled
 			constexpr uintptr_t LastSpawnTime = 0x0304;
 			constexpr uintptr_t PartPoolIndex = 0x0308;
 			constexpr uintptr_t FracPartGravScale = 0x030C;
@@ -3108,7 +3108,7 @@ namespace Offsets {
 			constexpr uintptr_t ServerActors = 0x0A30;
 			constexpr uintptr_t TravelURL = 0x0A40;
 			constexpr uintptr_t TravelType = 0x0A50;
-			constexpr uintptr_t Bitfields_0A54 = 0x0A54;  // Multiple: bWorldWasLoadedThisTick, bCheckForMovieCapture, bTriggerPostLoadMap, bStartedLoadMapMovie, bUnloadingMap, bShouldCommitPendingMapChange, bClearAnimSetLinkupCachesOnLoadMap, bEnableSecondaryDisplay, bEnableSecondaryViewport
+			constexpr uintptr_t Bitfields_0A54 = 0x0A54;  // Multiple: bCheckForMovieCapture, bClearAnimSetLinkupCachesOnLoadMap, bEnableSecondaryDisplay, bEnableSecondaryViewport, bShouldCommitPendingMapChange, bStartedLoadMapMovie, bTriggerPostLoadMap, bUnloadingMap, bWorldWasLoadedThisTick
 			constexpr uintptr_t OnlineSubsystem = 0x0A58;
 			constexpr uintptr_t DLCEnumerator = 0x0A60;
 			constexpr uintptr_t DownloadableContentEnumeratorClassName = 0x0A68;
@@ -3131,7 +3131,7 @@ namespace Offsets {
 		namespace GameInfo {
 			constexpr uintptr_t RegistryGroup = 0x0268;
 			constexpr uintptr_t BulletScenesCount = 0x0270;
-			constexpr uintptr_t Bitfields_0274 = 0x0274;  // Multiple: bRestartLevel, bPauseable, bTeamGame, bGameEnded, bOverTime, bDelayedStart, bWaitingToStartMatch, bChangeLevels, bAlreadyChanged, bGameRestarted, bLevelChange, bKickLiveIdlers, bFixedPlayerStart, bDoFearCostFallOff, bUseSeamlessTravel, bHasNetworkError, bRequiresPushToTalk, bIsStandbyCheckingEnabled, bIsStandbyCheckingOn, bHasStandbyCheatTriggered, bKeepingLoadingMovieOpen
+			constexpr uintptr_t Bitfields_0274 = 0x0274;  // Multiple: bAlreadyChanged, bChangeLevels, bDelayedStart, bDoFearCostFallOff, bFixedPlayerStart, bGameEnded, bGameRestarted, bHasNetworkError, bHasStandbyCheatTriggered, bIsStandbyCheckingEnabled, bIsStandbyCheckingOn, bKeepingLoadingMovieOpen, bKickLiveIdlers, bLevelChange, bOverTime, bPauseable, bRequiresPushToTalk, bRestartLevel, bTeamGame, bUseSeamlessTravel, bWaitingToStartMatch
 			constexpr uintptr_t CauseEventCommand = 0x0278;
 			constexpr uintptr_t BugLocString = 0x0288;
 			constexpr uintptr_t BugRotString = 0x0298;
@@ -3199,7 +3199,7 @@ namespace Offsets {
 		namespace GameReplicationInfo {
 			constexpr uintptr_t RegistryGroup = 0x0268;
 			constexpr uintptr_t GameClass = 0x0270;
-			constexpr uintptr_t Bitfields_0278 = 0x0278;  // Multiple: bStopCountDown, bMatchHasBegun, bMatchIsOver
+			constexpr uintptr_t Bitfields_0278 = 0x0278;  // Multiple: bMatchHasBegun, bMatchIsOver, bStopCountDown
 			constexpr uintptr_t RemainingTime = 0x027C;
 			constexpr uintptr_t ElapsedTime = 0x0280;
 			constexpr uintptr_t RemainingMinute = 0x0284;
@@ -3221,7 +3221,7 @@ namespace Offsets {
 			constexpr uintptr_t DoubleClickStartTime = 0x0128;
 			constexpr uintptr_t DoubleClickStartPosition = 0x0130;
 			constexpr uintptr_t InitialPressedKeys = 0x0138;
-			constexpr uintptr_t Bitfields_0188 = 0x0188;  // Multiple: bUpdateInputProcessingStatus, bUpdateSceneViewportSizes, bEnableDebugInput, bRenderDebugInfo, bCaptureUnprocessedInput
+			constexpr uintptr_t Bitfields_0188 = 0x0188;  // Multiple: bCaptureUnprocessedInput, bEnableDebugInput, bRenderDebugInfo, bUpdateInputProcessingStatus, bUpdateSceneViewportSizes
 			constexpr uintptr_t NavAliases = 0x0190;
 			constexpr uintptr_t AxisInputKeys = 0x01A0;
 		}
@@ -3240,7 +3240,7 @@ namespace Offsets {
 			constexpr uintptr_t ConnectingMessage = 0x00D8;
 			constexpr uintptr_t PausedMessage = 0x00E8;
 			constexpr uintptr_t PrecachingMessage = 0x00F8;
-			constexpr uintptr_t Bitfields_0108 = 0x0108;  // Multiple: bShowTitleSafeZone, bDisplayHardwareMouseCursor, bOverrideDiffuseAndSpecular, bIsPlayInEditorViewport, bShowSystemMouseCursor, bDisableWorldRendering, bCapturedWorldRendering, bDebugNoGFxUI
+			constexpr uintptr_t Bitfields_0108 = 0x0108;  // Multiple: bCapturedWorldRendering, bDebugNoGFxUI, bDisableWorldRendering, bDisplayHardwareMouseCursor, bIsPlayInEditorViewport, bOverrideDiffuseAndSpecular, bShowSystemMouseCursor, bShowTitleSafeZone
 			constexpr uintptr_t TitleSafeZone = 0x010C;
 			constexpr uintptr_t GamepadInputAPI = 0x011C;
 			constexpr uintptr_t DesiredSplitscreenType = 0x011D;
@@ -3317,7 +3317,7 @@ namespace Offsets {
 			constexpr uintptr_t GreenColor = 0x026C;
 			constexpr uintptr_t RedColor = 0x0270;
 			constexpr uintptr_t PlayerOwner = 0x0278;
-			constexpr uintptr_t Bitfields_0280 = 0x0280;  // Multiple: bLostFocusPaused, bShowHUD, bShowScores, bShowDebugInfo, bShowBadConnectionAlert, bShowDirectorInfoDebug, bShowDirectorInfoHUD, bRenderFullScreen, bScaleCanvasForCinematicMode, bShowOverlays
+			constexpr uintptr_t Bitfields_0280 = 0x0280;  // Multiple: bLostFocusPaused, bRenderFullScreen, bScaleCanvasForCinematicMode, bShowBadConnectionAlert, bShowDebugInfo, bShowDirectorInfoDebug, bShowDirectorInfoHUD, bShowHUD, bShowOverlays, bShowScores
 			constexpr uintptr_t HudCanvasScale = 0x0284;
 			constexpr uintptr_t PostRenderedActors = 0x0288;
 			constexpr uintptr_t ConsoleMessages = 0x0298;
@@ -3450,8 +3450,8 @@ namespace Offsets {
 			constexpr uintptr_t ScaleMaxX = 0x0074;
 			constexpr uintptr_t ScaleMaxY = 0x0078;
 			constexpr uintptr_t ScaleMaxZ = 0x007C;
-			constexpr uintptr_t Bitfields_0080 = 0x0080;  // Multiple: LockScaleX, LockScaleY, LockScaleZ, AlignToNormal, RandomYaw, UniformScale, ReapplyDensity, ReapplyRadius, ReapplyAlignToNormal, ReapplyRandomYaw, ReapplyScaleX, ReapplyScaleY, ReapplyScaleZ, ReapplyRandomPitchAngle, ReapplyGroundSlope, ReapplyHeight, ReapplyLandscapeLayer, ReapplyZOffset, CastShadow, bCastDynamicShadow, bCastStaticShadow, bSelfShadowOnly, bNoModSelfShadow, bAcceptsDynamicDominantLightShadows, bCastHiddenShadow, bCastShadowAsTwoSided, bAcceptsLights, bAcceptsDynamicLights, bUseOnePassLightingOnTranslucency, bUsePrecomputedShadows, bCollideActors, bBlockActors
-			constexpr uintptr_t Bitfields_0084 = 0x0084;  // Multiple: bBlockNonZeroExtent, bBlockZeroExtent, IsSelected, ShowNothing, ShowPaintSettings, ShowInstanceSettings
+			constexpr uintptr_t Bitfields_0080 = 0x0080;  // Multiple: AlignToNormal, CastShadow, LockScaleX, LockScaleY, LockScaleZ, RandomYaw, ReapplyAlignToNormal, ReapplyDensity, ReapplyGroundSlope, ReapplyHeight, ReapplyLandscapeLayer, ReapplyRadius, ReapplyRandomPitchAngle, ReapplyRandomYaw, ReapplyScaleX, ReapplyScaleY, ReapplyScaleZ, ReapplyZOffset, UniformScale, bAcceptsDynamicDominantLightShadows, bAcceptsDynamicLights, bAcceptsLights, bBlockActors, bCastDynamicShadow, bCastHiddenShadow, bCastShadowAsTwoSided, bCastStaticShadow, bCollideActors, bNoModSelfShadow, bSelfShadowOnly, bUseOnePassLightingOnTranslucency, bUsePrecomputedShadows
+			constexpr uintptr_t Bitfields_0084 = 0x0084;  // Multiple: IsSelected, ShowInstanceSettings, ShowNothing, ShowPaintSettings, bBlockNonZeroExtent, bBlockZeroExtent
 			constexpr uintptr_t AlignMaxAngle = 0x0088;
 			constexpr uintptr_t RandomPitchAngle = 0x008C;
 			constexpr uintptr_t GroundSlope = 0x0090;
@@ -3505,7 +3505,7 @@ namespace Offsets {
 		}
 
 		namespace InterpActor {
-			constexpr uintptr_t Bitfields_02C8 = 0x02C8;  // Multiple: bShouldSaveForCheckpoint, bMonitorMover, bMonitorZVelocity, bContinueOnEncroachPhysicsObject, bStopOnEncroach, bShouldShadowParentAllAttachedActors, bIsLift
+			constexpr uintptr_t Bitfields_02C8 = 0x02C8;  // Multiple: bContinueOnEncroachPhysicsObject, bIsLift, bMonitorMover, bMonitorZVelocity, bShouldSaveForCheckpoint, bShouldShadowParentAllAttachedActors, bStopOnEncroach
 			constexpr uintptr_t MyMarker = 0x02D0;
 			constexpr uintptr_t MaxZVelocity = 0x02D8;
 			constexpr uintptr_t StayOpenTime = 0x02DC;
@@ -3533,7 +3533,7 @@ namespace Offsets {
 			constexpr uintptr_t DefaultFilters = 0x0118;
 			constexpr uintptr_t EdSectionStart = 0x0128;
 			constexpr uintptr_t EdSectionEnd = 0x012C;
-			constexpr uintptr_t Bitfields_0130 = 0x0130;  // Multiple: bShouldBakeAndPrune, bHasSetDefaultTangentWeights
+			constexpr uintptr_t Bitfields_0130 = 0x0130;  // Multiple: bHasSetDefaultTangentWeights, bShouldBakeAndPrune
 			constexpr uintptr_t BakeAndPruneStatus = 0x0138;
 			constexpr uintptr_t CachedDirectorGroup = 0x0148;
 		}
@@ -3557,13 +3557,13 @@ namespace Offsets {
 			constexpr uintptr_t GroupName = 0x0078;
 			constexpr uintptr_t GroupColor = 0x0080;
 			constexpr uintptr_t GroupAnimSets = 0x0088;
-			constexpr uintptr_t Bitfields_0098 = 0x0098;  // Multiple: bCollapsed, bVisible, bIsFolder, bIsParented, bIsSelected
+			constexpr uintptr_t Bitfields_0098 = 0x0098;  // Multiple: bCollapsed, bIsFolder, bIsParented, bIsSelected, bVisible
 		}
 
 		namespace InterpGroupAI {
 			constexpr uintptr_t PreviewPawnClass = 0x00A0;
 			constexpr uintptr_t StageMarkGroup = 0x00A8;
-			constexpr uintptr_t Bitfields_00B0 = 0x00B0;  // Multiple: SnapToRootBoneLocationWhenFinished, bNoEncroachmentCheck, bDisableWorldCollision, bIgnoreLegacyHeightAdjust, bRecreatePreviewPawn, bRefreshStageMarkGroup
+			constexpr uintptr_t Bitfields_00B0 = 0x00B0;  // Multiple: SnapToRootBoneLocationWhenFinished, bDisableWorldCollision, bIgnoreLegacyHeightAdjust, bNoEncroachmentCheck, bRecreatePreviewPawn, bRefreshStageMarkGroup
 		}
 
 		namespace InterpGroupCamera {
@@ -3586,7 +3586,7 @@ namespace Offsets {
 		namespace InterpGroupInstAI {
 			constexpr uintptr_t AIGroup = 0x0088;
 			constexpr uintptr_t SavedPhysics = 0x0090;
-			constexpr uintptr_t Bitfields_0094 = 0x0094;  // Multiple: bSavedNoEncroachCheck, bSavedCollideActors, bSavedBlockActors
+			constexpr uintptr_t Bitfields_0094 = 0x0094;  // Multiple: bSavedBlockActors, bSavedCollideActors, bSavedNoEncroachCheck
 			constexpr uintptr_t PreviewPawn = 0x0098;
 			constexpr uintptr_t StageMarkActor = 0x00A0;
 		}
@@ -3600,7 +3600,7 @@ namespace Offsets {
 			constexpr uintptr_t TrackInstClass = 0x00A0;
 			constexpr uintptr_t ActiveCondition = 0x00A8;
 			constexpr uintptr_t TrackTitle = 0x00B0;
-			constexpr uintptr_t Bitfields_00C0 = 0x00C0;  // Multiple: bOnePerGroup, bDirGroupOnly, bDisableTrack, bIsAnimControlTrack, bSubTrackOnly, bVisible, bIsSelected, bIsRecording, bIsCollapsed
+			constexpr uintptr_t Bitfields_00C0 = 0x00C0;  // Multiple: bDirGroupOnly, bDisableTrack, bIsAnimControlTrack, bIsCollapsed, bIsRecording, bIsSelected, bOnePerGroup, bSubTrackOnly, bVisible
 		}
 
 		namespace InterpTrackAnimControl {
@@ -3634,7 +3634,7 @@ namespace Offsets {
 
 		namespace InterpTrackEvent {
 			constexpr uintptr_t EventTrack = 0x00C8;
-			constexpr uintptr_t Bitfields_00D8 = 0x00D8;  // Multiple: bFireEventsWhenForwards, bFireEventsWhenBackwards, bFireEventsWhenJumpingForwards
+			constexpr uintptr_t Bitfields_00D8 = 0x00D8;  // Multiple: bFireEventsWhenBackwards, bFireEventsWhenForwards, bFireEventsWhenJumpingForwards
 		}
 
 		namespace InterpTrackFaceFX {
@@ -3814,7 +3814,7 @@ namespace Offsets {
 			constexpr uintptr_t LookAtGroupName = 0x0108;
 			constexpr uintptr_t LinCurveTension = 0x0110;
 			constexpr uintptr_t AngCurveTension = 0x0114;
-			constexpr uintptr_t Bitfields_0118 = 0x0118;  // Multiple: bUseQuatInterpolation, bShowArrowAtKeys, bDisableMovement, bShowTranslationOnCurveEd, bShowRotationOnCurveEd, bHide3DTrack, bUseRawActorTMforRelativeToInitial
+			constexpr uintptr_t Bitfields_0118 = 0x0118;  // Multiple: bDisableMovement, bHide3DTrack, bShowArrowAtKeys, bShowRotationOnCurveEd, bShowTranslationOnCurveEd, bUseQuatInterpolation, bUseRawActorTMforRelativeToInitial
 			constexpr uintptr_t MoveFrame = 0x011C;
 			constexpr uintptr_t RotMode = 0x011D;
 		}
@@ -3852,12 +3852,12 @@ namespace Offsets {
 
 		namespace InterpTrackSound {
 			constexpr uintptr_t Sounds = 0x00E8;
-			constexpr uintptr_t Bitfields_00F8 = 0x00F8;  // Multiple: bPlayOnReverse, bContinueSoundOnMatineeEnd, bSuppressSubtitles, bTreatAsDialogue
+			constexpr uintptr_t Bitfields_00F8 = 0x00F8;  // Multiple: bContinueSoundOnMatineeEnd, bPlayOnReverse, bSuppressSubtitles, bTreatAsDialogue
 		}
 
 		namespace InterpTrackToggle {
 			constexpr uintptr_t ToggleTrack = 0x00C8;
-			constexpr uintptr_t Bitfields_00D8 = 0x00D8;  // Multiple: bActivateSystemEachUpdate, bActivateWithJustAttachedFlag, bFireEventsWhenForwards, bFireEventsWhenBackwards, bFireEventsWhenJumpingForwards
+			constexpr uintptr_t Bitfields_00D8 = 0x00D8;  // Multiple: bActivateSystemEachUpdate, bActivateWithJustAttachedFlag, bFireEventsWhenBackwards, bFireEventsWhenForwards, bFireEventsWhenJumpingForwards
 		}
 
 		namespace InterpTrackVectorBase {
@@ -3878,7 +3878,7 @@ namespace Offsets {
 
 		namespace InterpTrackVisibility {
 			constexpr uintptr_t VisibilityTrack = 0x00C8;
-			constexpr uintptr_t Bitfields_00D8 = 0x00D8;  // Multiple: bFireEventsWhenForwards, bFireEventsWhenBackwards, bFireEventsWhenJumpingForwards
+			constexpr uintptr_t Bitfields_00D8 = 0x00D8;  // Multiple: bFireEventsWhenBackwards, bFireEventsWhenForwards, bFireEventsWhenJumpingForwards
 		}
 
 		namespace JsonObject {
@@ -3890,7 +3890,7 @@ namespace Offsets {
 		}
 
 		namespace KActor {
-			constexpr uintptr_t Bitfields_02C8 = 0x02C8;  // Multiple: bDamageAppliesImpulse, bWakeOnLevelStart, bCurrentSlide, bSlideActive, bEnableStayUprightSpring, bLimitMaxPhysicsVelocity, bNeedsRBStateReplication, bDisableClientSidePawnInteractions
+			constexpr uintptr_t Bitfields_02C8 = 0x02C8;  // Multiple: bCurrentSlide, bDamageAppliesImpulse, bDisableClientSidePawnInteractions, bEnableStayUprightSpring, bLimitMaxPhysicsVelocity, bNeedsRBStateReplication, bSlideActive, bWakeOnLevelStart
 			constexpr uintptr_t ImpactEffectComponent = 0x02D0;
 			constexpr uintptr_t ImpactSoundComponent = 0x02D8;
 			constexpr uintptr_t ImpactSoundComponent2 = 0x02E0;
@@ -3922,7 +3922,7 @@ namespace Offsets {
 
 		namespace KAsset {
 			constexpr uintptr_t SkeletalMeshComponent = 0x0268;
-			constexpr uintptr_t Bitfields_0270 = 0x0270;  // Multiple: bDamageAppliesImpulse, bWakeOnLevelStart, bBlockPawns
+			constexpr uintptr_t Bitfields_0270 = 0x0270;  // Multiple: bBlockPawns, bDamageAppliesImpulse, bWakeOnLevelStart
 			constexpr uintptr_t ReplicatedMesh = 0x0278;
 			constexpr uintptr_t ReplicatedPhysAsset = 0x0280;
 		}
@@ -4019,7 +4019,7 @@ namespace Offsets {
 			constexpr uintptr_t PhysicalMaterials = 0x0338;
 			constexpr uintptr_t RBHeightfield = 0x0348;
 			constexpr uintptr_t CachedBoxSphereBounds = 0x0350;
-			constexpr uintptr_t Bitfields_036C = 0x036C;  // Multiple: bIncludeHoles, bHeightFieldDataHasHole
+			constexpr uintptr_t Bitfields_036C = 0x036C;  // Multiple: bHeightFieldDataHasHole, bIncludeHoles
 		}
 
 		namespace LandscapeInfo {
@@ -4065,7 +4065,7 @@ namespace Offsets {
 			constexpr uintptr_t UnknownData01 = 0x0310;
 			constexpr uintptr_t StaticLightingResolution = 0x0360;
 			constexpr uintptr_t LandscapeActor = 0x0368;
-			constexpr uintptr_t Bitfields_0370 = 0x0370;  // Multiple: bIsProxy, bIsSetup, bResetup, bIsMovingToLevel
+			constexpr uintptr_t Bitfields_0370 = 0x0370;  // Multiple: bIsMovingToLevel, bIsProxy, bIsSetup, bResetup
 			constexpr uintptr_t LightmassSettings = 0x0374;
 			constexpr uintptr_t CollisionMipLevel = 0x0390;
 			constexpr uintptr_t MobileLODBias = 0x0394;
@@ -4085,7 +4085,7 @@ namespace Offsets {
 			constexpr uintptr_t InnerCone = 0x024C;
 			constexpr uintptr_t ConeFudgeFactor = 0x0250;
 			constexpr uintptr_t Radius = 0x0254;
-			constexpr uintptr_t Bitfields_0258 = 0x0258;  // Multiple: bUseTrueConeCalculation, bUseFixedRelativeBoundingBox, bRenderDebugLines, ThumbnailImageOutOfDate
+			constexpr uintptr_t Bitfields_0258 = 0x0258;  // Multiple: ThumbnailImageOutOfDate, bRenderDebugLines, bUseFixedRelativeBoundingBox, bUseTrueConeCalculation
 			constexpr uintptr_t MinStrength = 0x025C;
 			constexpr uintptr_t ScreenPercentageMap = 0x0260;
 			constexpr uintptr_t FixedRelativeBoundingBox = 0x0288;
@@ -4101,7 +4101,7 @@ namespace Offsets {
 			constexpr uintptr_t PreviewInnerCone = 0x0260;
 			constexpr uintptr_t PreviewOuterCone = 0x0268;
 			constexpr uintptr_t PreviewRadius = 0x0270;
-			constexpr uintptr_t Bitfields_0278 = 0x0278;  // Multiple: bAutoActivate, bIsActive, bHasTranslucency, bHasUnlitTranslucency, bHasUnlitDistortion, bUsesSceneColor, bHasSeparateTranslucency, bUseTrueConeCalculation, bVisibleForMobile
+			constexpr uintptr_t Bitfields_0278 = 0x0278;  // Multiple: bAutoActivate, bHasSeparateTranslucency, bHasTranslucency, bHasUnlitDistortion, bHasUnlitTranslucency, bIsActive, bUseTrueConeCalculation, bUsesSceneColor, bVisibleForMobile
 			constexpr uintptr_t OuterCone = 0x027C;
 			constexpr uintptr_t InnerCone = 0x0280;
 			constexpr uintptr_t ConeFudgeFactor = 0x0284;
@@ -4144,7 +4144,7 @@ namespace Offsets {
 			constexpr uintptr_t Offset = 0x0070;
 			constexpr uintptr_t LevelTransform = 0x0080;
 			constexpr uintptr_t OldOffset = 0x00C0;
-			constexpr uintptr_t Bitfields_00CC = 0x00CC;  // Multiple: bIsVisible, bHasLoadRequestPending, bHasUnloadRequestPending, bShouldBeVisibleInEditor, bBoundingBoxVisible, bLocked, bIsFullyStatic, bShouldBeLoaded, bShouldBeVisible, bShouldBlockOnLoad, bDrawOnLevelStatusMap, bIsRequestingUnloadAndRemoval
+			constexpr uintptr_t Bitfields_00CC = 0x00CC;  // Multiple: bBoundingBoxVisible, bDrawOnLevelStatusMap, bHasLoadRequestPending, bHasUnloadRequestPending, bIsFullyStatic, bIsRequestingUnloadAndRemoval, bIsVisible, bLocked, bShouldBeLoaded, bShouldBeVisible, bShouldBeVisibleInEditor, bShouldBlockOnLoad
 			constexpr uintptr_t DrawColor = 0x00D0;
 			constexpr uintptr_t EditorStreamingVolumes = 0x00D8;
 			constexpr uintptr_t MinTimeBetweenVolumeUnloadRequests = 0x00E8;
@@ -4173,7 +4173,7 @@ namespace Offsets {
 
 		namespace LevelStreamingVolume {
 			constexpr uintptr_t StreamingLevels = 0x02A8;
-			constexpr uintptr_t Bitfields_02B8 = 0x02B8;  // Multiple: bEditorPreVisOnly, bDisabled, bTestDistanceToVolume
+			constexpr uintptr_t Bitfields_02B8 = 0x02B8;  // Multiple: bDisabled, bEditorPreVisOnly, bTestDistanceToVolume
 			constexpr uintptr_t StreamingUsage = 0x02BC;
 			constexpr uintptr_t Usage = 0x02BD;
 			constexpr uintptr_t TestVolumeDistance = 0x02C0;
@@ -4208,7 +4208,7 @@ namespace Offsets {
 			constexpr uintptr_t Brightness = 0x0150;
 			constexpr uintptr_t LightColor = 0x0154;
 			constexpr uintptr_t Function = 0x0158;
-			constexpr uintptr_t Bitfields_0160 = 0x0160;  // Multiple: bEnabled, CastShadows, CastStaticShadows, CastDynamicShadows, bCastCompositeShadow, bAffectCompositeShadowDirection, bNonModulatedSelfShadowing, bSelfShadowOnly, bAllowPreShadow, bForceDynamicLight, UseDirectLightMap, bHasLightEverBeenBuiltIntoLightMap, bCanAffectDynamicPrimitivesOutsideDynamicChannel, bRenderLightShafts, bUseImageReflectionSpecular, bPrecomputedLightingIsValid, bExplicitlyAssignedLight, bAllowCompositingIntoDLE
+			constexpr uintptr_t Bitfields_0160 = 0x0160;  // Multiple: CastDynamicShadows, CastShadows, CastStaticShadows, UseDirectLightMap, bAffectCompositeShadowDirection, bAllowCompositingIntoDLE, bAllowPreShadow, bCanAffectDynamicPrimitivesOutsideDynamicChannel, bCastCompositeShadow, bEnabled, bExplicitlyAssignedLight, bForceDynamicLight, bHasLightEverBeenBuiltIntoLightMap, bNonModulatedSelfShadowing, bPrecomputedLightingIsValid, bRenderLightShafts, bSelfShadowOnly, bUseImageReflectionSpecular
 			constexpr uintptr_t LightEnvironment = 0x0168;
 			constexpr uintptr_t LightingChannels = 0x0170;
 			constexpr uintptr_t LightAffectsClassification = 0x0174;
@@ -4233,7 +4233,7 @@ namespace Offsets {
 		}
 
 		namespace LightEnvironmentComponent {
-			constexpr uintptr_t Bitfields_00A0 = 0x00A0;  // Multiple: bEnabled, bForceNonCompositeDynamicLights, bAllowDynamicShadowsOnTranslucency, bAllowPreShadow, bTranslucencyShadowed
+			constexpr uintptr_t Bitfields_00A0 = 0x00A0;  // Multiple: bAllowDynamicShadowsOnTranslucency, bAllowPreShadow, bEnabled, bForceNonCompositeDynamicLights, bTranslucencyShadowed
 			constexpr uintptr_t DominantShadowFactor = 0x00A4;
 			constexpr uintptr_t AffectingDominantLight = 0x00A8;
 			constexpr uintptr_t AffectedComponents = 0x00B0;
@@ -4297,7 +4297,7 @@ namespace Offsets {
 			constexpr uintptr_t Size = 0x00D8;
 			constexpr uintptr_t PlayerPostProcess = 0x00E0;
 			constexpr uintptr_t PlayerPostProcessChains = 0x00E8;
-			constexpr uintptr_t Bitfields_00F8 = 0x00F8;  // Multiple: bForceDefaultPostProcessChain, bWantToResetToMapDefaultPP, bSentSplitJoin, bPendingServerAuth, bDrawWorldFullScreen, bReplayFXDirtied
+			constexpr uintptr_t Bitfields_00F8 = 0x00F8;  // Multiple: bDrawWorldFullScreen, bForceDefaultPostProcessChain, bPendingServerAuth, bReplayFXDirtied, bSentSplitJoin, bWantToResetToMapDefaultPP
 			constexpr uintptr_t ViewState = 0x0100;
 			constexpr uintptr_t ViewState2 = 0x0108;
 			constexpr uintptr_t ActorVisibilityHistory = 0x0110;
@@ -4357,8 +4357,8 @@ namespace Offsets {
 			constexpr uintptr_t SubsurfaceInscatteringColor = 0x0720;
 			constexpr uintptr_t SubsurfaceAbsorptionColor = 0x0760;
 			constexpr uintptr_t SubsurfaceScatteringRadius = 0x07A0;
-			constexpr uintptr_t Bitfields_07E0 = 0x07E0;  // Multiple: EnableSubsurfaceScattering, EnableSeparateTranslucency, EnableSeparateTranslucencyDuring4KCheckerboard, bEnableMaskedAntialiasing, TwoSided, TwoSidedSeparatePass, bDisableDepthTest, bSceneTextureRenderBehindTranslucency, bAllowFog, bTranslucencyReceiveDominantShadowsFromStatic, bTranslucencyInheritDominantShadowsFromOpaque, bAllowTranslucencyDoF, bUseOneLayerDistortion, bUseLitTranslucencyDepthPass, bUseLitTranslucencyPostRenderDepthPass, bCastLitTranslucencyShadowAsMasked, bDrawLitTranslucencyPrepassInOpaquePrepassWhen4KCB, bUsedAsLightFunction, bUsedWithFogVolumes, bUsedAsSpecialEngineMaterial, bUsedWithSkeletalMesh, bUsedWithTerrain, bUsedWithLandscape, bUsedWithMobileLandscape, bUsedWithFracturedMeshes, bUsedWithParticleSystem, bUsedWithParticleSprites, bUsedWithBeamTrails, bUsedWithParticleSubUV, bUsedWithSpeedTree, bUsedWithStaticLighting, bUsedWithLensFlare
-			constexpr uintptr_t Bitfields_07E4 = 0x07E4;  // Multiple: bUsedWithGammaCorrection, bUsedWithInstancedMeshParticles, bUsedWithFluidSurfaces, bUsedWithDecals, bUsedWithMaterialEffect, bUsedWithMorphTargets, bUsedWithRadialBlur, bUsedWithInstancedMeshes, bUsedWithSplineMeshes, bUsedWithAPEXMeshes, bUsedWithScreenDoorFade, bEnableCrackFreeDisplacement, bUseImageBasedReflections, Wireframe, bPerPixelCameraVector, bAllowLightmapSpecular, bIsFallbackMaterial, bUsesDistortion, bIsMasked, bIsPreviewMaterial
+			constexpr uintptr_t Bitfields_07E0 = 0x07E0;  // Multiple: EnableSeparateTranslucency, EnableSeparateTranslucencyDuring4KCheckerboard, EnableSubsurfaceScattering, TwoSided, TwoSidedSeparatePass, bAllowFog, bAllowTranslucencyDoF, bCastLitTranslucencyShadowAsMasked, bDisableDepthTest, bDrawLitTranslucencyPrepassInOpaquePrepassWhen4KCB, bEnableMaskedAntialiasing, bSceneTextureRenderBehindTranslucency, bTranslucencyInheritDominantShadowsFromOpaque, bTranslucencyReceiveDominantShadowsFromStatic, bUseLitTranslucencyDepthPass, bUseLitTranslucencyPostRenderDepthPass, bUseOneLayerDistortion, bUsedAsLightFunction, bUsedAsSpecialEngineMaterial, bUsedWithBeamTrails, bUsedWithFogVolumes, bUsedWithFracturedMeshes, bUsedWithLandscape, bUsedWithLensFlare, bUsedWithMobileLandscape, bUsedWithParticleSprites, bUsedWithParticleSubUV, bUsedWithParticleSystem, bUsedWithSkeletalMesh, bUsedWithSpeedTree, bUsedWithStaticLighting, bUsedWithTerrain
+			constexpr uintptr_t Bitfields_07E4 = 0x07E4;  // Multiple: Wireframe, bAllowLightmapSpecular, bEnableCrackFreeDisplacement, bIsFallbackMaterial, bIsMasked, bIsPreviewMaterial, bPerPixelCameraVector, bUseImageBasedReflections, bUsedWithAPEXMeshes, bUsedWithDecals, bUsedWithFluidSurfaces, bUsedWithGammaCorrection, bUsedWithInstancedMeshParticles, bUsedWithInstancedMeshes, bUsedWithMaterialEffect, bUsedWithMorphTargets, bUsedWithRadialBlur, bUsedWithScreenDoorFade, bUsedWithSplineMeshes, bUsesDistortion
 			constexpr uintptr_t ImageReflectionNormalDampening = 0x07E8;
 			constexpr uintptr_t MaterialResources = 0x07F0;
 			constexpr uintptr_t DefaultMaterialInstances = 0x0800;
@@ -4388,7 +4388,7 @@ namespace Offsets {
 			constexpr uintptr_t MaterialExpressionEditorX = 0x0068;
 			constexpr uintptr_t MaterialExpressionEditorY = 0x006C;
 			constexpr uintptr_t MaterialExpressionWidth = 0x0070;
-			constexpr uintptr_t Bitfields_0074 = 0x0074;  // Multiple: bRealtimePreview, bNeedToUpdatePreview, bIsParameterExpression, bIsHighlighted, bShowOutputNameOnPin, bHidePreviewWindow, bShowInputs, bShowOutputs, bUsedByStaticParameterSet
+			constexpr uintptr_t Bitfields_0074 = 0x0074;  // Multiple: bHidePreviewWindow, bIsHighlighted, bIsParameterExpression, bNeedToUpdatePreview, bRealtimePreview, bShowInputs, bShowOutputNameOnPin, bShowOutputs, bUsedByStaticParameterSet
 			constexpr uintptr_t Material = 0x0078;
 			constexpr uintptr_t Function = 0x0080;
 			constexpr uintptr_t Desc = 0x0088;
@@ -4453,7 +4453,7 @@ namespace Offsets {
 
 		namespace MaterialExpressionComponentMask {
 			constexpr uintptr_t Input = 0x00C0;
-			constexpr uintptr_t Bitfields_00F8 = 0x00F8;  // Multiple: R, G, B, A
+			constexpr uintptr_t Bitfields_00F8 = 0x00F8;  // Multiple: A, B, G, R
 		}
 
 		namespace MaterialExpressionConstant {
@@ -4610,7 +4610,7 @@ namespace Offsets {
 			constexpr uintptr_t Id = 0x0118;
 			constexpr uintptr_t InputType = 0x0128;
 			constexpr uintptr_t PreviewValue = 0x0130;
-			constexpr uintptr_t Bitfields_0140 = 0x0140;  // Multiple: bUsePreviewValueAsDefault, bCompilingFunctionPreview
+			constexpr uintptr_t Bitfields_0140 = 0x0140;  // Multiple: bCompilingFunctionPreview, bUsePreviewValueAsDefault
 			constexpr uintptr_t SortPriority = 0x0144;
 		}
 
@@ -4790,7 +4790,7 @@ namespace Offsets {
 
 		namespace MaterialExpressionStaticComponentMaskParameter {
 			constexpr uintptr_t Input = 0x00E0;
-			constexpr uintptr_t Bitfields_0118 = 0x0118;  // Multiple: DefaultR, DefaultG, DefaultB, DefaultA
+			constexpr uintptr_t Bitfields_0118 = 0x0118;  // Multiple: DefaultA, DefaultB, DefaultG, DefaultR
 			constexpr uintptr_t InstanceOverride = 0x0120;
 		}
 
@@ -4908,7 +4908,7 @@ namespace Offsets {
 			constexpr uintptr_t PhysMaterialMaskUVChannel = 0x0290;
 			constexpr uintptr_t BlackPhysicalMaterial = 0x0298;
 			constexpr uintptr_t WhitePhysicalMaterial = 0x02A0;
-			constexpr uintptr_t Bitfields_02A8 = 0x02A8;  // Multiple: bHasStaticPermutationResource, bStaticPermutationDirty, ReentrantFlag, bNeedsMaterialFlattening
+			constexpr uintptr_t Bitfields_02A8 = 0x02A8;  // Multiple: ReentrantFlag, bHasStaticPermutationResource, bNeedsMaterialFlattening, bStaticPermutationDirty
 			constexpr uintptr_t StaticParameters = 0x02B0;
 			constexpr uintptr_t StaticPermutationResources = 0x02C0;
 			constexpr uintptr_t Resources = 0x02D0;
@@ -4948,8 +4948,8 @@ namespace Offsets {
 			constexpr uintptr_t LightmassSettings = 0x0064;
 			constexpr uintptr_t PreviewMesh = 0x0080;
 			constexpr uintptr_t LightingGuid = 0x0090;
-			constexpr uintptr_t Bitfields_00A0 = 0x00A0;  // Multiple: bHasQualitySwitch, bHasHandheldQualityConnection, bStoredHandheldQuality, bAutoFlattenMobile, bAutoFlattenMobileNormalTexture, bMobileAllowFog, bGenerateSubUV, bUseMobileSpecular, bUseMobileVertexSpecular, bUseMobilePixelSpecular, bUseMobileBumpOffset, bLockColorBlending, bUseMobileUniformColorMultiply, bUseMobileVertexColorMultiply, bUseMobileDetailNormal, bBaseTextureTransformed, bEmissiveTextureTransformed, bNormalTextureTransformed, bMaskTextureTransformed, bDetailTextureTransformed, bUseMobileWaveVertexMovement, bMobileEnableBounceLight, bUseMobileLandscapeMonochromeLayerBlending, bHandheldDisableDiffuse, bHandheldDisableDiffusePower, bHandheldDisableEmissive, bHandheldDisableSpecular, bHandheldDisableSpecualrPower, bHandheldDisableOpacity, bHandheldDisableOpacityMasks, bHandheldDisableDistortion, bHandheldDisableTransmissionMask
-			constexpr uintptr_t Bitfields_00A4 = 0x00A4;  // Multiple: bHandheldDisableTransmissionColor, bHandheldDisableNormal, bHandheldDisableCustomLighting, bHandheldDisableAnisotropicDirection, bHandheldDisableWorldPositionOffset, bHandheldDisableWorldDisplacement, bHandheldDisableTessellationMultiplier, bHandheldDisableSubsurfaceInscatteringColor, bHandheldDisableSubsurfaceAbsorptionColor, bHandheldDisableSubsurfaceScatteringRadius
+			constexpr uintptr_t Bitfields_00A0 = 0x00A0;  // Multiple: bAutoFlattenMobile, bAutoFlattenMobileNormalTexture, bBaseTextureTransformed, bDetailTextureTransformed, bEmissiveTextureTransformed, bGenerateSubUV, bHandheldDisableDiffuse, bHandheldDisableDiffusePower, bHandheldDisableDistortion, bHandheldDisableEmissive, bHandheldDisableOpacity, bHandheldDisableOpacityMasks, bHandheldDisableSpecualrPower, bHandheldDisableSpecular, bHandheldDisableTransmissionMask, bHasHandheldQualityConnection, bHasQualitySwitch, bLockColorBlending, bMaskTextureTransformed, bMobileAllowFog, bMobileEnableBounceLight, bNormalTextureTransformed, bStoredHandheldQuality, bUseMobileBumpOffset, bUseMobileDetailNormal, bUseMobileLandscapeMonochromeLayerBlending, bUseMobilePixelSpecular, bUseMobileSpecular, bUseMobileUniformColorMultiply, bUseMobileVertexColorMultiply, bUseMobileVertexSpecular, bUseMobileWaveVertexMovement
+			constexpr uintptr_t Bitfields_00A4 = 0x00A4;  // Multiple: bHandheldDisableAnisotropicDirection, bHandheldDisableCustomLighting, bHandheldDisableNormal, bHandheldDisableSubsurfaceAbsorptionColor, bHandheldDisableSubsurfaceInscatteringColor, bHandheldDisableSubsurfaceScatteringRadius, bHandheldDisableTessellationMultiplier, bHandheldDisableTransmissionColor, bHandheldDisableWorldDisplacement, bHandheldDisableWorldPositionOffset
 			constexpr uintptr_t FlattenBackgroundColor = 0x00A8;
 			constexpr uintptr_t MobileBaseTexture = 0x00B0;
 			constexpr uintptr_t FlattenedTexture = 0x00B8;
@@ -5034,7 +5034,7 @@ namespace Offsets {
 
 		namespace MatineeActor {
 			constexpr uintptr_t InterpAction = 0x0268;
-			constexpr uintptr_t Bitfields_0270 = 0x0270;  // Multiple: bIsPlaying, bReversePlayback, bPaused, AllAIGroupsInitialized
+			constexpr uintptr_t Bitfields_0270 = 0x0270;  // Multiple: AllAIGroupsInitialized, bIsPlaying, bPaused, bReversePlayback
 			constexpr uintptr_t PlayRate = 0x0274;
 			constexpr uintptr_t Position = 0x0278;
 			constexpr uintptr_t AIGroupNames = 0x027C;
@@ -5106,7 +5106,7 @@ namespace Offsets {
 			constexpr uintptr_t BaseBoneName = 0x00B8;
 			constexpr uintptr_t BaseBoneAxis = 0x00C0;
 			constexpr uintptr_t AngleBoneAxis = 0x00C1;
-			constexpr uintptr_t Bitfields_00C4 = 0x00C4;  // Multiple: bInvertBaseBoneAxis, bInvertAngleBoneAxis, bControlMaterialParameter
+			constexpr uintptr_t Bitfields_00C4 = 0x00C4;  // Multiple: bControlMaterialParameter, bInvertAngleBoneAxis, bInvertBaseBoneAxis
 			constexpr uintptr_t AngleBoneName = 0x00C8;
 			constexpr uintptr_t MaterialSlotId = 0x00D0;
 			constexpr uintptr_t ScalarParameterName = 0x00D4;
@@ -5119,7 +5119,7 @@ namespace Offsets {
 			constexpr uintptr_t NodeWeight = 0x00B4;
 			constexpr uintptr_t BoneName = 0x00B8;
 			constexpr uintptr_t BoneAxis = 0x00C0;
-			constexpr uintptr_t Bitfields_00C4 = 0x00C4;  // Multiple: bInvertBoneAxis, bControlMaterialParameter
+			constexpr uintptr_t Bitfields_00C4 = 0x00C4;  // Multiple: bControlMaterialParameter, bInvertBoneAxis
 			constexpr uintptr_t WeightArray = 0x00C8;
 			constexpr uintptr_t MaterialSlotId = 0x00D8;
 			constexpr uintptr_t ScalarParameterName = 0x00DC;
@@ -5196,7 +5196,7 @@ namespace Offsets {
 		namespace NavMeshGoal_At {
 			constexpr uintptr_t Goal = 0x0080;
 			constexpr uintptr_t GoalDist = 0x008C;
-			constexpr uintptr_t Bitfields_0090 = 0x0090;  // Multiple: bKeepPartial, bWeightPartialByDist, bGoalInSamePolyAsAnchor
+			constexpr uintptr_t Bitfields_0090 = 0x0090;  // Multiple: bGoalInSamePolyAsAnchor, bKeepPartial, bWeightPartialByDist
 			constexpr uintptr_t PartialDistSq = 0x0094;
 			constexpr uintptr_t GoalPoly = 0x0098;
 			constexpr uintptr_t PartialGoal = 0x00A0;
@@ -5289,7 +5289,7 @@ namespace Offsets {
 		namespace NavMeshPath_WithinDistanceEnvelope {
 			constexpr uintptr_t MaxDistance = 0x0078;
 			constexpr uintptr_t MinDistance = 0x007C;
-			constexpr uintptr_t Bitfields_0080 = 0x0080;  // Multiple: bSoft, bOnlyThrowOutNodesThatLeaveEnvelope
+			constexpr uintptr_t Bitfields_0080 = 0x0080;  // Multiple: bOnlyThrowOutNodesThatLeaveEnvelope, bSoft
 			constexpr uintptr_t SoftStartPenalty = 0x0084;
 			constexpr uintptr_t EnvelopeTestPoint = 0x0088;
 		}
@@ -5308,7 +5308,7 @@ namespace Offsets {
 			constexpr uintptr_t CurrentEdge = 0x0088;
 			constexpr uintptr_t SubGoal_DestPoly = 0x0090;
 			constexpr uintptr_t FinalDestination = 0x0098;
-			constexpr uintptr_t Bitfields_00D0 = 0x00D0;  // Multiple: bSkipRouteCacheUpdates, bUseORforEvaluateGoal, bDebugConstraintsAndGoalEvals, bUltraVerbosePathDebugging, bVisualPathDebugging, bDebug_Breadcrumbs
+			constexpr uintptr_t Bitfields_00D0 = 0x00D0;  // Multiple: bDebugConstraintsAndGoalEvals, bDebug_Breadcrumbs, bSkipRouteCacheUpdates, bUltraVerbosePathDebugging, bUseORforEvaluateGoal, bVisualPathDebugging
 			constexpr uintptr_t PathConstraintList = 0x00D8;
 			constexpr uintptr_t PathGoalList = 0x00E0;
 			constexpr uintptr_t CachedPathParams = 0x00E8;
@@ -5324,7 +5324,7 @@ namespace Offsets {
 		}
 
 		namespace NavigationPoint {
-			constexpr uintptr_t Bitfields_0268 = 0x0268;  // Multiple: bEndPoint, bTransientEndPoint, bHideEditorPaths, bCanReach, bBlocked, bOneWayPath, bNeverUseStrafing, bAlwaysUseStrafing, bForceNoStrafing, bAutoBuilt, bSpecialMove, bNoAutoConnect, bNotBased, bPathsChanged, bDestinationOnly, bSourceOnly, bSpecialForced, bMustBeReachable, bBlockable, bFlyingPreferred, bAlreadyVisited, bMakeSourceOnly, bMustTouchToReach, bCanWalkOnToReach, bBuildLongPaths, bHasCrossLevelPaths, bShouldSaveForCheckpoint
+			constexpr uintptr_t Bitfields_0268 = 0x0268;  // Multiple: bAlreadyVisited, bAlwaysUseStrafing, bAutoBuilt, bBlockable, bBlocked, bBuildLongPaths, bCanReach, bCanWalkOnToReach, bDestinationOnly, bEndPoint, bFlyingPreferred, bForceNoStrafing, bHasCrossLevelPaths, bHideEditorPaths, bMakeSourceOnly, bMustBeReachable, bMustTouchToReach, bNeverUseStrafing, bNoAutoConnect, bNotBased, bOneWayPath, bPathsChanged, bShouldSaveForCheckpoint, bSourceOnly, bSpecialForced, bSpecialMove, bTransientEndPoint
 			constexpr uintptr_t NavOctreeObject = 0x0270;
 			constexpr uintptr_t PathList = 0x02B0;
 			constexpr uintptr_t EditorProscribedPaths = 0x02C0;
@@ -5444,7 +5444,7 @@ namespace Offsets {
 			constexpr uintptr_t Shape = 0x0258;
 			constexpr uintptr_t DrawComponent = 0x0260;
 			constexpr uintptr_t ExcludeChannel = 0x0268;
-			constexpr uintptr_t Bitfields_026C = 0x026C;  // Multiple: bForceActive, bDestroyWhenInactive
+			constexpr uintptr_t Bitfields_026C = 0x026C;  // Multiple: bDestroyWhenInactive, bForceActive
 			constexpr uintptr_t CollideWithChannels = 0x0270;
 			constexpr uintptr_t Duration = 0x0274;
 			constexpr uintptr_t ForceField = 0x0278;
@@ -5680,7 +5680,7 @@ namespace Offsets {
 		namespace OnlineGameSearch {
 			constexpr uintptr_t MaxSearchResults = 0x00A0;
 			constexpr uintptr_t Query = 0x00A4;
-			constexpr uintptr_t Bitfields_00B0 = 0x00B0;  // Multiple: bIsLanQuery, bUsesArbitration, bIsSearchInProgress
+			constexpr uintptr_t Bitfields_00B0 = 0x00B0;  // Multiple: bIsLanQuery, bIsSearchInProgress, bUsesArbitration
 			constexpr uintptr_t GameSettingsClass = 0x00B8;
 			constexpr uintptr_t Results = 0x00C0;
 			constexpr uintptr_t ManualSkillOverride = 0x00D0;
@@ -5698,7 +5698,7 @@ namespace Offsets {
 			constexpr uintptr_t NumOpenPublicConnections = 0x00A8;
 			constexpr uintptr_t NumOpenPrivateConnections = 0x00AC;
 			constexpr uintptr_t ServerNonce = 0x00B0;
-			constexpr uintptr_t Bitfields_00B8 = 0x00B8;  // Multiple: bShouldAdvertise, bIsLanMatch, bUsesStats, bAllowJoinInProgress, bAllowInvites, bUsesPresence, bAllowJoinViaPresence, bAllowJoinViaPresenceFriendsOnly, bUsesArbitration, bAntiCheatProtected, bWasFromInvite, bIsDedicated, bHasSkillUpdateInProgress, bShouldShrinkArbitratedSessions
+			constexpr uintptr_t Bitfields_00B8 = 0x00B8;  // Multiple: bAllowInvites, bAllowJoinInProgress, bAllowJoinViaPresence, bAllowJoinViaPresenceFriendsOnly, bAntiCheatProtected, bHasSkillUpdateInProgress, bIsDedicated, bIsLanMatch, bShouldAdvertise, bShouldShrinkArbitratedSessions, bUsesArbitration, bUsesPresence, bUsesStats, bWasFromInvite
 			constexpr uintptr_t OwningPlayerName = 0x00C0;
 			constexpr uintptr_t OwningPlayerId = 0x00D0;
 			constexpr uintptr_t PingInMs = 0x0118;
@@ -5823,7 +5823,7 @@ namespace Offsets {
 			constexpr uintptr_t GameClipsInterface_Object = 0x01D8;
 			constexpr uintptr_t GameClipsInterface_Interface = 0x01E0;
 			constexpr uintptr_t SearchClass = 0x01E8;
-			constexpr uintptr_t Bitfields_01F0 = 0x01F0;  // Multiple: bSupportsMultiSignin, bSupportsMultiVoice, bShowPrivilegeCheckErrors
+			constexpr uintptr_t Bitfields_01F0 = 0x01F0;  // Multiple: bShowPrivilegeCheckErrors, bSupportsMultiSignin, bSupportsMultiVoice
 			constexpr uintptr_t AccountSettings = 0x01F8;
 			constexpr uintptr_t BlockListStatuses = 0x0208;
 			constexpr uintptr_t UnsupportedCorrectiveActionURLs = 0x0218;
@@ -5848,7 +5848,7 @@ namespace Offsets {
 			constexpr uintptr_t RepeatAxis = 0x0098;
 			constexpr uintptr_t ASize = 0x009C;
 			constexpr uintptr_t BMaxSize = 0x00A0;
-			constexpr uintptr_t Bitfields_00A4 = 0x00A4;  // Multiple: bInvertPatternOrder, bEqualSizeAB
+			constexpr uintptr_t Bitfields_00A4 = 0x00A4;  // Multiple: bEqualSizeAB, bInvertPatternOrder
 		}
 
 		namespace PBRuleNodeBase {
@@ -5912,7 +5912,7 @@ namespace Offsets {
 		namespace PBRuleNodeMesh {
 			constexpr uintptr_t BuildingMeshes = 0x0098;
 			constexpr uintptr_t PartialOccludedBuildingMesh = 0x00A8;
-			constexpr uintptr_t Bitfields_00F8 = 0x00F8;  // Multiple: bDoOcclusionTest, bBlockAll
+			constexpr uintptr_t Bitfields_00F8 = 0x00F8;  // Multiple: bBlockAll, bDoOcclusionTest
 		}
 
 		namespace PBRuleNodeOcclusion {
@@ -5986,7 +5986,7 @@ namespace Offsets {
 			constexpr uintptr_t EmitterRenderMode = 0x006C;
 			constexpr uintptr_t EmitterEditorColor = 0x0070;
 			constexpr uintptr_t LODLevels = 0x0078;
-			constexpr uintptr_t Bitfields_0088 = 0x0088;  // Multiple: ConvertedModules, bCollapsed, bIsSoloing, bCookedOut, bDisableForLowIntensity
+			constexpr uintptr_t Bitfields_0088 = 0x0088;  // Multiple: ConvertedModules, bCollapsed, bCookedOut, bDisableForLowIntensity, bIsSoloing
 			constexpr uintptr_t PeakActiveParticles = 0x008C;
 			constexpr uintptr_t InitialAllocationCount = 0x0090;
 			constexpr uintptr_t MediumDetailSpawnRateScale = 0x0094;
@@ -5994,7 +5994,7 @@ namespace Offsets {
 
 		namespace ParticleLODLevel {
 			constexpr uintptr_t Level = 0x0060;
-			constexpr uintptr_t Bitfields_0064 = 0x0064;  // Multiple: bEnabled, ConvertedModules
+			constexpr uintptr_t Bitfields_0064 = 0x0064;  // Multiple: ConvertedModules, bEnabled
 			constexpr uintptr_t RequiredModule = 0x0068;
 			constexpr uintptr_t Modules = 0x0070;
 			constexpr uintptr_t TypeDataModule = 0x0080;
@@ -6017,7 +6017,7 @@ namespace Offsets {
 		}
 
 		namespace ParticleModule {
-			constexpr uintptr_t Bitfields_0060 = 0x0060;  // Multiple: bSpawnModule, bUpdateModule, bFinalUpdateModule, bCurvesAsColor, b3DDrawMode, bSupported3DDrawMode, bEnabled, bEditable, LODDuplicate, bSupportsRandomSeed, bRequiresLoopingNotification, bRequiresUpdateInTick
+			constexpr uintptr_t Bitfields_0060 = 0x0060;  // Multiple: LODDuplicate, b3DDrawMode, bCurvesAsColor, bEditable, bEnabled, bFinalUpdateModule, bRequiresLoopingNotification, bRequiresUpdateInTick, bSpawnModule, bSupported3DDrawMode, bSupportsRandomSeed, bUpdateModule
 			constexpr uintptr_t LODValidity = 0x0064;
 			constexpr uintptr_t ModuleEditorColor = 0x0068;
 		}
@@ -6043,7 +6043,7 @@ namespace Offsets {
 			constexpr uintptr_t FalloffType = 0x0070;
 			constexpr uintptr_t DestinationType = 0x0071;
 			constexpr uintptr_t SelectionMethod = 0x0072;
-			constexpr uintptr_t Bitfields_0074 = 0x0074;  // Multiple: bParticleLifeRelative, bAttractAlongLengthOfBone
+			constexpr uintptr_t Bitfields_0074 = 0x0074;  // Multiple: bAttractAlongLengthOfBone, bParticleLifeRelative
 			constexpr uintptr_t FalloffExponent = 0x0078;
 			constexpr uintptr_t Range = 0x00A0;
 			constexpr uintptr_t Strength = 0x00C8;
@@ -6066,7 +6066,7 @@ namespace Offsets {
 		namespace ParticleModuleAttractorParticle {
 			constexpr uintptr_t EmitterName = 0x0070;
 			constexpr uintptr_t Range = 0x0078;
-			constexpr uintptr_t Bitfields_00A0 = 0x00A0;  // Multiple: bStrengthByDistance, bAffectBaseVelocity, bRenewSource, bInheritSourceVel
+			constexpr uintptr_t Bitfields_00A0 = 0x00A0;  // Multiple: bAffectBaseVelocity, bInheritSourceVel, bRenewSource, bStrengthByDistance
 			constexpr uintptr_t Strength = 0x00A8;
 			constexpr uintptr_t SelectionMethod = 0x00D0;
 			constexpr uintptr_t LastSelIndex = 0x00D4;
@@ -6082,7 +6082,7 @@ namespace Offsets {
 		namespace ParticleModuleAttractorSkelVertSurface {
 			constexpr uintptr_t FalloffType = 0x0070;
 			constexpr uintptr_t DestinationType = 0x0071;
-			constexpr uintptr_t Bitfields_0074 = 0x0074;  // Multiple: bParticleLifeRelative, bEnforceNormalCheck
+			constexpr uintptr_t Bitfields_0074 = 0x0074;  // Multiple: bEnforceNormalCheck, bParticleLifeRelative
 			constexpr uintptr_t FalloffExponent = 0x0078;
 			constexpr uintptr_t Range = 0x00A0;
 			constexpr uintptr_t Strength = 0x00C8;
@@ -6115,7 +6115,7 @@ namespace Offsets {
 		}
 
 		namespace ParticleModuleBeamNoise {
-			constexpr uintptr_t Bitfields_0070 = 0x0070;  // Multiple: bLowFreq_Enabled, bNRScaleEmitterTime, bSmooth, bNoiseLock, bOscillate, bUseNoiseTangents, bTargetNoise, bApplyNoiseScale
+			constexpr uintptr_t Bitfields_0070 = 0x0070;  // Multiple: bApplyNoiseScale, bLowFreq_Enabled, bNRScaleEmitterTime, bNoiseLock, bOscillate, bSmooth, bTargetNoise, bUseNoiseTangents
 			constexpr uintptr_t Frequency = 0x0074;
 			constexpr uintptr_t Frequency_LowRange = 0x0078;
 			constexpr uintptr_t NoiseRange = 0x0080;
@@ -6134,7 +6134,7 @@ namespace Offsets {
 			constexpr uintptr_t SourceMethod = 0x0070;
 			constexpr uintptr_t SourceTangentMethod = 0x0071;
 			constexpr uintptr_t SourceName = 0x0074;
-			constexpr uintptr_t Bitfields_007C = 0x007C;  // Multiple: bSourceAbsolute, bLockSource, bLockSourceTangent, bLockSourceStength
+			constexpr uintptr_t Bitfields_007C = 0x007C;  // Multiple: bLockSource, bLockSourceStength, bLockSourceTangent, bSourceAbsolute
 			constexpr uintptr_t Source = 0x0080;
 			constexpr uintptr_t SourceTangent = 0x00A8;
 			constexpr uintptr_t SourceStrength = 0x00D0;
@@ -6145,7 +6145,7 @@ namespace Offsets {
 			constexpr uintptr_t TargetTangentMethod = 0x0071;
 			constexpr uintptr_t TargetName = 0x0074;
 			constexpr uintptr_t Target = 0x0080;
-			constexpr uintptr_t Bitfields_00A8 = 0x00A8;  // Multiple: bTargetAbsolute, bLockTarget, bLockTargetTangent, bLockTargetStength
+			constexpr uintptr_t Bitfields_00A8 = 0x00A8;  // Multiple: bLockTarget, bLockTargetStength, bLockTargetTangent, bTargetAbsolute
 			constexpr uintptr_t TargetTangent = 0x00B0;
 			constexpr uintptr_t TargetBone = 0x00D8;
 			constexpr uintptr_t TargetStrength = 0x00E0;
@@ -6167,7 +6167,7 @@ namespace Offsets {
 			constexpr uintptr_t DampingFactorRotation = 0x0098;
 			constexpr uintptr_t MaxCollisions = 0x00C0;
 			constexpr uintptr_t CollisionCompletionOption = 0x00E8;
-			constexpr uintptr_t Bitfields_00EC = 0x00EC;  // Multiple: bApplyPhysics, bNoClip, bPawnsDoNotDecrementCount, bOnlyVerticalNormalsDecrementCount, bDropDetail, bCollideOnlyIfVisible, bCollideWithWorld, bCollideWithWorldAttractors
+			constexpr uintptr_t Bitfields_00EC = 0x00EC;  // Multiple: bApplyPhysics, bCollideOnlyIfVisible, bCollideWithWorld, bCollideWithWorldAttractors, bDropDetail, bNoClip, bOnlyVerticalNormalsDecrementCount, bPawnsDoNotDecrementCount
 			constexpr uintptr_t DecalMaterial = 0x00F0;
 			constexpr uintptr_t DecalWidth = 0x00F8;
 			constexpr uintptr_t DecalHeight = 0x00FC;
@@ -6247,7 +6247,7 @@ namespace Offsets {
 
 		namespace ParticleModuleEventReceiverSpawn {
 			constexpr uintptr_t SpawnCount = 0x0080;
-			constexpr uintptr_t Bitfields_00A8 = 0x00A8;  // Multiple: bUseParticleTime, bUsePSysLocation, bInheritVelocity
+			constexpr uintptr_t Bitfields_00A8 = 0x00A8;  // Multiple: bInheritVelocity, bUsePSysLocation, bUseParticleTime
 			constexpr uintptr_t InheritVelocityScale = 0x00B0;
 		}
 
@@ -6258,12 +6258,12 @@ namespace Offsets {
 		namespace ParticleModuleKillBox {
 			constexpr uintptr_t LowerLeftCorner = 0x0070;
 			constexpr uintptr_t UpperRightCorner = 0x0098;
-			constexpr uintptr_t Bitfields_00C0 = 0x00C0;  // Multiple: bAbsolute, bKillInside, bAxisAlignedAndFixedSize
+			constexpr uintptr_t Bitfields_00C0 = 0x00C0;  // Multiple: bAbsolute, bAxisAlignedAndFixedSize, bKillInside
 		}
 
 		namespace ParticleModuleKillHeight {
 			constexpr uintptr_t Height = 0x0070;
-			constexpr uintptr_t Bitfields_0098 = 0x0098;  // Multiple: bAbsolute, bFloor, bApplyPSysScale
+			constexpr uintptr_t Bitfields_0098 = 0x0098;  // Multiple: bAbsolute, bApplyPSysScale, bFloor
 		}
 
 		namespace ParticleModuleLifetime {
@@ -6293,7 +6293,7 @@ namespace Offsets {
 			constexpr uintptr_t SelectionMethod = 0x0071;
 			constexpr uintptr_t UniversalOffset = 0x0074;
 			constexpr uintptr_t SourceLocations = 0x0080;
-			constexpr uintptr_t Bitfields_0090 = 0x0090;  // Multiple: bUpdatePositionEachFrame, bOrientMeshEmitters, bInheritVelocityAtSpawn
+			constexpr uintptr_t Bitfields_0090 = 0x0090;  // Multiple: bInheritVelocityAtSpawn, bOrientMeshEmitters, bUpdatePositionEachFrame
 			constexpr uintptr_t SkelMeshActorParamName = 0x0094;
 			constexpr uintptr_t EditorSkelMesh = 0x00A0;
 			constexpr uintptr_t LastUpdateTime = 0x00A8;
@@ -6319,7 +6319,7 @@ namespace Offsets {
 		}
 
 		namespace ParticleModuleLocationPrimitiveBase {
-			constexpr uintptr_t Bitfields_0070 = 0x0070;  // Multiple: Positive_X, Positive_Y, Positive_Z, Negative_X, Negative_Y, Negative_Z, SurfaceOnly, Velocity
+			constexpr uintptr_t Bitfields_0070 = 0x0070;  // Multiple: Negative_X, Negative_Y, Negative_Z, Positive_X, Positive_Y, Positive_Z, SurfaceOnly, Velocity
 			constexpr uintptr_t VelocityScale = 0x0078;
 			constexpr uintptr_t StartLocation = 0x00A0;
 		}
@@ -6346,7 +6346,7 @@ namespace Offsets {
 		namespace ParticleModuleLocationSkelVertSurface {
 			constexpr uintptr_t SourceType = 0x0070;
 			constexpr uintptr_t UniversalOffset = 0x0074;
-			constexpr uintptr_t Bitfields_0080 = 0x0080;  // Multiple: bUpdatePositionEachFrame, bOrientMeshEmitters, bEnforceNormalCheck
+			constexpr uintptr_t Bitfields_0080 = 0x0080;  // Multiple: bEnforceNormalCheck, bOrientMeshEmitters, bUpdatePositionEachFrame
 			constexpr uintptr_t SkelMeshActorParamName = 0x0084;
 			constexpr uintptr_t EditorSkelMesh = 0x0090;
 			constexpr uintptr_t ValidAssociatedBones = 0x0098;
@@ -6359,7 +6359,7 @@ namespace Offsets {
 		namespace ParticleModuleLocationStaticVertSurface {
 			constexpr uintptr_t SourceType = 0x0070;
 			constexpr uintptr_t UniversalOffset = 0x0074;
-			constexpr uintptr_t Bitfields_0080 = 0x0080;  // Multiple: bUpdatePositionEachFrame, bOrientMeshEmitters, bEnforceNormalCheck
+			constexpr uintptr_t Bitfields_0080 = 0x0080;  // Multiple: bEnforceNormalCheck, bOrientMeshEmitters, bUpdatePositionEachFrame
 			constexpr uintptr_t StaticMeshActorParamName = 0x0084;
 			constexpr uintptr_t EditorStaticMesh = 0x0090;
 			constexpr uintptr_t NormalToCompare = 0x0098;
@@ -6463,7 +6463,7 @@ namespace Offsets {
 			constexpr uintptr_t ParticleBurstMethod = 0x007A;
 			constexpr uintptr_t InterpolationMethod = 0x007B;
 			constexpr uintptr_t EmitterNormalsMode = 0x007C;
-			constexpr uintptr_t Bitfields_0080 = 0x0080;  // Multiple: bAllowImageFlipping, bSquareImageFlipping, bUseLocalSpace, bKillOnDeactivate, bKillOnCompleted, bRequiresSorting, bUseLegacyEmitterTime, bEnableNearParticleCulling, bEnableFarParticleCulling, bEmitterDurationUseRange, bDurationRecalcEachLoop, bEmitterDelayUseRange, bDelayFirstLoopOnly, bScaleUV, bDirectUV, bOverrideSystemMacroUV, bUseMaxDrawCount, bOrbitModuleAffectsVelocityAlignment
+			constexpr uintptr_t Bitfields_0080 = 0x0080;  // Multiple: bAllowImageFlipping, bDelayFirstLoopOnly, bDirectUV, bDurationRecalcEachLoop, bEmitterDelayUseRange, bEmitterDurationUseRange, bEnableFarParticleCulling, bEnableNearParticleCulling, bKillOnCompleted, bKillOnDeactivate, bOrbitModuleAffectsVelocityAlignment, bOverrideSystemMacroUV, bRequiresSorting, bScaleUV, bSquareImageFlipping, bUseLegacyEmitterTime, bUseLocalSpace, bUseMaxDrawCount
 			constexpr uintptr_t NearCullDistance = 0x0084;
 			constexpr uintptr_t NearFadeDistance = 0x0088;
 			constexpr uintptr_t FarFadeDistance = 0x008C;
@@ -6570,13 +6570,13 @@ namespace Offsets {
 		}
 
 		namespace ParticleModuleSpawnBase {
-			constexpr uintptr_t Bitfields_0070 = 0x0070;  // Multiple: bProcessSpawnRate, bProcessBurstList
+			constexpr uintptr_t Bitfields_0070 = 0x0070;  // Multiple: bProcessBurstList, bProcessSpawnRate
 		}
 
 		namespace ParticleModuleSpawnPerUnit {
 			constexpr uintptr_t UnitScalar = 0x0078;
 			constexpr uintptr_t SpawnPerUnit = 0x0080;
-			constexpr uintptr_t Bitfields_00A8 = 0x00A8;  // Multiple: bIgnoreSpawnRateWhenMoving, bIgnoreMovementAlongX, bIgnoreMovementAlongY, bIgnoreMovementAlongZ
+			constexpr uintptr_t Bitfields_00A8 = 0x00A8;  // Multiple: bIgnoreMovementAlongX, bIgnoreMovementAlongY, bIgnoreMovementAlongZ, bIgnoreSpawnRateWhenMoving
 			constexpr uintptr_t MovementTolerance = 0x00AC;
 			constexpr uintptr_t MaxFrameDistance = 0x00B0;
 			constexpr uintptr_t MinFrameDistance = 0x00B4;
@@ -6619,7 +6619,7 @@ namespace Offsets {
 			constexpr uintptr_t SelectionMethod = 0x0071;
 			constexpr uintptr_t SourceName = 0x0074;
 			constexpr uintptr_t SourceStrength = 0x0080;
-			constexpr uintptr_t Bitfields_00A8 = 0x00A8;  // Multiple: bLockSourceStength, bInheritRotation
+			constexpr uintptr_t Bitfields_00A8 = 0x00A8;  // Multiple: bInheritRotation, bLockSourceStength
 			constexpr uintptr_t SourceOffsetCount = 0x00AC;
 			constexpr uintptr_t SourceOffsetDefaults = 0x00B0;
 		}
@@ -6637,7 +6637,7 @@ namespace Offsets {
 		namespace ParticleModuleTypeDataAnimTrail {
 			constexpr uintptr_t ControlEdgeName = 0x0070;
 			constexpr uintptr_t SheetsPerTrail = 0x0078;
-			constexpr uintptr_t Bitfields_007C = 0x007C;  // Multiple: bDeadTrailsOnDeactivate, bClipSourceSegement, bEnablePreviousTangentRecalculation, bTangentRecalculationEveryFrame, bRenderGeometry, bRenderSpawnPoints, bRenderTangents, bRenderTessellation
+			constexpr uintptr_t Bitfields_007C = 0x007C;  // Multiple: bClipSourceSegement, bDeadTrailsOnDeactivate, bEnablePreviousTangentRecalculation, bRenderGeometry, bRenderSpawnPoints, bRenderTangents, bRenderTessellation, bTangentRecalculationEveryFrame
 			constexpr uintptr_t TilingDistance = 0x0080;
 			constexpr uintptr_t DistanceTessellationStepSize = 0x0084;
 			constexpr uintptr_t TangentTessellationScalar = 0x0088;
@@ -6662,7 +6662,7 @@ namespace Offsets {
 			constexpr uintptr_t TargetStrength = 0x00F8;
 			constexpr uintptr_t EndPointDirection = 0x0120;
 			constexpr uintptr_t TextureTile = 0x0148;
-			constexpr uintptr_t Bitfields_014C = 0x014C;  // Multiple: RenderGeometry, RenderDirectLine, RenderLines, RenderTessellation
+			constexpr uintptr_t Bitfields_014C = 0x014C;  // Multiple: RenderDirectLine, RenderGeometry, RenderLines, RenderTessellation
 		}
 
 		namespace ParticleModuleTypeDataBeam2 {
@@ -6674,7 +6674,7 @@ namespace Offsets {
 			constexpr uintptr_t MaxBeamCount = 0x0080;
 			constexpr uintptr_t Speed = 0x0084;
 			constexpr uintptr_t InterpolationPoints = 0x0088;
-			constexpr uintptr_t Bitfields_008C = 0x008C;  // Multiple: bAlwaysOn, RenderGeometry, RenderDirectLine, RenderLines, RenderTessellation
+			constexpr uintptr_t Bitfields_008C = 0x008C;  // Multiple: RenderDirectLine, RenderGeometry, RenderLines, RenderTessellation, bAlwaysOn
 			constexpr uintptr_t UpVectorStepSize = 0x0090;
 			constexpr uintptr_t BranchParentName = 0x0094;
 			constexpr uintptr_t Distance = 0x00A0;
@@ -6685,7 +6685,7 @@ namespace Offsets {
 		namespace ParticleModuleTypeDataMesh {
 			constexpr uintptr_t Mesh = 0x0070;
 			constexpr uintptr_t MeshParamName = 0x0078;
-			constexpr uintptr_t Bitfields_0080 = 0x0080;  // Multiple: CastShadows, DoCollisions, bAllowMotionBlur, bOverrideMaterial, bCameraFacing, bApplyParticleRotationAsSpin
+			constexpr uintptr_t Bitfields_0080 = 0x0080;  // Multiple: CastShadows, DoCollisions, bAllowMotionBlur, bApplyParticleRotationAsSpin, bCameraFacing, bOverrideMaterial
 			constexpr uintptr_t MeshAlignment = 0x0084;
 			constexpr uintptr_t AxisLockOption = 0x0085;
 			constexpr uintptr_t CameraFacingUpAxisOption = 0x0086;
@@ -6713,7 +6713,7 @@ namespace Offsets {
 			constexpr uintptr_t SheetsPerTrail = 0x0074;
 			constexpr uintptr_t MaxTrailCount = 0x0078;
 			constexpr uintptr_t MaxParticleInTrailCount = 0x007C;
-			constexpr uintptr_t Bitfields_0080 = 0x0080;  // Multiple: bDeadTrailsOnDeactivate, bDeadTrailsOnSourceLoss, bClipSourceSegement, bEnablePreviousTangentRecalculation, bTangentRecalculationEveryFrame, bSpawnInitialParticle, bRenderGeometry, bRenderSpawnPoints, bRenderTangents, bRenderTessellation, bEnableTangentDiffInterpScale
+			constexpr uintptr_t Bitfields_0080 = 0x0080;  // Multiple: bClipSourceSegement, bDeadTrailsOnDeactivate, bDeadTrailsOnSourceLoss, bEnablePreviousTangentRecalculation, bEnableTangentDiffInterpScale, bRenderGeometry, bRenderSpawnPoints, bRenderTangents, bRenderTessellation, bSpawnInitialParticle, bTangentRecalculationEveryFrame
 			constexpr uintptr_t RenderAxis = 0x0084;
 			constexpr uintptr_t TangentSpawningScalar = 0x0088;
 			constexpr uintptr_t TilingDistance = 0x008C;
@@ -6722,7 +6722,7 @@ namespace Offsets {
 		}
 
 		namespace ParticleModuleTypeDataTrail {
-			constexpr uintptr_t Bitfields_0070 = 0x0070;  // Multiple: RenderGeometry, RenderLines, RenderTessellation, Tapered, SpawnByDistance
+			constexpr uintptr_t Bitfields_0070 = 0x0070;  // Multiple: RenderGeometry, RenderLines, RenderTessellation, SpawnByDistance, Tapered
 			constexpr uintptr_t TessellationFactor = 0x0074;
 			constexpr uintptr_t Tension = 0x0078;
 			constexpr uintptr_t SpawnDistance = 0x00A0;
@@ -6736,7 +6736,7 @@ namespace Offsets {
 			constexpr uintptr_t Sheets = 0x0080;
 			constexpr uintptr_t MaxTrailCount = 0x0084;
 			constexpr uintptr_t MaxParticleInTrailCount = 0x0088;
-			constexpr uintptr_t Bitfields_008C = 0x008C;  // Multiple: bClipSourceSegement, bClearTangents, RenderGeometry, RenderDirectLine, RenderLines, RenderTessellation
+			constexpr uintptr_t Bitfields_008C = 0x008C;  // Multiple: RenderDirectLine, RenderGeometry, RenderLines, RenderTessellation, bClearTangents, bClipSourceSegement
 		}
 
 		namespace ParticleModuleUberBase {
@@ -6787,7 +6787,7 @@ namespace Offsets {
 			constexpr uintptr_t StartVelocityRadialMax = 0x00BC;
 			constexpr uintptr_t ColorOverLife = 0x00C0;
 			constexpr uintptr_t AlphaOverLife = 0x00CC;
-			constexpr uintptr_t Bitfields_00D0 = 0x00D0;  // Multiple: bIsUsingCylinder, bPositive_X, bPositive_Y, bPositive_Z, bNegative_X, bNegative_Y, bNegative_Z, bSurfaceOnly, bVelocity, bRadialVelocity
+			constexpr uintptr_t Bitfields_00D0 = 0x00D0;  // Multiple: bIsUsingCylinder, bNegative_X, bNegative_Y, bNegative_Z, bPositive_X, bPositive_Y, bPositive_Z, bRadialVelocity, bSurfaceOnly, bVelocity
 			constexpr uintptr_t PC_VelocityScale = 0x00D4;
 			constexpr uintptr_t PC_StartLocation = 0x00D8;
 			constexpr uintptr_t PC_StartRadius = 0x00E4;
@@ -6801,7 +6801,7 @@ namespace Offsets {
 			constexpr uintptr_t LifeTime = 0x0080;
 			constexpr uintptr_t StartSize = 0x00A8;
 			constexpr uintptr_t StartRotation = 0x00D0;
-			constexpr uintptr_t Bitfields_00F8 = 0x00F8;  // Multiple: bInheritParent, MultiplyX, MultiplyY, MultiplyZ, bIsUsingCylinder, bPositive_X, bPositive_Y, bPositive_Z, bNegative_X, bNegative_Y, bNegative_Z, bSurfaceOnly, bVelocity, bRadialVelocity
+			constexpr uintptr_t Bitfields_00F8 = 0x00F8;  // Multiple: MultiplyX, MultiplyY, MultiplyZ, bInheritParent, bIsUsingCylinder, bNegative_X, bNegative_Y, bNegative_Z, bPositive_X, bPositive_Y, bPositive_Z, bRadialVelocity, bSurfaceOnly, bVelocity
 			constexpr uintptr_t LifeMultiplier = 0x0100;
 			constexpr uintptr_t PC_VelocityScale = 0x0128;
 			constexpr uintptr_t PC_StartLocation = 0x0150;
@@ -6816,7 +6816,7 @@ namespace Offsets {
 			constexpr uintptr_t LifeTime = 0x0080;
 			constexpr uintptr_t StartSize = 0x00A8;
 			constexpr uintptr_t StartRotation = 0x00D0;
-			constexpr uintptr_t Bitfields_00F8 = 0x00F8;  // Multiple: bInheritParent, MultiplyX, MultiplyY, MultiplyZ
+			constexpr uintptr_t Bitfields_00F8 = 0x00F8;  // Multiple: MultiplyX, MultiplyY, MultiplyZ, bInheritParent
 			constexpr uintptr_t LifeMultiplier = 0x0100;
 			constexpr uintptr_t ColorOverLife = 0x0128;
 			constexpr uintptr_t AlphaOverLife = 0x0150;
@@ -6838,7 +6838,7 @@ namespace Offsets {
 		}
 
 		namespace ParticleModuleVelocityBase {
-			constexpr uintptr_t Bitfields_0070 = 0x0070;  // Multiple: bInWorldSpace, bApplyOwnerScale
+			constexpr uintptr_t Bitfields_0070 = 0x0070;  // Multiple: bApplyOwnerScale, bInWorldSpace
 		}
 
 		namespace ParticleModuleVelocityCone {
@@ -6883,7 +6883,7 @@ namespace Offsets {
 			constexpr uintptr_t ThumbnailAngle = 0x0090;
 			constexpr uintptr_t ThumbnailDistance = 0x009C;
 			constexpr uintptr_t ThumbnailWarmup = 0x00A0;
-			constexpr uintptr_t Bitfields_00A4 = 0x00A4;  // Multiple: bLit, bOrientZAxisTowardCamera, bRegenerateLODDuplicate, bUseFixedRelativeBoundingBox, bShouldResetPeakCounts, bHasPhysics, bUseRealtimeThumbnail, ThumbnailImageOutOfDate, bSkipSpawnCountCheck, bUseDelayRange
+			constexpr uintptr_t Bitfields_00A4 = 0x00A4;  // Multiple: ThumbnailImageOutOfDate, bHasPhysics, bLit, bOrientZAxisTowardCamera, bRegenerateLODDuplicate, bShouldResetPeakCounts, bSkipSpawnCountCheck, bUseDelayRange, bUseFixedRelativeBoundingBox, bUseRealtimeThumbnail
 			constexpr uintptr_t CurveEdSetup = 0x00A8;
 			constexpr uintptr_t LODDistanceCheckTime = 0x00B0;
 			constexpr uintptr_t LODDistances = 0x00B8;
@@ -6917,7 +6917,7 @@ namespace Offsets {
 			constexpr uintptr_t SMMaterialInterfaces = 0x02A0;
 			constexpr uintptr_t SkelMeshComponents = 0x02B0;
 			constexpr uintptr_t ViewMBInfoArray = 0x02C0;
-			constexpr uintptr_t Bitfields_02D0 = 0x02D0;  // Multiple: bAutoActivate, bWasCompleted, bSuppressSpawning, bWasDeactivated, bResetOnDetach, bUpdateOnDedicatedServer, bJustAttached, bIsActive, bHasBeenActivated, bWarmingUp, bIsCachedInPool, bOverrideLODMethod, bSkipUpdateDynamicDataDuringTick, bSkipBoundsUpdate, bUpdateComponentInTick, bDeferredBeamUpdate, bForcedInActive, bIsWarmingUp, bIsViewRelevanceDirty, bRecacheViewRelevance, bParticleRequiresUpdateInTick, bLODUpdatePending, bSkipSpawnCountCheck
+			constexpr uintptr_t Bitfields_02D0 = 0x02D0;  // Multiple: bAutoActivate, bDeferredBeamUpdate, bForcedInActive, bHasBeenActivated, bIsActive, bIsCachedInPool, bIsViewRelevanceDirty, bIsWarmingUp, bJustAttached, bLODUpdatePending, bOverrideLODMethod, bParticleRequiresUpdateInTick, bRecacheViewRelevance, bResetOnDetach, bSkipBoundsUpdate, bSkipSpawnCountCheck, bSkipUpdateDynamicDataDuringTick, bSuppressSpawning, bUpdateComponentInTick, bUpdateOnDedicatedServer, bWarmingUp, bWasCompleted, bWasDeactivated
 			constexpr uintptr_t LastDetailMode = 0x02D4;
 			constexpr uintptr_t LODMethod = 0x02D5;
 			constexpr uintptr_t ReplayState = 0x02D6;
@@ -7006,7 +7006,7 @@ namespace Offsets {
 		namespace Path_WithinDistanceEnvelope {
 			constexpr uintptr_t MaxDistance = 0x0070;
 			constexpr uintptr_t MinDistance = 0x0074;
-			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bSoft, bOnlyThrowOutNodesThatLeaveEnvelope
+			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bOnlyThrowOutNodesThatLeaveEnvelope, bSoft
 			constexpr uintptr_t SoftStartPenalty = 0x007C;
 			constexpr uintptr_t EnvelopeTestPoint = 0x0080;
 		}
@@ -7031,8 +7031,8 @@ namespace Offsets {
 			constexpr uintptr_t NetRelevancyTime = 0x02B0;
 			constexpr uintptr_t LastRealViewer = 0x02B8;
 			constexpr uintptr_t LastViewer = 0x02C0;
-			constexpr uintptr_t Bitfields_02C8 = 0x02C8;  // Multiple: bScriptTickSpecial, bUpAndOut, bIsWalking, bWantsToCrouch, bIsCrouched, bTryToUncrouch, bCanCrouch, bCrawler, bReducedSpeed, bJumpCapable, bCanJump, bCanWalk, bCanFly, bCanStrafe, bAvoidLedges, bStopAtLedges, bAllowLedgeOverhang, bPartiallyOverLedge, bSimulateGravity, bIgnoreForces, bCanWalkOffLedges, bCanBeBaseForPawns, bSimGravityDisabled, bDirectHitWall, bPushesRigidBodies, bForceFloorCheck, bForceKeepAnchor, bCanMantle, bCanClimbUp, bCanClimbCeilings, bCanSwatTurn, bCanLeap
-			constexpr uintptr_t Bitfields_02CC = 0x02CC;  // Multiple: bCanCoverSlip, bDisplayPathErrors, bAmbientCreature, bLOSHearing, bMuffledHearing, bDontPossess, bRollToDesired, bStationary, bCachedRelevant, bModifyReachSpecCost, bModifyNavPointDest, bPrevBypassSimulatedClientPhysics, bRunPhysicsWithNoController, bForceMaxAccel, bLimitFallAccel, bForceRMVelocity, bForceRegularVelocity, bDesiredRotationSet, bLockDesiredRotation, bUnlockWhenReached, bNeedsBaseTickedFirst, bUsedByMatinee, bRootMotionFromInterpCurve, bDebugShowCameraLocation, bFastAttachedMove
+			constexpr uintptr_t Bitfields_02C8 = 0x02C8;  // Multiple: bAllowLedgeOverhang, bAvoidLedges, bCanBeBaseForPawns, bCanClimbCeilings, bCanClimbUp, bCanCrouch, bCanFly, bCanJump, bCanLeap, bCanMantle, bCanStrafe, bCanSwatTurn, bCanWalk, bCanWalkOffLedges, bCrawler, bDirectHitWall, bForceFloorCheck, bForceKeepAnchor, bIgnoreForces, bIsCrouched, bIsWalking, bJumpCapable, bPartiallyOverLedge, bPushesRigidBodies, bReducedSpeed, bScriptTickSpecial, bSimGravityDisabled, bSimulateGravity, bStopAtLedges, bTryToUncrouch, bUpAndOut, bWantsToCrouch
+			constexpr uintptr_t Bitfields_02CC = 0x02CC;  // Multiple: bAmbientCreature, bCachedRelevant, bCanCoverSlip, bDebugShowCameraLocation, bDesiredRotationSet, bDisplayPathErrors, bDontPossess, bFastAttachedMove, bForceMaxAccel, bForceRMVelocity, bForceRegularVelocity, bLOSHearing, bLimitFallAccel, bLockDesiredRotation, bModifyNavPointDest, bModifyReachSpecCost, bMuffledHearing, bNeedsBaseTickedFirst, bPrevBypassSimulatedClientPhysics, bRollToDesired, bRootMotionFromInterpCurve, bRunPhysicsWithNoController, bStationary, bUnlockWhenReached, bUsedByMatinee
 			constexpr uintptr_t WalkingPhysics = 0x02D0;
 			constexpr uintptr_t PathSearchType = 0x02D1;
 			constexpr uintptr_t RemoteViewPitch = 0x02D2;
@@ -7139,7 +7139,7 @@ namespace Offsets {
 			constexpr uintptr_t FrictionWithDynamicShapes = 0x0080;
 			constexpr uintptr_t StaticFrictionWithStaticShapes = 0x0084;
 			constexpr uintptr_t StaticFrictionWithDynamicShapes = 0x0088;
-			constexpr uintptr_t Bitfields_008C = 0x008C;  // Multiple: bDynamicCollision, bDisableGravity, bStaticCollision, bTwoWayCollision, bDestroy, bSyncFailed, bIsInGame
+			constexpr uintptr_t Bitfields_008C = 0x008C;  // Multiple: bDestroy, bDisableGravity, bDynamicCollision, bIsInGame, bStaticCollision, bSyncFailed, bTwoWayCollision
 			constexpr uintptr_t MaxMotionDistance = 0x0090;
 			constexpr uintptr_t Damping = 0x0094;
 			constexpr uintptr_t ExternalAcceleration = 0x0098;
@@ -7157,7 +7157,7 @@ namespace Offsets {
 			constexpr uintptr_t MaterialIndex = 0x0060;
 			constexpr uintptr_t Friction = 0x0064;
 			constexpr uintptr_t Restitution = 0x0068;
-			constexpr uintptr_t Bitfields_006C = 0x006C;  // Multiple: bForceConeFriction, bEnableAnisotropicFriction
+			constexpr uintptr_t Bitfields_006C = 0x006C;  // Multiple: bEnableAnisotropicFriction, bForceConeFriction
 			constexpr uintptr_t AnisoFrictionDir = 0x0070;
 			constexpr uintptr_t FrictionV = 0x007C;
 			constexpr uintptr_t Density = 0x0080;
@@ -7210,7 +7210,7 @@ namespace Offsets {
 
 		namespace PhysicsVolume {
 			constexpr uintptr_t ZoneVelocity = 0x02A8;
-			constexpr uintptr_t Bitfields_02B4 = 0x02B4;  // Multiple: bVelocityAffectsWalking, bDestructive, bMoveProjectiles, bBounceVelocity, bCrowdAgentsPlayDeathAnim, bPhysicsOnContact
+			constexpr uintptr_t Bitfields_02B4 = 0x02B4;  // Multiple: bBounceVelocity, bCrowdAgentsPlayDeathAnim, bDestructive, bMoveProjectiles, bPhysicsOnContact, bVelocityAffectsWalking
 			constexpr uintptr_t GroundFriction = 0x02B8;
 			constexpr uintptr_t TerminalVelocity = 0x02BC;
 			constexpr uintptr_t Priority = 0x02C0;
@@ -7221,7 +7221,7 @@ namespace Offsets {
 		}
 
 		namespace PitchTekSettings {
-			constexpr uintptr_t Bitfields_0060 = 0x0060;  // Multiple: bEnabled, bUseInitialColorTexture, bUseInitialDataTexture, bRenderBallDecalOnContact, bRenderCarPositionDecal
+			constexpr uintptr_t Bitfields_0060 = 0x0060;  // Multiple: bEnabled, bRenderBallDecalOnContact, bRenderCarPositionDecal, bUseInitialColorTexture, bUseInitialDataTexture
 			constexpr uintptr_t ColorTargetSize = 0x0064;
 			constexpr uintptr_t DataTargetSize = 0x0065;
 			constexpr uintptr_t PitchLengthX = 0x0068;
@@ -7244,7 +7244,7 @@ namespace Offsets {
 		}
 
 		namespace PlatformAccountSettings {
-			constexpr uintptr_t Bitfields_0070 = 0x0070;  // Multiple: bCrossplayEnabled, bAllowInvites
+			constexpr uintptr_t Bitfields_0070 = 0x0070;  // Multiple: bAllowInvites, bCrossplayEnabled
 			constexpr uintptr_t CrossPlatformChatState = 0x0074;
 		}
 
@@ -7287,7 +7287,7 @@ namespace Offsets {
 			constexpr uintptr_t Player = 0x0478;
 			constexpr uintptr_t PlayerCamera = 0x0480;
 			constexpr uintptr_t CameraClass = 0x0488;
-			constexpr uintptr_t Bitfields_0490 = 0x0490;  // Multiple: bFrozen, bPressedJump, bDoubleJump, bUpdatePosition, bUpdating, bCheatFlying, bCameraPositionLocked, bShortConnectTimeOut, bPendingDestroy, bWasSpeedHack, bWasSaturated, bAimingHelp, bCameraCut, bClientSimulatingViewTarget, bHasVoiceHandshakeCompleted, bIsChatBanned, bIsSocialBanned, bCinematicMode, bInteractiveMode, bCinemaDisableInputMove, bCinemaDisableInputLook, bIgnoreNetworkMessages, bShowKismetDrawText, bReplicateAllPawns, bIsUsingStreamingVolumes, bIsExternalUIOpen, bIsControllerConnected, bCheckSoundOcclusion, bDebugCameraAnims, bBlockCameraAnimsFromOverridingPostProcess, bLogHearSoundOverflow, bCheckRelevancyThroughPortals
+			constexpr uintptr_t Bitfields_0490 = 0x0490;  // Multiple: bAimingHelp, bBlockCameraAnimsFromOverridingPostProcess, bCameraCut, bCameraPositionLocked, bCheatFlying, bCheckRelevancyThroughPortals, bCheckSoundOcclusion, bCinemaDisableInputLook, bCinemaDisableInputMove, bCinematicMode, bClientSimulatingViewTarget, bDebugCameraAnims, bDoubleJump, bFrozen, bHasVoiceHandshakeCompleted, bIgnoreNetworkMessages, bInteractiveMode, bIsChatBanned, bIsControllerConnected, bIsExternalUIOpen, bIsSocialBanned, bIsUsingStreamingVolumes, bLogHearSoundOverflow, bPendingDestroy, bPressedJump, bReplicateAllPawns, bShortConnectTimeOut, bShowKismetDrawText, bUpdatePosition, bUpdating, bWasSaturated, bWasSpeedHack
 			constexpr uintptr_t bDebugClientAdjustPosition = 0x0494;
 			constexpr uintptr_t MaxResponseTime = 0x0498;
 			constexpr uintptr_t WaitDelay = 0x049C;
@@ -7365,7 +7365,7 @@ namespace Offsets {
 		}
 
 		namespace PlayerInput {
-			constexpr uintptr_t Bitfields_01B0 = 0x01B0;  // Multiple: bUsingGamepad, bInvertMouse, bInvertTurn, bWasForward, bWasBack, bWasLeft, bWasRight, bEdgeForward, bEdgeBack, bEdgeLeft, bEdgeRight, bEnableMouseSmoothing, bEnableFOVScaling, bLockTurnUntilRelease
+			constexpr uintptr_t Bitfields_01B0 = 0x01B0;  // Multiple: bEdgeBack, bEdgeForward, bEdgeLeft, bEdgeRight, bEnableFOVScaling, bEnableMouseSmoothing, bInvertMouse, bInvertTurn, bLockTurnUntilRelease, bUsingGamepad, bWasBack, bWasForward, bWasLeft, bWasRight
 			constexpr uintptr_t LastAxisKeyName = 0x01B4;
 			constexpr uintptr_t DoubleClickTimer = 0x01BC;
 			constexpr uintptr_t DoubleClickTime = 0x01C0;
@@ -7424,7 +7424,7 @@ namespace Offsets {
 			constexpr uintptr_t OldName = 0x0298;
 			constexpr uintptr_t PlayerID = 0x02A8;
 			constexpr uintptr_t Team = 0x02B0;
-			constexpr uintptr_t Bitfields_02B8 = 0x02B8;  // Multiple: bAdmin, bIsSpectator, bOnlySpectator, bWaitingPlayer, bReadyToPlay, bOutOfLives, bBot, bIsInactive, bFromPreviousLevel, bTimedOut, bUnregistered
+			constexpr uintptr_t Bitfields_02B8 = 0x02B8;  // Multiple: bAdmin, bBot, bFromPreviousLevel, bIsInactive, bIsSpectator, bOnlySpectator, bOutOfLives, bReadyToPlay, bTimedOut, bUnregistered, bWaitingPlayer
 			constexpr uintptr_t StartTime = 0x02BC;
 			constexpr uintptr_t StringSpectating = 0x02C0;
 			constexpr uintptr_t StringUnknown = 0x02D0;
@@ -7442,7 +7442,7 @@ namespace Offsets {
 		}
 
 		namespace PlayerStart {
-			constexpr uintptr_t Bitfields_0388 = 0x0388;  // Multiple: bEnabled, bPrimaryStart, bBestStart
+			constexpr uintptr_t Bitfields_0388 = 0x0388;  // Multiple: bBestStart, bEnabled, bPrimaryStart
 			constexpr uintptr_t TeamIndex = 0x038C;
 			constexpr uintptr_t Score = 0x0390;
 			constexpr uintptr_t SelectionIndex = 0x0394;
@@ -7480,7 +7480,7 @@ namespace Offsets {
 			constexpr uintptr_t TextureResolutionX = 0x0288;
 			constexpr uintptr_t TextureResolutionY = 0x028C;
 			constexpr uintptr_t MyMarker = 0x0290;
-			constexpr uintptr_t Bitfields_0298 = 0x0298;  // Multiple: bMovablePortal, bAlwaysTeleportNonPawns, bCanTeleportVehicles
+			constexpr uintptr_t Bitfields_0298 = 0x0298;  // Multiple: bAlwaysTeleportNonPawns, bCanTeleportVehicles, bMovablePortal
 		}
 
 		namespace PortalVolume {
@@ -7492,7 +7492,7 @@ namespace Offsets {
 		}
 
 		namespace PostProcessEffect {
-			constexpr uintptr_t Bitfields_0060 = 0x0060;  // Multiple: bShowInEditor, bShowInGame, bUseWorldSettings, bAffectsLightingOnly
+			constexpr uintptr_t Bitfields_0060 = 0x0060;  // Multiple: bAffectsLightingOnly, bShowInEditor, bShowInGame, bUseWorldSettings
 			constexpr uintptr_t EffectName = 0x0064;
 			constexpr uintptr_t NodePosY = 0x006C;
 			constexpr uintptr_t NodePosX = 0x0070;
@@ -7505,7 +7505,7 @@ namespace Offsets {
 
 		namespace PostProcessVolume {
 			constexpr uintptr_t Priority = 0x02A8;
-			constexpr uintptr_t Bitfields_02AC = 0x02AC;  // Multiple: bOverrideWorldPostProcessChain, bEnabled
+			constexpr uintptr_t Bitfields_02AC = 0x02AC;  // Multiple: bEnabled, bOverrideWorldPostProcessChain
 			constexpr uintptr_t Settings = 0x02B0;
 			constexpr uintptr_t NextLowerPriorityVolume = 0x0418;
 		}
@@ -7525,7 +7525,7 @@ namespace Offsets {
 			constexpr uintptr_t RemovedArchetypes = 0x0078;
 			constexpr uintptr_t PrefabSequence = 0x0088;
 			constexpr uintptr_t PrefabPreview = 0x0090;
-			constexpr uintptr_t Bitfields_0098 = 0x0098;  // Multiple: bWorldspacePrefab, bAutoUpdatePrefabInstances
+			constexpr uintptr_t Bitfields_0098 = 0x0098;  // Multiple: bAutoUpdatePrefabInstances, bWorldspacePrefab
 		}
 
 		namespace PrefabInstance {
@@ -7579,8 +7579,8 @@ namespace Offsets {
 			constexpr uintptr_t RBChannel = 0x0187;
 			constexpr uintptr_t RBDominanceGroup = 0x0188;
 			constexpr uintptr_t PreviewEnvironmentShadowing = 0x0189;
-			constexpr uintptr_t Bitfields_018C = 0x018C;  // Multiple: bUseViewOwnerDepthPriorityGroup, bOnlyBlockActorMovement, bAllowCullDistanceVolume, HiddenGame, HiddenEditor, bOwnerNoSee, bOnlyOwnerSee, bIgnoreOwnerHidden, bUseAsOccluder, bAllowApproximateOcclusion, bFirstFrameOcclusion, bIgnoreNearPlaneIntersection, bSelectable, bForceMipStreaming, bAcceptsStaticDecals, bAcceptsDynamicDecals, bIsRefreshingDecals, bAllowDecalAutomaticReAttach, bUsePerInstanceHitProxies, CastShadow, bForceDirectLightMap, bCastDynamicShadow, bCastStaticShadow, bSelfShadowOnly, bNoModSelfShadow, bAcceptsDynamicDominantLightShadows, bCastHiddenShadow, bCastShadowAsTwoSided, bAcceptsLights, bAcceptsDynamicLights, bUseOnePassLightingOnTranslucency, bUsePrecomputedShadows
-			constexpr uintptr_t Bitfields_0190 = 0x0190;  // Multiple: bHasExplicitShadowParent, bAllowAmbientOcclusion, CollideActors, AlwaysCheckCollision, BlockActors, BlockZeroExtent, BlockNonZeroExtent, CanBlockCamera, BlockRigidBody, bBlockFootPlacement, bDisableAllRigidBody, bSkipRBGeomCreation, bNotifyRigidBodyCollision, bFluidDrain, bFluidTwoWay, bIgnoreRadialImpulse, bIgnoreRadialForce, bIgnoreForceField, bUseCompartment, AlwaysLoadOnClient, AlwaysLoadOnServer, bIgnoreHiddenActorsMembership, AbsoluteTranslation, AbsoluteRotation, AbsoluteScale, bAllowShadowFade, bSupportedOnMobile, bWasSNFiltered
+			constexpr uintptr_t Bitfields_018C = 0x018C;  // Multiple: CastShadow, HiddenEditor, HiddenGame, bAcceptsDynamicDecals, bAcceptsDynamicDominantLightShadows, bAcceptsDynamicLights, bAcceptsLights, bAcceptsStaticDecals, bAllowApproximateOcclusion, bAllowCullDistanceVolume, bAllowDecalAutomaticReAttach, bCastDynamicShadow, bCastHiddenShadow, bCastShadowAsTwoSided, bCastStaticShadow, bFirstFrameOcclusion, bForceDirectLightMap, bForceMipStreaming, bIgnoreNearPlaneIntersection, bIgnoreOwnerHidden, bIsRefreshingDecals, bNoModSelfShadow, bOnlyBlockActorMovement, bOnlyOwnerSee, bOwnerNoSee, bSelectable, bSelfShadowOnly, bUseAsOccluder, bUseOnePassLightingOnTranslucency, bUsePerInstanceHitProxies, bUsePrecomputedShadows, bUseViewOwnerDepthPriorityGroup
+			constexpr uintptr_t Bitfields_0190 = 0x0190;  // Multiple: AbsoluteRotation, AbsoluteScale, AbsoluteTranslation, AlwaysCheckCollision, AlwaysLoadOnClient, AlwaysLoadOnServer, BlockActors, BlockNonZeroExtent, BlockRigidBody, BlockZeroExtent, CanBlockCamera, CollideActors, bAllowAmbientOcclusion, bAllowShadowFade, bBlockFootPlacement, bDisableAllRigidBody, bFluidDrain, bFluidTwoWay, bHasExplicitShadowParent, bIgnoreForceField, bIgnoreHiddenActorsMembership, bIgnoreRadialForce, bIgnoreRadialImpulse, bNotifyRigidBodyCollision, bSkipRBGeomCreation, bSupportedOnMobile, bUseCompartment, bWasSNFiltered
 			constexpr uintptr_t OctreeNodes = 0x0198;
 			constexpr uintptr_t AlwaysShowInSelectedPlatforms = 0x01A8;
 			constexpr uintptr_t TranslucencySortPriority = 0x01B8;
@@ -7602,7 +7602,7 @@ namespace Offsets {
 		}
 
 		namespace PrimitiveComponentFactory {
-			constexpr uintptr_t Bitfields_0060 = 0x0060;  // Multiple: CollideActors, BlockActors, BlockZeroExtent, BlockNonZeroExtent, BlockRigidBody, HiddenGame, HiddenEditor, CastShadow
+			constexpr uintptr_t Bitfields_0060 = 0x0060;  // Multiple: BlockActors, BlockNonZeroExtent, BlockRigidBody, BlockZeroExtent, CastShadow, CollideActors, HiddenEditor, HiddenGame
 		}
 
 		namespace ProcBuilding {
@@ -7610,7 +7610,7 @@ namespace Offsets {
 			constexpr uintptr_t BuildingMeshCompInfos = 0x02B0;
 			constexpr uintptr_t BuildingFracMeshCompInfos = 0x02C0;
 			constexpr uintptr_t SimpleMeshComp = 0x02D0;
-			constexpr uintptr_t Bitfields_02D8 = 0x02D8;  // Multiple: bGenerateRoofMesh, bGenerateFloorMesh, bApplyRulesToRoof, bApplyRulesToFloor, bSplitWallsAtRoofLevels, bSplitWallsAtWallEdges, bQuickEdited, bBuildingBrushCollision, bDebugDrawEdgeInfo, bDebugDrawScopes
+			constexpr uintptr_t Bitfields_02D8 = 0x02D8;  // Multiple: bApplyRulesToFloor, bApplyRulesToRoof, bBuildingBrushCollision, bDebugDrawEdgeInfo, bDebugDrawScopes, bGenerateFloorMesh, bGenerateRoofMesh, bQuickEdited, bSplitWallsAtRoofLevels, bSplitWallsAtWallEdges
 			constexpr uintptr_t LODMeshComps = 0x02E0;
 			constexpr uintptr_t LODMeshUVInfos = 0x02F0;
 			constexpr uintptr_t TopLevelScopes = 0x0300;
@@ -7677,7 +7677,7 @@ namespace Offsets {
 			constexpr uintptr_t ExpansionRadius = 0x0400;
 			constexpr uintptr_t MaxExpansionRadius = 0x0404;
 			constexpr uintptr_t PylonRadiusPreview = 0x0408;
-			constexpr uintptr_t Bitfields_0410 = 0x0410;  // Multiple: bImportedMesh, bUseExpansionSphereOverride, bNeedsCostCheck, bPylonInHighLevelPath, bUseRecast, bAllowRecastGenerator, bDrawEdgePolys, bDrawPolyBounds, bRenderInShowPaths, bDrawWalkableSurface, bDrawObstacleSurface, bSolidObstaclesInGame, bBuildThisPylon, bDisabled, bForceObstacleMeshCollision
+			constexpr uintptr_t Bitfields_0410 = 0x0410;  // Multiple: bAllowRecastGenerator, bBuildThisPylon, bDisabled, bDrawEdgePolys, bDrawObstacleSurface, bDrawPolyBounds, bDrawWalkableSurface, bForceObstacleMeshCollision, bImportedMesh, bNeedsCostCheck, bPylonInHighLevelPath, bRenderInShowPaths, bSolidObstaclesInGame, bUseExpansionSphereOverride, bUseRecast
 			constexpr uintptr_t ExpansionSphereCenter = 0x0414;
 			constexpr uintptr_t RenderingComp = 0x0420;
 			constexpr uintptr_t BrokenSprite = 0x0428;
@@ -7711,7 +7711,7 @@ namespace Offsets {
 			constexpr uintptr_t BulletBodys = 0x0090;
 			constexpr uintptr_t BoneSpring = 0x00A0;
 			constexpr uintptr_t BoneSpringKinActor = 0x00A8;
-			constexpr uintptr_t Bitfields_00B0 = 0x00B0;  // Multiple: bEnableBoneSpringLinear, bEnableBoneSpringAngular, bDisableOnOverextension, bNotifyOwnerOnOverextension, bTeleportOnOverextension, bUseKinActorForBoneSpring, bMakeSpringToBaseCollisionComponent, bOnlyCollideWithPawns, bEnableCollisionResponse, bPushBody, bForceUnfixed, bInstanceAlwaysFullAnimWeight
+			constexpr uintptr_t Bitfields_00B0 = 0x00B0;  // Multiple: bDisableOnOverextension, bEnableBoneSpringAngular, bEnableBoneSpringLinear, bEnableCollisionResponse, bForceUnfixed, bInstanceAlwaysFullAnimWeight, bMakeSpringToBaseCollisionComponent, bNotifyOwnerOnOverextension, bOnlyCollideWithPawns, bPushBody, bTeleportOnOverextension, bUseKinActorForBoneSpring
 			constexpr uintptr_t BoneLinearSpring = 0x00B4;
 			constexpr uintptr_t BoneLinearDamping = 0x00B8;
 			constexpr uintptr_t BoneAngularSpring = 0x00BC;
@@ -7728,7 +7728,7 @@ namespace Offsets {
 		namespace RB_BodySetup {
 			constexpr uintptr_t SleepFamily = 0x00C0;
 			constexpr uintptr_t BoneName = 0x00C4;
-			constexpr uintptr_t Bitfields_00CC = 0x00CC;  // Multiple: bFixed, bNoCollision, bBlockZeroExtent, bBlockNonZeroExtent, bEnableContinuousCollisionDetection, bAlwaysFullAnimWeight, bConsiderForBounds
+			constexpr uintptr_t Bitfields_00CC = 0x00CC;  // Multiple: bAlwaysFullAnimWeight, bBlockNonZeroExtent, bBlockZeroExtent, bConsiderForBounds, bEnableContinuousCollisionDetection, bFixed, bNoCollision
 			constexpr uintptr_t PhysMaterial = 0x00D0;
 			constexpr uintptr_t MassScale = 0x00D8;
 			constexpr uintptr_t CollisionGeom = 0x00E0;
@@ -7757,7 +7757,7 @@ namespace Offsets {
 			constexpr uintptr_t OwnerComponent = 0x0068;
 			constexpr uintptr_t ConstraintIndex = 0x0070;
 			constexpr uintptr_t SceneIndex = 0x0074;
-			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bInHardware, bLinearXPositionDrive, bLinearXVelocityDrive, bLinearYPositionDrive, bLinearYVelocityDrive, bLinearZPositionDrive, bLinearZVelocityDrive, bSwingPositionDrive, bSwingVelocityDrive, bTwistPositionDrive, bTwistVelocityDrive, bAngularSlerpDrive, bTerminated
+			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bAngularSlerpDrive, bInHardware, bLinearXPositionDrive, bLinearXVelocityDrive, bLinearYPositionDrive, bLinearYVelocityDrive, bLinearZPositionDrive, bLinearZVelocityDrive, bSwingPositionDrive, bSwingVelocityDrive, bTerminated, bTwistPositionDrive, bTwistVelocityDrive
 			constexpr uintptr_t ConstraintData = 0x0080;
 			constexpr uintptr_t LinearPositionTarget = 0x0088;
 			constexpr uintptr_t LinearVelocityTarget = 0x0094;
@@ -7784,7 +7784,7 @@ namespace Offsets {
 			constexpr uintptr_t SecAxis2 = 0x00B4;
 			constexpr uintptr_t PulleyPivot1 = 0x00C0;
 			constexpr uintptr_t PulleyPivot2 = 0x00CC;
-			constexpr uintptr_t Bitfields_00D8 = 0x00D8;  // Multiple: bEnableProjection, bLinearLimitSoft, bLinearBreakable, bSwingLimited, bTwistLimited, bSwingLimitSoft, bTwistLimitSoft, bAngularBreakable, bIsPulley, bMaintainMinDistance
+			constexpr uintptr_t Bitfields_00D8 = 0x00D8;  // Multiple: bAngularBreakable, bEnableProjection, bIsPulley, bLinearBreakable, bLinearLimitSoft, bMaintainMinDistance, bSwingLimitSoft, bSwingLimited, bTwistLimitSoft, bTwistLimited
 			constexpr uintptr_t LinearXSetup = 0x00DC;
 			constexpr uintptr_t LinearYSetup = 0x00E4;
 			constexpr uintptr_t LinearZSetup = 0x00EC;
@@ -7813,7 +7813,7 @@ namespace Offsets {
 			constexpr uintptr_t ForceTopRadius = 0x0288;
 			constexpr uintptr_t ForceHeight = 0x028C;
 			constexpr uintptr_t HeightOffset = 0x0290;
-			constexpr uintptr_t Bitfields_0294 = 0x0294;  // Multiple: bForceActive, bForceApplyToCloth, bForceApplyToFluid, bForceApplyToRigidBodies, bForceApplyToProjectiles
+			constexpr uintptr_t Bitfields_0294 = 0x0294;  // Multiple: bForceActive, bForceApplyToCloth, bForceApplyToFluid, bForceApplyToProjectiles, bForceApplyToRigidBodies
 			constexpr uintptr_t CollideWithChannels = 0x0298;
 		}
 
@@ -7830,7 +7830,7 @@ namespace Offsets {
 			constexpr uintptr_t GrabbedComponent = 0x00A0;
 			constexpr uintptr_t GrabbedBoneName = 0x00A8;
 			constexpr uintptr_t SceneIndex = 0x00B0;
-			constexpr uintptr_t Bitfields_00B4 = 0x00B4;  // Multiple: bInHardware, bRotationConstrained, bInterpolating
+			constexpr uintptr_t Bitfields_00B4 = 0x00B4;  // Multiple: bInHardware, bInterpolating, bRotationConstrained
 			constexpr uintptr_t HandleData = 0x00B8;
 			constexpr uintptr_t KinActorData = 0x00C0;
 			constexpr uintptr_t LinearDamping = 0x00C8;
@@ -7851,7 +7851,7 @@ namespace Offsets {
 		namespace RB_LineImpulseActor {
 			constexpr uintptr_t ImpulseStrength = 0x0268;
 			constexpr uintptr_t ImpulseRange = 0x026C;
-			constexpr uintptr_t Bitfields_0270 = 0x0270;  // Multiple: bVelChange, bStopAtFirstHit, bCauseFracture
+			constexpr uintptr_t Bitfields_0270 = 0x0270;  // Multiple: bCauseFracture, bStopAtFirstHit, bVelChange
 			constexpr uintptr_t Arrow = 0x0278;
 			constexpr uintptr_t ImpulseCount = 0x0280;
 		}
@@ -7872,7 +7872,7 @@ namespace Offsets {
 			constexpr uintptr_t SpinTorque = 0x027C;
 			constexpr uintptr_t ForceFalloff = 0x0280;
 			constexpr uintptr_t RadialForceMode = 0x0281;
-			constexpr uintptr_t Bitfields_0284 = 0x0284;  // Multiple: bForceActive, bForceApplyToCloth, bForceApplyToFluid, bForceApplyToRigidBodies, bForceApplyToProjectiles
+			constexpr uintptr_t Bitfields_0284 = 0x0284;  // Multiple: bForceActive, bForceApplyToCloth, bForceApplyToFluid, bForceApplyToProjectiles, bForceApplyToRigidBodies
 			constexpr uintptr_t CollideWithChannels = 0x0288;
 		}
 
@@ -7886,7 +7886,7 @@ namespace Offsets {
 			constexpr uintptr_t ImpulseFalloff = 0x0258;
 			constexpr uintptr_t ImpulseStrength = 0x025C;
 			constexpr uintptr_t ImpulseRadius = 0x0260;
-			constexpr uintptr_t Bitfields_0264 = 0x0264;  // Multiple: bVelChange, bCauseFracture
+			constexpr uintptr_t Bitfields_0264 = 0x0264;  // Multiple: bCauseFracture, bVelChange
 			constexpr uintptr_t PreviewSphere = 0x0268;
 		}
 
@@ -7900,7 +7900,7 @@ namespace Offsets {
 			constexpr uintptr_t Component2 = 0x00B0;
 			constexpr uintptr_t BoneName2 = 0x00B8;
 			constexpr uintptr_t SceneIndex = 0x00C0;
-			constexpr uintptr_t Bitfields_00C4 = 0x00C4;  // Multiple: bInHardware, bEnableForceMassRatio
+			constexpr uintptr_t Bitfields_00C4 = 0x00C4;  // Multiple: bEnableForceMassRatio, bInHardware
 			constexpr uintptr_t SpringData = 0x00C8;
 			constexpr uintptr_t TimeSinceActivation = 0x00D0;
 			constexpr uintptr_t MinBodyMass = 0x00D4;
@@ -7933,7 +7933,7 @@ namespace Offsets {
 			constexpr uintptr_t BlurOpacity = 0x00B4;
 			constexpr uintptr_t MaxCullDistance = 0x00B8;
 			constexpr uintptr_t DistanceFalloffExponent = 0x00BC;
-			constexpr uintptr_t Bitfields_00C0 = 0x00C0;  // Multiple: bRenderAsVelocity, bEnabled
+			constexpr uintptr_t Bitfields_00C0 = 0x00C0;  // Multiple: bEnabled, bRenderAsVelocity
 			constexpr uintptr_t UnknownData00 = 0x00C4;
 			constexpr uintptr_t LocalToWorld = 0x00D0;
 		}
@@ -7950,7 +7950,7 @@ namespace Offsets {
 			constexpr uintptr_t MaxLandingVelocity = 0x00A4;
 			constexpr uintptr_t bPruned = 0x00A8;
 			constexpr uintptr_t PathColorIndex = 0x00A9;
-			constexpr uintptr_t Bitfields_00AC = 0x00AC;  // Multiple: bAddToNavigationOctree, bCanCutCorners, bCheckForObstructions, bSkipPrune, bDisabled
+			constexpr uintptr_t Bitfields_00AC = 0x00AC;  // Multiple: bAddToNavigationOctree, bCanCutCorners, bCheckForObstructions, bDisabled, bSkipPrune
 			constexpr uintptr_t PruneSpecList = 0x00B0;
 			constexpr uintptr_t BlockedBy = 0x00C0;
 		}
@@ -7984,7 +7984,7 @@ namespace Offsets {
 			constexpr uintptr_t NextMove = 0x0060;
 			constexpr uintptr_t TimeStamp = 0x0068;
 			constexpr uintptr_t delta = 0x006C;
-			constexpr uintptr_t Bitfields_0070 = 0x0070;  // Multiple: bRun, bDuck, bPressedJump, bDoubleJump, bPreciseDestination, bForceRMVelocity, bForceMaxAccel, bRootMotionFromInterpCurve
+			constexpr uintptr_t Bitfields_0070 = 0x0070;  // Multiple: bDoubleJump, bDuck, bForceMaxAccel, bForceRMVelocity, bPreciseDestination, bPressedJump, bRootMotionFromInterpCurve, bRun
 			constexpr uintptr_t DoubleClickMove = 0x0074;
 			constexpr uintptr_t SavedPhysics = 0x0075;
 			constexpr uintptr_t RootMotionMode = 0x0076;
@@ -8040,7 +8040,7 @@ namespace Offsets {
 		namespace SceneCaptureComponent {
 			constexpr uintptr_t MaxCaptureTime = 0x00A0;
 			constexpr uintptr_t CaptureTimeRemaining = 0x00A4;
-			constexpr uintptr_t Bitfields_00A8 = 0x00A8;  // Multiple: bEnabled, bEnablePostProcess, bEnableFog, bUseMainScenePostProcessSettings, bSkipUpdateIfTextureUsersOccluded, bSkipUpdateIfOwnerOccluded, bSkipRenderingDepthPrepass
+			constexpr uintptr_t Bitfields_00A8 = 0x00A8;  // Multiple: bEnableFog, bEnablePostProcess, bEnabled, bSkipRenderingDepthPrepass, bSkipUpdateIfOwnerOccluded, bSkipUpdateIfTextureUsersOccluded, bUseMainScenePostProcessSettings
 			constexpr uintptr_t ClearColor = 0x00AC;
 			constexpr uintptr_t ViewMode = 0x00B0;
 			constexpr uintptr_t PostMethod = 0x00B1;
@@ -8156,7 +8156,7 @@ namespace Offsets {
 		}
 
 		namespace SeqAct_ActorFactory {
-			constexpr uintptr_t Bitfields_0178 = 0x0178;  // Multiple: bEnabled, bIsSpawning, bCheckSpawnCollision
+			constexpr uintptr_t Bitfields_0178 = 0x0178;  // Multiple: bCheckSpawnCollision, bEnabled, bIsSpawning
 			constexpr uintptr_t Factory = 0x0180;
 			constexpr uintptr_t PointSelection = 0x0188;
 			constexpr uintptr_t SpawnPoints = 0x0190;
@@ -8219,13 +8219,13 @@ namespace Offsets {
 			constexpr uintptr_t FadeAlpha = 0x0164;
 			constexpr uintptr_t FadeOpacity = 0x016C;
 			constexpr uintptr_t FadeTime = 0x0170;
-			constexpr uintptr_t Bitfields_0174 = 0x0174;  // Multiple: bPersistFade, bFadeAudio
+			constexpr uintptr_t Bitfields_0174 = 0x0174;  // Multiple: bFadeAudio, bPersistFade
 			constexpr uintptr_t FadeTimeRemaining = 0x0178;
 			constexpr uintptr_t CachedPCs = 0x0180;
 		}
 
 		namespace SeqAct_CameraLookAt {
-			constexpr uintptr_t Bitfields_0160 = 0x0160;  // Multiple: bAffectCamera, bAlwaysFocus, bAdjustCamera, bTurnInPlace, bIgnoreTrace, bAffectHead, bRotatePlayerWithCamera, bToggleGodMode, bLeaveCameraRotation, bDisableInput, bUsedTimer, bCheckLineOfSight
+			constexpr uintptr_t Bitfields_0160 = 0x0160;  // Multiple: bAdjustCamera, bAffectCamera, bAffectHead, bAlwaysFocus, bCheckLineOfSight, bDisableInput, bIgnoreTrace, bLeaveCameraRotation, bRotatePlayerWithCamera, bToggleGodMode, bTurnInPlace, bUsedTimer
 			constexpr uintptr_t InterpSpeedRange = 0x0164;
 			constexpr uintptr_t InFocusFOV = 0x016C;
 			constexpr uintptr_t FocusBoneName = 0x0174;
@@ -8238,7 +8238,7 @@ namespace Offsets {
 		namespace SeqAct_CameraShake {
 			constexpr uintptr_t Shake = 0x0160;
 			constexpr uintptr_t ShakeScale = 0x0168;
-			constexpr uintptr_t Bitfields_016C = 0x016C;  // Multiple: bDoControllerVibration, bRadialShake, bOrientTowardRadialEpicenter
+			constexpr uintptr_t Bitfields_016C = 0x016C;  // Multiple: bDoControllerVibration, bOrientTowardRadialEpicenter, bRadialShake
 			constexpr uintptr_t RadialShake_InnerRadius = 0x0170;
 			constexpr uintptr_t RadialShake_OuterRadius = 0x0174;
 			constexpr uintptr_t RadialShake_Falloff = 0x0178;
@@ -8258,7 +8258,7 @@ namespace Offsets {
 		}
 
 		namespace SeqAct_ChangeCollision {
-			constexpr uintptr_t Bitfields_0160 = 0x0160;  // Multiple: bCollideActors, bBlockActors, bIgnoreEncroachers
+			constexpr uintptr_t Bitfields_0160 = 0x0160;  // Multiple: bBlockActors, bCollideActors, bIgnoreEncroachers
 			constexpr uintptr_t CollisionType = 0x0164;
 		}
 
@@ -8385,7 +8385,7 @@ namespace Offsets {
 			constexpr uintptr_t PlayRate = 0x0218;
 			constexpr uintptr_t Position = 0x021C;
 			constexpr uintptr_t ForceStartPosition = 0x0220;
-			constexpr uintptr_t Bitfields_0224 = 0x0224;  // Multiple: bIsPlaying, bPaused, bIsBeingEdited, bLooping, bRewindOnPlay, bNoResetOnRewind, bRewindIfAlreadyPlaying, bReversePlayback, bInterpForPathBuilding, bForceStartPos, bDisableRadioFilter, bClientSideOnly, bSkipUpdateIfNotVisible, bIsSkippable, bActivateDumpMovieOnStart, bShouldShowGore
+			constexpr uintptr_t Bitfields_0224 = 0x0224;  // Multiple: bActivateDumpMovieOnStart, bClientSideOnly, bDisableRadioFilter, bForceStartPos, bInterpForPathBuilding, bIsBeingEdited, bIsPlaying, bIsSkippable, bLooping, bNoResetOnRewind, bPaused, bReversePlayback, bRewindIfAlreadyPlaying, bRewindOnPlay, bShouldShowGore, bSkipUpdateIfNotVisible
 			constexpr uintptr_t LinkedCover = 0x0228;
 			constexpr uintptr_t InterpData = 0x0238;
 			constexpr uintptr_t GroupInst = 0x0240;
@@ -8426,7 +8426,7 @@ namespace Offsets {
 		}
 
 		namespace SeqAct_Log {
-			constexpr uintptr_t Bitfields_0160 = 0x0160;  // Multiple: bOutputToScreen, bIncludeObjComment
+			constexpr uintptr_t Bitfields_0160 = 0x0160;  // Multiple: bIncludeObjComment, bOutputToScreen
 			constexpr uintptr_t TargetDuration = 0x0164;
 			constexpr uintptr_t TargetOffset = 0x0168;
 			constexpr uintptr_t LogMessage = 0x0178;
@@ -8448,7 +8448,7 @@ namespace Offsets {
 
 		namespace SeqAct_MultiLevelStreaming {
 			constexpr uintptr_t Levels = 0x0180;
-			constexpr uintptr_t Bitfields_0190 = 0x0190;  // Multiple: bUnloadAllOtherLevels, bStatusIsOk
+			constexpr uintptr_t Bitfields_0190 = 0x0190;  // Multiple: bStatusIsOk, bUnloadAllOtherLevels
 		}
 
 		namespace SeqAct_MultiplyFloat {
@@ -8502,7 +8502,7 @@ namespace Offsets {
 		namespace SeqAct_PlaySound {
 			constexpr uintptr_t PlaySound = 0x0178;
 			constexpr uintptr_t ExtraDelay = 0x0180;
-			constexpr uintptr_t Bitfields_0184 = 0x0184;  // Multiple: bDelayReached, bSuppressSubtitles, bStopped
+			constexpr uintptr_t Bitfields_0184 = 0x0184;  // Multiple: bDelayReached, bStopped, bSuppressSubtitles
 			constexpr uintptr_t SoundDuration = 0x0188;
 			constexpr uintptr_t FadeInTime = 0x018C;
 			constexpr uintptr_t FadeOutTime = 0x0190;
@@ -8614,7 +8614,7 @@ namespace Offsets {
 			constexpr uintptr_t NewSkeletalMesh = 0x0160;
 			constexpr uintptr_t NewStaticMesh = 0x0168;
 			constexpr uintptr_t MeshType = 0x0170;
-			constexpr uintptr_t Bitfields_0174 = 0x0174;  // Multiple: bIsAllowedToMove, bAllowDecalsToReattach
+			constexpr uintptr_t Bitfields_0174 = 0x0174;  // Multiple: bAllowDecalsToReattach, bIsAllowedToMove
 		}
 
 		namespace SeqAct_SetMotionBlurParams {
@@ -8674,7 +8674,7 @@ namespace Offsets {
 
 		namespace SeqAct_SetWorldAttractorParam {
 			constexpr uintptr_t Attractor = 0x0160;
-			constexpr uintptr_t Bitfields_0170 = 0x0170;  // Multiple: bEnabledField, bFalloffTypeField, bFalloffExponentField, bRangeField, bStrengthField, bEnabled
+			constexpr uintptr_t Bitfields_0170 = 0x0170;  // Multiple: bEnabled, bEnabledField, bFalloffExponentField, bFalloffTypeField, bRangeField, bStrengthField
 			constexpr uintptr_t FalloffType = 0x0174;
 			constexpr uintptr_t FalloffExponent = 0x0178;
 			constexpr uintptr_t Range = 0x01A0;
@@ -8682,7 +8682,7 @@ namespace Offsets {
 		}
 
 		namespace SeqAct_StreamInTextures {
-			constexpr uintptr_t Bitfields_0178 = 0x0178;  // Multiple: bLocationBased, bStreamingActive, bHasTriggeredAllLoaded
+			constexpr uintptr_t Bitfields_0178 = 0x0178;  // Multiple: bHasTriggeredAllLoaded, bLocationBased, bStreamingActive
 			constexpr uintptr_t Seconds = 0x017C;
 			constexpr uintptr_t StreamingDistanceMultiplier = 0x0180;
 			constexpr uintptr_t NumWantingResourcesID = 0x0184;
@@ -8710,12 +8710,12 @@ namespace Offsets {
 		namespace SeqAct_Switch {
 			constexpr uintptr_t LinkCount = 0x0160;
 			constexpr uintptr_t IncrementAmount = 0x0164;
-			constexpr uintptr_t Bitfields_0168 = 0x0168;  // Multiple: bLooping, bAutoDisableLinks
+			constexpr uintptr_t Bitfields_0168 = 0x0168;  // Multiple: bAutoDisableLinks, bLooping
 			constexpr uintptr_t Indices = 0x0170;
 		}
 
 		namespace SeqAct_Teleport {
-			constexpr uintptr_t Bitfields_0160 = 0x0160;  // Multiple: bUpdateRotation, bCheckOverlap
+			constexpr uintptr_t Bitfields_0160 = 0x0160;  // Multiple: bCheckOverlap, bUpdateRotation
 			constexpr uintptr_t TeleportDistance = 0x0164;
 			constexpr uintptr_t TeleportVolumes = 0x0168;
 		}
@@ -8726,7 +8726,7 @@ namespace Offsets {
 		}
 
 		namespace SeqAct_ToggleCinematicMode {
-			constexpr uintptr_t Bitfields_0160 = 0x0160;  // Multiple: bDisableMovement, bDisableTurning, bHidePlayer, bDisableInput, bHideHUD, bDeadBodies, bDroppedPickups
+			constexpr uintptr_t Bitfields_0160 = 0x0160;  // Multiple: bDeadBodies, bDisableInput, bDisableMovement, bDisableTurning, bDroppedPickups, bHideHUD, bHidePlayer
 		}
 
 		namespace SeqAct_ToggleConstraintDrive {
@@ -9028,7 +9028,7 @@ namespace Offsets {
 			constexpr uintptr_t TriggerCount = 0x0164;
 			constexpr uintptr_t MaxTriggerCount = 0x0168;
 			constexpr uintptr_t ReTriggerDelay = 0x016C;
-			constexpr uintptr_t Bitfields_0170 = 0x0170;  // Multiple: bEnabled, bPlayerOnly, bRegistered, bClientSideOnly
+			constexpr uintptr_t Bitfields_0170 = 0x0170;  // Multiple: bClientSideOnly, bEnabled, bPlayerOnly, bRegistered
 			constexpr uintptr_t Priority = 0x0174;
 			constexpr uintptr_t MaxWidth = 0x0178;
 		}
@@ -9061,7 +9061,7 @@ namespace Offsets {
 		}
 
 		namespace SequenceOp {
-			constexpr uintptr_t Bitfields_00D8 = 0x00D8;  // Multiple: bIsActivated, bIsCurrentDebuggerOp, bActive, bLatentExecution, bAutoActivateOutputLinks, bHaveMovingVarConnector, bHaveMovingInputConnector, bHaveMovingOutputConnector, bPendingVarConnectorRecalc, bPendingInputConnectorRecalc, bPendingOutputConnectorRecalc, bIsBreakpointSet, bIsHiddenBreakpointSet
+			constexpr uintptr_t Bitfields_00D8 = 0x00D8;  // Multiple: bActive, bAutoActivateOutputLinks, bHaveMovingInputConnector, bHaveMovingOutputConnector, bHaveMovingVarConnector, bIsActivated, bIsBreakpointSet, bIsCurrentDebuggerOp, bIsHiddenBreakpointSet, bLatentExecution, bPendingInputConnectorRecalc, bPendingOutputConnectorRecalc, bPendingVarConnectorRecalc
 			constexpr uintptr_t PIEActivationTime = 0x00DC;
 			constexpr uintptr_t ActivatorSeqOp = 0x00E0;
 			constexpr uintptr_t LastActivatedInputLink = 0x00E8;
@@ -9145,7 +9145,7 @@ namespace Offsets {
 			constexpr uintptr_t BlendInTime = 0x009C;
 			constexpr uintptr_t BlendOutTime = 0x00A0;
 			constexpr uintptr_t BlendType = 0x00A4;
-			constexpr uintptr_t Bitfields_00A8 = 0x00A8;  // Multiple: bPostPhysicsController, bSetStrengthFromAnimNode, bInitializedCachedNodeList, bControlledByAnimMetada, bInvertMetadataWeight, bPropagateSetActive, bIgnoreWhenNotRendered, bShouldTickInScript, bShouldTickOwner, bEnableEaseInOut
+			constexpr uintptr_t Bitfields_00A8 = 0x00A8;  // Multiple: bControlledByAnimMetada, bEnableEaseInOut, bIgnoreWhenNotRendered, bInitializedCachedNodeList, bInvertMetadataWeight, bPostPhysicsController, bPropagateSetActive, bSetStrengthFromAnimNode, bShouldTickInScript, bShouldTickOwner
 			constexpr uintptr_t StrengthTarget = 0x00AC;
 			constexpr uintptr_t BlendTimeToGo = 0x00B0;
 			constexpr uintptr_t StrengthAnimNodeNameList = 0x00B8;
@@ -9164,7 +9164,7 @@ namespace Offsets {
 			constexpr uintptr_t FootOffset = 0x0158;
 			constexpr uintptr_t FootUpAxis = 0x015C;
 			constexpr uintptr_t FootRotOffset = 0x0160;
-			constexpr uintptr_t Bitfields_016C = 0x016C;  // Multiple: bInvertFootUpAxis, bOrientFootToGround, bOnlyEnableForUpAdjustment
+			constexpr uintptr_t Bitfields_016C = 0x016C;  // Multiple: bInvertFootUpAxis, bOnlyEnableForUpAdjustment, bOrientFootToGround
 			constexpr uintptr_t MaxUpAdjustment = 0x0170;
 			constexpr uintptr_t MaxDownAdjustment = 0x0174;
 			constexpr uintptr_t MaxFootOrientAdjust = 0x0178;
@@ -9190,7 +9190,7 @@ namespace Offsets {
 			constexpr uintptr_t JointTargetSpaceBoneName = 0x0128;
 			constexpr uintptr_t JointOffset = 0x0130;
 			constexpr uintptr_t JointOffsetBoneName = 0x013C;
-			constexpr uintptr_t Bitfields_0144 = 0x0144;  // Multiple: bInvertBoneAxis, bInvertJointAxis, bRotateJoint, bMaintainEffectorRelRot, bTakeRotationFromEffectorSpace, bAllowStretching
+			constexpr uintptr_t Bitfields_0144 = 0x0144;  // Multiple: bAllowStretching, bInvertBoneAxis, bInvertJointAxis, bMaintainEffectorRelRot, bRotateJoint, bTakeRotationFromEffectorSpace
 			constexpr uintptr_t StretchLimits = 0x0148;
 			constexpr uintptr_t StretchRollBoneName = 0x0150;
 		}
@@ -9202,7 +9202,7 @@ namespace Offsets {
 			constexpr uintptr_t UpAxis = 0x010E;
 			constexpr uintptr_t AllowRotationSpace = 0x010F;
 			constexpr uintptr_t TargetSpaceBoneName = 0x0110;
-			constexpr uintptr_t Bitfields_0118 = 0x0118;  // Multiple: bInvertLookAtAxis, bDefineUpAxis, bInvertUpAxis, bEnableLimit, bLimitBasedOnRefPose, bDisableBeyondLimit, bNotifyBeyondLimit, bShowLimit, bAllowRotationX, bAllowRotationY, bAllowRotationZ
+			constexpr uintptr_t Bitfields_0118 = 0x0118;  // Multiple: bAllowRotationX, bAllowRotationY, bAllowRotationZ, bDefineUpAxis, bDisableBeyondLimit, bEnableLimit, bInvertLookAtAxis, bInvertUpAxis, bLimitBasedOnRefPose, bNotifyBeyondLimit, bShowLimit
 			constexpr uintptr_t TargetLocationInterpSpeed = 0x011C;
 			constexpr uintptr_t DesiredTargetLocation = 0x0120;
 			constexpr uintptr_t ActorSpaceLookAtTarget = 0x012C;
@@ -9224,7 +9224,7 @@ namespace Offsets {
 		}
 
 		namespace SkelControlSingleBone {
-			constexpr uintptr_t Bitfields_0100 = 0x0100;  // Multiple: bApplyTranslation, bApplyRotation, bAddTranslation, bAddRotation, bRemoveMeshRotation
+			constexpr uintptr_t Bitfields_0100 = 0x0100;  // Multiple: bAddRotation, bAddTranslation, bApplyRotation, bApplyTranslation, bRemoveMeshRotation
 			constexpr uintptr_t BoneTranslation = 0x0104;
 			constexpr uintptr_t BoneTranslationSpace = 0x0110;
 			constexpr uintptr_t BoneRotationSpace = 0x0111;
@@ -9245,7 +9245,7 @@ namespace Offsets {
 		namespace SkelControlTrail {
 			constexpr uintptr_t ChainLength = 0x0100;
 			constexpr uintptr_t ChainBoneAxis = 0x0104;
-			constexpr uintptr_t Bitfields_0108 = 0x0108;  // Multiple: bInvertChainBoneAxis, bLimitStretch, bActorSpaceFakeVel, bHadValidStrength
+			constexpr uintptr_t Bitfields_0108 = 0x0108;  // Multiple: bActorSpaceFakeVel, bHadValidStrength, bInvertChainBoneAxis, bLimitStretch
 			constexpr uintptr_t TrailRelaxation = 0x010C;
 			constexpr uintptr_t StretchLimit = 0x0110;
 			constexpr uintptr_t FakeVelocity = 0x0114;
@@ -9274,7 +9274,7 @@ namespace Offsets {
 			constexpr uintptr_t MaxPerBoneIterations = 0x0128;
 			constexpr uintptr_t IterationsCount = 0x012C;
 			constexpr uintptr_t Precision = 0x0130;
-			constexpr uintptr_t Bitfields_0134 = 0x0134;  // Multiple: bStartFromTail, bNoTurnOptimization
+			constexpr uintptr_t Bitfields_0134 = 0x0134;  // Multiple: bNoTurnOptimization, bStartFromTail
 			constexpr uintptr_t AngleConstraint = 0x0138;
 			constexpr uintptr_t MaxAngleSteps = 0x0148;
 		}
@@ -9313,7 +9313,7 @@ namespace Offsets {
 			constexpr uintptr_t PerPolyCollisionBones = 0x01D0;
 			constexpr uintptr_t AddToParentPerPolyCollisionBone = 0x01E0;
 			constexpr uintptr_t PerPolyBoneKDOPs = 0x01F0;
-			constexpr uintptr_t Bitfields_0200 = 0x0200;  // Multiple: bPerPolyUseSoftWeighting, bUseSimpleLineCollision, bUseSimpleBoxCollision, bForceCPUSkinning, bUseFullPrecisionUVs, bHasBeenSimplified
+			constexpr uintptr_t Bitfields_0200 = 0x0200;  // Multiple: bForceCPUSkinning, bHasBeenSimplified, bPerPolyUseSoftWeighting, bUseFullPrecisionUVs, bUseSimpleBoxCollision, bUseSimpleLineCollision
 			constexpr uintptr_t FaceFXAsset = 0x0208;
 			constexpr uintptr_t BoundsPreviewAsset = 0x0210;
 			constexpr uintptr_t PreviewMorphSets = 0x0218;
@@ -9355,9 +9355,9 @@ namespace Offsets {
 			constexpr uintptr_t ClothAttachmentTearFactor = 0x0338;
 			constexpr uintptr_t ClothSleepLinearVelocity = 0x033C;
 			constexpr uintptr_t HardStretchLimitFactor = 0x0340;
-			constexpr uintptr_t Bitfields_0344 = 0x0344;  // Multiple: bHardStretchLimit, bEnableClothOrthoBendConstraints, bEnableClothSelfCollision, bEnableClothPressure, bEnableClothTwoWayCollision
+			constexpr uintptr_t Bitfields_0344 = 0x0344;  // Multiple: bEnableClothOrthoBendConstraints, bEnableClothPressure, bEnableClothSelfCollision, bEnableClothTwoWayCollision, bHardStretchLimit
 			constexpr uintptr_t ClothSpecialBones = 0x0348;
-			constexpr uintptr_t Bitfields_0358 = 0x0358;  // Multiple: bEnableClothLineChecks, bClothMetal
+			constexpr uintptr_t Bitfields_0358 = 0x0358;  // Multiple: bClothMetal, bEnableClothLineChecks
 			constexpr uintptr_t ClothMetalImpulseThreshold = 0x035C;
 			constexpr uintptr_t ClothMetalPenetrationDepth = 0x0360;
 			constexpr uintptr_t ClothMetalMaxDeformationDistance = 0x0364;
@@ -9391,7 +9391,7 @@ namespace Offsets {
 			constexpr uintptr_t SoftBodyCollisionResponse = 0x049C;
 			constexpr uintptr_t SoftBodyDetailLevel = 0x04A0;
 			constexpr uintptr_t SoftBodySubdivisionLevel = 0x04A4;
-			constexpr uintptr_t Bitfields_04A8 = 0x04A8;  // Multiple: bSoftBodyIsoSurface, bEnableSoftBodyDamping, bUseSoftBodyCOMDamping
+			constexpr uintptr_t Bitfields_04A8 = 0x04A8;  // Multiple: bEnableSoftBodyDamping, bSoftBodyIsoSurface, bUseSoftBodyCOMDamping
 			constexpr uintptr_t SoftBodyAttachmentThreshold = 0x04AC;
 			constexpr uintptr_t bEnableSoftBodyTwoWayCollision = 0x04B0;
 			constexpr uintptr_t SoftBodyAttachmentTearFactor = 0x04B4;
@@ -9405,7 +9405,7 @@ namespace Offsets {
 		}
 
 		namespace SkeletalMeshActor {
-			constexpr uintptr_t Bitfields_0268 = 0x0268;  // Multiple: bDamageAppliesImpulse, bShouldDoAnimNotifies, bForceSaveInCheckpoint, bCollideActors_OldValue, bShouldShadowParentAllAttachedActors
+			constexpr uintptr_t Bitfields_0268 = 0x0268;  // Multiple: bCollideActors_OldValue, bDamageAppliesImpulse, bForceSaveInCheckpoint, bShouldDoAnimNotifies, bShouldShadowParentAllAttachedActors
 			constexpr uintptr_t SkeletalMeshComponent = 0x0270;
 			constexpr uintptr_t LightEnvironment = 0x0278;
 			constexpr uintptr_t FacialAudioComp = 0x0280;
@@ -9499,10 +9499,10 @@ namespace Offsets {
 			constexpr uintptr_t MinDistFactorForKinematicUpdate = 0x04DC;
 			constexpr uintptr_t FramesPhysicsAsleep = 0x04E0;
 			constexpr uintptr_t SkipRateForTickAnimNodesAndGetBoneAtoms = 0x04E4;
-			constexpr uintptr_t Bitfields_04E8 = 0x04E8;  // Multiple: bSkipTickAnimNodes, bSkipGetBoneAtoms, bInterpolateBoneAtoms, bHasValidBodies, bSkipAllUpdateWhenPhysicsAsleep, bComponentUseFixedSkelBounds, bUseBoundsFromParentAnimComponent, bConsiderAllBodiesForBounds, bUpdateSkelWhenNotRendered, bIgnoreControllersWhenNotRendered, bTickAnimNodesWhenNotRendered, bNotUpdatingKinematicDueToDistance, bForceDiscardRootMotion, bNotifyRootMotionProcessed, bRootMotionModeChangeNotify, bRootMotionExtractedNotify, bProcessingRootMotion, bDisableFaceFXMaterialInstanceCreation, bDisableFaceFX, bAnimTreeInitialised, bForceMeshObjectUpdate, bHasPhysicsAssetInstance, bUpdateKinematicBonesFromAnimation, bUpdateJointsFromAnimation, bSkelCompFixed, bHasHadPhysicsBlendedIn, bForceUpdateAttachmentsInTick, bEnableFullAnimWeightBodies, bPerBoneVolumeEffects, bPerBoneMotionBlur, bSyncActorLocationToRootRigidBody, bUseRawData
-			constexpr uintptr_t Bitfields_04EC = 0x04EC;  // Multiple: bDisableWarningWhenAnimNotFound, bOverrideAttachmentOwnerVisibility, bNeedsToDeleteHitMask, bPauseAnims, bChartDistanceFactor, bEnableLineCheckWithBounds, bCanHighlightSelectedSections, bUpdateMorphWhenParentAnimComponentExists
+			constexpr uintptr_t Bitfields_04E8 = 0x04E8;  // Multiple: bAnimTreeInitialised, bComponentUseFixedSkelBounds, bConsiderAllBodiesForBounds, bDisableFaceFX, bDisableFaceFXMaterialInstanceCreation, bEnableFullAnimWeightBodies, bForceDiscardRootMotion, bForceMeshObjectUpdate, bForceUpdateAttachmentsInTick, bHasHadPhysicsBlendedIn, bHasPhysicsAssetInstance, bHasValidBodies, bIgnoreControllersWhenNotRendered, bInterpolateBoneAtoms, bNotUpdatingKinematicDueToDistance, bNotifyRootMotionProcessed, bPerBoneMotionBlur, bPerBoneVolumeEffects, bProcessingRootMotion, bRootMotionExtractedNotify, bRootMotionModeChangeNotify, bSkelCompFixed, bSkipAllUpdateWhenPhysicsAsleep, bSkipGetBoneAtoms, bSkipTickAnimNodes, bSyncActorLocationToRootRigidBody, bTickAnimNodesWhenNotRendered, bUpdateJointsFromAnimation, bUpdateKinematicBonesFromAnimation, bUpdateSkelWhenNotRendered, bUseBoundsFromParentAnimComponent, bUseRawData
+			constexpr uintptr_t Bitfields_04EC = 0x04EC;  // Multiple: bCanHighlightSelectedSections, bChartDistanceFactor, bDisableWarningWhenAnimNotFound, bEnableLineCheckWithBounds, bNeedsToDeleteHitMask, bOverrideAttachmentOwnerVisibility, bPauseAnims, bUpdateMorphWhenParentAnimComponentExists
 			constexpr uintptr_t LineCheckBoundsScale = 0x04F0;
-			constexpr uintptr_t Bitfields_04FC = 0x04FC;  // Multiple: bEnableClothSimulation, bDisableClothCollision, bClothFrozen, bAutoFreezeClothWhenNotRendered, bClothAwakeOnStartup, bClothBaseVelClamp, bClothBaseVelInterp, bAttachClothVertsToBaseBody, bIsClothOnStaticObject, bUpdatedFixedClothVerts, bClothPositionalDampening, bClothWindRelativeToOwner, bRecentlyRendered, bCacheAnimSequenceNodes, bNeedsInstanceWeightUpdate, bAlwaysUseInstanceWeights, bUpdateComposeSkeletonPasses, bValidTemporarySavedAnimSets
+			constexpr uintptr_t Bitfields_04FC = 0x04FC;  // Multiple: bAlwaysUseInstanceWeights, bAttachClothVertsToBaseBody, bAutoFreezeClothWhenNotRendered, bCacheAnimSequenceNodes, bClothAwakeOnStartup, bClothBaseVelClamp, bClothBaseVelInterp, bClothFrozen, bClothPositionalDampening, bClothWindRelativeToOwner, bDisableClothCollision, bEnableClothSimulation, bIsClothOnStaticObject, bNeedsInstanceWeightUpdate, bRecentlyRendered, bUpdateComposeSkeletonPasses, bUpdatedFixedClothVerts, bValidTemporarySavedAnimSets
 			constexpr uintptr_t InstanceVertexWeightBones = 0x0500;
 			constexpr uintptr_t LODInfo = 0x0510;
 			constexpr uintptr_t FrozenLocalToWorldPos = 0x0520;
@@ -9554,7 +9554,7 @@ namespace Offsets {
 			constexpr uintptr_t NumSoftBodyTetraVerts = 0x06B0;
 			constexpr uintptr_t NumSoftBodyTetraIndices = 0x06B4;
 			constexpr uintptr_t SoftBodyImpulseScale = 0x06B8;
-			constexpr uintptr_t Bitfields_06BC = 0x06BC;  // Multiple: bSoftBodyFrozen, bAutoFreezeSoftBodyWhenNotRendered, bSoftBodyAwakeOnStartup, bSoftBodyUseCompartment
+			constexpr uintptr_t Bitfields_06BC = 0x06BC;  // Multiple: bAutoFreezeSoftBodyWhenNotRendered, bSoftBodyAwakeOnStartup, bSoftBodyFrozen, bSoftBodyUseCompartment
 			constexpr uintptr_t SoftBodyRBChannel = 0x06C0;
 			constexpr uintptr_t SoftBodyRBCollideWithChannels = 0x06C4;
 			constexpr uintptr_t SoftBodyASVPlane = 0x06C8;
@@ -9660,7 +9660,7 @@ namespace Offsets {
 		}
 
 		namespace SoundNodeAmbient {
-			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bAttenuate, bSpatialize, bAttenuateWithLPF
+			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bAttenuate, bAttenuateWithLPF, bSpatialize
 			constexpr uintptr_t dBAttenuationAtMax = 0x007C;
 			constexpr uintptr_t DistanceModel = 0x0080;
 			constexpr uintptr_t RadiusMin = 0x0084;
@@ -9681,7 +9681,7 @@ namespace Offsets {
 		}
 
 		namespace SoundNodeAttenuation {
-			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bAttenuate, bSpatialize, bAttenuateWithLPF
+			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bAttenuate, bAttenuateWithLPF, bSpatialize
 			constexpr uintptr_t dBAttenuationAtMax = 0x007C;
 			constexpr uintptr_t OmniRadius = 0x0080;
 			constexpr uintptr_t DistanceAlgorithm = 0x0084;
@@ -9693,7 +9693,7 @@ namespace Offsets {
 		}
 
 		namespace SoundNodeAttenuationAndGain {
-			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bAttenuate, bSpatialize, bAttenuateWithLPF
+			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bAttenuate, bAttenuateWithLPF, bSpatialize
 			constexpr uintptr_t dBAttenuationAtMax = 0x007C;
 			constexpr uintptr_t OmniRadius = 0x0080;
 			constexpr uintptr_t GainDistanceAlgorithm = 0x0084;
@@ -9732,7 +9732,7 @@ namespace Offsets {
 			constexpr uintptr_t LoopEnd = 0x007C;
 			constexpr uintptr_t DurationAfterLoop = 0x0080;
 			constexpr uintptr_t LoopCount = 0x0084;
-			constexpr uintptr_t Bitfields_0088 = 0x0088;  // Multiple: bLoopIndefinitely, bLoop
+			constexpr uintptr_t Bitfields_0088 = 0x0088;  // Multiple: bLoop, bLoopIndefinitely
 			constexpr uintptr_t VolumeInterpCurve = 0x0090;
 			constexpr uintptr_t PitchInterpCurve = 0x0098;
 		}
@@ -9763,7 +9763,7 @@ namespace Offsets {
 		}
 
 		namespace SoundNodeOscillator {
-			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bModulateVolume, bModulatePitch
+			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bModulatePitch, bModulateVolume
 			constexpr uintptr_t AmplitudeMin = 0x007C;
 			constexpr uintptr_t AmplitudeMax = 0x0080;
 			constexpr uintptr_t FrequencyMin = 0x0084;
@@ -9788,7 +9788,7 @@ namespace Offsets {
 
 		namespace SoundNodeWave {
 			constexpr uintptr_t CompressionQuality = 0x0078;
-			constexpr uintptr_t Bitfields_007C = 0x007C;  // Multiple: bForceRealTimeDecompression, bLoopingSound, bDynamicResource, bUseTTS, bProcedural, bMature, bManualWordWrap, bSingleLine
+			constexpr uintptr_t Bitfields_007C = 0x007C;  // Multiple: bDynamicResource, bForceRealTimeDecompression, bLoopingSound, bManualWordWrap, bMature, bProcedural, bSingleLine, bUseTTS
 			constexpr uintptr_t TTSSpeaker = 0x0080;
 			constexpr uintptr_t DecompressionType = 0x0081;
 			constexpr uintptr_t MobileDetailMode = 0x0082;
@@ -9870,7 +9870,7 @@ namespace Offsets {
 
 		namespace SpeedTreeComponent {
 			constexpr uintptr_t SpeedTree = 0x0258;
-			constexpr uintptr_t Bitfields_0260 = 0x0260;  // Multiple: bUseLeafCards, bUseLeafMeshes, bUseBranches, bUseFronds, bUseBillboards
+			constexpr uintptr_t Bitfields_0260 = 0x0260;  // Multiple: bUseBillboards, bUseBranches, bUseFronds, bUseLeafCards, bUseLeafMeshes
 			constexpr uintptr_t Lod3DStart = 0x0264;
 			constexpr uintptr_t Lod3DEnd = 0x0268;
 			constexpr uintptr_t LodBillboardStart = 0x026C;
@@ -9908,7 +9908,7 @@ namespace Offsets {
 			constexpr uintptr_t Connections = 0x0268;
 			constexpr uintptr_t SplineActorTangent = 0x0278;
 			constexpr uintptr_t SplineColor = 0x0284;
-			constexpr uintptr_t Bitfields_0288 = 0x0288;  // Multiple: bDisableDestination, bAlreadyVisited
+			constexpr uintptr_t Bitfields_0288 = 0x0288;  // Multiple: bAlreadyVisited, bDisableDestination
 			constexpr uintptr_t LinksFrom = 0x0290;
 			constexpr uintptr_t nextOrdered = 0x02A0;
 			constexpr uintptr_t prevOrdered = 0x02A8;
@@ -9943,7 +9943,7 @@ namespace Offsets {
 			constexpr uintptr_t Roll = 0x0308;
 			constexpr uintptr_t WorldXDir = 0x030C;
 			constexpr uintptr_t Offset = 0x0318;
-			constexpr uintptr_t Bitfields_0320 = 0x0320;  // Multiple: bSmoothInterpRollAndScale, bAcceptsLights
+			constexpr uintptr_t Bitfields_0320 = 0x0320;  // Multiple: bAcceptsLights, bSmoothInterpRollAndScale
 			constexpr uintptr_t MeshLightEnvironment = 0x0328;
 			constexpr uintptr_t MeshMaxDrawDistance = 0x0330;
 		}
@@ -10023,7 +10023,7 @@ namespace Offsets {
 
 		namespace StaticMeshActor {
 			constexpr uintptr_t StaticMeshComponent = 0x0268;
-			constexpr uintptr_t Bitfields_0270 = 0x0270;  // Multiple: bDisableAutoBaseOnProcBuilding, bProxy, bHiddenByProxy, OldCastShadow, OldAcceptsLights
+			constexpr uintptr_t Bitfields_0270 = 0x0270;  // Multiple: OldAcceptsLights, OldCastShadow, bDisableAutoBaseOnProcBuilding, bHiddenByProxy, bProxy
 			constexpr uintptr_t OldCollisionType = 0x0274;
 			constexpr uintptr_t PreCombinedStaticMeshActors = 0x0278;
 		}
@@ -10044,13 +10044,13 @@ namespace Offsets {
 			constexpr uintptr_t PreviousLODLevel = 0x0284;
 			constexpr uintptr_t StaticMesh = 0x0288;
 			constexpr uintptr_t WireframeColor = 0x0290;
-			constexpr uintptr_t Bitfields_0294 = 0x0294;  // Multiple: bIgnoreInstanceForTextureStreaming, bOverrideLightMapResolution, bOverrideLightMapRes
+			constexpr uintptr_t Bitfields_0294 = 0x0294;  // Multiple: bIgnoreInstanceForTextureStreaming, bOverrideLightMapRes, bOverrideLightMapResolution
 			constexpr uintptr_t OverriddenLightMapResolution = 0x0298;
 			constexpr uintptr_t OverriddenLightMapRes = 0x029C;
 			constexpr uintptr_t OverriddenLODMaxRange = 0x02A0;
 			constexpr uintptr_t StreamingDistanceMultiplier = 0x02A4;
 			constexpr uintptr_t SubDivisionStepSize = 0x02A8;
-			constexpr uintptr_t Bitfields_02AC = 0x02AC;  // Multiple: bUseSubDivisions, bForceStaticDecals, bCanHighlightSelectedSections, bUseSimpleLightmapModifications
+			constexpr uintptr_t Bitfields_02AC = 0x02AC;  // Multiple: bCanHighlightSelectedSections, bForceStaticDecals, bUseSimpleLightmapModifications, bUseSubDivisions
 			constexpr uintptr_t SimpleLightmapModificationTexture = 0x02B0;
 			constexpr uintptr_t SimpleLightmapModificationFunction = 0x02B8;
 			constexpr uintptr_t bNeverBecomeDynamic = 0x02BC;
@@ -10085,7 +10085,7 @@ namespace Offsets {
 		namespace Teleporter {
 			constexpr uintptr_t URL = 0x0388;
 			constexpr uintptr_t ProductRequired = 0x0398;
-			constexpr uintptr_t Bitfields_03A0 = 0x03A0;  // Multiple: bChangesVelocity, bChangesYaw, bReversesX, bReversesY, bReversesZ, bEnabled
+			constexpr uintptr_t Bitfields_03A0 = 0x03A0;  // Multiple: bChangesVelocity, bChangesYaw, bEnabled, bReversesX, bReversesY, bReversesZ
 			constexpr uintptr_t TargetVelocity = 0x03A4;
 			constexpr uintptr_t LastFired = 0x03B0;
 		}
@@ -10114,7 +10114,7 @@ namespace Offsets {
 			constexpr uintptr_t NumPatchesY = 0x033C;
 			constexpr uintptr_t MaxComponentSize = 0x0340;
 			constexpr uintptr_t StaticLightingResolution = 0x0344;
-			constexpr uintptr_t Bitfields_0348 = 0x0348;  // Multiple: bIsOverridingLightResolution, bBilinearFilterLightmapGeneration, bCastShadow, bForceDirectLightMap, bCastDynamicShadow, bEnableSpecular, bBlockRigidBody, bAllowRigidBodyUnderneath, bAcceptsDynamicLights, bMorphingEnabled, bMorphingGradientsEnabled, bLocked, bHeightmapLocked, bShowingCollision, bUseWorldOriginTextureUVs, bShowWireframe
+			constexpr uintptr_t Bitfields_0348 = 0x0348;  // Multiple: bAcceptsDynamicLights, bAllowRigidBodyUnderneath, bBilinearFilterLightmapGeneration, bBlockRigidBody, bCastDynamicShadow, bCastShadow, bEnableSpecular, bForceDirectLightMap, bHeightmapLocked, bIsOverridingLightResolution, bLocked, bMorphingEnabled, bMorphingGradientsEnabled, bShowWireframe, bShowingCollision, bUseWorldOriginTextureUVs
 			constexpr uintptr_t TerrainPhysMaterialOverride = 0x0350;
 			constexpr uintptr_t LightingChannels = 0x0358;
 			constexpr uintptr_t LightmassSettings = 0x035C;
@@ -10171,7 +10171,7 @@ namespace Offsets {
 		}
 
 		namespace Texture {
-			constexpr uintptr_t Bitfields_0060 = 0x0060;  // Multiple: SRGB, RGBE, bIsSourceArtUncompressed, CompressionNoAlpha, CompressionNone, CompressionNoMipmaps, CompressionFullDynamicRange, DeferCompression, NeverStream, bDitherMipMapAlpha, bPreserveBorderR, bPreserveBorderG, bPreserveBorderB, bPreserveBorderA, bNoTiling, bForcePVRTC4, bAsyncResourceReleaseHasBeenStarted, bUseCinematicMipLevels
+			constexpr uintptr_t Bitfields_0060 = 0x0060;  // Multiple: CompressionFullDynamicRange, CompressionNoAlpha, CompressionNoMipmaps, CompressionNone, DeferCompression, NeverStream, RGBE, SRGB, bAsyncResourceReleaseHasBeenStarted, bDitherMipMapAlpha, bForcePVRTC4, bIsSourceArtUncompressed, bNoTiling, bPreserveBorderA, bPreserveBorderB, bPreserveBorderG, bPreserveBorderR, bUseCinematicMipLevels
 			constexpr uintptr_t UnpackMin = 0x0064;
 			constexpr uintptr_t UnpackMax = 0x0074;
 			constexpr uintptr_t SourceArt = 0x0088;
@@ -10211,7 +10211,7 @@ namespace Offsets {
 			constexpr uintptr_t Format = 0x0200;
 			constexpr uintptr_t AddressX = 0x0201;
 			constexpr uintptr_t AddressY = 0x0202;
-			constexpr uintptr_t Bitfields_0204 = 0x0204;  // Multiple: bIsEditorOnly, bIsStreamable, bHasCancelationPending, bHasBeenLoadedFromPersistentArchive, bForceMiplevelsToBeResident, bGlobalForceMipLevelsToBeResident, bIsCompositingSource, bHasBeenPaintedInEditor, bUseAlphaInThumbnail
+			constexpr uintptr_t Bitfields_0204 = 0x0204;  // Multiple: bForceMiplevelsToBeResident, bGlobalForceMipLevelsToBeResident, bHasBeenLoadedFromPersistentArchive, bHasBeenPaintedInEditor, bHasCancelationPending, bIsCompositingSource, bIsEditorOnly, bIsStreamable, bUseAlphaInThumbnail
 			constexpr uintptr_t ForceMipLevelsToBeResidentTimestamp = 0x0208;
 			constexpr uintptr_t TextureFileCacheName = 0x020C;
 			constexpr uintptr_t TextureFileCacheGuid = 0x0214;
@@ -10264,7 +10264,7 @@ namespace Offsets {
 			constexpr uintptr_t TimeSinceLastFrame = 0x028C;
 			constexpr uintptr_t HorizontalScale = 0x0290;
 			constexpr uintptr_t VerticalScale = 0x0294;
-			constexpr uintptr_t Bitfields_0298 = 0x0298;  // Multiple: bPaused, bStopped, bLooping, bAutoPlay
+			constexpr uintptr_t Bitfields_0298 = 0x0298;  // Multiple: bAutoPlay, bLooping, bPaused, bStopped
 			constexpr uintptr_t HorizontalImages = 0x029C;
 			constexpr uintptr_t VerticalImages = 0x02A0;
 			constexpr uintptr_t FBMethod = 0x02A4;
@@ -10286,13 +10286,13 @@ namespace Offsets {
 			constexpr uintptr_t MovieStreamSource = 0x015B;
 			constexpr uintptr_t DecoderClass = 0x0160;
 			constexpr uintptr_t Decoder = 0x0168;
-			constexpr uintptr_t Bitfields_0170 = 0x0170;  // Multiple: Paused, Stopped, Looping, ResetOnLastFrame, AutoPlay
+			constexpr uintptr_t Bitfields_0170 = 0x0170;  // Multiple: AutoPlay, Looping, Paused, ResetOnLastFrame, Stopped
 			constexpr uintptr_t Data = 0x0178;
 			constexpr uintptr_t ReleaseCodecFence = 0x01D0;
 		}
 
 		namespace TextureRenderTarget {
-			constexpr uintptr_t Bitfields_0150 = 0x0150;  // Multiple: bUpdateImmediate, bNeedsTwoCopies, bRenderOnce
+			constexpr uintptr_t Bitfields_0150 = 0x0150;  // Multiple: bNeedsTwoCopies, bRenderOnce, bUpdateImmediate
 			constexpr uintptr_t TargetGamma = 0x0154;
 		}
 
@@ -10372,7 +10372,7 @@ namespace Offsets {
 			constexpr uintptr_t FriendlyName = 0x00E0;
 			constexpr uintptr_t CustomFriendlyName = 0x00F0;
 			constexpr uintptr_t Description = 0x0100;
-			constexpr uintptr_t Bitfields_0110 = 0x0110;  // Multiple: bEditableCombo, bNumericCombo, bKeyboardOrMouseOption, bOnlineOnly, bOfflineOnly, bSearchAllInis, bRemoveOn360, bRemoveOnPC, bRemoveOnPS3
+			constexpr uintptr_t Bitfields_0110 = 0x0110;  // Multiple: bEditableCombo, bKeyboardOrMouseOption, bNumericCombo, bOfflineOnly, bOnlineOnly, bRemoveOn360, bRemoveOnPC, bRemoveOnPS3, bSearchAllInis
 			constexpr uintptr_t EditBoxMaxLength = 0x0114;
 			constexpr uintptr_t RangeData = 0x0118;
 			constexpr uintptr_t SchemaCellFields = 0x0130;
@@ -10426,7 +10426,7 @@ namespace Offsets {
 		namespace UIDataProvider_OnlinePlayerStorage {
 			constexpr uintptr_t Profile = 0x0078;
 			constexpr uintptr_t ProviderName = 0x0080;
-			constexpr uintptr_t Bitfields_0088 = 0x0088;  // Multiple: bWasErrorLastRead, bIsExternalUIOpen, bNeedsDeferredRefresh
+			constexpr uintptr_t Bitfields_0088 = 0x0088;  // Multiple: bIsExternalUIOpen, bNeedsDeferredRefresh, bWasErrorLastRead
 			constexpr uintptr_t PlayerStorageArrayProviders = 0x0090;
 			constexpr uintptr_t DeviceStorageSizeNeeded = 0x00A0;
 		}
@@ -10557,7 +10557,7 @@ namespace Offsets {
 			constexpr uintptr_t ClassName = 0x00A0;
 			constexpr uintptr_t GameAcronym = 0x00B0;
 			constexpr uintptr_t MapPrefix = 0x00C0;
-			constexpr uintptr_t Bitfields_00D0 = 0x00D0;  // Multiple: bIsTeamGame, bIsDisabled
+			constexpr uintptr_t Bitfields_00D0 = 0x00D0;  // Multiple: bIsDisabled, bIsTeamGame
 			constexpr uintptr_t GameSettingsClassName = 0x00D8;
 			constexpr uintptr_t GameName = 0x00E8;
 			constexpr uintptr_t Description = 0x00F8;
@@ -10644,7 +10644,7 @@ namespace Offsets {
 			constexpr uintptr_t TonemapperToeFactor = 0x0134;
 			constexpr uintptr_t TonemapperScale = 0x0138;
 			constexpr uintptr_t MotionBlurSoftEdgeKernelSize = 0x013C;
-			constexpr uintptr_t Bitfields_0140 = 0x0140;  // Multiple: bEnableImageGrain, bScaleEffectsWithViewSize, bEnableHDRTonemapper
+			constexpr uintptr_t Bitfields_0140 = 0x0140;  // Multiple: bEnableHDRTonemapper, bEnableImageGrain, bScaleEffectsWithViewSize
 			constexpr uintptr_t SceneImageGrainScale = 0x0144;
 			constexpr uintptr_t BloomWeightSmall = 0x0148;
 			constexpr uintptr_t BloomWeightMedium = 0x014C;
@@ -10668,7 +10668,7 @@ namespace Offsets {
 
 		namespace Volume {
 			constexpr uintptr_t AssociatedActor = 0x0298;
-			constexpr uintptr_t Bitfields_02A0 = 0x02A0;  // Multiple: bForcePawnWalk, bProcessAllActors, bPawnsOnly
+			constexpr uintptr_t Bitfields_02A0 = 0x02A0;  // Multiple: bForcePawnWalk, bPawnsOnly, bProcessAllActors
 		}
 
 		namespace VolumePathNode {
@@ -10721,8 +10721,8 @@ namespace Offsets {
 		namespace WorldInfo {
 			constexpr uintptr_t DefaultPostProcessSettings = 0x0278;
 			constexpr uintptr_t WorldPostProcessChain = 0x03E0;
-			constexpr uintptr_t Bitfields_03E8 = 0x03E8;  // Multiple: bPersistPostProcessToNextLevel, bFogEnabled, bBumpOffsetEnabled, bUseGammaCorrection, bMapNeedsLightingFullyRebuilt, bMapHasMultipleDominantLightsAffectingOnePrimitive, bMapHasPathingErrors, bRequestedBlockOnAsyncLoading, bBegunPlay, bPlayersOnly, bPlayersOnlyPending, bSuspendAI, bDropDetail, bAggressiveLOD, bStartup, bPathsRebuilt, bHasPathNodes, bIsMenuLevel, bUnitTest, bDebugPauseExecution, bDebugStepExecution, bUseConsoleInput, bDisableGlobalGravityZ, bMinimizeBSPSections, bNoPathWarnings, bNoMobileMapWarnings, bHighPriorityLoading, bHighPriorityLoadingLocal, bUseProcBuildingRulesetOverride, bInteractiveMode, bForceInteractiveMode, bSupportDoubleBufferedPhysics
-			constexpr uintptr_t Bitfields_03EC = 0x03EC;  // Multiple: bPhysicsIgnoreDeltaTime, bEnableChanceOfPhysicsChunkOverride, bLimitExplosionChunkSize, bLimitDamageChunkSize, bPrecomputeVisibility, bPlaceCellsOnSurfaces, bAffectIndirectCompositeShadowDirection, bAllowTemporalAA, bUseGlobalIllumination, bForceNoPrecomputedLighting, bHaveActiveCrowd, bAllowHostMigration, bGameplayFramePause
+			constexpr uintptr_t Bitfields_03E8 = 0x03E8;  // Multiple: bAggressiveLOD, bBegunPlay, bBumpOffsetEnabled, bDebugPauseExecution, bDebugStepExecution, bDisableGlobalGravityZ, bDropDetail, bFogEnabled, bForceInteractiveMode, bHasPathNodes, bHighPriorityLoading, bHighPriorityLoadingLocal, bInteractiveMode, bIsMenuLevel, bMapHasMultipleDominantLightsAffectingOnePrimitive, bMapHasPathingErrors, bMapNeedsLightingFullyRebuilt, bMinimizeBSPSections, bNoMobileMapWarnings, bNoPathWarnings, bPathsRebuilt, bPersistPostProcessToNextLevel, bPlayersOnly, bPlayersOnlyPending, bRequestedBlockOnAsyncLoading, bStartup, bSupportDoubleBufferedPhysics, bSuspendAI, bUnitTest, bUseConsoleInput, bUseGammaCorrection, bUseProcBuildingRulesetOverride
+			constexpr uintptr_t Bitfields_03EC = 0x03EC;  // Multiple: bAffectIndirectCompositeShadowDirection, bAllowHostMigration, bAllowTemporalAA, bEnableChanceOfPhysicsChunkOverride, bForceNoPrecomputedLighting, bGameplayFramePause, bHaveActiveCrowd, bLimitDamageChunkSize, bLimitExplosionChunkSize, bPhysicsIgnoreDeltaTime, bPlaceCellsOnSurfaces, bPrecomputeVisibility, bUseGlobalIllumination
 			constexpr uintptr_t SquintModeKernelSize = 0x03F0;
 			constexpr uintptr_t HighestPriorityPostProcessVolume = 0x03F8;
 			constexpr uintptr_t DefaultReverbSettings = 0x0400;
@@ -10891,7 +10891,7 @@ namespace Offsets {
 			constexpr uintptr_t Movie = 0x0160;
 			constexpr uintptr_t MoviePlayerClass = 0x0168;
 			constexpr uintptr_t MoviePlayer = 0x0170;
-			constexpr uintptr_t Bitfields_0178 = 0x0178;  // Multiple: bTakeFocus, bCaptureInput, bStartPaused, bEnableGammaCorrection, bDisplayWithHudOff
+			constexpr uintptr_t Bitfields_0178 = 0x0178;  // Multiple: bCaptureInput, bDisplayWithHudOff, bEnableGammaCorrection, bStartPaused, bTakeFocus
 			constexpr uintptr_t RenderTextureMode = 0x017C;
 			constexpr uintptr_t RenderTexture = 0x0180;
 			constexpr uintptr_t CaptureKeys = 0x0188;
@@ -10934,7 +10934,7 @@ namespace Offsets {
 			constexpr uintptr_t UnknownData01 = 0x00C8;
 			constexpr uintptr_t NextASUObject = 0x0118;
 			constexpr uintptr_t MovieInfo = 0x0120;
-			constexpr uintptr_t Bitfields_0128 = 0x0128;  // Multiple: bMovieIsOpen, bDisplayWithHudOff, bEnableGammaCorrection, bWidgetsInitializedThisFrame, bLogUnhandedWidgetInitializations, bAllowInput, bAllowFocus, bAutoPlay, bPauseGameWhileActive, bDisableWorldRendering, bCaptureWorldRendering, bCloseOnLevelChange, bOnlyOwnerFocusable, bForceFullViewport, bDiscardNonOwnerInput, bCaptureInput, bCaptureMouseInput, bIgnoreMouseInput, bIsSplitscreenLayoutModified, bShowHardwareMouseCursor, bForceFullScreen, bBlurLesserMovies, bHideLesserMovies, bIsPriorityBlurred, bIsPriorityHidden, bIgnoreVisibilityEffect, bIgnoreBlurEffect
+			constexpr uintptr_t Bitfields_0128 = 0x0128;  // Multiple: bAllowFocus, bAllowInput, bAutoPlay, bBlurLesserMovies, bCaptureInput, bCaptureMouseInput, bCaptureWorldRendering, bCloseOnLevelChange, bDisableWorldRendering, bDiscardNonOwnerInput, bDisplayWithHudOff, bEnableGammaCorrection, bForceFullScreen, bForceFullViewport, bHideLesserMovies, bIgnoreBlurEffect, bIgnoreMouseInput, bIgnoreVisibilityEffect, bIsPriorityBlurred, bIsPriorityHidden, bIsSplitscreenLayoutModified, bLogUnhandedWidgetInitializations, bMovieIsOpen, bOnlyOwnerFocusable, bPauseGameWhileActive, bShowHardwareMouseCursor, bWidgetsInitializedThisFrame
 			constexpr uintptr_t RenderTexture = 0x0130;
 			constexpr uintptr_t LocalPlayerOwnerIndex = 0x0138;
 			constexpr uintptr_t ExternalInterface = 0x0140;
@@ -10964,7 +10964,7 @@ namespace Offsets {
 		}
 
 		namespace SwfMovie {
-			constexpr uintptr_t Bitfields_00A0 = 0x00A0;  // Multiple: bUsesFontlib, bSetSRGBOnImportedTextures, bPackTextures, bForceSquarePacking
+			constexpr uintptr_t Bitfields_00A0 = 0x00A0;  // Multiple: bForceSquarePacking, bPackTextures, bSetSRGBOnImportedTextures, bUsesFontlib
 			constexpr uintptr_t SourceFile = 0x00A8;
 			constexpr uintptr_t PackTextureSize = 0x00B8;
 			constexpr uintptr_t TextureRescale = 0x00BC;
@@ -11211,7 +11211,7 @@ namespace Offsets {
 			constexpr uintptr_t VfTable_FTickableObject = 0x0060;
 			constexpr uintptr_t MeshBeaconPort = 0x0068;
 			constexpr uintptr_t Socket = 0x0070;
-			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bIsInTick, bWantsDeferredDestroy, bShouldTick
+			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bIsInTick, bShouldTick, bWantsDeferredDestroy
 			constexpr uintptr_t HeartbeatTimeout = 0x007C;
 			constexpr uintptr_t ElapsedHeartbeatTime = 0x0080;
 			constexpr uintptr_t BeaconName = 0x0084;
@@ -11375,7 +11375,7 @@ namespace Offsets {
 			constexpr uintptr_t VfTable_FTickableObject = 0x0060;
 			constexpr uintptr_t PartyBeaconPort = 0x0068;
 			constexpr uintptr_t Socket = 0x0070;
-			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bIsInTick, bWantsDeferredDestroy, bShouldTick
+			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bIsInTick, bShouldTick, bWantsDeferredDestroy
 			constexpr uintptr_t HeartbeatTimeout = 0x007C;
 			constexpr uintptr_t ElapsedHeartbeatTime = 0x0080;
 			constexpr uintptr_t BeaconName = 0x0084;
@@ -11484,7 +11484,7 @@ namespace Offsets {
 			constexpr uintptr_t IncludePath = 0x00C0;
 			constexpr uintptr_t CharSet = 0x00D0;
 			constexpr uintptr_t Connection = 0x00E0;
-			constexpr uintptr_t Bitfields_00E8 = 0x00E8;  // Multiple: bSentText, bSentResponse
+			constexpr uintptr_t Bitfields_00E8 = 0x00E8;  // Multiple: bSentResponse, bSentText
 		}
 
 		namespace WebServer {
@@ -11682,7 +11682,7 @@ namespace Offsets {
 		namespace OnlineSubsystemSteamworks {
 			constexpr uintptr_t Discord = 0x03D8;
 			constexpr uintptr_t UnlockedDLC = 0x03E0;
-			constexpr uintptr_t Bitfields_0400 = 0x0400;  // Multiple: bStoringAchievement, bClientStatsStorePending, bGSStatsStoresSuccess, bNeedsKeyboardTicking, bLastHasConnection, bIsStatsSessionOk, bHasSteamworksAccount, bShouldUseMcp, bShowIPCCount, bInterceptFriendMessages
+			constexpr uintptr_t Bitfields_0400 = 0x0400;  // Multiple: bClientStatsStorePending, bGSStatsStoresSuccess, bHasSteamworksAccount, bInterceptFriendMessages, bIsStatsSessionOk, bLastHasConnection, bNeedsKeyboardTicking, bShouldUseMcp, bShowIPCCount, bStoringAchievement
 			constexpr uintptr_t TotalGSStatsStoresPending = 0x0404;
 			constexpr uintptr_t UserStatsReceivedState = 0x0408;
 			constexpr uintptr_t LoggedInStatus = 0x0409;
@@ -11762,7 +11762,7 @@ namespace Offsets {
 		}
 
 		namespace ActorComponent_X {
-			constexpr uintptr_t Bitfields_00A0 = 0x00A0;  // Multiple: bTick, bIgnoreScriptAttach
+			constexpr uintptr_t Bitfields_00A0 = 0x00A0;  // Multiple: bIgnoreScriptAttach, bTick
 		}
 
 		namespace AdHocBeacon_X {
@@ -11809,7 +11809,7 @@ namespace Offsets {
 		namespace AnimNodeBlendBase_X {
 			constexpr uintptr_t BlendTime = 0x0170;
 			constexpr uintptr_t ChildBlendTimes = 0x0178;
-			constexpr uintptr_t Bitfields_0188 = 0x0188;  // Multiple: bRebuildChildren, bChildrenUpdated
+			constexpr uintptr_t Bitfields_0188 = 0x0188;  // Multiple: bChildrenUpdated, bRebuildChildren
 		}
 
 		namespace AnimNodeBlendList_X {
@@ -11854,7 +11854,7 @@ namespace Offsets {
 		namespace AprilConfig_X {
 			constexpr uintptr_t StartTime = 0x0078;
 			constexpr uintptr_t EndTime = 0x0080;
-			constexpr uintptr_t Bitfields_0088 = 0x0088;  // Multiple: bChangeRankedIcons, bChangePlaylists, bChangeCrowd
+			constexpr uintptr_t Bitfields_0088 = 0x0088;  // Multiple: bChangeCrowd, bChangePlaylists, bChangeRankedIcons
 			constexpr uintptr_t QuickChatDisplayOverrides = 0x0090;
 			constexpr uintptr_t HatScale = 0x00A0;
 			constexpr uintptr_t AntennaScale = 0x00A4;
@@ -11868,7 +11868,7 @@ namespace Offsets {
 		namespace ArchetypeSpawnPoint_X {
 			constexpr uintptr_t VfTable_IInterface_NavMeshPathObject = 0x0268;
 			constexpr uintptr_t ArchetypePath = 0x0270;
-			constexpr uintptr_t Bitfields_0280 = 0x0280;  // Multiple: bSeedNavMesh, bSpawnOnLevelStart, bOnlyAllowOneInstance
+			constexpr uintptr_t Bitfields_0280 = 0x0280;  // Multiple: bOnlyAllowOneInstance, bSeedNavMesh, bSpawnOnLevelStart
 			constexpr uintptr_t ActorArchetype = 0x0288;
 			constexpr uintptr_t PlacementSprite = 0x0290;
 			constexpr uintptr_t ArchetypeSkeletalMesh = 0x0298;
@@ -12086,7 +12086,7 @@ namespace Offsets {
 		namespace ClubDetails_X {
 			constexpr uintptr_t ClubID = 0x0088;
 			constexpr uintptr_t OwnerPlayerID = 0x0090;
-			constexpr uintptr_t Bitfields_00D8 = 0x00D8;  // Multiple: bVerified, bServerReplicated
+			constexpr uintptr_t Bitfields_00D8 = 0x00D8;  // Multiple: bServerReplicated, bVerified
 			constexpr uintptr_t LastUpdatedTime = 0x00E0;
 			constexpr uintptr_t Badges = 0x00E8;
 			constexpr uintptr_t EquippedTitle = 0x00F8;
@@ -12158,7 +12158,7 @@ namespace Offsets {
 		namespace ControlPreset_X {
 			constexpr uintptr_t PCBindings = 0x0060;
 			constexpr uintptr_t GamepadBindings = 0x0070;
-			constexpr uintptr_t Bitfields_0080 = 0x0080;  // Multiple: bRemovedPCOverrides, bRemovedGamepadOverrides
+			constexpr uintptr_t Bitfields_0080 = 0x0080;  // Multiple: bRemovedGamepadOverrides, bRemovedPCOverrides
 			constexpr uintptr_t SteamInputBindings = 0x0088;
 			constexpr uintptr_t CustomPresetName = 0x0098;
 			constexpr uintptr_t DefaultPresetName = 0x00A0;
@@ -12347,7 +12347,7 @@ namespace Offsets {
 		}
 
 		namespace EpicConfig_X {
-			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bAllowRemoteAvatars, bPollDuringAccountLinking, bEnforcePinRequirementForFriends, bEnforceCabinedMode, bPromptForPin, bForceEnableTrade
+			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bAllowRemoteAvatars, bEnforceCabinedMode, bEnforcePinRequirementForFriends, bForceEnableTrade, bPollDuringAccountLinking, bPromptForPin
 			constexpr uintptr_t RemoteAvatarPermissionRequestDelay = 0x007C;
 			constexpr uintptr_t SecondsBetweenPolling = 0x0080;
 			constexpr uintptr_t SecondsBeforeRequestsTimeout = 0x0084;
@@ -12418,7 +12418,7 @@ namespace Offsets {
 			constexpr uintptr_t PinGrantCode = 0x0060;
 			constexpr uintptr_t PinGrantURL = 0x0070;
 			constexpr uintptr_t PinGrantExpiration = 0x0080;
-			constexpr uintptr_t Bitfields_0088 = 0x0088;  // Multiple: bLoggedIn, bCorrectiveActionRequired, bSetAsPrimaryAccount, bPollDuringAccountLinking, bPinGrantRequestInProgress, bLoginInProgress, bNintendoServiceAccountLinkingNeeded, bRefusedNintendoAccountAuthorization, bUserSpecifiedPrimaryAccount, bInitialized, bIsExternalUIOpen
+			constexpr uintptr_t Bitfields_0088 = 0x0088;  // Multiple: bCorrectiveActionRequired, bInitialized, bIsExternalUIOpen, bLoggedIn, bLoginInProgress, bNintendoServiceAccountLinkingNeeded, bPinGrantRequestInProgress, bPollDuringAccountLinking, bRefusedNintendoAccountAuthorization, bSetAsPrimaryAccount, bUserSpecifiedPrimaryAccount
 			constexpr uintptr_t ParentalConsentURL = 0x0090;
 			constexpr uintptr_t CabinedFlowState = 0x00A0;
 			constexpr uintptr_t OldCabinedFlowState_Switch = 0x00A1;
@@ -12532,11 +12532,11 @@ namespace Offsets {
 			constexpr uintptr_t LastModifiedTimestamp = 0x00C0;
 			constexpr uintptr_t Custom = 0x00D0;
 			constexpr uintptr_t URL = 0x00E0;
-			constexpr uintptr_t Bitfields_00F0 = 0x00F0;  // Multiple: WasDeclined, HasResponse
+			constexpr uintptr_t Bitfields_00F0 = 0x00F0;  // Multiple: HasResponse, WasDeclined
 		}
 
 		namespace EventRecorderConfig_X {
-			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bEnabled, bSeparatePlayerIDs, bExcludePlayerIDs
+			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bEnabled, bExcludePlayerIDs, bSeparatePlayerIDs
 			constexpr uintptr_t DisabledEvents = 0x0080;
 			constexpr uintptr_t EventRecorderClass = 0x0090;
 			constexpr uintptr_t PlayerNetMetricsPeriod = 0x0098;
@@ -12575,7 +12575,7 @@ namespace Offsets {
 			constexpr uintptr_t EndRadius = 0x00B0;
 			constexpr uintptr_t Speed = 0x00B4;
 			constexpr uintptr_t Falloff = 0x00B8;
-			constexpr uintptr_t Bitfields_00BC = 0x00BC;  // Multiple: bPassThroughWorldGeometry, bIgnoreInstigator, bDebug
+			constexpr uintptr_t Bitfields_00BC = 0x00BC;  // Multiple: bDebug, bIgnoreInstigator, bPassThroughWorldGeometry
 			constexpr uintptr_t MomentumOffset = 0x00C0;
 			constexpr uintptr_t LifeTime = 0x00CC;
 			constexpr uintptr_t DamagedActors = 0x00D0;
@@ -12585,7 +12585,7 @@ namespace Offsets {
 			constexpr uintptr_t StartTime = 0x00A8;
 			constexpr uintptr_t EndTime = 0x00AC;
 			constexpr uintptr_t CollisionInformation = 0x00B0;
-			constexpr uintptr_t Bitfields_00B8 = 0x00B8;  // Multiple: bIgnoreInstigator, bPassThroughWorldGeometry, bOnlyApplyImpulseOnce, bDebug, bPullTowardHitLocation
+			constexpr uintptr_t Bitfields_00B8 = 0x00B8;  // Multiple: bDebug, bIgnoreInstigator, bOnlyApplyImpulseOnce, bPassThroughWorldGeometry, bPullTowardHitLocation
 			constexpr uintptr_t Falloff = 0x00BC;
 			constexpr uintptr_t RBVelocityChange = 0x00C0;
 			constexpr uintptr_t Speed = 0x00C4;
@@ -12610,7 +12610,7 @@ namespace Offsets {
 			constexpr uintptr_t Attachments = 0x0278;
 			constexpr uintptr_t Locality = 0x0288;
 			constexpr uintptr_t SocketOrBoneName = 0x028C;
-			constexpr uintptr_t Bitfields_0294 = 0x0294;  // Multiple: bDeactivateWhenOwnerDestroyed, bAllowShadowCasting, bAutoActivate, bRenderInactive, bActive, bHadOwner
+			constexpr uintptr_t Bitfields_0294 = 0x0294;  // Multiple: bActive, bAllowShadowCasting, bAutoActivate, bDeactivateWhenOwnerDestroyed, bHadOwner, bRenderInactive
 			constexpr uintptr_t Parent = 0x0298;
 			constexpr uintptr_t AttachmentActor = 0x02A0;
 			constexpr uintptr_t FXStates = 0x02A8;
@@ -12739,7 +12739,7 @@ namespace Offsets {
 			constexpr uintptr_t ReplicatedServerRegion = 0x02E0;
 			constexpr uintptr_t Reservations = 0x02F0;
 			constexpr uintptr_t GameServerID = 0x05F0;
-			constexpr uintptr_t Bitfields_0600 = 0x0600;  // Multiple: bGameStarted, bGameEnded
+			constexpr uintptr_t Bitfields_0600 = 0x0600;  // Multiple: bGameEnded, bGameStarted
 			constexpr uintptr_t MatchGUID = 0x0608;
 		}
 
@@ -12773,7 +12773,7 @@ namespace Offsets {
 			constexpr uintptr_t Description = 0x0078;
 			constexpr uintptr_t BadgeTitle = 0x0088;
 			constexpr uintptr_t PlayerCount = 0x0098;
-			constexpr uintptr_t Bitfields_009C = 0x009C;  // Multiple: bStandard, bRanked, bSolo, bExtraMode, bPrivate, bTournament, bApplyQuitPenalty, bAllowForfeit, bDisableRankedReconnect, bIgnoreAssignTeams, bAllowBotFills, bKickOnMigrate, bCheckRankedMatchReservationID, bServerBroadcastCancellations, bSkipGameModeVerification, bNoBackFill, bIsMicroEventPlaylist, bHasVariablePlayerCount, bNew, bAllowClubs, bDisableSaveReplays, bOpenDetailsOnFirstTimeClicked, bAllowStayAsParty
+			constexpr uintptr_t Bitfields_009C = 0x009C;  // Multiple: bAllowBotFills, bAllowClubs, bAllowForfeit, bAllowStayAsParty, bApplyQuitPenalty, bCheckRankedMatchReservationID, bDisableRankedReconnect, bDisableSaveReplays, bExtraMode, bHasVariablePlayerCount, bIgnoreAssignTeams, bIsMicroEventPlaylist, bKickOnMigrate, bNew, bNoBackFill, bOpenDetailsOnFirstTimeClicked, bPrivate, bRanked, bServerBroadcastCancellations, bSkipGameModeVerification, bSolo, bStandard, bTournament
 			constexpr uintptr_t PlaylistImageURL = 0x00A0;
 			constexpr uintptr_t PlaylistImageTexture = 0x00B0;
 			constexpr uintptr_t PlaylistIconActiveURL = 0x00C0;
@@ -12795,7 +12795,7 @@ namespace Offsets {
 		}
 
 		namespace GameViewportClient_X {
-			constexpr uintptr_t Bitfields_0248 = 0x0248;  // Multiple: bHandCursor, bMuteSoundOnFocusLost, bIsFinishedLoadingSaveSettings
+			constexpr uintptr_t Bitfields_0248 = 0x0248;  // Multiple: bHandCursor, bIsFinishedLoadingSaveSettings, bMuteSoundOnFocusLost
 			constexpr uintptr_t MaxSplitScreenPlayers = 0x024C;
 		}
 
@@ -12950,7 +12950,7 @@ namespace Offsets {
 			constexpr uintptr_t MapName = 0x0090;
 			constexpr uintptr_t Playlist = 0x0098;
 			constexpr uintptr_t Mutators = 0x00A0;
-			constexpr uintptr_t Bitfields_00B0 = 0x00B0;  // Multiple: bIsBotMatch, bClubVsClub, bOverTime, bNoContest, bForfeit
+			constexpr uintptr_t Bitfields_00B0 = 0x00B0;  // Multiple: bClubVsClub, bForfeit, bIsBotMatch, bNoContest, bOverTime
 			constexpr uintptr_t ClubID = 0x00B4;
 			constexpr uintptr_t CustomMatchCreatorPlayerID = 0x00B8;
 			constexpr uintptr_t CustomServerName = 0x0100;
@@ -13057,7 +13057,7 @@ namespace Offsets {
 		}
 
 		namespace ObjectSerializer_X {
-			constexpr uintptr_t Bitfields_0060 = 0x0060;  // Multiple: bPersistent, bDebug
+			constexpr uintptr_t Bitfields_0060 = 0x0060;  // Multiple: bDebug, bPersistent
 		}
 
 		namespace OnlineClubCache_X {
@@ -13137,7 +13137,7 @@ namespace Offsets {
 			constexpr uintptr_t CustomMatch = 0x0218;
 			constexpr uintptr_t CustomMatchOwner = 0x02A0;
 			constexpr uintptr_t CustomMatchClubID = 0x02E8;
-			constexpr uintptr_t Bitfields_02F0 = 0x02F0;  // Multiple: bQueuedShutdown, bFindingReplacementServer, bHasValidMigrationServer, bDisableMatchmakingBan, bBotTest
+			constexpr uintptr_t Bitfields_02F0 = 0x02F0;  // Multiple: bBotTest, bDisableMatchmakingBan, bFindingReplacementServer, bHasValidMigrationServer, bQueuedShutdown
 			constexpr uintptr_t ReplacementServerID = 0x02F8;
 			constexpr uintptr_t PlayerTracker = 0x0308;
 			constexpr uintptr_t ExploitManager = 0x0310;
@@ -13234,7 +13234,7 @@ namespace Offsets {
 			constexpr uintptr_t NullSearchStatus = 0x0140;
 			constexpr uintptr_t PartyTimeout = 0x0148;
 			constexpr uintptr_t CurrentPartySize = 0x014C;
-			constexpr uintptr_t Bitfields_0150 = 0x0150;  // Multiple: LastbSearchingStatus, LastLockStatus, bPendingIncomingTradeInvite, bTradeLocked
+			constexpr uintptr_t Bitfields_0150 = 0x0150;  // Multiple: LastLockStatus, LastbSearchingStatus, bPendingIncomingTradeInvite, bTradeLocked
 			constexpr uintptr_t LastSearchState = 0x0154;
 			constexpr uintptr_t MatchSettings = 0x0160;
 			constexpr uintptr_t ProcessingStatus = 0x01B8;
@@ -13308,7 +13308,7 @@ namespace Offsets {
 			constexpr uintptr_t WaitForReservationsTimeout = 0x00B4;
 			constexpr uintptr_t InitialReservationTimeoutSeconds = 0x00B8;
 			constexpr uintptr_t InitialMigrationTimeoutSeconds = 0x00BC;
-			constexpr uintptr_t Bitfields_00C0 = 0x00C0;  // Multiple: bAllowPrivateMatchCrossPlayDisable, bSkipReservationCheck, bSinglePlayerMatchmaking, bServerTraveling, bScrambleTeams, bMatchStarted, bLockTeams, bIsBotMatch, bMigrationInProgress, bFirstClubDetailsRequestDone
+			constexpr uintptr_t Bitfields_00C0 = 0x00C0;  // Multiple: bAllowPrivateMatchCrossPlayDisable, bFirstClubDetailsRequestDone, bIsBotMatch, bLockTeams, bMatchStarted, bMigrationInProgress, bScrambleTeams, bServerTraveling, bSinglePlayerMatchmaking, bSkipReservationCheck
 			constexpr uintptr_t Beacon = 0x00C8;
 			constexpr uintptr_t PingBeacon = 0x00D0;
 			constexpr uintptr_t Players = 0x00D8;
@@ -13350,7 +13350,7 @@ namespace Offsets {
 			constexpr uintptr_t NumOpenPublicConnections = 0x00A4;
 			constexpr uintptr_t GameSettingCategories = 0x00A8;
 			constexpr uintptr_t GameModeMutatorSettingPresets = 0x00B8;
-			constexpr uintptr_t Bitfields_00C8 = 0x00C8;  // Multiple: bOffline, bIgnoreHiddenMutatorsOverride
+			constexpr uintptr_t Bitfields_00C8 = 0x00C8;  // Multiple: bIgnoreHiddenMutatorsOverride, bOffline
 			constexpr uintptr_t MinimumPlayersRequired = 0x00CC;
 			constexpr uintptr_t NumSecondsWaitingForPlayers = 0x00D0;
 			constexpr uintptr_t SearchScore = 0x00D4;
@@ -13471,7 +13471,7 @@ namespace Offsets {
 			constexpr uintptr_t LoggedInPlayerId = 0x00C0;
 			constexpr uintptr_t PlayerUID = 0x0108;
 			constexpr uintptr_t Platform = 0x0118;
-			constexpr uintptr_t Bitfields_0128 = 0x0128;  // Multiple: bLoggedIn, bPlatformTokenAuthenticationFailed, bPlatformAuthTicketFailed_Switch, bSkipAuth, bLastChanceAuthBan
+			constexpr uintptr_t Bitfields_0128 = 0x0128;  // Multiple: bLastChanceAuthBan, bLoggedIn, bPlatformAuthTicketFailed_Switch, bPlatformTokenAuthenticationFailed, bSkipAuth
 			constexpr uintptr_t AuthLoginError = 0x0130;
 			constexpr uintptr_t BanMessage = 0x0138;
 			constexpr uintptr_t EncryptedAuthTicket = 0x0140;
@@ -13485,7 +13485,7 @@ namespace Offsets {
 		}
 
 		namespace OnlinePlayerFriends_X {
-			constexpr uintptr_t Bitfields_00B0 = 0x00B0;  // Multiple: bAllowSamePlatformPsyNetFriends, bRepeatFriendsListDownloadsUntilSuccess, bFetchingLinkedAccounts
+			constexpr uintptr_t Bitfields_00B0 = 0x00B0;  // Multiple: bAllowSamePlatformPsyNetFriends, bFetchingLinkedAccounts, bRepeatFriendsListDownloadsUntilSuccess
 			constexpr uintptr_t CachedFriends = 0x00B8;
 			constexpr uintptr_t PlatformFriends = 0x00C0;
 			constexpr uintptr_t EpicFriends = 0x00C8;
@@ -13551,7 +13551,7 @@ namespace Offsets {
 			constexpr uintptr_t CleanPlayerID = 0x0138;
 			constexpr uintptr_t LoginStatus = 0x0180;
 			constexpr uintptr_t LocalPlayerNum = 0x0184;
-			constexpr uintptr_t Bitfields_0188 = 0x0188;  // Multiple: bLoggingIn, bLoggingOut, bCabinedModeStatusKnown
+			constexpr uintptr_t Bitfields_0188 = 0x0188;  // Multiple: bCabinedModeStatusKnown, bLoggingIn, bLoggingOut
 			constexpr uintptr_t LoginError = 0x0190;
 			constexpr uintptr_t CachedEpicID = 0x0198;
 			constexpr uintptr_t LoginStatusError = 0x01A8;
@@ -13562,7 +13562,7 @@ namespace Offsets {
 			constexpr uintptr_t URL = 0x0070;
 			constexpr uintptr_t RetryDelays = 0x0080;
 			constexpr uintptr_t CacheSeconds = 0x0090;
-			constexpr uintptr_t Bitfields_0094 = 0x0094;  // Multiple: bZipResponse, bSyncing
+			constexpr uintptr_t Bitfields_0094 = 0x0094;  // Multiple: bSyncing, bZipResponse
 			constexpr uintptr_t Headers = 0x0098;
 			constexpr uintptr_t CachedData = 0x00A0;
 			constexpr uintptr_t RetryCount = 0x00A8;
@@ -13813,7 +13813,7 @@ namespace Offsets {
 			constexpr uintptr_t TapTime = 0x03A8;
 			constexpr uintptr_t DoubleTapTime = 0x03AC;
 			constexpr uintptr_t HeldBindings = 0x03B0;
-			constexpr uintptr_t Bitfields_03C0 = 0x03C0;  // Multiple: bDebugInput, bAbsorbCurrentKeyPress
+			constexpr uintptr_t Bitfields_03C0 = 0x03C0;  // Multiple: bAbsorbCurrentKeyPress, bDebugInput
 			constexpr uintptr_t UnknownData00 = 0x03C8;
 		}
 
@@ -13823,7 +13823,7 @@ namespace Offsets {
 			constexpr uintptr_t BadgeTitle = 0x0080;
 			constexpr uintptr_t PlaylistId = 0x0090;
 			constexpr uintptr_t PlayerCount = 0x0094;
-			constexpr uintptr_t Bitfields_0098 = 0x0098;  // Multiple: bStandard, bRanked, bCheckRankedMatchReservationID, bSolo, bHidden, bExtraMode, bPrivate, bTournament, bApplyQuitPenalty, bAllowForfeit, bDisableRankedReconnect, bIgnoreAssignTeams, bKickOnMigrate, bAllowBotFills, bServerBroadcastCancellations, bSkipGameModeVerification, bNoBackFill, bIsMicroEventPlaylist, bHasVariablePlayerCount, bNew, bAllowClubs, bDisableSaveReplays, bOpenDetailsOnFirstTimeClicked, bAllowStayAsParty
+			constexpr uintptr_t Bitfields_0098 = 0x0098;  // Multiple: bAllowBotFills, bAllowClubs, bAllowForfeit, bAllowStayAsParty, bApplyQuitPenalty, bCheckRankedMatchReservationID, bDisableRankedReconnect, bDisableSaveReplays, bExtraMode, bHasVariablePlayerCount, bHidden, bIgnoreAssignTeams, bIsMicroEventPlaylist, bKickOnMigrate, bNew, bNoBackFill, bOpenDetailsOnFirstTimeClicked, bPrivate, bRanked, bServerBroadcastCancellations, bSkipGameModeVerification, bSolo, bStandard, bTournament
 			constexpr uintptr_t PlaylistImageURL = 0x00A0;
 			constexpr uintptr_t PlaylistImageTexture = 0x00B0;
 			constexpr uintptr_t PlaylistIconActiveURL = 0x00C0;
@@ -13873,7 +13873,7 @@ namespace Offsets {
 
 		namespace PrivilegeCheck_X {
 			constexpr uintptr_t ControllerIDs = 0x0060;
-			constexpr uintptr_t Bitfields_0070 = 0x0070;  // Multiple: bHasRestriction, bFinished
+			constexpr uintptr_t Bitfields_0070 = 0x0070;  // Multiple: bFinished, bHasRestriction
 			constexpr uintptr_t FailReason = 0x0078;
 			constexpr uintptr_t PendingPrivileges = 0x0080;
 			constexpr uintptr_t FailedControllerID = 0x0090;
@@ -13899,7 +13899,7 @@ namespace Offsets {
 
 		namespace PsyNetChannel_X {
 			constexpr uintptr_t ChannelName = 0x0060;
-			constexpr uintptr_t Bitfields_0070 = 0x0070;  // Multiple: bOpen, bReceivedFirstMessage, bClosed, bTimedOut
+			constexpr uintptr_t Bitfields_0070 = 0x0070;  // Multiple: bClosed, bOpen, bReceivedFirstMessage, bTimedOut
 			constexpr uintptr_t NextMessageID = 0x0074;
 			constexpr uintptr_t WaitForMessageTime = 0x0078;
 			constexpr uintptr_t ServiceQueue = 0x0080;
@@ -13919,7 +13919,7 @@ namespace Offsets {
 		}
 
 		namespace PsyNetConfig_X {
-			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bAllowPerCon, bRequiresPerCon, bAllowPsyNetParty, bSendPingMessage, bAllowServerBacktraceUploads, bAllowServerBacktraceLogUploads, bAllowClientBacktraceUploads, bAllowClientBacktraceLogUploads, bAllowPlayerCancelMatch
+			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bAllowClientBacktraceLogUploads, bAllowClientBacktraceUploads, bAllowPerCon, bAllowPlayerCancelMatch, bAllowPsyNetParty, bAllowServerBacktraceLogUploads, bAllowServerBacktraceUploads, bRequiresPerCon, bSendPingMessage
 			constexpr uintptr_t PerConTimeout = 0x007C;
 			constexpr uintptr_t PerConPingInterval = 0x0080;
 			constexpr uintptr_t DisabledServerBacktracePlatforms = 0x0088;
@@ -14240,7 +14240,7 @@ namespace Offsets {
 
 		namespace RPC_GetAntiAddictionData_X {
 			constexpr uintptr_t PlayerID = 0x00E8;
-			constexpr uintptr_t Bitfields_0130 = 0x0130;  // Multiple: bUnderAge, bShowMessage
+			constexpr uintptr_t Bitfields_0130 = 0x0130;  // Multiple: bShowMessage, bUnderAge
 			constexpr uintptr_t HoursPlayed = 0x0134;
 		}
 
@@ -14388,7 +14388,7 @@ namespace Offsets {
 			constexpr uintptr_t FeatureSet = 0x0148;
 			constexpr uintptr_t Device = 0x0150;
 			constexpr uintptr_t LocalFirstPlayerID = 0x0160;
-			constexpr uintptr_t Bitfields_0170 = 0x0170;  // Multiple: bSkipAuth, bSetAsPrimaryAccount, UseWebSocket, IsLastChanceAuthBan
+			constexpr uintptr_t Bitfields_0170 = 0x0170;  // Multiple: IsLastChanceAuthBan, UseWebSocket, bSetAsPrimaryAccount, bSkipAuth
 			constexpr uintptr_t EpicAuthTicket = 0x0178;
 			constexpr uintptr_t EpicAccountId = 0x0188;
 			constexpr uintptr_t SessionId = 0x0198;
@@ -14644,7 +14644,7 @@ namespace Offsets {
 			constexpr uintptr_t NumPlayersTeam2 = 0x0104;
 			constexpr uintptr_t ReservationsTeam1 = 0x0108;
 			constexpr uintptr_t ReservationsTeam2 = 0x010C;
-			constexpr uintptr_t Bitfields_0110 = 0x0110;  // Multiple: bIsPostGame, bIsBotMatch
+			constexpr uintptr_t Bitfields_0110 = 0x0110;  // Multiple: bIsBotMatch, bIsPostGame
 			constexpr uintptr_t TimeRemaining = 0x0114;
 			constexpr uintptr_t ExclusivePlatform = 0x0118;
 			constexpr uintptr_t PlayersPlatforms = 0x0128;
@@ -14681,7 +14681,7 @@ namespace Offsets {
 			constexpr uintptr_t Service = 0x0060;
 			constexpr uintptr_t Version = 0x0070;
 			constexpr uintptr_t ServiceFailRetryDelay = 0x0074;
-			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bAllowBatching, bRequiresAuth, bDisposed
+			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bAllowBatching, bDisposed, bRequiresAuth
 			constexpr uintptr_t Priority = 0x007C;
 			constexpr uintptr_t Headers = 0x0080;
 			constexpr uintptr_t Error = 0x0090;
@@ -14849,7 +14849,7 @@ namespace Offsets {
 		namespace ServerConfig_X {
 			constexpr uintptr_t HeartbeatSeconds = 0x0078;
 			constexpr uintptr_t HeartbeatRetrySeconds = 0x007C;
-			constexpr uintptr_t Bitfields_0080 = 0x0080;  // Multiple: bUploadLogFiles, bUploadReplays, bFlatbufferRecordInput, bPrivateMatchCreatorAdmin
+			constexpr uintptr_t Bitfields_0080 = 0x0080;  // Multiple: bFlatbufferRecordInput, bPrivateMatchCreatorAdmin, bUploadLogFiles, bUploadReplays
 			constexpr uintptr_t MaxUploadLogFileSize = 0x0084;
 			constexpr uintptr_t NetServerMaxTickRate = 0x0088;
 			constexpr uintptr_t IdleNetServerMaxTickRate = 0x008C;
@@ -14883,7 +14883,7 @@ namespace Offsets {
 			constexpr uintptr_t InnerRadius = 0x00A8;
 			constexpr uintptr_t OuterRadius = 0x00AC;
 			constexpr uintptr_t Falloff = 0x00B0;
-			constexpr uintptr_t Bitfields_00B4 = 0x00B4;  // Multiple: bAutoPlay, bAutoDetach, bOnlyAffectPlayersWithPawns, bAttenuate, bPlaying, bStopping
+			constexpr uintptr_t Bitfields_00B4 = 0x00B4;  // Multiple: bAttenuate, bAutoDetach, bAutoPlay, bOnlyAffectPlayersWithPawns, bPlaying, bStopping
 			constexpr uintptr_t Receiver = 0x00B8;
 			constexpr uintptr_t RadiusScale = 0x00BC;
 			constexpr uintptr_t BlendInTime = 0x00C0;
@@ -15001,12 +15001,12 @@ namespace Offsets {
 
 		namespace TickComponent_X {
 			constexpr uintptr_t VfTable_FTickableObject = 0x0080;
-			constexpr uintptr_t Bitfields_0088 = 0x0088;  // Multiple: bTickWhenGamePaused, bTick
+			constexpr uintptr_t Bitfields_0088 = 0x0088;  // Multiple: bTick, bTickWhenGamePaused
 		}
 
 		namespace TickableStateObject_X {
 			constexpr uintptr_t VfTable_FTickableObject = 0x0068;
-			constexpr uintptr_t Bitfields_0070 = 0x0070;  // Multiple: bTickWhenGamePaused, bAutoTick
+			constexpr uintptr_t Bitfields_0070 = 0x0070;  // Multiple: bAutoTick, bTickWhenGamePaused
 			constexpr uintptr_t Timers = 0x0078;
 			constexpr uintptr_t LatentFloat = 0x0088;
 		}
@@ -15094,7 +15094,7 @@ namespace Offsets {
 		}
 
 		namespace WebRequest_X {
-			constexpr uintptr_t Bitfields_0060 = 0x0060;  // Multiple: bZipRequest, bZipResponse, bLogRequestContent, bLogResponseContent, bLogSendRecv, bConnectionReset, bCancelled
+			constexpr uintptr_t Bitfields_0060 = 0x0060;  // Multiple: bCancelled, bConnectionReset, bLogRequestContent, bLogResponseContent, bLogSendRecv, bZipRequest, bZipResponse
 			constexpr uintptr_t RequestState = 0x0064;
 			constexpr uintptr_t URL = 0x0068;
 			constexpr uintptr_t HTTPRequest = 0x0078;
@@ -15112,7 +15112,7 @@ namespace Offsets {
 		}
 
 		namespace WordFilterConfig_X {
-			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bSanitizeEntirePhrase, PsyNetFilterEnabled
+			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: PsyNetFilterEnabled, bSanitizeEntirePhrase
 			constexpr uintptr_t NameHistoryCacheLength = 0x007C;
 			constexpr uintptr_t IgnoreFilterList = 0x0080;
 			constexpr uintptr_t PlatformFilterList = 0x0090;
@@ -15693,7 +15693,7 @@ namespace Offsets {
 			constexpr uintptr_t EnemyCars = 0x0688;
 			constexpr uintptr_t PlayerControlledCars = 0x0698;
 			constexpr uintptr_t OtherCars = 0x06A8;
-			constexpr uintptr_t Bitfields_06B8 = 0x06B8;  // Multiple: bForceUpdateConditions, bCanUseBoost, bBeingReplaced
+			constexpr uintptr_t Bitfields_06B8 = 0x06B8;  // Multiple: bBeingReplaced, bCanUseBoost, bForceUpdateConditions
 			constexpr uintptr_t GameShare = 0x06C0;
 			constexpr uintptr_t SelectedActor = 0x06C8;
 			constexpr uintptr_t FieldScalar = 0x06D0;
@@ -15779,7 +15779,7 @@ namespace Offsets {
 			constexpr uintptr_t MetaAchievementPointMax = 0x01C4;
 			constexpr uintptr_t BattleCarCollector_CarsCollected = 0x01C8;
 			constexpr uintptr_t Traveler_Maps = 0x01CC;
-			constexpr uintptr_t Bitfields_01D0 = 0x01D0;  // Multiple: bBoostWasFull, bPlayerInited, bHandbrakePressed, bCheckMinuteToWinIt, bDidInitialCheckForMinuteToWinIt, bCheckBuzzerBeater, bDidInitialCheckForBuzzerBeater, bQualifiesForDLC1Throwback, bSSFuryCarInLoadout
+			constexpr uintptr_t Bitfields_01D0 = 0x01D0;  // Multiple: bBoostWasFull, bCheckBuzzerBeater, bCheckMinuteToWinIt, bDidInitialCheckForBuzzerBeater, bDidInitialCheckForMinuteToWinIt, bHandbrakePressed, bPlayerInited, bQualifiesForDLC1Throwback, bSSFuryCarInLoadout
 			constexpr uintptr_t HandbrakeStartDir = 0x01D4;
 			constexpr uintptr_t HandbrakeStartLocation = 0x01E0;
 			constexpr uintptr_t WastelandMapName = 0x01F0;
@@ -16033,7 +16033,7 @@ namespace Offsets {
 
 		namespace ArenaSoundSettings_TA {
 			constexpr uintptr_t InGameMusicCue = 0x0060;
-			constexpr uintptr_t Bitfields_0068 = 0x0068;  // Multiple: bDynamicMusic, UpdateStatSounds
+			constexpr uintptr_t Bitfields_0068 = 0x0068;  // Multiple: UpdateStatSounds, bDynamicMusic
 			constexpr uintptr_t GoalScoreSound = 0x0070;
 			constexpr uintptr_t GameStartStinger = 0x0078;
 			constexpr uintptr_t GoalScoreStinger = 0x0080;
@@ -16153,7 +16153,7 @@ namespace Offsets {
 			constexpr uintptr_t FocusCarRTPC = 0x0120;
 			constexpr uintptr_t LiveReplay_InCameraViewRTPC = 0x0128;
 			constexpr uintptr_t NumLocalPlayers = 0x0130;
-			constexpr uintptr_t Bitfields_0134 = 0x0134;  // Multiple: bPlayerUsingBallCam, bIsActiveState, bSpectating, bIsMajorityFar, bInLiveReplay
+			constexpr uintptr_t Bitfields_0134 = 0x0134;  // Multiple: bInLiveReplay, bIsActiveState, bIsMajorityFar, bPlayerUsingBallCam, bSpectating
 			constexpr uintptr_t MajorityFarMinDistanceSq = 0x0138;
 			constexpr uintptr_t BallListenerOffset = 0x013C;
 		}
@@ -16201,7 +16201,7 @@ namespace Offsets {
 			constexpr uintptr_t ReplayCameraViewFocusRTPC = 0x00F8;
 			constexpr uintptr_t IsLocalRPTC = 0x0100;
 			constexpr uintptr_t TargetCar = 0x0108;
-			constexpr uintptr_t Bitfields_0110 = 0x0110;  // Multiple: bShouldFocusCar, bShouldFocusCameraView, bShouldFocusCarBeLocal
+			constexpr uintptr_t Bitfields_0110 = 0x0110;  // Multiple: bShouldFocusCameraView, bShouldFocusCar, bShouldFocusCarBeLocal
 			constexpr uintptr_t ReplayCamera = 0x0118;
 			constexpr uintptr_t GameEvent = 0x0120;
 		}
@@ -16288,7 +16288,7 @@ namespace Offsets {
 		}
 
 		namespace BTAction_MoveTo {
-			constexpr uintptr_t Bitfields_0160 = 0x0160;  // Multiple: bReverse, bBoost, bAllowPointTurns, bPointTurn, bWasFacingDestination, bHasPath
+			constexpr uintptr_t Bitfields_0160 = 0x0160;  // Multiple: bAllowPointTurns, bBoost, bHasPath, bPointTurn, bReverse, bWasFacingDestination
 			constexpr uintptr_t MinSpeed = 0x0164;
 			constexpr uintptr_t MaxSpeed = 0x0168;
 			constexpr uintptr_t RandomMaxSpeedModifier = 0x016C;
@@ -16547,7 +16547,7 @@ namespace Offsets {
 		}
 
 		namespace BTC_Vehicle {
-			constexpr uintptr_t Bitfields_00E8 = 0x00E8;  // Multiple: bOnBack, bNotOnBack, bWheelsOnGround, bWheelsNotOnGround
+			constexpr uintptr_t Bitfields_00E8 = 0x00E8;  // Multiple: bNotOnBack, bOnBack, bWheelsNotOnGround, bWheelsOnGround
 			constexpr uintptr_t GroundNormalGreaterThan = 0x00EC;
 			constexpr uintptr_t GroundNormalLessThan = 0x00F0;
 			constexpr uintptr_t ForwardSpeedGreaterThan = 0x00F4;
@@ -16558,7 +16558,7 @@ namespace Offsets {
 			constexpr uintptr_t Root = 0x0070;
 			constexpr uintptr_t RootStatus = 0x0078;
 			constexpr uintptr_t AI = 0x0080;
-			constexpr uintptr_t Bitfields_0088 = 0x0088;  // Multiple: bPrintStatusLogs, bDirtyStatusLogs, bEvaluatingConditions, bPauseNextTick
+			constexpr uintptr_t Bitfields_0088 = 0x0088;  // Multiple: bDirtyStatusLogs, bEvaluatingConditions, bPauseNextTick, bPrintStatusLogs
 			constexpr uintptr_t StatusLogs = 0x0090;
 			constexpr uintptr_t StatusLogsIndex = 0x00A0;
 			constexpr uintptr_t StatusLogsStack = 0x00A8;
@@ -16568,7 +16568,7 @@ namespace Offsets {
 
 		namespace BTCondition {
 			constexpr uintptr_t UpdateDelay = 0x0080;
-			constexpr uintptr_t Bitfields_0084 = 0x0084;  // Multiple: bFlipResult, bDirty, CachedResult
+			constexpr uintptr_t Bitfields_0084 = 0x0084;  // Multiple: CachedResult, bDirty, bFlipResult
 			constexpr uintptr_t NextUpdateTime = 0x0088;
 		}
 
@@ -16626,7 +16626,7 @@ namespace Offsets {
 
 		namespace BTNode {
 			constexpr uintptr_t Decorators = 0x0060;
-			constexpr uintptr_t Bitfields_0070 = 0x0070;  // Multiple: bDebugPause, bDebug
+			constexpr uintptr_t Bitfields_0070 = 0x0070;  // Multiple: bDebug, bDebugPause
 			constexpr uintptr_t AI = 0x0078;
 		}
 
@@ -16712,7 +16712,7 @@ namespace Offsets {
 			constexpr uintptr_t CountdownThreshold = 0x00B0;
 			constexpr uintptr_t NoTeamCountdownThreshold = 0x00B4;
 			constexpr uintptr_t CurrentStaleTime = 0x00B8;
-			constexpr uintptr_t Bitfields_00BC = 0x00BC;  // Multiple: bWasInRedSide, bNotifiedStaleBall
+			constexpr uintptr_t Bitfields_00BC = 0x00BC;  // Multiple: bNotifiedStaleBall, bWasInRedSide
 			constexpr uintptr_t Tolerance = 0x00C0;
 			constexpr uintptr_t StaleBallYRespawnOffset = 0x00C4;
 			constexpr uintptr_t HeatseekerResetForce = 0x00C8;
@@ -16752,7 +16752,7 @@ namespace Offsets {
 		}
 
 		namespace BallTrajectoryComponent_TA {
-			constexpr uintptr_t Bitfields_00A8 = 0x00A8;  // Multiple: bEnabled, bCalculatePoints
+			constexpr uintptr_t Bitfields_00A8 = 0x00A8;  // Multiple: bCalculatePoints, bEnabled
 			constexpr uintptr_t TrajectoryPoints = 0x00B0;
 			constexpr uintptr_t TrajectorySettings = 0x00C0;
 			constexpr uintptr_t TotalPathDistance = 0x00D4;
@@ -16764,7 +16764,7 @@ namespace Offsets {
 		namespace Ball_Breakout_TA {
 			constexpr uintptr_t DamageAtTime = 0x0AF0;
 			constexpr uintptr_t DamageForceLevels = 0x0B00;
-			constexpr uintptr_t Bitfields_0B10 = 0x0B10;  // Multiple: bClearTeamOnDamage, bCanDamageOwnTeam
+			constexpr uintptr_t Bitfields_0B10 = 0x0B10;  // Multiple: bCanDamageOwnTeam, bClearTeamOnDamage
 			constexpr uintptr_t MinDamageVelocity = 0x0B14;
 			constexpr uintptr_t MinDamageTime = 0x0B18;
 			constexpr uintptr_t MinImpactSpeedForCharge = 0x0B1C;
@@ -16836,7 +16836,7 @@ namespace Offsets {
 			constexpr uintptr_t AudioIntensityName = 0x0B5C;
 			constexpr uintptr_t FXEvent_TeamChanged = 0x0B68;
 			constexpr uintptr_t FXEvent_IntensityChanged = 0x0B70;
-			constexpr uintptr_t Bitfields_0B78 = 0x0B78;  // Multiple: bSwapTeamOnWorldHit, bBackwardsDirectionCheckEnabled
+			constexpr uintptr_t Bitfields_0B78 = 0x0B78;  // Multiple: bBackwardsDirectionCheckEnabled, bSwapTeamOnWorldHit
 		}
 
 		namespace Ball_Haunted_TA {
@@ -16877,7 +16877,7 @@ namespace Offsets {
 			constexpr uintptr_t WarnFXActor = 0x0818;
 			constexpr uintptr_t ExplosionArchetype = 0x0820;
 			constexpr uintptr_t NoGoalExplosionArchetype = 0x0828;
-			constexpr uintptr_t Bitfields_0830 = 0x0830;  // Multiple: bAllowPlayerExplosionOverride, bNotifyGroundHit, bAwardDemolishCredit, bEndOfGameHidden, bFadeIn, bFadeOut, bPredictionOnGround, bCanBeAttached, bItemFreeze, bWarnBallReset, bCanBeScored, bPossessionEnabled
+			constexpr uintptr_t Bitfields_0830 = 0x0830;  // Multiple: bAllowPlayerExplosionOverride, bAwardDemolishCredit, bCanBeAttached, bCanBeScored, bEndOfGameHidden, bFadeIn, bFadeOut, bItemFreeze, bNotifyGroundHit, bPossessionEnabled, bPredictionOnGround, bWarnBallReset
 			constexpr uintptr_t MagnusCoefficient = 0x0834;
 			constexpr uintptr_t MagnusMinSpeed = 0x0840;
 			constexpr uintptr_t AngularVelocityDamping = 0x0844;
@@ -17013,7 +17013,7 @@ namespace Offsets {
 		}
 
 		namespace BreakOutActor_Platform_TA {
-			constexpr uintptr_t Bitfields_0268 = 0x0268;  // Multiple: bHalfSize, bPrimaryPlayerStart, bLockedDamageState
+			constexpr uintptr_t Bitfields_0268 = 0x0268;  // Multiple: bHalfSize, bLockedDamageState, bPrimaryPlayerStart
 			constexpr uintptr_t TeamIndex = 0x026C;
 			constexpr uintptr_t MaxDamage = 0x0270;
 			constexpr uintptr_t StaticMeshComponent = 0x0278;
@@ -17053,7 +17053,7 @@ namespace Offsets {
 			constexpr uintptr_t UploadCameraDelay = 0x0268;
 			constexpr uintptr_t PRI = 0x0270;
 			constexpr uintptr_t ProfileSettings = 0x0278;
-			constexpr uintptr_t Bitfields_0294 = 0x0294;  // Multiple: bUsingSecondaryCamera, bUsingBehindView, bUsingFreecam, bDirtySecondaryCamera, bDirtyBehindView
+			constexpr uintptr_t Bitfields_0294 = 0x0294;  // Multiple: bDirtyBehindView, bDirtySecondaryCamera, bUsingBehindView, bUsingFreecam, bUsingSecondaryCamera
 			constexpr uintptr_t CameraPitch = 0x0298;
 			constexpr uintptr_t CameraYaw = 0x0299;
 			constexpr uintptr_t MaxProximityDistance = 0x029C;
@@ -17095,7 +17095,7 @@ namespace Offsets {
 			constexpr uintptr_t Target = 0x01F0;
 			constexpr uintptr_t BasePOV = 0x01F8;
 			constexpr uintptr_t OldTargetLocation = 0x0224;
-			constexpr uintptr_t Bitfields_0230 = 0x0230;  // Multiple: bWasReverseCam, bActive
+			constexpr uintptr_t Bitfields_0230 = 0x0230;  // Multiple: bActive, bWasReverseCam
 			constexpr uintptr_t TargetClasses = 0x0238;
 			constexpr uintptr_t PlaneSelectSettings = 0x0248;
 			constexpr uintptr_t AngleSelectSettings = 0x0258;
@@ -17283,7 +17283,7 @@ namespace Offsets {
 			constexpr uintptr_t BadFocusViewRatingDuration = 0x020C;
 			constexpr uintptr_t FocusCar = 0x0210;
 			constexpr uintptr_t LastCarChangeTime = 0x0218;
-			constexpr uintptr_t Bitfields_021C = 0x021C;  // Multiple: bIsRelevant, bBlending, bExceptionallyBadFocus, bBadViewRating
+			constexpr uintptr_t Bitfields_021C = 0x021C;  // Multiple: bBadViewRating, bBlending, bExceptionallyBadFocus, bIsRelevant
 			constexpr uintptr_t BlendTime = 0x0220;
 			constexpr uintptr_t SnapshotPOV = 0x0224;
 			constexpr uintptr_t BadViewRatingStart = 0x0250;
@@ -17354,7 +17354,7 @@ namespace Offsets {
 			constexpr uintptr_t SoccarGame = 0x00F0;
 			constexpr uintptr_t FocusCar = 0x00F8;
 			constexpr uintptr_t FocusBall = 0x0100;
-			constexpr uintptr_t Bitfields_0108 = 0x0108;  // Multiple: bHasDoneFirstUpdate, bCanUpdate, bSetGoalScorerFocusOffset
+			constexpr uintptr_t Bitfields_0108 = 0x0108;  // Multiple: bCanUpdate, bHasDoneFirstUpdate, bSetGoalScorerFocusOffset
 			constexpr uintptr_t LastFocusChangeTime = 0x010C;
 			constexpr uintptr_t SlomoTime = 0x0110;
 			constexpr uintptr_t Goal = 0x0118;
@@ -17467,7 +17467,7 @@ namespace Offsets {
 			constexpr uintptr_t MaxGoalYZoomOutDistance = 0x0154;
 			constexpr uintptr_t MaxGoalXZoomOutDistance = 0x0158;
 			constexpr uintptr_t MinCameraDistanceToBall = 0x015C;
-			constexpr uintptr_t Bitfields_0160 = 0x0160;  // Multiple: bSnapFOV, bSnapToFocus, bBallHasBeenHit, bHasGoalScorerFocus, bHitWallLastFrame
+			constexpr uintptr_t Bitfields_0160 = 0x0160;  // Multiple: bBallHasBeenHit, bHasGoalScorerFocus, bHitWallLastFrame, bSnapFOV, bSnapToFocus
 			constexpr uintptr_t BallFloorLocation = 0x0164;
 			constexpr uintptr_t BallFloorNormal = 0x0170;
 			constexpr uintptr_t LastCarFocusOffset = 0x017C;
@@ -17531,7 +17531,7 @@ namespace Offsets {
 		}
 
 		namespace CameraState_Replay_TA {
-			constexpr uintptr_t Bitfields_0098 = 0x0098;  // Multiple: bLocalMovement, bClipToField, bUIHighlightFocus
+			constexpr uintptr_t Bitfields_0098 = 0x0098;  // Multiple: bClipToField, bLocalMovement, bUIHighlightFocus
 			constexpr uintptr_t OldFocusActor = 0x00A0;
 			constexpr uintptr_t OldFocusActorLocation = 0x00A8;
 		}
@@ -17572,7 +17572,7 @@ namespace Offsets {
 		}
 
 		namespace CameraState_TA {
-			constexpr uintptr_t Bitfields_0090 = 0x0090;  // Multiple: bShowCarHUD, bAllowRearCamera
+			constexpr uintptr_t Bitfields_0090 = 0x0090;  // Multiple: bAllowRearCamera, bShowCarHUD
 			constexpr uintptr_t StateStartTime = 0x0094;
 		}
 
@@ -17627,7 +17627,7 @@ namespace Offsets {
 			constexpr uintptr_t GreenScreenLimits = 0x0814;
 			constexpr uintptr_t BloomScaleLimits = 0x0820;
 			constexpr uintptr_t FilterOverlayLimits = 0x082C;
-			constexpr uintptr_t Bitfields_0838 = 0x0838;  // Multiple: bReplayTranslucency, bGreenScreen
+			constexpr uintptr_t Bitfields_0838 = 0x0838;  // Multiple: bGreenScreen, bReplayTranslucency
 			constexpr uintptr_t GreenScreenColorIndex = 0x083C;
 			constexpr uintptr_t CurrentCameraState = 0x0840;
 			constexpr uintptr_t PreviousCameraProxyState = 0x0848;
@@ -17716,7 +17716,7 @@ namespace Offsets {
 			constexpr uintptr_t BoostModifier = 0x0334;
 			constexpr uintptr_t LastBoostAmountRequestTime = 0x0338;
 			constexpr uintptr_t LastBoostAmount = 0x033C;
-			constexpr uintptr_t Bitfields_0340 = 0x0340;  // Multiple: bPendingConfirmBoostAmount, bRechargeGroundOnly, bNoBoost
+			constexpr uintptr_t Bitfields_0340 = 0x0340;  // Multiple: bNoBoost, bPendingConfirmBoostAmount, bRechargeGroundOnly
 			constexpr uintptr_t BoostForce = 0x0344;
 			constexpr uintptr_t MinBoostTime = 0x0348;
 			constexpr uintptr_t RechargeRate = 0x034C;
@@ -17812,7 +17812,7 @@ namespace Offsets {
 		namespace CarComponent_TA {
 			constexpr uintptr_t FXActorArchetype = 0x0268;
 			constexpr uintptr_t FXEvent = 0x0270;
-			constexpr uintptr_t Bitfields_0278 = 0x0278;  // Multiple: bDisabled, bAutoActivate, bSimulateComponent, bCreated, bActive, bRemovedFromCar
+			constexpr uintptr_t Bitfields_0278 = 0x0278;  // Multiple: bActive, bAutoActivate, bCreated, bDisabled, bRemovedFromCar, bSimulateComponent
 			constexpr uintptr_t ComponentData = 0x027C;
 			constexpr uintptr_t ReplicatedActive = 0x027D;
 			constexpr uintptr_t Activator = 0x0280;
@@ -17825,7 +17825,7 @@ namespace Offsets {
 		}
 
 		namespace CarComponent_TerritoryDemolish_TA {
-			constexpr uintptr_t Bitfields_02E0 = 0x02E0;  // Multiple: bSelfDestructCountdown, bBlueSide, bCrossWallSFX, bIsLocallyControlled
+			constexpr uintptr_t Bitfields_02E0 = 0x02E0;  // Multiple: bBlueSide, bCrossWallSFX, bIsLocallyControlled, bSelfDestructCountdown
 			constexpr uintptr_t AmbientMuffleRTCP = 0x02E4;
 			constexpr uintptr_t EnterWallSFX = 0x02F0;
 			constexpr uintptr_t ExitWallSFX = 0x02F8;
@@ -17852,7 +17852,7 @@ namespace Offsets {
 		}
 
 		namespace CarGrappleTracker_TA {
-			constexpr uintptr_t Bitfields_0090 = 0x0090;  // Multiple: bGrappled, bDoubleGrappled
+			constexpr uintptr_t Bitfields_0090 = 0x0090;  // Multiple: bDoubleGrappled, bGrappled
 			constexpr uintptr_t DoubleGrappleCount = 0x0094;
 			constexpr uintptr_t CachedBall = 0x0098;
 		}
@@ -17878,7 +17878,7 @@ namespace Offsets {
 			constexpr uintptr_t TeamColorID = 0x07F4;
 			constexpr uintptr_t CustomColorID = 0x07F8;
 			constexpr uintptr_t Logo = 0x0800;
-			constexpr uintptr_t Bitfields_0808 = 0x0808;  // Multiple: bSwapLogoColors, bBoosting, bLocalPlayer
+			constexpr uintptr_t Bitfields_0808 = 0x0808;  // Multiple: bBoosting, bLocalPlayer, bSwapLogoColors
 			constexpr uintptr_t TeamFinish = 0x0810;
 			constexpr uintptr_t CustomFinish = 0x0818;
 			constexpr uintptr_t ClubColors = 0x0820;
@@ -17908,7 +17908,7 @@ namespace Offsets {
 			constexpr uintptr_t ChassisSpringComponent = 0x0910;
 			constexpr uintptr_t ChassisSpringControl = 0x0918;
 			constexpr uintptr_t BoostControls = 0x0920;
-			constexpr uintptr_t Bitfields_0930 = 0x0930;  // Multiple: bInAir, bBoostFlying, bPreviewSupersonic, bWantsBoostCameraAdjustment
+			constexpr uintptr_t Bitfields_0930 = 0x0930;  // Multiple: bBoostFlying, bInAir, bPreviewSupersonic, bWantsBoostCameraAdjustment
 			constexpr uintptr_t Throttle = 0x0934;
 		}
 
@@ -17934,7 +17934,7 @@ namespace Offsets {
 			constexpr uintptr_t BodyFX = 0x0388;
 			constexpr uintptr_t BoostAsset = 0x0390;
 			constexpr uintptr_t SupersonicAsset = 0x0398;
-			constexpr uintptr_t Bitfields_03A0 = 0x03A0;  // Multiple: bLockLoadout, bSpinWheelsFromBoost, bAddToCarPreviewList
+			constexpr uintptr_t Bitfields_03A0 = 0x03A0;  // Multiple: bAddToCarPreviewList, bLockLoadout, bSpinWheelsFromBoost
 			constexpr uintptr_t SupersonicFX = 0x03A8;
 			constexpr uintptr_t EngineAudioAsset = 0x03B8;
 			constexpr uintptr_t EngineAudioPreview = 0x03C0;
@@ -17950,7 +17950,7 @@ namespace Offsets {
 			constexpr uintptr_t Slot = 0x00A8;
 			constexpr uintptr_t KeyFrames = 0x00B0;
 			constexpr uintptr_t Delay = 0x00C0;
-			constexpr uintptr_t Bitfields_00C4 = 0x00C4;  // Multiple: bDelayHidden, bLoop, bComponentWasAttached
+			constexpr uintptr_t Bitfields_00C4 = 0x00C4;  // Multiple: bComponentWasAttached, bDelayHidden, bLoop
 			constexpr uintptr_t SkelControlName = 0x00C8;
 			constexpr uintptr_t PreviewActor = 0x00D0;
 			constexpr uintptr_t Component = 0x00D8;
@@ -18079,7 +18079,7 @@ namespace Offsets {
 			constexpr uintptr_t DemolishSpeed = 0x08D9;
 			constexpr uintptr_t DemolishSource = 0x08DA;
 			constexpr uintptr_t Loadout = 0x08E0;
-			constexpr uintptr_t Bitfields_08E8 = 0x08E8;  // Multiple: bLoadoutSet, bUnlimitedTimeForDodge, bUnlimitedJumps, bDemolishOnOpposingGround, bWasOnOpposingGround, bDemolishOnGoalZone, bWasInGoalZone, bOverrideHandbrakeOn, bTeamBumpsUseCarForceMultiplier, bOverrideBoostOn, bUseDefaultLoadout
+			constexpr uintptr_t Bitfields_08E8 = 0x08E8;  // Multiple: bDemolishOnGoalZone, bDemolishOnOpposingGround, bLoadoutSet, bOverrideBoostOn, bOverrideHandbrakeOn, bTeamBumpsUseCarForceMultiplier, bUnlimitedJumps, bUnlimitedTimeForDodge, bUseDefaultLoadout, bWasInGoalZone, bWasOnOpposingGround
 			constexpr uintptr_t ExitFXArchetype = 0x08F0;
 			constexpr uintptr_t DemolishExplosionArchetype = 0x08F8;
 			constexpr uintptr_t DemolishExplosion = 0x0900;
@@ -18163,7 +18163,7 @@ namespace Offsets {
 			constexpr uintptr_t Description = 0x0090;
 			constexpr uintptr_t GroupId = 0x00A0;
 			constexpr uintptr_t Points = 0x00A4;
-			constexpr uintptr_t Bitfields_00A8 = 0x00A8;  // Multiple: bIsAchievement, bIsRepeatable, bIsPremium, bAutoClaimRewards
+			constexpr uintptr_t Bitfields_00A8 = 0x00A8;  // Multiple: bAutoClaimRewards, bIsAchievement, bIsPremium, bIsRepeatable
 			constexpr uintptr_t XPUnlockLevel = 0x00AC;
 			constexpr uintptr_t RepeatLimit = 0x00B0;
 			constexpr uintptr_t IconURL = 0x00B8;
@@ -18241,7 +18241,7 @@ namespace Offsets {
 		}
 
 		namespace Challenge_TA {
-			constexpr uintptr_t Bitfields_01E8 = 0x01E8;  // Multiple: bIsHidden, bRewardsAvailable, bNotifyNewInfo, bComplete, bLocked
+			constexpr uintptr_t Bitfields_01E8 = 0x01E8;  // Multiple: bComplete, bIsHidden, bLocked, bNotifyNewInfo, bRewardsAvailable
 			constexpr uintptr_t CompleteCount = 0x01EC;
 			constexpr uintptr_t ProgressResetTimeUTC = 0x01F0;
 			constexpr uintptr_t RequirementProgress = 0x01F8;
@@ -18397,7 +18397,7 @@ namespace Offsets {
 			constexpr uintptr_t NameLengthMin = 0x0080;
 			constexpr uintptr_t NameLengthMax = 0x0084;
 			constexpr uintptr_t MilestoneDataCacheDurationSeconds = 0x0088;
-			constexpr uintptr_t Bitfields_008C = 0x008C;  // Multiple: bEnforceFriendsOnlyParty, bAllowSeverClubInfoReplication
+			constexpr uintptr_t Bitfields_008C = 0x008C;  // Multiple: bAllowSeverClubInfoReplication, bEnforceFriendsOnlyParty
 			constexpr uintptr_t MilestoneStatNames = 0x0090;
 		}
 
@@ -18561,7 +18561,7 @@ namespace Offsets {
 			constexpr uintptr_t BaseSettings = 0x00A8;
 			constexpr uintptr_t CrowdActorManager = 0x00B0;
 			constexpr uintptr_t Sounds = 0x00B8;
-			constexpr uintptr_t Bitfields_00C0 = 0x00C0;  // Multiple: bInitializedMods, bIn0Seconds, bLowEnergy
+			constexpr uintptr_t Bitfields_00C0 = 0x00C0;  // Multiple: bIn0Seconds, bInitializedMods, bLowEnergy
 			constexpr uintptr_t DebugLastExcitementSoundValue = 0x00C8;
 			constexpr uintptr_t DebugLastExcitementSoundTime = 0x00D8;
 			constexpr uintptr_t TimeSince0Seconds = 0x00DC;
@@ -18588,7 +18588,7 @@ namespace Offsets {
 			constexpr uintptr_t OpenGoalTime = 0x0154;
 			constexpr uintptr_t NearGoalTime = 0x0158;
 			constexpr uintptr_t FastBreakTime = 0x015C;
-			constexpr uintptr_t Bitfields_0160 = 0x0160;  // Multiple: bFastBreakInProgress, bShotInProgress, bAerialInProgress, bWaitingForKickoffTouch, bWaitingForTenseClear
+			constexpr uintptr_t Bitfields_0160 = 0x0160;  // Multiple: bAerialInProgress, bFastBreakInProgress, bShotInProgress, bWaitingForKickoffTouch, bWaitingForTenseClear
 			constexpr uintptr_t ShotGoal = 0x0168;
 			constexpr uintptr_t ShotMaxScorability = 0x0170;
 			constexpr uintptr_t LastShotTime = 0x0174;
@@ -18863,7 +18863,7 @@ namespace Offsets {
 		}
 
 		namespace EOSGameClipsConfig_TA {
-			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bFeatureEnabled, bCabinedModeClippingEnabled, bGameplayClippingEnabled, bGoalReplayClippingEnabled, bLinkAccountPopupEnabled, bSettingsMenuButtonEnabled, bStaticDataDebugEnabled
+			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bCabinedModeClippingEnabled, bFeatureEnabled, bGameplayClippingEnabled, bGoalReplayClippingEnabled, bLinkAccountPopupEnabled, bSettingsMenuButtonEnabled, bStaticDataDebugEnabled
 			constexpr uintptr_t ClipDurationSeconds = 0x0080;
 			constexpr uintptr_t MinClipLengthSeconds = 0x0088;
 			constexpr uintptr_t MinClipCooldownSeconds = 0x008C;
@@ -19012,7 +19012,7 @@ namespace Offsets {
 		}
 
 		namespace EOSVoiceSettingsSave_TA {
-			constexpr uintptr_t Bitfields_00C8 = 0x00C8;  // Multiple: bEnabled, bPushToTalk, bLocalMuted, bMainMenuNotifications, bMatchNotifications, bTextNotifications
+			constexpr uintptr_t Bitfields_00C8 = 0x00C8;  // Multiple: bEnabled, bLocalMuted, bMainMenuNotifications, bMatchNotifications, bPushToTalk, bTextNotifications
 			constexpr uintptr_t VoiceChatFilter = 0x00CC;
 			constexpr uintptr_t VoiceInputMode = 0x00CD;
 			constexpr uintptr_t PreferredRoomType = 0x00CE;
@@ -19218,7 +19218,7 @@ namespace Offsets {
 		}
 
 		namespace EngineShare_TA {
-			constexpr uintptr_t Bitfields_0170 = 0x0170;  // Multiple: bEnableClientPrediction, bClientPhysicsUpdate, bDisableClientCorrections, bRunningPhysicsFrame, bDebugClientCorrections, bForceClientCorrection
+			constexpr uintptr_t Bitfields_0170 = 0x0170;  // Multiple: bClientPhysicsUpdate, bDebugClientCorrections, bDisableClientCorrections, bEnableClientPrediction, bForceClientCorrection, bRunningPhysicsFrame
 			constexpr uintptr_t ReplayManager = 0x0178;
 			constexpr uintptr_t AdManager = 0x0180;
 			constexpr uintptr_t OnlineProductStore = 0x0188;
@@ -19297,7 +19297,7 @@ namespace Offsets {
 		}
 
 		namespace EulaConfig_TA {
-			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bRequiresAcceptance, bAllowEulaReset
+			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bAllowEulaReset, bRequiresAcceptance
 			constexpr uintptr_t ExcludedPlatforms = 0x0080;
 			constexpr uintptr_t IgnoredHashIds = 0x0090;
 		}
@@ -19486,7 +19486,7 @@ namespace Offsets {
 			constexpr uintptr_t BoostGlowRate = 0x03E8;
 			constexpr uintptr_t ShakeComponent = 0x03F0;
 			constexpr uintptr_t Vehicle = 0x03F8;
-			constexpr uintptr_t Bitfields_0400 = 0x0400;  // Multiple: bThrottle, bInAir, bBrake, bWasBoosting, bWasBoostFlying, bWasSuperSonic, bWasOnWall, bEnabled, bPreferSimulatedState
+			constexpr uintptr_t Bitfields_0400 = 0x0400;  // Multiple: bBrake, bEnabled, bInAir, bPreferSimulatedState, bThrottle, bWasBoostFlying, bWasBoosting, bWasOnWall, bWasSuperSonic
 			constexpr uintptr_t ThrottleState = 0x0408;
 			constexpr uintptr_t SuperSonicState = 0x0410;
 			constexpr uintptr_t InAirState = 0x0418;
@@ -19632,7 +19632,7 @@ namespace Offsets {
 
 		namespace FirstTimeExperienceRedefinition_TA {
 			constexpr uintptr_t FTERedefinedInfo = 0x0060;
-			constexpr uintptr_t Bitfields_0070 = 0x0070;  // Multiple: bFTEManagerEnabled, bClearActiveFTE
+			constexpr uintptr_t Bitfields_0070 = 0x0070;  // Multiple: bClearActiveFTE, bFTEManagerEnabled
 		}
 
 		namespace FirstTimeExperienceSave_TA {
@@ -19654,7 +19654,7 @@ namespace Offsets {
 			constexpr uintptr_t SeperationIdealDistance = 0x0290;
 			constexpr uintptr_t Spline = 0x0298;
 			constexpr uintptr_t SpawnSpreadDistanceAlongSpline = 0x02A0;
-			constexpr uintptr_t Bitfields_02A4 = 0x02A4;  // Multiple: bRestartTimerEnabled, UpdateFlockMovement, ResetFlockOnToggleUpdateMovement
+			constexpr uintptr_t Bitfields_02A4 = 0x02A4;  // Multiple: ResetFlockOnToggleUpdateMovement, UpdateFlockMovement, bRestartTimerEnabled
 			constexpr uintptr_t WaitTimeInSeconds = 0x02A8;
 			constexpr uintptr_t MinAgentScale = 0x02AC;
 			constexpr uintptr_t MaxAgentScale = 0x02B0;
@@ -19791,7 +19791,7 @@ namespace Offsets {
 			constexpr uintptr_t AutoTour = 0x00B0;
 			constexpr uintptr_t CycleID = 0x00B8;
 			constexpr uintptr_t WeekIndex = 0x00C0;
-			constexpr uintptr_t Bitfields_00C4 = 0x00C4;  // Multiple: bEliminatedFirstRound, bWeeksResultsChanged, bReceivedResults, bFailedToRetrieveResults
+			constexpr uintptr_t Bitfields_00C4 = 0x00C4;  // Multiple: bEliminatedFirstRound, bFailedToRetrieveResults, bReceivedResults, bWeeksResultsChanged
 			constexpr uintptr_t NewTournamentResult = 0x00C8;
 			constexpr uintptr_t OldWeeklyResults = 0x00D8;
 			constexpr uintptr_t NewWeeklyResults = 0x00E8;
@@ -19832,7 +19832,7 @@ namespace Offsets {
 			constexpr uintptr_t TeamSize = 0x00E8;
 			constexpr uintptr_t GameMode = 0x00EC;
 			constexpr uintptr_t GameModesDisplayNames = 0x00F0;
-			constexpr uintptr_t Bitfields_0100 = 0x0100;  // Multiple: bIsIneligible, bCanCheckIn, bRegistered, bUpdateSkill, bIsInitialized
+			constexpr uintptr_t Bitfields_0100 = 0x0100;  // Multiple: bCanCheckIn, bIsIneligible, bIsInitialized, bRegistered, bUpdateSkill
 		}
 
 		namespace GFxData_AutoTour_Week_TA {
@@ -19895,7 +19895,7 @@ namespace Offsets {
 		}
 
 		namespace GFxData_ChallengeFolder_TA {
-			constexpr uintptr_t Bitfields_0098 = 0x0098;  // Multiple: bSelected, bNotifyNewInfo, bNormalRewardsAvailable, bPremiumRewardsAvailable
+			constexpr uintptr_t Bitfields_0098 = 0x0098;  // Multiple: bNormalRewardsAvailable, bNotifyNewInfo, bPremiumRewardsAvailable, bSelected
 			constexpr uintptr_t GFxParentFolder = 0x00A0;
 			constexpr uintptr_t GFxSubFolders = 0x00A8;
 			constexpr uintptr_t SubFolderClass = 0x00B8;
@@ -19952,7 +19952,7 @@ namespace Offsets {
 			constexpr uintptr_t PrimaryColorID = 0x00C0;
 			constexpr uintptr_t AccentColorID = 0x00C4;
 			constexpr uintptr_t OwnerId = 0x00C8;
-			constexpr uintptr_t Bitfields_0110 = 0x0110;  // Multiple: bVerified, bCrossPlatformFiltered
+			constexpr uintptr_t Bitfields_0110 = 0x0110;  // Multiple: bCrossPlatformFiltered, bVerified
 			constexpr uintptr_t ClubTitleID = 0x0114;
 			constexpr uintptr_t ClubTitleText = 0x0120;
 			constexpr uintptr_t ClubTitleColor = 0x0130;
@@ -19992,7 +19992,7 @@ namespace Offsets {
 
 		namespace GFxData_Clubs_TA {
 			constexpr uintptr_t LocalClubID = 0x0098;
-			constexpr uintptr_t Bitfields_00A0 = 0x00A0;  // Multiple: bClubOwner, bSyncedLocalClub, bCrossPlatformFiltered, bHasSyncedClubInvites, bNeedsStatMilestoneDataRequest, bOnlineStorageSyncCompleted, bOmitRoleChangeNotification
+			constexpr uintptr_t Bitfields_00A0 = 0x00A0;  // Multiple: bClubOwner, bCrossPlatformFiltered, bHasSyncedClubInvites, bNeedsStatMilestoneDataRequest, bOmitRoleChangeNotification, bOnlineStorageSyncCompleted, bSyncedLocalClub
 			constexpr uintptr_t LocalPlayerClubRole = 0x00A4;
 			constexpr uintptr_t LocalClubSyncError = 0x00A8;
 			constexpr uintptr_t ExecutingClubAction = 0x00B8;
@@ -20088,7 +20088,7 @@ namespace Offsets {
 			constexpr uintptr_t MotD = 0x00B0;
 			constexpr uintptr_t Cache = 0x00C0;
 			constexpr uintptr_t ShopNotificationsManager = 0x00C8;
-			constexpr uintptr_t Bitfields_00D0 = 0x00D0;  // Multiple: bIsNewsPanelExpanded, bInitialLoadCompleted
+			constexpr uintptr_t Bitfields_00D0 = 0x00D0;  // Multiple: bInitialLoadCompleted, bIsNewsPanelExpanded
 		}
 
 		namespace GFxData_ConnectionStats_TA {
@@ -20190,7 +20190,7 @@ namespace Offsets {
 			constexpr uintptr_t VoiceSettingsSave = 0x00A8;
 			constexpr uintptr_t SoundSettingsSave = 0x00B0;
 			constexpr uintptr_t UISavedValues = 0x00B8;
-			constexpr uintptr_t Bitfields_00C0 = 0x00C0;  // Multiple: bPushToTalkActive, bInMapTransition, bMainMenuNotifications, bMatchNotifications, bVoiceSettingEnabled, bDisplayVoiceTab, bVoiceFeatureEnabled
+			constexpr uintptr_t Bitfields_00C0 = 0x00C0;  // Multiple: bDisplayVoiceTab, bInMapTransition, bMainMenuNotifications, bMatchNotifications, bPushToTalkActive, bVoiceFeatureEnabled, bVoiceSettingEnabled
 			constexpr uintptr_t VoiceReportURL = 0x00C8;
 			constexpr uintptr_t InactivePTTVolume = 0x00D8;
 			constexpr uintptr_t ActivePTTVolume = 0x00DC;
@@ -20203,7 +20203,7 @@ namespace Offsets {
 			constexpr uintptr_t EpicAccountId = 0x0098;
 			constexpr uintptr_t PlayerID = 0x00A8;
 			constexpr uintptr_t RoomName = 0x00F0;
-			constexpr uintptr_t Bitfields_0100 = 0x0100;  // Multiple: bLocal, bSpeaking, bSelfMuted, bLocalMuted, bAdminMuted, bBlocked
+			constexpr uintptr_t Bitfields_0100 = 0x0100;  // Multiple: bAdminMuted, bBlocked, bLocal, bLocalMuted, bSelfMuted, bSpeaking
 			constexpr uintptr_t Persona = 0x0108;
 			constexpr uintptr_t PlayerActivity = 0x0110;
 		}
@@ -20213,7 +20213,7 @@ namespace Offsets {
 			constexpr uintptr_t RoomType = 0x00A8;
 			constexpr uintptr_t VoiceChatFilter = 0x00A9;
 			constexpr uintptr_t RoomTitle = 0x00B0;
-			constexpr uintptr_t Bitfields_00C0 = 0x00C0;  // Multiple: bVoiceReportingEnabled, bRecordingActive, bJoinable, bPlayersAllowVoiceReporting, bRecordingDataAvailable, bManuallyJoined
+			constexpr uintptr_t Bitfields_00C0 = 0x00C0;  // Multiple: bJoinable, bManuallyJoined, bPlayersAllowVoiceReporting, bRecordingActive, bRecordingDataAvailable, bVoiceReportingEnabled
 			constexpr uintptr_t PartyRoomTitle = 0x00C8;
 			constexpr uintptr_t MatchRoomTitle = 0x00D8;
 			constexpr uintptr_t SettingDisabledTitle = 0x00E8;
@@ -20239,7 +20239,7 @@ namespace Offsets {
 		}
 
 		namespace GFxData_EOSVoiceUser_TA {
-			constexpr uintptr_t Bitfields_0098 = 0x0098;  // Multiple: bVoiceAgreementAccepted, bVoiceAgeRestricted, bHasVoiceChatPermissions, bDropsFinished, bInMainMenu
+			constexpr uintptr_t Bitfields_0098 = 0x0098;  // Multiple: bDropsFinished, bHasVoiceChatPermissions, bInMainMenu, bVoiceAgeRestricted, bVoiceAgreementAccepted
 			constexpr uintptr_t NewUserLastFTEGroupName = 0x009C;
 			constexpr uintptr_t LegacyUserLastFTEGroupName = 0x00A4;
 			constexpr uintptr_t LegacySave = 0x00B0;
@@ -20263,7 +20263,7 @@ namespace Offsets {
 			constexpr uintptr_t EpicAccountSave = 0x0098;
 			constexpr uintptr_t EpicDisplayName = 0x00A0;
 			constexpr uintptr_t AccountLinkURL = 0x00B0;
-			constexpr uintptr_t Bitfields_00C0 = 0x00C0;  // Multiple: bEnforceCabinedMode, bInCabinedMode, bConnectionLost
+			constexpr uintptr_t Bitfields_00C0 = 0x00C0;  // Multiple: bConnectionLost, bEnforceCabinedMode, bInCabinedMode
 			constexpr uintptr_t SetDOBErrorMessage = 0x00C8;
 			constexpr uintptr_t SetParentEmailErrorMessage = 0x00D8;
 			constexpr uintptr_t ConfirmDisplayNameErrorMessage = 0x00E8;
@@ -20332,7 +20332,7 @@ namespace Offsets {
 			constexpr uintptr_t NumInGameFriendsPlatform = 0x0114;
 			constexpr uintptr_t NumOnlineFriendsEpic = 0x0118;
 			constexpr uintptr_t NumInGameFriendsEpic = 0x011C;
-			constexpr uintptr_t Bitfields_0120 = 0x0120;  // Multiple: bPlatformFriendsDownloadFailed, bEpicFriendsDownloadFailed, bPromptForPin, bRequirePinForFriends, bUsePresenceGroups, bCrossplayEnabled, bPermissionsInitialized
+			constexpr uintptr_t Bitfields_0120 = 0x0120;  // Multiple: bCrossplayEnabled, bEpicFriendsDownloadFailed, bPermissionsInitialized, bPlatformFriendsDownloadFailed, bPromptForPin, bRequirePinForFriends, bUsePresenceGroups
 			constexpr uintptr_t ForgotPinURL = 0x0128;
 			constexpr uintptr_t HiddenManager = 0x0138;
 			constexpr uintptr_t PersonasData = 0x0140;
@@ -20355,7 +20355,7 @@ namespace Offsets {
 			constexpr uintptr_t TimeRemaining = 0x0098;
 			constexpr uintptr_t TimeToNextMatch = 0x009C;
 			constexpr uintptr_t TimeWaitingForPlayersRemaining = 0x00A0;
-			constexpr uintptr_t Bitfields_00A4 = 0x00A4;  // Multiple: bOverTime, bOnline, bUnfairTeams, bForfeit, bNoContest, bServerTraveling, bRankedMatch, bSolo, bIsBotMatch, bForfeitVoteAllowed, bHasLeaveMatchPenalty, bCanVoteToForfeit, bViewingEndGameReplay, bShowIntroScene, bReadyToStartGame, bClubMatch, bDisableTeamSelectScreen, bStayAsPartyButtonVisible, bStayAsPartyButtonEnabled, bServerShutdown, bAlwaysShowMatchTypeLabel, bShowMutatorInfo
+			constexpr uintptr_t Bitfields_00A4 = 0x00A4;  // Multiple: bAlwaysShowMatchTypeLabel, bCanVoteToForfeit, bClubMatch, bDisableTeamSelectScreen, bForfeit, bForfeitVoteAllowed, bHasLeaveMatchPenalty, bIsBotMatch, bNoContest, bOnline, bOverTime, bRankedMatch, bReadyToStartGame, bServerShutdown, bServerTraveling, bShowIntroScene, bShowMutatorInfo, bSolo, bStayAsPartyButtonEnabled, bStayAsPartyButtonVisible, bUnfairTeams, bViewingEndGameReplay
 			constexpr uintptr_t MatchState = 0x00A8;
 			constexpr uintptr_t GameState = 0x00B8;
 			constexpr uintptr_t MatchType = 0x00C0;
@@ -20392,7 +20392,7 @@ namespace Offsets {
 			constexpr uintptr_t CustomColors = 0x00E0;
 			constexpr uintptr_t Team0Colors = 0x00F0;
 			constexpr uintptr_t Team1Colors = 0x0100;
-			constexpr uintptr_t Bitfields_0110 = 0x0110;  // Multiple: bTeam0FinishDisabled, bTeam1FinishDisabled, bCustom0FinishDisabled, bCustom1FinishDisabled, bTeam0ColorForced, bTeam1ColorForced, bCustom0ColorForced, bCustom1ColorForced
+			constexpr uintptr_t Bitfields_0110 = 0x0110;  // Multiple: bCustom0ColorForced, bCustom0FinishDisabled, bCustom1ColorForced, bCustom1FinishDisabled, bTeam0ColorForced, bTeam0FinishDisabled, bTeam1ColorForced, bTeam1FinishDisabled
 			constexpr uintptr_t ForcedTeam0FinishName = 0x0118;
 			constexpr uintptr_t ForcedTeam1FinishName = 0x0128;
 			constexpr uintptr_t ForcedTeam0Color = 0x0138;
@@ -20481,7 +20481,7 @@ namespace Offsets {
 
 		namespace GFxData_LocalCar_TA {
 			constexpr uintptr_t Boost = 0x0098;
-			constexpr uintptr_t Bitfields_009C = 0x009C;  // Multiple: bOnBack, bViewingCarCam, bShowItemsDisplay, bShowTargetReticle, bItemActive
+			constexpr uintptr_t Bitfields_009C = 0x009C;  // Multiple: bItemActive, bOnBack, bShowItemsDisplay, bShowTargetReticle, bViewingCarCam
 			constexpr uintptr_t TimeTillItem = 0x00A0;
 			constexpr uintptr_t MaxTimeTillItem = 0x00A4;
 			constexpr uintptr_t ItemName = 0x00A8;
@@ -20491,7 +20491,7 @@ namespace Offsets {
 		}
 
 		namespace GFxData_LocalPlayer_TA {
-			constexpr uintptr_t Bitfields_0098 = 0x0098;  // Multiple: bOpenedStartMenu, bCheckedStartupEvents, bSaveDataLoaded, bBallcam, bUseHoldBallCam, bUseBallCamIndicator, bAlternateNameplates, bMetric, bTeamColoredBoostMeter, bPrimaryPlayer, bPartyLeader, bIsInParty, bIsPlayerTrading, bDemoBuild, bForceSplitScreenUI, bPrivateMatchGameOwner, bAgeRestricted, bPendingIdleKick, bStartVoteToForfeitDisabled, bDisableCrossPlay, bReplacingBot, bDisableDivisions, bCheckedBootMessage, bUseSteamInput, bControllerConnected, bCompletedChallengesForCompetitive
+			constexpr uintptr_t Bitfields_0098 = 0x0098;  // Multiple: bAgeRestricted, bAlternateNameplates, bBallcam, bCheckedBootMessage, bCheckedStartupEvents, bCompletedChallengesForCompetitive, bControllerConnected, bDemoBuild, bDisableCrossPlay, bDisableDivisions, bForceSplitScreenUI, bIsInParty, bIsPlayerTrading, bMetric, bOpenedStartMenu, bPartyLeader, bPendingIdleKick, bPrimaryPlayer, bPrivateMatchGameOwner, bReplacingBot, bSaveDataLoaded, bStartVoteToForfeitDisabled, bTeamColoredBoostMeter, bUseBallCamIndicator, bUseHoldBallCam, bUseSteamInput
 			constexpr uintptr_t SaveDataError = 0x00A0;
 			constexpr uintptr_t OnlineError = 0x00B0;
 			constexpr uintptr_t PlayerName = 0x00C0;
@@ -20589,7 +20589,7 @@ namespace Offsets {
 		namespace GFxData_MatchHistoryManager_TA {
 			constexpr uintptr_t SyncStatus = 0x0098;
 			constexpr uintptr_t SyncErrorMsg = 0x00A0;
-			constexpr uintptr_t Bitfields_00B0 = 0x00B0;  // Multiple: bMatchHistorySyncFailed, bCached
+			constexpr uintptr_t Bitfields_00B0 = 0x00B0;  // Multiple: bCached, bMatchHistorySyncFailed
 			constexpr uintptr_t Matches = 0x00B8;
 			constexpr uintptr_t SyncRPC = 0x00C8;
 			constexpr uintptr_t Config = 0x00D0;
@@ -20604,7 +20604,7 @@ namespace Offsets {
 			constexpr uintptr_t Index = 0x0098;
 			constexpr uintptr_t LocalPlayerTeam = 0x009C;
 			constexpr uintptr_t ReplayURL = 0x00A0;
-			constexpr uintptr_t Bitfields_00B0 = 0x00B0;  // Multiple: bHasSavedReplay, bIsLocalPlayerMvp, bLocalPlayerAbandoned, bIsPrivateMatch
+			constexpr uintptr_t Bitfields_00B0 = 0x00B0;  // Multiple: bHasSavedReplay, bIsLocalPlayerMvp, bIsPrivateMatch, bLocalPlayerAbandoned
 			constexpr uintptr_t TeamSize = 0x00B4;
 			constexpr uintptr_t MatchGameMode = 0x00B8;
 			constexpr uintptr_t MatchPlaylist = 0x00C8;
@@ -20632,7 +20632,7 @@ namespace Offsets {
 			constexpr uintptr_t Regions = 0x0198;
 			constexpr uintptr_t TotalPopulation = 0x01A8;
 			constexpr uintptr_t MatchmakingViewTab = 0x01AC;
-			constexpr uintptr_t Bitfields_01B0 = 0x01B0;  // Multiple: bRankedPlaylistsEnabled, bMultiSelectEnabled
+			constexpr uintptr_t Bitfields_01B0 = 0x01B0;  // Multiple: bMultiSelectEnabled, bRankedPlaylistsEnabled
 			constexpr uintptr_t SeasonEndDays = 0x01B4;
 			constexpr uintptr_t SeasonEndHours = 0x01B8;
 			constexpr uintptr_t SeasonEndMinutes = 0x01BC;
@@ -20671,12 +20671,12 @@ namespace Offsets {
 		}
 
 		namespace GFxData_MenuTreeNode_Playlist_TA {
-			constexpr uintptr_t Bitfields_00D0 = 0x00D0;  // Multiple: bSelected, bLocked, bIsViral
+			constexpr uintptr_t Bitfields_00D0 = 0x00D0;  // Multiple: bIsViral, bLocked, bSelected
 			constexpr uintptr_t LockReason = 0x00D8;
 		}
 
 		namespace GFxData_MenuTreeNode_TA {
-			constexpr uintptr_t Bitfields_0098 = 0x0098;  // Multiple: bEnabled, bDisplayCrumbTrail
+			constexpr uintptr_t Bitfields_0098 = 0x0098;  // Multiple: bDisplayCrumbTrail, bEnabled
 			constexpr uintptr_t ThumbnailImage = 0x00A0;
 			constexpr uintptr_t BannerTitle = 0x00A8;
 			constexpr uintptr_t BannerBody = 0x00B8;
@@ -20715,7 +20715,7 @@ namespace Offsets {
 
 		namespace GFxData_MusicPlayer_TA {
 			constexpr uintptr_t UrlConfig = 0x0098;
-			constexpr uintptr_t Bitfields_00A0 = 0x00A0;  // Multiple: bDebugMusicPlayer, bPlaylistsEnabled, bEnableMusicControls, bPlayerPopupDisplaying, bActivePlaylistsEnabled, bTitleTracksActive
+			constexpr uintptr_t Bitfields_00A0 = 0x00A0;  // Multiple: bActivePlaylistsEnabled, bDebugMusicPlayer, bEnableMusicControls, bPlayerPopupDisplaying, bPlaylistsEnabled, bTitleTracksActive
 			constexpr uintptr_t DefaultPlaylists = 0x00A8;
 			constexpr uintptr_t Playlists = 0x00B8;
 			constexpr uintptr_t TrackTitle = 0x00C8;
@@ -20776,7 +20776,7 @@ namespace Offsets {
 			constexpr uintptr_t LivesVisibilityFadeMaxDistance = 0x00A0;
 			constexpr uintptr_t PlayerName = 0x00A8;
 			constexpr uintptr_t Team = 0x00B8;
-			constexpr uintptr_t Bitfields_00BC = 0x00BC;  // Multiple: bHideFullNameplate, bIsTargetLocked, bInKnockoutGameMode, bIsDistracted, bLocalPlayer, bRenderBoostAmount, bShowShortcut
+			constexpr uintptr_t Bitfields_00BC = 0x00BC;  // Multiple: bHideFullNameplate, bInKnockoutGameMode, bIsDistracted, bIsTargetLocked, bLocalPlayer, bRenderBoostAmount, bShowShortcut
 			constexpr uintptr_t LivesVisibility = 0x00C0;
 			constexpr uintptr_t RemainingLives = 0x00C4;
 			constexpr uintptr_t MaxLives = 0x00C8;
@@ -20850,7 +20850,7 @@ namespace Offsets {
 			constexpr uintptr_t Shots = 0x00E4;
 			constexpr uintptr_t Ping = 0x00E8;
 			constexpr uintptr_t BreakoutDamage = 0x00EC;
-			constexpr uintptr_t Bitfields_00F0 = 0x00F0;  // Multiple: bMvp, bSpeaking, bMuted, bBlocked, bReady, bBotPlayer, bLocalPlayer, bDisconnected, bStayAsPartyActive, bSpectator, bCompletedPlacementMatches, bSelected, bHighlighted, bGameEnded, bOnPodium, bWantsToHonorDuel, bChallengedToHonorDuel, bCanChallengeToHonorDuel
+			constexpr uintptr_t Bitfields_00F0 = 0x00F0;  // Multiple: bBlocked, bBotPlayer, bCanChallengeToHonorDuel, bChallengedToHonorDuel, bCompletedPlacementMatches, bDisconnected, bGameEnded, bHighlighted, bLocalPlayer, bMuted, bMvp, bOnPodium, bReady, bSelected, bSpeaking, bSpectator, bStayAsPartyActive, bWantsToHonorDuel
 			constexpr uintptr_t ConnectionStatus = 0x00F8;
 			constexpr uintptr_t PartyID = 0x0108;
 			constexpr uintptr_t XPTitle = 0x0118;
@@ -21004,7 +21004,7 @@ namespace Offsets {
 			constexpr uintptr_t Description = 0x00C8;
 			constexpr uintptr_t BadgeTitle = 0x00D8;
 			constexpr uintptr_t TeamSize = 0x00E8;
-			constexpr uintptr_t Bitfields_00EC = 0x00EC;  // Multiple: bStandardMatch, bRanked, bSolo, bSelected, bEnabled, bRestricted, bNew, bIsMicroEventPlaylist, bTournament, bCompletedPlacementMatches, bOpenDetailsOnFirstTimeClicked, bDisableSaveReplays, bPlaylistAllowsStayAsParty, bUndersizedPartyWithRankDisparity, bIsTimeRestricted, bForceDetailsPage
+			constexpr uintptr_t Bitfields_00EC = 0x00EC;  // Multiple: bCompletedPlacementMatches, bDisableSaveReplays, bEnabled, bForceDetailsPage, bIsMicroEventPlaylist, bIsTimeRestricted, bNew, bOpenDetailsOnFirstTimeClicked, bPlaylistAllowsStayAsParty, bRanked, bRestricted, bSelected, bSolo, bStandardMatch, bTournament, bUndersizedPartyWithRankDisparity
 			constexpr uintptr_t PlaylistBackgroundTexture = 0x00F0;
 			constexpr uintptr_t PlaylistIconActiveTexture = 0x00F8;
 			constexpr uintptr_t PlaylistIconInactiveTexture = 0x0100;
@@ -21080,7 +21080,7 @@ namespace Offsets {
 		}
 
 		namespace GFxData_ProductAttribute_Container_TA {
-			constexpr uintptr_t Bitfields_00B0 = 0x00B0;  // Multiple: bUnlocked, bSkipRoulette, bGiftbox
+			constexpr uintptr_t Bitfields_00B0 = 0x00B0;  // Multiple: bGiftbox, bSkipRoulette, bUnlocked
 		}
 
 		namespace GFxData_ProductAttribute_CreatorDetails_TA {
@@ -21166,7 +21166,7 @@ namespace Offsets {
 			constexpr uintptr_t Paints = 0x0108;
 			constexpr uintptr_t SeriesIDs = 0x0118;
 			constexpr uintptr_t SortingLabels = 0x0128;
-			constexpr uintptr_t Bitfields_0138 = 0x0138;  // Multiple: bIgnoreEquipped, bTradeInScreenSelected, bAllowDefaultProducts
+			constexpr uintptr_t Bitfields_0138 = 0x0138;  // Multiple: bAllowDefaultProducts, bIgnoreEquipped, bTradeInScreenSelected
 			constexpr uintptr_t BatchPreviewQuantityTimer = 0x013C;
 			constexpr uintptr_t FilterStack = 0x0140;
 			constexpr uintptr_t Filters = 0x0150;
@@ -21182,7 +21182,7 @@ namespace Offsets {
 		}
 
 		namespace GFxData_ProductSlot_TA {
-			constexpr uintptr_t Bitfields_0098 = 0x0098;  // Multiple: bEnabled, bCanUnequip, bDefaultEquipped0, bDefaultEquipped1
+			constexpr uintptr_t Bitfields_0098 = 0x0098;  // Multiple: bCanUnequip, bDefaultEquipped0, bDefaultEquipped1, bEnabled
 			constexpr uintptr_t SlotName = 0x009C;
 			constexpr uintptr_t Label = 0x00A8;
 			constexpr uintptr_t PluralLabel = 0x00B8;
@@ -21220,7 +21220,7 @@ namespace Offsets {
 			constexpr uintptr_t ProductSlot = 0x0110;
 			constexpr uintptr_t ProductSlotLabel = 0x0118;
 			constexpr uintptr_t ProductSlotLongLabel = 0x0128;
-			constexpr uintptr_t Bitfields_0138 = 0x0138;  // Multiple: bProductEquipped, bProductEquipped01, bProductUnlocked, bProductIsPack, bProductIsNew, bProductHasNewSkin, bProductCanBeTradedIn, bProductCanBePlayerTraded, bProductIsContainer, bProductIsContainerKey, bProductIsSchematic, bHasPostMatchCelebration, bIsReactive, bHasReactivePreview, bIsFavorited, bIsArchived, bCanArchive, bIsXETradeLocked, bDebugLoadingProducts
+			constexpr uintptr_t Bitfields_0138 = 0x0138;  // Multiple: bCanArchive, bDebugLoadingProducts, bHasPostMatchCelebration, bHasReactivePreview, bIsArchived, bIsFavorited, bIsReactive, bIsXETradeLocked, bProductCanBePlayerTraded, bProductCanBeTradedIn, bProductEquipped, bProductEquipped01, bProductHasNewSkin, bProductIsContainer, bProductIsContainerKey, bProductIsNew, bProductIsPack, bProductIsSchematic, bProductUnlocked
 			constexpr uintptr_t ProductPaintColor = 0x013C;
 			constexpr uintptr_t ProductPaintColorName = 0x0140;
 			constexpr uintptr_t ProductQuality = 0x0150;
@@ -21284,7 +21284,7 @@ namespace Offsets {
 			constexpr uintptr_t CameraMode = 0x00B8;
 			constexpr uintptr_t FocusActorString = 0x00C0;
 			constexpr uintptr_t LastFocusActorString = 0x00D0;
-			constexpr uintptr_t Bitfields_00E0 = 0x00E0;  // Multiple: bHighlightFocusActor, bShowReplayHUD, bShowMatchInfoHUD, bShowPlayerNames, bPausedForScrub, bChangesMade
+			constexpr uintptr_t Bitfields_00E0 = 0x00E0;  // Multiple: bChangesMade, bHighlightFocusActor, bPausedForScrub, bShowMatchInfoHUD, bShowPlayerNames, bShowReplayHUD
 			constexpr uintptr_t Slomo = 0x00E4;
 			constexpr uintptr_t FOV = 0x00E8;
 			constexpr uintptr_t ViewRoll = 0x00EC;
@@ -21307,7 +21307,7 @@ namespace Offsets {
 			constexpr uintptr_t MatchEndDate = 0x00E0;
 			constexpr uintptr_t TotalSecondsPlayed = 0x00F0;
 			constexpr uintptr_t WinningTeam = 0x00F4;
-			constexpr uintptr_t Bitfields_00F8 = 0x00F8;  // Multiple: bPrimaryPlayerInReplay, bLocalPlayerAbandoned
+			constexpr uintptr_t Bitfields_00F8 = 0x00F8;  // Multiple: bLocalPlayerAbandoned, bPrimaryPlayerInReplay
 		}
 
 		namespace GFxData_Restrictions_TA {
@@ -21457,7 +21457,7 @@ namespace Offsets {
 			constexpr uintptr_t UserSettings = 0x01B0;
 			constexpr uintptr_t OldResolution = 0x01C0;
 			constexpr uintptr_t OldWindowMode = 0x01D0;
-			constexpr uintptr_t Bitfields_01E0 = 0x01E0;  // Multiple: OldVSync, bSettingRenderDetail, bSettingCameraPreset
+			constexpr uintptr_t Bitfields_01E0 = 0x01E0;  // Multiple: OldVSync, bSettingCameraPreset, bSettingRenderDetail
 			constexpr uintptr_t Profile = 0x01E8;
 			constexpr uintptr_t SaveData = 0x01F0;
 			constexpr uintptr_t Viewport = 0x01F8;
@@ -21502,7 +21502,7 @@ namespace Offsets {
 			constexpr uintptr_t EndDate = 0x00E0;
 			constexpr uintptr_t ShopImage = 0x00E8;
 			constexpr uintptr_t ShopImageURL = 0x00F0;
-			constexpr uintptr_t Bitfields_0100 = 0x0100;  // Multiple: bLoaded, bNeedsUpdate, bRelatedCatalogueBatchRequestInProgress, bFailedToLoad, bShopItemExpired, bAutoReload, bNewCatalogue
+			constexpr uintptr_t Bitfields_0100 = 0x0100;  // Multiple: bAutoReload, bFailedToLoad, bLoaded, bNeedsUpdate, bNewCatalogue, bRelatedCatalogueBatchRequestInProgress, bShopItemExpired
 			constexpr uintptr_t CachedItems = 0x0108;
 			constexpr uintptr_t CacheDuration = 0x0118;
 			constexpr uintptr_t LastCacheTime = 0x011C;
@@ -21522,7 +21522,7 @@ namespace Offsets {
 			constexpr uintptr_t Shops = 0x00B0;
 			constexpr uintptr_t ShopsMap = 0x00C0;
 			constexpr uintptr_t DebugShopID = 0x0110;
-			constexpr uintptr_t Bitfields_0114 = 0x0114;  // Multiple: bHideMainMenuButton, bNewCatalogues, bHidePurchaseEsportToken
+			constexpr uintptr_t Bitfields_0114 = 0x0114;  // Multiple: bHideMainMenuButton, bHidePurchaseEsportToken, bNewCatalogues
 			constexpr uintptr_t CrateShopSet = 0x0118;
 			constexpr uintptr_t CacheDuration = 0x0120;
 			constexpr uintptr_t LastCacheTime = 0x0124;
@@ -21589,7 +21589,7 @@ namespace Offsets {
 			constexpr uintptr_t UIState = 0x00A8;
 			constexpr uintptr_t SharedUIState = 0x00B8;
 			constexpr uintptr_t LocalPlayerCount = 0x00C8;
-			constexpr uintptr_t Bitfields_00CC = 0x00CC;  // Multiple: bSaveDataLoaded, bLoggedInPsyNet, bLoggedInPlatform, bOnline, bUndocked
+			constexpr uintptr_t Bitfields_00CC = 0x00CC;  // Multiple: bLoggedInPlatform, bLoggedInPsyNet, bOnline, bSaveDataLoaded, bUndocked
 			constexpr uintptr_t SplitScreenType = 0x00D0;
 			constexpr uintptr_t AvailableGamepadType = 0x00D1;
 			constexpr uintptr_t SafeZoneRatio = 0x00D4;
@@ -21660,7 +21660,7 @@ namespace Offsets {
 			constexpr uintptr_t TeamAWins = 0x00C0;
 			constexpr uintptr_t TeamBWins = 0x00C4;
 			constexpr uintptr_t WinnerTeam = 0x00C8;
-			constexpr uintptr_t Bitfields_00D0 = 0x00D0;  // Multiple: bInProgress, bCanSpectate
+			constexpr uintptr_t Bitfields_00D0 = 0x00D0;  // Multiple: bCanSpectate, bInProgress
 			constexpr uintptr_t GFxGameClass = 0x00D8;
 		}
 
@@ -21729,7 +21729,7 @@ namespace Offsets {
 			constexpr uintptr_t Rewards = 0x00C0;
 			constexpr uintptr_t CreatorAvatar = 0x00D0;
 			constexpr uintptr_t CreatorPlatform = 0x00D8;
-			constexpr uintptr_t Bitfields_00E8 = 0x00E8;  // Multiple: bRegistered, bAdmin, bCanCheckIn
+			constexpr uintptr_t Bitfields_00E8 = 0x00E8;  // Multiple: bAdmin, bCanCheckIn, bRegistered
 		}
 
 		namespace GFxData_TourEvent_TA {
@@ -21827,7 +21827,7 @@ namespace Offsets {
 			constexpr uintptr_t CachedSearchDuration = 0x00D8;
 			constexpr uintptr_t CachedFavoriteTimeoutTime = 0x00DC;
 			constexpr uintptr_t FavoritedFilesMetaData = 0x00E0;
-			constexpr uintptr_t Bitfields_00F0 = 0x00F0;  // Multiple: bFavoritesLoaded, bErrorModalOpen
+			constexpr uintptr_t Bitfields_00F0 = 0x00F0;  // Multiple: bErrorModalOpen, bFavoritesLoaded
 			constexpr uintptr_t CachedFavoriteDuration = 0x00F4;
 			constexpr uintptr_t CachedDownloadedFiles = 0x00F8;
 			constexpr uintptr_t LoadingFiles = 0x0108;
@@ -21853,7 +21853,7 @@ namespace Offsets {
 			constexpr uintptr_t BallStartSpeed = 0x00DC;
 			constexpr uintptr_t BallScreenPosX = 0x00E0;
 			constexpr uintptr_t BallScreenPosY = 0x00E4;
-			constexpr uintptr_t Bitfields_00E8 = 0x00E8;  // Multiple: bOwned, bNoEditor, bUnsavedChanges
+			constexpr uintptr_t Bitfields_00E8 = 0x00E8;  // Multiple: bNoEditor, bOwned, bUnsavedChanges
 			constexpr uintptr_t ModalProcessing = 0x00F0;
 		}
 
@@ -21863,7 +21863,7 @@ namespace Offsets {
 			constexpr uintptr_t SanitizedTrainingModeName = 0x00A8;
 			constexpr uintptr_t SanitizedCreatorName = 0x00B8;
 			constexpr uintptr_t Tags = 0x00C8;
-			constexpr uintptr_t Bitfields_00D8 = 0x00D8;  // Multiple: bOwned, bFavorited, bOutOfDate
+			constexpr uintptr_t Bitfields_00D8 = 0x00D8;  // Multiple: bFavorited, bOutOfDate, bOwned
 			constexpr uintptr_t PublishedTime = 0x00E0;
 			constexpr uintptr_t UpdatedAtTime = 0x00F0;
 			constexpr uintptr_t ShotsCompleted = 0x0100;
@@ -21887,7 +21887,7 @@ namespace Offsets {
 			constexpr uintptr_t TotalRounds = 0x00A8;
 			constexpr uintptr_t Difficulty = 0x00B0;
 			constexpr uintptr_t SelectedFreeplayMap = 0x00C0;
-			constexpr uintptr_t Bitfields_00C8 = 0x00C8;  // Multiple: bShowBoostMeter, bShufflePlay, bIsCustomTraining
+			constexpr uintptr_t Bitfields_00C8 = 0x00C8;  // Multiple: bIsCustomTraining, bShowBoostMeter, bShufflePlay
 			constexpr uintptr_t UseActions = 0x00D0;
 			constexpr uintptr_t TutorialTip = 0x00E0;
 			constexpr uintptr_t ProgressPerShot = 0x00F0;
@@ -21899,7 +21899,7 @@ namespace Offsets {
 		}
 
 		namespace GFxData_UIConfig_TA {
-			constexpr uintptr_t Bitfields_0098 = 0x0098;  // Multiple: bAprilFoolsRankedIcons, bAprilFoolsPlaylistImages
+			constexpr uintptr_t Bitfields_0098 = 0x0098;  // Multiple: bAprilFoolsPlaylistImages, bAprilFoolsRankedIcons
 		}
 
 		namespace GFxData_UserBugReport_TA {
@@ -21925,7 +21925,7 @@ namespace Offsets {
 			constexpr uintptr_t ValuesArray = 0x00E0;
 			constexpr uintptr_t Labels = 0x00F0;
 			constexpr uintptr_t Value = 0x0100;
-			constexpr uintptr_t Bitfields_0110 = 0x0110;  // Multiple: bUserSetting, bEnabled
+			constexpr uintptr_t Bitfields_0110 = 0x0110;  // Multiple: bEnabled, bUserSetting
 			constexpr uintptr_t DefaultValue = 0x0118;
 			constexpr uintptr_t Limits = 0x0128;
 		}
@@ -22002,7 +22002,7 @@ namespace Offsets {
 		namespace GFxHUD_Replay_TA {
 			constexpr uintptr_t Game = 0x05A0;
 			constexpr uintptr_t PrevKeyframeBufferTime = 0x05A8;
-			constexpr uintptr_t Bitfields_05AC = 0x05AC;  // Multiple: bUserPaused, bPausedForEndOfReplay
+			constexpr uintptr_t Bitfields_05AC = 0x05AC;  // Multiple: bPausedForEndOfReplay, bUserPaused
 			constexpr uintptr_t ReferencedProducts = 0x05B0;
 		}
 
@@ -22018,7 +22018,7 @@ namespace Offsets {
 			constexpr uintptr_t ZoomClickTime = 0x054C;
 			constexpr uintptr_t GameHUD = 0x0550;
 			constexpr uintptr_t TargetPlayerPRI = 0x0558;
-			constexpr uintptr_t Bitfields_0560 = 0x0560;  // Multiple: bZoomIn, bZoomOut, bReplayTimeSkipped
+			constexpr uintptr_t Bitfields_0560 = 0x0560;  // Multiple: bReplayTimeSkipped, bZoomIn, bZoomOut
 			constexpr uintptr_t ZoomInTime = 0x0564;
 			constexpr uintptr_t ZoomOutTime = 0x0568;
 		}
@@ -22083,7 +22083,7 @@ namespace Offsets {
 			constexpr uintptr_t NameplateMeshArchetype = 0x0078;
 			constexpr uintptr_t Shell = 0x0080;
 			constexpr uintptr_t Movie = 0x0088;
-			constexpr uintptr_t Bitfields_0090 = 0x0090;  // Multiple: bHidden, bShowingShortcuts, bDebug
+			constexpr uintptr_t Bitfields_0090 = 0x0090;  // Multiple: bDebug, bHidden, bShowingShortcuts
 			constexpr uintptr_t ComponentSlots = 0x0098;
 			constexpr uintptr_t PendingComponents = 0x00A8;
 			constexpr uintptr_t NameplateRows = 0x00B8;
@@ -22099,7 +22099,7 @@ namespace Offsets {
 			constexpr uintptr_t TAPlayer = 0x0138;
 			constexpr uintptr_t SystemData = 0x0140;
 			constexpr uintptr_t LocalPlayerData = 0x0148;
-			constexpr uintptr_t Bitfields_0150 = 0x0150;  // Multiple: bEnableFocusDebugger, bDisableStartupMovies, bAllowOnlineStorageResyncModal
+			constexpr uintptr_t Bitfields_0150 = 0x0150;  // Multiple: bAllowOnlineStorageResyncModal, bDisableStartupMovies, bEnableFocusDebugger
 			constexpr uintptr_t EOSReconnectMessage = 0x0158;
 			constexpr uintptr_t EOSNotConnectedMessage = 0x0168;
 			constexpr uintptr_t EOSRestartLauncherMessage = 0x0178;
@@ -22317,7 +22317,7 @@ namespace Offsets {
 			constexpr uintptr_t TestCarArchetype = 0x07D0;
 			constexpr uintptr_t BallArchetype = 0x07D8;
 			constexpr uintptr_t GoalIndicatorArchetype = 0x07E0;
-			constexpr uintptr_t Bitfields_07E8 = 0x07E8;  // Multiple: bShouldSpawnGoalIndicators, bRandomBallSpawnPoint, bRoundActive, bPlayReplays, bBallHasBeenHit, bOverTime, bUnlimitedTime, bGoalsEnabled, bNoContest, bDisableGoalDelay, bShowNoScorerGoalMessage, bMatchEnded, bDisableCrowdSound, bShowIntroScene, bReadyToStartGame, bClubMatch, bFullClubMatch, bCanDropOnlineRewards, bAllowHonorDuels
+			constexpr uintptr_t Bitfields_07E8 = 0x07E8;  // Multiple: bAllowHonorDuels, bBallHasBeenHit, bCanDropOnlineRewards, bClubMatch, bDisableCrowdSound, bDisableGoalDelay, bFullClubMatch, bGoalsEnabled, bMatchEnded, bNoContest, bOverTime, bPlayReplays, bRandomBallSpawnPoint, bReadyToStartGame, bRoundActive, bShouldSpawnGoalIndicators, bShowIntroScene, bShowNoScorerGoalMessage, bUnlimitedTime
 			constexpr uintptr_t BallSpawnPoints = 0x07F0;
 			constexpr uintptr_t BallSpawnPointIndex = 0x0800;
 			constexpr uintptr_t StatFactoryArchetype = 0x0808;
@@ -22417,7 +22417,7 @@ namespace Offsets {
 			constexpr uintptr_t CarArchetype = 0x0298;
 			constexpr uintptr_t CountdownTime = 0x02A0;
 			constexpr uintptr_t FinishTime = 0x02A4;
-			constexpr uintptr_t Bitfields_02A8 = 0x02A8;  // Multiple: bMultiplayer, bCountdownMessagesDisabled, bAllowPrespawn, bFillWithAI, bAllowQueueSaveReplay, bAllowReadyUp, bRestartingMatch, bHasLeaveMatchPenalty, bCanVoteToForfeit, bAwardAchievements, bIsBotMatch, bAllowTeamVoiceChat, bAllowSpectatorVoiceChat, bAlwaysShowMatchTypeLabel, bGameTearingDown
+			constexpr uintptr_t Bitfields_02A8 = 0x02A8;  // Multiple: bAllowPrespawn, bAllowQueueSaveReplay, bAllowReadyUp, bAllowSpectatorVoiceChat, bAllowTeamVoiceChat, bAlwaysShowMatchTypeLabel, bAwardAchievements, bCanVoteToForfeit, bCountdownMessagesDisabled, bFillWithAI, bGameTearingDown, bHasLeaveMatchPenalty, bIsBotMatch, bMultiplayer, bRestartingMatch
 			constexpr uintptr_t MinPlayers = 0x02AC;
 			constexpr uintptr_t MaxPlayers = 0x02B0;
 			constexpr uintptr_t SpawnPoints = 0x02B8;
@@ -22476,7 +22476,7 @@ namespace Offsets {
 			constexpr uintptr_t Teams = 0x0750;
 			constexpr uintptr_t MaxTeamSize = 0x0760;
 			constexpr uintptr_t NumBots = 0x0764;
-			constexpr uintptr_t Bitfields_0768 = 0x0768;  // Multiple: bMuteOppositeTeams, bDisableMutingOtherTeam, bForfeit, bUnfairTeams, bAlwaysAutoSelectTeam, bDisableQuickChat
+			constexpr uintptr_t Bitfields_0768 = 0x0768;  // Multiple: bAlwaysAutoSelectTeam, bDisableMutingOtherTeam, bDisableQuickChat, bForfeit, bMuteOppositeTeams, bUnfairTeams
 			constexpr uintptr_t RematchVoteArchetype = 0x0770;
 			constexpr uintptr_t RematchVote = 0x0778;
 			constexpr uintptr_t PreloadedBotAssets = 0x0780;
@@ -22486,7 +22486,7 @@ namespace Offsets {
 		namespace GameEvent_TrainingEditor_TA {
 			constexpr uintptr_t MinRoundTime = 0x0DF8;
 			constexpr uintptr_t MaxRoundTime = 0x0DFC;
-			constexpr uintptr_t Bitfields_0E00 = 0x0E00;  // Multiple: bNoEditor, bDisplayedRedoPenaltyMessage, bUnsavedChanges, bShouldEndTraining
+			constexpr uintptr_t Bitfields_0E00 = 0x0E00;  // Multiple: bDisplayedRedoPenaltyMessage, bNoEditor, bShouldEndTraining, bUnsavedChanges
 			constexpr uintptr_t PointsScoredThisRound = 0x0E04;
 			constexpr uintptr_t ResetModal = 0x0E08;
 			constexpr uintptr_t ShotAttempt = 0x0E10;
@@ -22524,7 +22524,7 @@ namespace Offsets {
 			constexpr uintptr_t TotalFieldExtent = 0x0D88;
 			constexpr uintptr_t TeamNum = 0x0D94;
 			constexpr uintptr_t BallGoalNum = 0x0D98;
-			constexpr uintptr_t Bitfields_0D9C = 0x0D9C;  // Multiple: bOnlyScoreInBallGoalNum, bRedoRound, bAllowSuperBoost, bDisplayedRedoPenaltyMessage, bShowBoostMeter
+			constexpr uintptr_t Bitfields_0D9C = 0x0D9C;  // Multiple: bAllowSuperBoost, bDisplayedRedoPenaltyMessage, bOnlyScoreInBallGoalNum, bRedoRound, bShowBoostMeter
 			constexpr uintptr_t Difficulty = 0x0DA0;
 			constexpr uintptr_t DebugRotationType = 0x0DA1;
 			constexpr uintptr_t DifficultyList = 0x0DA8;
@@ -22625,7 +22625,7 @@ namespace Offsets {
 			constexpr uintptr_t RocketLabsMedleyMapSet = 0x0080;
 			constexpr uintptr_t MutatorPresetName = 0x0088;
 			constexpr uintptr_t DisallowedMutatorCategories = 0x0090;
-			constexpr uintptr_t Bitfields_00A0 = 0x00A0;  // Multiple: bEnabled, bAllowPrivateMatchOnly, bIsEnabledForOnlineFreeplay, bMultiGameMode
+			constexpr uintptr_t Bitfields_00A0 = 0x00A0;  // Multiple: bAllowPrivateMatchOnly, bEnabled, bIsEnabledForOnlineFreeplay, bMultiGameMode
 			constexpr uintptr_t SortIdx = 0x00A4;
 			constexpr uintptr_t GameInfoClass = 0x00A8;
 			constexpr uintptr_t GameArchetypePath = 0x00B0;
@@ -22664,7 +22664,7 @@ namespace Offsets {
 			constexpr uintptr_t ScorabilityDefenseWeight = 0x0104;
 			constexpr uintptr_t CarBallAerialBlend = 0x0108;
 			constexpr uintptr_t MaxAerialHitProbability = 0x010C;
-			constexpr uintptr_t Bitfields_0110 = 0x0110;  // Multiple: bDebugCarData, bDebugGoalData, bDebugBallData, bDebugPrediction
+			constexpr uintptr_t Bitfields_0110 = 0x0110;  // Multiple: bDebugBallData, bDebugCarData, bDebugGoalData, bDebugPrediction
 			constexpr uintptr_t RelevantCars = 0x0118;
 			constexpr uintptr_t RelevantGoals = 0x0128;
 			constexpr uintptr_t MinAerialAltitude = 0x0138;
@@ -22686,7 +22686,7 @@ namespace Offsets {
 		namespace GameSettingPlaylist_TA {
 			constexpr uintptr_t MapSkillRequirements = 0x0160;
 			constexpr uintptr_t TourServerInfoClass = 0x0170;
-			constexpr uintptr_t Bitfields_0178 = 0x0178;  // Multiple: bAllowHonorDuelChallenges, bAllowVoiceChat, bAllowViralItems
+			constexpr uintptr_t Bitfields_0178 = 0x0178;  // Multiple: bAllowHonorDuelChallenges, bAllowViralItems, bAllowVoiceChat
 			constexpr uintptr_t DetailsGroup = 0x017C;
 			constexpr uintptr_t TeamColors = 0x0180;
 			constexpr uintptr_t BallSuperSonicColor = 0x0190;
@@ -22715,7 +22715,7 @@ namespace Offsets {
 		}
 
 		namespace GameViewportClient_TA {
-			constexpr uintptr_t Bitfields_02C8 = 0x02C8;  // Multiple: bSplitScreenDisabled, bUpdateSplitscreenSizes, bDrawWorldFullScreen, bDrawBuildInfo
+			constexpr uintptr_t Bitfields_02C8 = 0x02C8;  // Multiple: bDrawBuildInfo, bDrawWorldFullScreen, bSplitScreenDisabled, bUpdateSplitscreenSizes
 			constexpr uintptr_t LastSplitJoinTryTimes = 0x02D0;
 			constexpr uintptr_t UIScaleModifier = 0x02E0;
 			constexpr uintptr_t NameplateScaleModifier = 0x02E4;
@@ -22743,7 +22743,7 @@ namespace Offsets {
 		}
 
 		namespace GameplaySettingsSave_TA {
-			constexpr uintptr_t Bitfields_00C8 = 0x00C8;  // Multiple: bFilterNonTacticalQuickChat, bColorBlind, bForceDefaultColors, bEnableHorizontalSplitscreen, bEnableFreeplayUnlimitedBoost, bUseSteamInput, bDisableFreeplayGoals, bIsTradingEnabled, bFirstTimeDefaultVoice, bFirstTimeDefaultText, bFirstTimeDefaultTrade
+			constexpr uintptr_t Bitfields_00C8 = 0x00C8;  // Multiple: bColorBlind, bDisableFreeplayGoals, bEnableFreeplayUnlimitedBoost, bEnableHorizontalSplitscreen, bFilterNonTacticalQuickChat, bFirstTimeDefaultText, bFirstTimeDefaultTrade, bFirstTimeDefaultVoice, bForceDefaultColors, bIsTradingEnabled, bUseSteamInput
 			constexpr uintptr_t QuickChatFilter = 0x00CC;
 			constexpr uintptr_t MatchChatFilter = 0x00CD;
 			constexpr uintptr_t PartyChatFilter = 0x00CE;
@@ -22849,7 +22849,7 @@ namespace Offsets {
 			constexpr uintptr_t TeamNum = 0x00DC;
 			constexpr uintptr_t ScoreFX = 0x00E0;
 			constexpr uintptr_t GoalIndicatorArchetype = 0x00E8;
-			constexpr uintptr_t Bitfields_00F8 = 0x00F8;  // Multiple: bNoGoalIndicator, bOnlyGoalsFromDirection, bAllowPostMatchLobbyReset, bEnabled, bShowFocusExtent
+			constexpr uintptr_t Bitfields_00F8 = 0x00F8;  // Multiple: bAllowPostMatchLobbyReset, bEnabled, bNoGoalIndicator, bOnlyGoalsFromDirection, bShowFocusExtent
 			constexpr uintptr_t GoalDirection = 0x0100;
 			constexpr uintptr_t PointsToAward = 0x0108;
 			constexpr uintptr_t AutoCamFocusExtent = 0x010C;
@@ -23016,7 +23016,7 @@ namespace Offsets {
 		namespace InputRecorder_TA {
 			constexpr uintptr_t VfTable_IITickNotify_TA = 0x0268;
 			constexpr uintptr_t MaxRecordTime = 0x0270;
-			constexpr uintptr_t Bitfields_0274 = 0x0274;  // Multiple: bRecording, bPlaying
+			constexpr uintptr_t Bitfields_0274 = 0x0274;  // Multiple: bPlaying, bRecording
 			constexpr uintptr_t CarStates = 0x0278;
 			constexpr uintptr_t BallStates = 0x0288;
 			constexpr uintptr_t Inputs = 0x0298;
@@ -23187,7 +23187,7 @@ namespace Offsets {
 
 		namespace LightBarComponent_TA {
 			constexpr uintptr_t Team = 0x00A0;
-			constexpr uintptr_t Bitfields_00A8 = 0x00A8;  // Multiple: bStrobeActive, bRandStrobeColor
+			constexpr uintptr_t Bitfields_00A8 = 0x00A8;  // Multiple: bRandStrobeColor, bStrobeActive
 			constexpr uintptr_t StrobeCount = 0x00AC;
 			constexpr uintptr_t MaxStrobeCount = 0x00B0;
 			constexpr uintptr_t StrobeTime = 0x00B4;
@@ -23229,7 +23229,7 @@ namespace Offsets {
 			constexpr uintptr_t ThumbnailAsset = 0x0088;
 			constexpr uintptr_t Asset = 0x0090;
 			constexpr uintptr_t Thumbnail = 0x0098;
-			constexpr uintptr_t Bitfields_00A0 = 0x00A0;  // Multiple: bUpdateProductData, bIgnoreEquipped
+			constexpr uintptr_t Bitfields_00A0 = 0x00A0;  // Multiple: bIgnoreEquipped, bUpdateProductData
 			constexpr uintptr_t AdditionalProductReferences = 0x00A8;
 		}
 
@@ -23240,7 +23240,7 @@ namespace Offsets {
 			constexpr uintptr_t GFxEngineRef = 0x0090;
 			constexpr uintptr_t OnlineGame = 0x0098;
 			constexpr uintptr_t LoadingScreenInfo = 0x00A0;
-			constexpr uintptr_t Bitfields_0140 = 0x0140;  // Multiple: bUnfairTeams, bComingFromEntry
+			constexpr uintptr_t Bitfields_0140 = 0x0140;  // Multiple: bComingFromEntry, bUnfairTeams
 		}
 
 		namespace LoadoutRandomizer_TA {
@@ -23466,7 +23466,7 @@ namespace Offsets {
 		namespace MatchType_TA {
 			constexpr uintptr_t GameEvent = 0x0060;
 			constexpr uintptr_t Components = 0x0068;
-			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bPreAssignedTeams, bAreMatchSettingsCached
+			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bAreMatchSettingsCached, bPreAssignedTeams
 			constexpr uintptr_t ForfeitVoteWaitGameTime = 0x007C;
 			constexpr uintptr_t WaitForPlayersTime = 0x0080;
 			constexpr uintptr_t WaitingForPlayersStartTime = 0x0084;
@@ -23584,7 +23584,7 @@ namespace Offsets {
 
 		namespace MenuSequence_TA {
 			constexpr uintptr_t CameraState = 0x0060;
-			constexpr uintptr_t Bitfields_0068 = 0x0068;  // Multiple: bRemotePlayersHidden, bLockPreviewActor, bImmediate
+			constexpr uintptr_t Bitfields_0068 = 0x0068;  // Multiple: bImmediate, bLockPreviewActor, bRemotePlayersHidden
 			constexpr uintptr_t MenuSequenceComp = 0x0070;
 		}
 
@@ -23625,7 +23625,7 @@ namespace Offsets {
 		}
 
 		namespace MenuTreeNode_PlaylistFolder_TA {
-			constexpr uintptr_t Bitfields_01C8 = 0x01C8;  // Multiple: bCompetitive, bShowArenasAndRegions, bCanUseMultiSelect
+			constexpr uintptr_t Bitfields_01C8 = 0x01C8;  // Multiple: bCanUseMultiSelect, bCompetitive, bShowArenasAndRegions
 			constexpr uintptr_t HeaderType = 0x01CC;
 			constexpr uintptr_t HeaderEndTime = 0x01D0;
 			constexpr uintptr_t LTMPlaylistName = 0x01D8;
@@ -23724,7 +23724,7 @@ namespace Offsets {
 		}
 
 		namespace MtxConfig_TA {
-			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bAllowMicroTransactions, bAllowCurrencyTrading, bAllowCurrencyGifting, bAllowCurrencyForCurrencyTrades, bEnablePlatformStartPurchase
+			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bAllowCurrencyForCurrencyTrades, bAllowCurrencyGifting, bAllowCurrencyTrading, bAllowMicroTransactions, bEnablePlatformStartPurchase
 			constexpr uintptr_t MaxCurrencyWalletAmount = 0x007C;
 			constexpr uintptr_t MaxCurrencyDailyAmount = 0x0080;
 			constexpr uintptr_t FulfillmentRestrictedWalletMessage = 0x0088;
@@ -23757,7 +23757,7 @@ namespace Offsets {
 		namespace MusicPlayerSave_TA {
 			constexpr uintptr_t PlaylistsUpdate22 = 0x00C8;
 			constexpr uintptr_t GameplayMusicSetting = 0x00D8;
-			constexpr uintptr_t Bitfields_00DC = 0x00DC;  // Multiple: bPlayMusicInMenu, bPlayMusicInTraining, bPlayMusicInGame
+			constexpr uintptr_t Bitfields_00DC = 0x00DC;  // Multiple: bPlayMusicInGame, bPlayMusicInMenu, bPlayMusicInTraining
 		}
 
 		namespace MusicPlaylist_TA {
@@ -23878,7 +23878,7 @@ namespace Offsets {
 		}
 
 		namespace Mutator_Booster_TA {
-			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bNoBooster, bUnlimitedBoost, bBoostRechargeGroundOnly, bOverrideStartBoost, bIgnoreOnFreeplay, bIsOnlineFreeplay
+			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bBoostRechargeGroundOnly, bIgnoreOnFreeplay, bIsOnlineFreeplay, bNoBooster, bOverrideStartBoost, bUnlimitedBoost
 			constexpr uintptr_t BoostStrength = 0x007C;
 			constexpr uintptr_t BoostRechargeRate = 0x0080;
 			constexpr uintptr_t BoostRechargeDelay = 0x0084;
@@ -23897,7 +23897,7 @@ namespace Offsets {
 			constexpr uintptr_t JumpScale = 0x007C;
 			constexpr uintptr_t CarMaxLinearSpeedScale = 0x0080;
 			constexpr uintptr_t MaxTimeForDodge = 0x0084;
-			constexpr uintptr_t Bitfields_0088 = 0x0088;  // Multiple: bUnlimitedTimeForDodge, bUnlimitedJumps
+			constexpr uintptr_t Bitfields_0088 = 0x0088;  // Multiple: bUnlimitedJumps, bUnlimitedTimeForDodge
 			constexpr uintptr_t MaxNumJumps = 0x008C;
 		}
 
@@ -24133,7 +24133,7 @@ namespace Offsets {
 		}
 
 		namespace NetworkSave_TA {
-			constexpr uintptr_t Bitfields_00C8 = 0x00C8;  // Multiple: bEnableCrossPlatform, bDisableCrossPlay
+			constexpr uintptr_t Bitfields_00C8 = 0x00C8;  // Multiple: bDisableCrossPlay, bEnableCrossPlatform
 			constexpr uintptr_t IncomingPacketFrequency = 0x00CC;
 			constexpr uintptr_t OutgoingPacketFrequency = 0x00CD;
 			constexpr uintptr_t IncomingBandwidth = 0x00CE;
@@ -24152,7 +24152,7 @@ namespace Offsets {
 
 		namespace NotificationSave_TA {
 			constexpr uintptr_t Notifications = 0x00C8;
-			constexpr uintptr_t Bitfields_00D8 = 0x00D8;  // Multiple: bShowInGameNotifications, bShowItemShopNotifications, bFirstTimeDefaultShopNotifications, bShopNotificationsDefaultValue
+			constexpr uintptr_t Bitfields_00D8 = 0x00D8;  // Multiple: bFirstTimeDefaultShopNotifications, bShopNotificationsDefaultValue, bShowInGameNotifications, bShowItemShopNotifications
 			constexpr uintptr_t EngagementEventNotification = 0x00E0;
 		}
 
@@ -24173,7 +24173,7 @@ namespace Offsets {
 			constexpr uintptr_t NotificationID = 0x0060;
 			constexpr uintptr_t Title = 0x0068;
 			constexpr uintptr_t Body = 0x0078;
-			constexpr uintptr_t Bitfields_0088 = 0x0088;  // Multiple: bPopUp, bRemoveAfterDisplayed, bPopUpShown, bPauseWhenModalsActive, bSave
+			constexpr uintptr_t Bitfields_0088 = 0x0088;  // Multiple: bPauseWhenModalsActive, bPopUp, bPopUpShown, bRemoveAfterDisplayed, bSave
 			constexpr uintptr_t PopUpDuration = 0x008C;
 			constexpr uintptr_t Expiration = 0x0090;
 			constexpr uintptr_t NotificationManager = 0x0098;
@@ -24302,7 +24302,7 @@ namespace Offsets {
 		}
 
 		namespace OnlinePlayerMTX_TA {
-			constexpr uintptr_t Bitfields_0060 = 0x0060;  // Multiple: bEntitlementsDirty, bClaimingEntitlements, bMtxCodeExpired, bAllowEntitlements
+			constexpr uintptr_t Bitfields_0060 = 0x0060;  // Multiple: bAllowEntitlements, bClaimingEntitlements, bEntitlementsDirty, bMtxCodeExpired
 		}
 
 		namespace OnlinePlayer_TA {
@@ -24450,7 +24450,7 @@ namespace Offsets {
 
 		namespace PRI_KnockOut_TA {
 			constexpr uintptr_t GameEvent_KO = 0x0C90;
-			constexpr uintptr_t Bitfields_0C98 = 0x0C98;  // Multiple: bShowMatchPlacement, bIsEliminated, bIsActiveMVP
+			constexpr uintptr_t Bitfields_0C98 = 0x0C98;  // Multiple: bIsActiveMVP, bIsEliminated, bShowMatchPlacement
 			constexpr uintptr_t Knockouts = 0x0C9C;
 			constexpr uintptr_t StackedKnockoutCount = 0x0CA0;
 			constexpr uintptr_t LastKnockoutTime = 0x0CA4;
@@ -24476,7 +24476,7 @@ namespace Offsets {
 			constexpr uintptr_t MatchDemolishes = 0x0470;
 			constexpr uintptr_t MatchBonusXP = 0x0474;
 			constexpr uintptr_t MatchBreakoutDamage = 0x0478;
-			constexpr uintptr_t Bitfields_047C = 0x047C;  // Multiple: bMatchMVP, bMatchAdmin, bLoadoutSet, bOnlineLoadoutSet, bLoadoutsSet, bOnlineLoadoutsSet, bServerSetTeamLoadoutLocked, bTeamPaintSet, bReady, bIsDistracted, bUsingSecondaryCamera, bUsingBehindView, bUsingFreecam, bIsInSplitScreen, bStartVoteToForfeitDisabled, bUsingItems, bPlayerHistoryValid, PlayerHistoryValid, bIdleBanned, bStayAsPartyActive, bAbleToStart, bTeamChanged
+			constexpr uintptr_t Bitfields_047C = 0x047C;  // Multiple: PlayerHistoryValid, bAbleToStart, bIdleBanned, bIsDistracted, bIsInSplitScreen, bLoadoutSet, bLoadoutsSet, bMatchAdmin, bMatchMVP, bOnlineLoadoutSet, bOnlineLoadoutsSet, bPlayerHistoryValid, bReady, bServerSetTeamLoadoutLocked, bStartVoteToForfeitDisabled, bStayAsPartyActive, bTeamChanged, bTeamPaintSet, bUsingBehindView, bUsingFreecam, bUsingItems, bUsingSecondaryCamera
 			constexpr uintptr_t GameEvent = 0x0480;
 			constexpr uintptr_t ReplicatedGameEvent = 0x0488;
 			constexpr uintptr_t Car = 0x0490;
@@ -24708,7 +24708,7 @@ namespace Offsets {
 			constexpr uintptr_t ClubRole = 0x00CD;
 			constexpr uintptr_t SecondaryPlatform = 0x00CE;
 			constexpr uintptr_t OnlinePresenceMessage = 0x00D0;
-			constexpr uintptr_t Bitfields_00E0 = 0x00E0;  // Multiple: bBlockedStatus, bPlatformFriend, bPsyNetFriend, bEpicFriend, bNoEpicAccountIdFound, bIsClubMemberPersonaInGame, bNameSanitized, bCanShowAvatar, bAvatarPermissionDownloaded, bHidden
+			constexpr uintptr_t Bitfields_00E0 = 0x00E0;  // Multiple: bAvatarPermissionDownloaded, bBlockedStatus, bCanShowAvatar, bEpicFriend, bHidden, bIsClubMemberPersonaInGame, bNameSanitized, bNoEpicAccountIdFound, bPlatformFriend, bPsyNetFriend
 			constexpr uintptr_t PresenceId = 0x00E4;
 			constexpr uintptr_t LastActive = 0x00E8;
 			constexpr uintptr_t PlayerNote = 0x00F0;
@@ -24729,7 +24729,7 @@ namespace Offsets {
 
 		namespace PhysicalMaterialProperty_TA {
 			constexpr uintptr_t AkSwitchValue = 0x0060;
-			constexpr uintptr_t Bitfields_0068 = 0x0068;  // Multiple: bStickyWheels, bConsiderForGround
+			constexpr uintptr_t Bitfields_0068 = 0x0068;  // Multiple: bConsiderForGround, bStickyWheels
 			constexpr uintptr_t GroundToleranceZ = 0x006C;
 		}
 
@@ -24738,7 +24738,7 @@ namespace Offsets {
 			constexpr uintptr_t DisabledFeatures = 0x0088;
 			constexpr uintptr_t CarInteractionSettings = 0x0098;
 			constexpr uintptr_t SuperSonicSettings = 0x01A0;
-			constexpr uintptr_t Bitfields_01AC = 0x01AC;  // Multiple: bUseAckermannSteering, bPredictContacts, bQuantizePhysics, bOverrideServerPhysicsState, bBackupVehicleInputs, bUseNEQ, bExtrapolateRendering, bEnableCustomExplosionPhysics, bLegacyDropshotTileCollision, bPodiumDoubleJumpsEnabled
+			constexpr uintptr_t Bitfields_01AC = 0x01AC;  // Multiple: bBackupVehicleInputs, bEnableCustomExplosionPhysics, bExtrapolateRendering, bLegacyDropshotTileCollision, bOverrideServerPhysicsState, bPodiumDoubleJumpsEnabled, bPredictContacts, bQuantizePhysics, bUseAckermannSteering, bUseNEQ
 			constexpr uintptr_t JumpLeaveGroundTime = 0x01B0;
 			constexpr uintptr_t STS = 0x01B4;
 			constexpr uintptr_t CSTS = 0x01B8;
@@ -24823,7 +24823,7 @@ namespace Offsets {
 			constexpr uintptr_t Car = 0x0998;
 			constexpr uintptr_t PRI = 0x09A0;
 			constexpr uintptr_t VehicleInput = 0x09A8;
-			constexpr uintptr_t Bitfields_09C8 = 0x09C8;  // Multiple: bReceivedServerShutdownMessage, bFilterNonTacticalQuickChat, bOverrideInput, bJumpPressed, bBoostPressed, bHandbrakePressed, bHasPitchedOrRolled, bAirPitchSafetyEnabled, bAllowAsymmetricalMute, bReportedPlayer, bUsePickupPressed
+			constexpr uintptr_t Bitfields_09C8 = 0x09C8;  // Multiple: bAirPitchSafetyEnabled, bAllowAsymmetricalMute, bBoostPressed, bFilterNonTacticalQuickChat, bHandbrakePressed, bHasPitchedOrRolled, bJumpPressed, bOverrideInput, bReceivedServerShutdownMessage, bReportedPlayer, bUsePickupPressed
 			constexpr uintptr_t LoginURL = 0x09D0;
 			constexpr uintptr_t DeprecatedVoiceFilter = 0x09E0;
 			constexpr uintptr_t QuickChatFilter = 0x09E1;
@@ -24901,7 +24901,7 @@ namespace Offsets {
 			constexpr uintptr_t Sequence = 0x00D0;
 			constexpr uintptr_t ConsoleCommand = 0x00E0;
 			constexpr uintptr_t Timeout = 0x00F0;
-			constexpr uintptr_t Bitfields_00F4 = 0x00F4;  // Multiple: bOrderMatters, bCheat, bRemoveOnComplete, bRemoveAfterSplashScreen, bCaptureInput, bConfirm, bPrimaryPlayerOnly
+			constexpr uintptr_t Bitfields_00F4 = 0x00F4;  // Multiple: bCaptureInput, bCheat, bConfirm, bOrderMatters, bPrimaryPlayerOnly, bRemoveAfterSplashScreen, bRemoveOnComplete
 			constexpr uintptr_t Message = 0x00F8;
 			constexpr uintptr_t CurrentSequence = 0x0108;
 		}
@@ -24914,7 +24914,7 @@ namespace Offsets {
 			constexpr uintptr_t GamepadLookScale = 0x0478;
 			constexpr uintptr_t aTargetSelect = 0x047C;
 			constexpr uintptr_t TargetSelectDeadZone = 0x0480;
-			constexpr uintptr_t Bitfields_0484 = 0x0484;  // Multiple: bTargetSelected, bIsUsingMouseSteer, bIsUsingMouseThrottle, bIsUsingPositiveMouseAirYaw, bIsUsingNegativeMouseAirYaw, bIsUsingPositiveMouseAirPitch, bIsUsingNegativeMouseAirPitch, bIsUsingPositiveMouseAirRoll, bIsUsingNegativeMouseAirRoll
+			constexpr uintptr_t Bitfields_0484 = 0x0484;  // Multiple: bIsUsingMouseSteer, bIsUsingMouseThrottle, bIsUsingNegativeMouseAirPitch, bIsUsingNegativeMouseAirRoll, bIsUsingNegativeMouseAirYaw, bIsUsingPositiveMouseAirPitch, bIsUsingPositiveMouseAirRoll, bIsUsingPositiveMouseAirYaw, bTargetSelected
 			constexpr uintptr_t aPositiveYaw = 0x0488;
 			constexpr uintptr_t aNegativeYaw = 0x048C;
 			constexpr uintptr_t aPositivePitch = 0x0490;
@@ -24937,7 +24937,7 @@ namespace Offsets {
 			constexpr uintptr_t ItemGiveRate = 0x0060;
 			constexpr uintptr_t PreviewTimeSeconds = 0x0064;
 			constexpr uintptr_t ItemPool = 0x0068;
-			constexpr uintptr_t Bitfields_0070 = 0x0070;  // Multiple: bResetTimerOnDemolish, bWaitingForNextRound, bGiveItemOnRoundStart, bGiveItemOnFirstBallHit, bGiveItemBeforeRoundStart, bHideItemIconByDefault, bGiven
+			constexpr uintptr_t Bitfields_0070 = 0x0070;  // Multiple: bGiveItemBeforeRoundStart, bGiveItemOnFirstBallHit, bGiveItemOnRoundStart, bGiven, bHideItemIconByDefault, bResetTimerOnDemolish, bWaitingForNextRound
 			constexpr uintptr_t NextItemTime = 0x0074;
 			constexpr uintptr_t NextItemPreviewTime = 0x0078;
 			constexpr uintptr_t PRI = 0x0080;
@@ -25016,7 +25016,7 @@ namespace Offsets {
 		namespace PlaylistSettings_TA {
 			constexpr uintptr_t MapSkillRequirements = 0x0158;
 			constexpr uintptr_t TourServerInfoClass = 0x0168;
-			constexpr uintptr_t Bitfields_0170 = 0x0170;  // Multiple: bAllowHonorDuelChallenges, bAllowVoiceChat, bAllowViralItems
+			constexpr uintptr_t Bitfields_0170 = 0x0170;  // Multiple: bAllowHonorDuelChallenges, bAllowViralItems, bAllowVoiceChat
 			constexpr uintptr_t DetailsGroup = 0x0174;
 			constexpr uintptr_t BackFillPolicy = 0x0178;
 			constexpr uintptr_t TeamColors = 0x0180;
@@ -25082,7 +25082,7 @@ namespace Offsets {
 			constexpr uintptr_t SkinType = 0x0069;
 			constexpr uintptr_t SkinParameters = 0x0070;
 			constexpr uintptr_t Thumbnail = 0x00A0;
-			constexpr uintptr_t Bitfields_00A8 = 0x00A8;  // Multiple: bTeamFinishDisabled, bCustomFinishDisabled
+			constexpr uintptr_t Bitfields_00A8 = 0x00A8;  // Multiple: bCustomFinishDisabled, bTeamFinishDisabled
 			constexpr uintptr_t Attributes = 0x00B0;
 			constexpr uintptr_t SkinSets = 0x00C0;
 			constexpr uintptr_t AssetTemplate = 0x00D0;
@@ -25125,7 +25125,7 @@ namespace Offsets {
 		}
 
 		namespace ProductAssetLoader_TA {
-			constexpr uintptr_t Bitfields_0060 = 0x0060;  // Multiple: bDebug, bLoadingAssetAsync, bAssetLoadedThisFrame
+			constexpr uintptr_t Bitfields_0060 = 0x0060;  // Multiple: bAssetLoadedThisFrame, bDebug, bLoadingAssetAsync
 			constexpr uintptr_t LoadAssetQueue = 0x0068;
 		}
 
@@ -25176,7 +25176,7 @@ namespace Offsets {
 			constexpr uintptr_t ChassisTranslationScale = 0x01F0;
 			constexpr uintptr_t SuspensionTravelMax = 0x01F4;
 			constexpr uintptr_t SuspensionTravelMin = 0x01F8;
-			constexpr uintptr_t Bitfields_01FC = 0x01FC;  // Multiple: bUseLegacySuspensionOffsets, bOverrideBoostFlapsAngle
+			constexpr uintptr_t Bitfields_01FC = 0x01FC;  // Multiple: bOverrideBoostFlapsAngle, bUseLegacySuspensionOffsets
 			constexpr uintptr_t EngineSound = 0x0200;
 			constexpr uintptr_t ExhaustSound = 0x0208;
 			constexpr uintptr_t BlowoffSound = 0x0210;
@@ -25302,7 +25302,7 @@ namespace Offsets {
 			constexpr uintptr_t SkinType = 0x0138;
 			constexpr uintptr_t ThumbnailTeamColor = 0x013C;
 			constexpr uintptr_t ThumbnailCustomColor = 0x014C;
-			constexpr uintptr_t Bitfields_015C = 0x015C;  // Multiple: bTeamFinishDisabled, bCustomFinishDisabled
+			constexpr uintptr_t Bitfields_015C = 0x015C;  // Multiple: bCustomFinishDisabled, bTeamFinishDisabled
 			constexpr uintptr_t TeamFinishToApply = 0x0160;
 			constexpr uintptr_t CustomFinishToApply = 0x0198;
 			constexpr uintptr_t ForcedTeamColors = 0x01D0;
@@ -25387,7 +25387,7 @@ namespace Offsets {
 		}
 
 		namespace ProductAttribute_Container_TA {
-			constexpr uintptr_t Bitfields_0080 = 0x0080;  // Multiple: bUnlocked, bSkipRoulette, bGiftbox
+			constexpr uintptr_t Bitfields_0080 = 0x0080;  // Multiple: bGiftbox, bSkipRoulette, bUnlocked
 		}
 
 		namespace ProductAttribute_Currency_TA {
@@ -25454,7 +25454,7 @@ namespace Offsets {
 
 		namespace ProductAttribute_PaintSettings_TA {
 			constexpr uintptr_t MaterialGroups = 0x0060;
-			constexpr uintptr_t Bitfields_0080 = 0x0080;  // Multiple: bPaintParticles, bPaintBody, bGammaCorrect
+			constexpr uintptr_t Bitfields_0080 = 0x0080;  // Multiple: bGammaCorrect, bPaintBody, bPaintParticles
 			constexpr uintptr_t PaintParameterName = 0x0084;
 			constexpr uintptr_t PaintType = 0x008C;
 			constexpr uintptr_t PaintAdditionalParameters = 0x0090;
@@ -25547,7 +25547,7 @@ namespace Offsets {
 
 		namespace ProductAttribute_TA {
 			constexpr uintptr_t Typename = 0x0060;
-			constexpr uintptr_t Bitfields_0068 = 0x0068;  // Multiple: bReplicated, bRequiresDynamicThumbnail, bDummyAttribute
+			constexpr uintptr_t Bitfields_0068 = 0x0068;  // Multiple: bDummyAttribute, bReplicated, bRequiresDynamicThumbnail
 			constexpr uintptr_t Label = 0x0070;
 		}
 
@@ -25585,7 +25585,7 @@ namespace Offsets {
 		}
 
 		namespace ProductAttribute_UnlockForcedProducts_TA {
-			constexpr uintptr_t Bitfields_0080 = 0x0080;  // Multiple: bUnlockTeamColor, bUnlockCustomColor
+			constexpr uintptr_t Bitfields_0080 = 0x0080;  // Multiple: bUnlockCustomColor, bUnlockTeamColor
 			constexpr uintptr_t SlotsToUnlock = 0x0088;
 		}
 
@@ -25606,7 +25606,7 @@ namespace Offsets {
 		}
 
 		namespace ProductDatabase_Builder_TA {
-			constexpr uintptr_t Bitfields_0060 = 0x0060;  // Multiple: bPrime, bClickToBuildMarked
+			constexpr uintptr_t Bitfields_0060 = 0x0060;  // Multiple: bClickToBuildMarked, bPrime
 		}
 
 		namespace ProductDatabase_TA {
@@ -25739,7 +25739,7 @@ namespace Offsets {
 			constexpr uintptr_t FinishType = 0x0130;
 			constexpr uintptr_t EmissiveAmount = 0x0134;
 			constexpr uintptr_t EmissiveParameterName = 0x0138;
-			constexpr uintptr_t Bitfields_0140 = 0x0140;  // Multiple: bVisible, bIncludeByDefault
+			constexpr uintptr_t Bitfields_0140 = 0x0140;  // Multiple: bIncludeByDefault, bVisible
 		}
 
 		namespace ProductSlot_TA {
@@ -25753,7 +25753,7 @@ namespace Offsets {
 			constexpr uintptr_t ProductAssetTemplate = 0x00B8;
 			constexpr uintptr_t Icon = 0x00C0;
 			constexpr uintptr_t IconLarge = 0x00C8;
-			constexpr uintptr_t Bitfields_00D0 = 0x00D0;  // Multiple: bReplicated, bAlwaysCooked, bDedicatedServerRelevant, bAlwaysLoaded, bDefaultProductAlwaysLoaded, bAllowLicensedEquip
+			constexpr uintptr_t Bitfields_00D0 = 0x00D0;  // Multiple: bAllowLicensedEquip, bAlwaysCooked, bAlwaysLoaded, bDedicatedServerRelevant, bDefaultProductAlwaysLoaded, bReplicated
 			constexpr uintptr_t DropWeight = 0x00D4;
 		}
 
@@ -25794,7 +25794,7 @@ namespace Offsets {
 			constexpr uintptr_t RequiredProduct = 0x0088;
 			constexpr uintptr_t ProductIP = 0x0090;
 			constexpr uintptr_t AllowedList = 0x00A0;
-			constexpr uintptr_t Bitfields_00B0 = 0x00B0;  // Multiple: bWhitelistAll, bLocalized, bAutoGenerateDLCPack, bLicensed
+			constexpr uintptr_t Bitfields_00B0 = 0x00B0;  // Multiple: bAutoGenerateDLCPack, bLicensed, bLocalized, bWhitelistAll
 			constexpr uintptr_t IPWhitelist = 0x00B8;
 			constexpr uintptr_t IPBlacklist = 0x00C8;
 			constexpr uintptr_t PlatformReplacement = 0x00D8;
@@ -25820,7 +25820,7 @@ namespace Offsets {
 			constexpr uintptr_t ThumbnailSizes = 0x0068;
 			constexpr uintptr_t RenderDelay = 0x0078;
 			constexpr uintptr_t RenderCountMax = 0x007C;
-			constexpr uintptr_t Bitfields_0080 = 0x0080;  // Multiple: bDebug, bCreatedThumbnailScene
+			constexpr uintptr_t Bitfields_0080 = 0x0080;  // Multiple: bCreatedThumbnailScene, bDebug
 			constexpr uintptr_t SceneQue = 0x0088;
 			constexpr uintptr_t Requests = 0x0098;
 			constexpr uintptr_t ThumbnailsCreatedSinceLastPurge = 0x00A8;
@@ -25841,7 +25841,7 @@ namespace Offsets {
 		namespace Product_TA {
 			constexpr uintptr_t AssetPackageName = 0x0138;
 			constexpr uintptr_t AssetPath = 0x0140;
-			constexpr uintptr_t Bitfields_0150 = 0x0150;  // Multiple: bReplaced, bPack
+			constexpr uintptr_t Bitfields_0150 = 0x0150;  // Multiple: bPack, bReplaced
 			constexpr uintptr_t Label = 0x0158;
 			constexpr uintptr_t AsciiLabel = 0x0168;
 			constexpr uintptr_t LongLabel = 0x0178;
@@ -25856,7 +25856,7 @@ namespace Offsets {
 			constexpr uintptr_t ProhibitedProducts = 0x0078;
 			constexpr uintptr_t ItemSeries_PreventP2PTrade = 0x0088;
 			constexpr uintptr_t ProductTradeHoldOverrides = 0x0098;
-			constexpr uintptr_t Bitfields_00A8 = 0x00A8;  // Multiple: bUseSaveDataCacheProducts, bClearSyncTimestampOnMissingProduct
+			constexpr uintptr_t Bitfields_00A8 = 0x00A8;  // Multiple: bClearSyncTimestampOnMissingProduct, bUseSaveDataCacheProducts
 			constexpr uintptr_t MaxSecondsBetweenFullProductSyncs = 0x00AC;
 		}
 
@@ -25887,7 +25887,7 @@ namespace Offsets {
 		namespace ProfileCameraSave_TA {
 			constexpr uintptr_t AutoCam = 0x00C8;
 			constexpr uintptr_t Camera = 0x00F0;
-			constexpr uintptr_t Bitfields_010C = 0x010C;  // Multiple: bInvertSwivelPitch, bInvertSpectatorPitch, bLockSpectatorBallCam, bFreecam, bPrefersSecondaryCamera, bToggleSecondaryCamera, bToggleRearCamera, bUseBallIndicator, bUseBallCamIndicator, bEnableCameraShake, bDirectorAllowCameraBlending
+			constexpr uintptr_t Bitfields_010C = 0x010C;  // Multiple: bDirectorAllowCameraBlending, bEnableCameraShake, bFreecam, bInvertSpectatorPitch, bInvertSwivelPitch, bLockSpectatorBallCam, bPrefersSecondaryCamera, bToggleRearCamera, bToggleSecondaryCamera, bUseBallCamIndicator, bUseBallIndicator
 			constexpr uintptr_t CameraSettingsPreset = 0x0110;
 			constexpr uintptr_t DirectorMinChangeTeamFocusTime = 0x0114;
 			constexpr uintptr_t DirectorMinSameTeamFocusTime = 0x0118;
@@ -25915,7 +25915,7 @@ namespace Offsets {
 		}
 
 		namespace ProfileGameplaySave_TA {
-			constexpr uintptr_t Bitfields_00C8 = 0x00C8;  // Multiple: bMetric, bTeamColoredBoostMeter, bDisableDivisions, bDisableDivisionsSports
+			constexpr uintptr_t Bitfields_00C8 = 0x00C8;  // Multiple: bDisableDivisions, bDisableDivisionsSports, bMetric, bTeamColoredBoostMeter
 			constexpr uintptr_t HUDMessageThreshold = 0x00CC;
 			constexpr uintptr_t RankInfoDisplayType = 0x00CD;
 			constexpr uintptr_t NameplateMode = 0x00CE;
@@ -26084,7 +26084,7 @@ namespace Offsets {
 			constexpr uintptr_t MaxLinearSpeed = 0x0560;
 			constexpr uintptr_t MaxAngularSpeed = 0x0564;
 			constexpr uintptr_t RollingFriction = 0x0568;
-			constexpr uintptr_t Bitfields_056C = 0x056C;  // Multiple: bDisableSleeping, bReplayActor, bFrozen, bAutoInitFXEffects, bIgnoreSyncing, bPhysInitialized, bSkipNextErrorAccumulation
+			constexpr uintptr_t Bitfields_056C = 0x056C;  // Multiple: bAutoInitFXEffects, bDisableSleeping, bFrozen, bIgnoreSyncing, bPhysInitialized, bReplayActor, bSkipNextErrorAccumulation
 			constexpr uintptr_t NetworkSyncSettings = 0x0570;
 			constexpr uintptr_t OldRBState = 0x0590;
 			constexpr uintptr_t RBState = 0x05D0;
@@ -26914,7 +26914,7 @@ namespace Offsets {
 		}
 
 		namespace ReplayComponent_TA {
-			constexpr uintptr_t Bitfields_00A0 = 0x00A0;  // Multiple: bRecording, bPlaying
+			constexpr uintptr_t Bitfields_00A0 = 0x00A0;  // Multiple: bPlaying, bRecording
 		}
 
 		namespace ReplayDirector_TA {
@@ -26947,7 +26947,7 @@ namespace Offsets {
 			constexpr uintptr_t ScoreHitIndex = 0x0314;
 			constexpr uintptr_t GoalActorName = 0x0318;
 			constexpr uintptr_t ScoredGoal = 0x0320;
-			constexpr uintptr_t Bitfields_0328 = 0x0328;  // Multiple: bSlomo, bReplicatedSlomo, bSlomoForDefender, bAutoSave
+			constexpr uintptr_t Bitfields_0328 = 0x0328;  // Multiple: bAutoSave, bReplicatedSlomo, bSlomo, bSlomoForDefender
 			constexpr uintptr_t FocusHitIndex = 0x032C;
 			constexpr uintptr_t FocusCars = 0x0330;
 			constexpr uintptr_t FocusCarIdx = 0x0340;
@@ -26987,7 +26987,7 @@ namespace Offsets {
 		namespace Replay_Soccar_TA {
 			constexpr uintptr_t TeamSize = 0x02F8;
 			constexpr uintptr_t UnfairTeamSize = 0x02FC;
-			constexpr uintptr_t Bitfields_0300 = 0x0300;  // Multiple: bUnfairBots, bNoContest, bForfeit, bLocalPlayerAbandoned
+			constexpr uintptr_t Bitfields_0300 = 0x0300;  // Multiple: bForfeit, bLocalPlayerAbandoned, bNoContest, bUnfairBots
 			constexpr uintptr_t PrimaryPlayerTeam = 0x0304;
 			constexpr uintptr_t Team0Score = 0x0308;
 			constexpr uintptr_t Team1Score = 0x030C;
@@ -27020,7 +27020,7 @@ namespace Offsets {
 			constexpr uintptr_t FilePath = 0x00D8;
 			constexpr uintptr_t Id = 0x00E8;
 			constexpr uintptr_t MatchGUID = 0x00F8;
-			constexpr uintptr_t Bitfields_0108 = 0x0108;  // Multiple: bIsUnfinishedMatchReplay, bFileCorrupted, bForceKeyframe, bLoadedNetPackages, bDebug
+			constexpr uintptr_t Bitfields_0108 = 0x0108;  // Multiple: bDebug, bFileCorrupted, bForceKeyframe, bIsUnfinishedMatchReplay, bLoadedNetPackages
 			constexpr uintptr_t MapName = 0x010C;
 			constexpr uintptr_t Date = 0x0118;
 			constexpr uintptr_t NumFrames = 0x0128;
@@ -27113,7 +27113,7 @@ namespace Offsets {
 			constexpr uintptr_t EndTime = 0x0088;
 			constexpr uintptr_t StartRangeSeconds = 0x0090;
 			constexpr uintptr_t FinalStartTime = 0x0098;
-			constexpr uintptr_t Bitfields_00A0 = 0x00A0;  // Multiple: bIsActive, bHideMainMenuButton
+			constexpr uintptr_t Bitfields_00A0 = 0x00A0;  // Multiple: bHideMainMenuButton, bIsActive
 		}
 
 		namespace RocketPassErrors_TA {
@@ -27159,7 +27159,7 @@ namespace Offsets {
 			constexpr uintptr_t FallOffCurve = 0x00D8;
 			constexpr uintptr_t YawSpeedCurveMouse = 0x00F0;
 			constexpr uintptr_t YawSpeedCurveGamepad = 0x0108;
-			constexpr uintptr_t Bitfields_0120 = 0x0120;  // Multiple: bGrabbed, bDeterminedSnapRotation, bUsingGamepad
+			constexpr uintptr_t Bitfields_0120 = 0x0120;  // Multiple: bDeterminedSnapRotation, bGrabbed, bUsingGamepad
 			constexpr uintptr_t SnapRotation = 0x0124;
 			constexpr uintptr_t SnapAngle = 0x0130;
 			constexpr uintptr_t TotalSnaps = 0x0134;
@@ -27207,7 +27207,7 @@ namespace Offsets {
 			constexpr uintptr_t LoadedSaveName = 0x00A0;
 			constexpr uintptr_t TrainingData = 0x00B0;
 			constexpr uintptr_t PlayerTeamNumber = 0x00B8;
-			constexpr uintptr_t Bitfields_00BC = 0x00BC;  // Multiple: bUnowned, bPerfectCompleted
+			constexpr uintptr_t Bitfields_00BC = 0x00BC;  // Multiple: bPerfectCompleted, bUnowned
 			constexpr uintptr_t ShotsCompleted = 0x00C0;
 			constexpr uintptr_t FavoritesFolderPath = 0x00C8;
 			constexpr uintptr_t MyTrainingFolderPath = 0x00D8;
@@ -27216,7 +27216,7 @@ namespace Offsets {
 
 		namespace SaveData_TA {
 			constexpr uintptr_t SaveManager = 0x0060;
-			constexpr uintptr_t Bitfields_0068 = 0x0068;  // Multiple: bFromPreviousSave, bClearSyncTimestampOnMissingProduct, bEnableOnlineData, bUnloaded
+			constexpr uintptr_t Bitfields_0068 = 0x0068;  // Multiple: bClearSyncTimestampOnMissingProduct, bEnableOnlineData, bFromPreviousSave, bUnloaded
 			constexpr uintptr_t OnlineProducts = 0x0070;
 			constexpr uintptr_t OnlineProductSet = 0x0080;
 			constexpr uintptr_t MostRecentProductUpdatedTimestamp = 0x0088;
@@ -27257,7 +27257,7 @@ namespace Offsets {
 			constexpr uintptr_t LastSaveTime = 0x0094;
 			constexpr uintptr_t DataLoadError = 0x0098;
 			constexpr uintptr_t DataSaveError = 0x00A0;
-			constexpr uintptr_t Bitfields_00A8 = 0x00A8;  // Multiple: bDataLoaded, bUserIgnoredLoadFailure, bEnableSaving, bDisableSaveOSS, bDirty
+			constexpr uintptr_t Bitfields_00A8 = 0x00A8;  // Multiple: bDataLoaded, bDirty, bDisableSaveOSS, bEnableSaving, bUserIgnoredLoadFailure
 			constexpr uintptr_t SaveFolderPath = 0x00B0;
 			constexpr uintptr_t EpicSaveFolderPath = 0x00C0;
 		}
@@ -27272,7 +27272,7 @@ namespace Offsets {
 			constexpr uintptr_t SaveData = 0x00D0;
 			constexpr uintptr_t SavePath = 0x00D8;
 			constexpr uintptr_t ControllerId = 0x00E8;
-			constexpr uintptr_t Bitfields_00EC = 0x00EC;  // Multiple: bSaving, bPlayerSaveData
+			constexpr uintptr_t Bitfields_00EC = 0x00EC;  // Multiple: bPlayerSaveData, bSaving
 			constexpr uintptr_t InitializeTasks = 0x00F0;
 		}
 
@@ -27377,7 +27377,7 @@ namespace Offsets {
 
 		namespace SeqAct_CarMatinee_TA {
 			constexpr uintptr_t CinematicCarArchPath = 0x0288;
-			constexpr uintptr_t Bitfields_0298 = 0x0298;  // Multiple: bHideAfterPause, bHideAfterCompleted
+			constexpr uintptr_t Bitfields_0298 = 0x0298;  // Multiple: bHideAfterCompleted, bHideAfterPause
 			constexpr uintptr_t ClassesToNotShow = 0x02A0;
 		}
 
@@ -27494,7 +27494,7 @@ namespace Offsets {
 
 		namespace SeqAct_HideDuplicateCar_TA {
 			constexpr uintptr_t ActorNameToHide = 0x0160;
-			constexpr uintptr_t Bitfields_0170 = 0x0170;  // Multiple: bKeepAllInstancesHidden, bFoundDemoedCar
+			constexpr uintptr_t Bitfields_0170 = 0x0170;  // Multiple: bFoundDemoedCar, bKeepAllInstancesHidden
 		}
 
 		namespace SeqAct_InstanceMaterial_TA {
@@ -27617,7 +27617,7 @@ namespace Offsets {
 			constexpr uintptr_t ProductsWithPaint = 0x0170;
 			constexpr uintptr_t TeamFinish = 0x0180;
 			constexpr uintptr_t AccentFinish = 0x0188;
-			constexpr uintptr_t Bitfields_0190 = 0x0190;  // Multiple: bUseInGameColors, bOverwriteCurrent, bUseDefaultLoadout, bApplyToAllCars
+			constexpr uintptr_t Bitfields_0190 = 0x0190;  // Multiple: bApplyToAllCars, bOverwriteCurrent, bUseDefaultLoadout, bUseInGameColors
 			constexpr uintptr_t TeamColor = 0x0194;
 			constexpr uintptr_t AccentColor = 0x01A4;
 			constexpr uintptr_t ForcedTeamOverride = 0x01B4;
@@ -27693,7 +27693,7 @@ namespace Offsets {
 
 		namespace SeqAct_SetTimeDilation_TA {
 			constexpr uintptr_t VfTable_FTickableObject = 0x0160;
-			constexpr uintptr_t Bitfields_0168 = 0x0168;  // Multiple: bUseCurve, bActivated
+			constexpr uintptr_t Bitfields_0168 = 0x0168;  // Multiple: bActivated, bUseCurve
 			constexpr uintptr_t CurrentTime = 0x016C;
 			constexpr uintptr_t EndTime = 0x0170;
 			constexpr uintptr_t SlomoValue = 0x0174;
@@ -27723,7 +27723,7 @@ namespace Offsets {
 			constexpr uintptr_t SpawnedBot = 0x0160;
 			constexpr uintptr_t SpawnTransform = 0x0168;
 			constexpr uintptr_t SkillLevel = 0x0170;
-			constexpr uintptr_t Bitfields_0174 = 0x0174;  // Multiple: bDisableAllLogic, bCollideWithBall, bCollideWithVehicle
+			constexpr uintptr_t Bitfields_0174 = 0x0174;  // Multiple: bCollideWithBall, bCollideWithVehicle, bDisableAllLogic
 			constexpr uintptr_t TeamIndex = 0x0178;
 		}
 
@@ -28001,7 +28001,7 @@ namespace Offsets {
 		}
 
 		namespace ShopTabsConfig_TA {
-			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bUseLegacyTabSorting, bDisableItemsInCatalogCheck, bDebugShowIds, bDebugVerboseDebugging
+			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bDebugShowIds, bDebugVerboseDebugging, bDisableItemsInCatalogCheck, bUseLegacyTabSorting
 			constexpr uintptr_t EsportsShopValidRegions = 0x0080;
 			constexpr uintptr_t ShopType_Esports = 0x0090;
 			constexpr uintptr_t ShopType_EsportsTeam = 0x00A0;
@@ -28176,7 +28176,7 @@ namespace Offsets {
 			constexpr uintptr_t AmbientVolume = 0x00D8;
 			constexpr uintptr_t CrowdVolume = 0x00DC;
 			constexpr uintptr_t VoiceVolume = 0x00E0;
-			constexpr uintptr_t Bitfields_00E4 = 0x00E4;  // Multiple: bMuteOnFocusLost, bStreamerSafeAudioEnabled, bIsFinishedLoadingSaveSettings
+			constexpr uintptr_t Bitfields_00E4 = 0x00E4;  // Multiple: bIsFinishedLoadingSaveSettings, bMuteOnFocusLost, bStreamerSafeAudioEnabled
 			constexpr uintptr_t OutputType = 0x00E8;
 			constexpr uintptr_t DynamicRangeType = 0x00E9;
 			constexpr uintptr_t MusicStingersSetting = 0x00EA;
@@ -28205,7 +28205,7 @@ namespace Offsets {
 			constexpr uintptr_t CarHitMultiplier = 0x07C4;
 			constexpr uintptr_t CarHitVerticalMultiplier = 0x07C8;
 			constexpr uintptr_t CarHitTorque = 0x07CC;
-			constexpr uintptr_t Bitfields_07D0 = 0x07D0;  // Multiple: bUseCarsBump, bDemolishOnHit, bDemolishTeam
+			constexpr uintptr_t Bitfields_07D0 = 0x07D0;  // Multiple: bDemolishOnHit, bDemolishTeam, bUseCarsBump
 			constexpr uintptr_t AttachedCar = 0x07D8;
 		}
 
@@ -28314,7 +28314,7 @@ namespace Offsets {
 
 		namespace SpecialPickup_BallVelcro_TA {
 			constexpr uintptr_t BallOffset = 0x0388;
-			constexpr uintptr_t Bitfields_0394 = 0x0394;  // Multiple: bUseRealOffset, bHit, bBroken
+			constexpr uintptr_t Bitfields_0394 = 0x0394;  // Multiple: bBroken, bHit, bUseRealOffset
 			constexpr uintptr_t AfterHitDuration = 0x0398;
 			constexpr uintptr_t Mesh = 0x03A0;
 			constexpr uintptr_t MeshScaleCurve = 0x03A8;
@@ -28413,7 +28413,7 @@ namespace Offsets {
 			constexpr uintptr_t Force = 0x03C4;
 			constexpr uintptr_t MaxRopeLength = 0x03C8;
 			constexpr uintptr_t PredictionSpeed = 0x03CC;
-			constexpr uintptr_t Bitfields_03D0 = 0x03D0;  // Multiple: bDeactivateOnTouch, bInstant, bBlocked, bAttachedToBall
+			constexpr uintptr_t Bitfields_03D0 = 0x03D0;  // Multiple: bAttachedToBall, bBlocked, bDeactivateOnTouch, bInstant
 			constexpr uintptr_t RopeLengthCurve = 0x03D8;
 			constexpr uintptr_t RopeMesh = 0x03F0;
 			constexpr uintptr_t RopeMeshScale = 0x03F8;
@@ -28449,7 +28449,7 @@ namespace Offsets {
 		}
 
 		namespace SpecialPickup_HauntedBallBeam_TA {
-			constexpr uintptr_t Bitfields_0420 = 0x0420;  // Multiple: bIsPhasingBall, bIsInRange, bSFxLoopIsPlaying
+			constexpr uintptr_t Bitfields_0420 = 0x0420;  // Multiple: bIsInRange, bIsPhasingBall, bSFxLoopIsPlaying
 			constexpr uintptr_t PrevHauntedBall = 0x0428;
 			constexpr uintptr_t MaxSimulatedClients = 0x0430;
 			constexpr uintptr_t ArrivalDistance = 0x0434;
@@ -28490,7 +28490,7 @@ namespace Offsets {
 			constexpr uintptr_t KickOffActivationDelay = 0x03B4;
 			constexpr uintptr_t BallReleaseForce = 0x03B8;
 			constexpr uintptr_t BallReleaseLift = 0x03BC;
-			constexpr uintptr_t Bitfields_03C0 = 0x03C0;  // Multiple: bUseForwardReleaseDirection, bBallWelded
+			constexpr uintptr_t Bitfields_03C0 = 0x03C0;  // Multiple: bBallWelded, bUseForwardReleaseDirection
 			constexpr uintptr_t MaterialInstanceOverride = 0x03C8;
 			constexpr uintptr_t Team0Color = 0x03D0;
 			constexpr uintptr_t Team1Color = 0x03E0;
@@ -28506,7 +28506,7 @@ namespace Offsets {
 			constexpr uintptr_t Force = 0x03C0;
 			constexpr uintptr_t VerticalForce = 0x03C4;
 			constexpr uintptr_t Torque = 0x03C8;
-			constexpr uintptr_t Bitfields_03D4 = 0x03D4;  // Multiple: bApplyRelativeForce, bApplyConstantForce, bBreakConstantForceWithHit, bApplyRelativeConstantForce, bInstant, bFollowAfterHit, bSpringed
+			constexpr uintptr_t Bitfields_03D4 = 0x03D4;  // Multiple: bApplyConstantForce, bApplyRelativeConstantForce, bApplyRelativeForce, bBreakConstantForceWithHit, bFollowAfterHit, bInstant, bSpringed
 			constexpr uintptr_t RelativeForceCurve = 0x03D8;
 			constexpr uintptr_t RelativeForceNormalDirection = 0x03F0;
 			constexpr uintptr_t MaxSpringLength = 0x03F4;
@@ -28559,7 +28559,7 @@ namespace Offsets {
 
 		namespace SpecialPickup_TA {
 			constexpr uintptr_t PickupName = 0x02E0;
-			constexpr uintptr_t Bitfields_02F0 = 0x02F0;  // Multiple: bHudIgnoreUseTime, bHasActivated, bIsActive
+			constexpr uintptr_t Bitfields_02F0 = 0x02F0;  // Multiple: bHasActivated, bHudIgnoreUseTime, bIsActive
 			constexpr uintptr_t ActiveIcon = 0x02F8;
 			constexpr uintptr_t InactiveIcon = 0x0300;
 			constexpr uintptr_t ActivationDuration = 0x0308;
@@ -28575,7 +28575,7 @@ namespace Offsets {
 		}
 
 		namespace SpecialPickup_Targeted_TA {
-			constexpr uintptr_t Bitfields_0388 = 0x0388;  // Multiple: bCanTargetBall, bCanTargetCars, bCanTargetEnemyCars, bCanTargetTeamCars, bUseDirectionalTargeting, bRequireTrace
+			constexpr uintptr_t Bitfields_0388 = 0x0388;  // Multiple: bCanTargetBall, bCanTargetCars, bCanTargetEnemyCars, bCanTargetTeamCars, bRequireTrace, bUseDirectionalTargeting
 			constexpr uintptr_t Range = 0x038C;
 			constexpr uintptr_t DirectionalTargetingAccuracy = 0x0390;
 			constexpr uintptr_t ClientTarget = 0x0398;
@@ -28653,7 +28653,7 @@ namespace Offsets {
 		namespace StatEvent_TA {
 			constexpr uintptr_t Points = 0x0060;
 			constexpr uintptr_t CooldownSeconds = 0x0064;
-			constexpr uintptr_t Bitfields_0068 = 0x0068;  // Multiple: bAddToScore, bIsLeaderboardStat, bNotifyTicker, bShowOnHUD, bPrimaryStat, bSkipReplication, bCanMute, bCountMultiplied
+			constexpr uintptr_t Bitfields_0068 = 0x0068;  // Multiple: bAddToScore, bCanMute, bCountMultiplied, bIsLeaderboardStat, bNotifyTicker, bPrimaryStat, bShowOnHUD, bSkipReplication
 			constexpr uintptr_t Group = 0x0070;
 			constexpr uintptr_t Texture = 0x0078;
 			constexpr uintptr_t UISound = 0x0080;
@@ -28767,7 +28767,7 @@ namespace Offsets {
 			constexpr uintptr_t MinStatValueRequired = 0x0084;
 			constexpr uintptr_t MaxStatValueAllowed = 0x0088;
 			constexpr uintptr_t Stat = 0x0090;
-			constexpr uintptr_t Bitfields_0098 = 0x0098;  // Multiple: bPerStat, bInverseStat, bClampStatToOne
+			constexpr uintptr_t Bitfields_0098 = 0x0098;  // Multiple: bClampStatToOne, bInverseStat, bPerStat
 			constexpr uintptr_t StatUnitType = 0x009C;
 		}
 
@@ -28990,14 +28990,14 @@ namespace Offsets {
 			constexpr uintptr_t ReleaseSound = 0x00B0;
 			constexpr uintptr_t Car = 0x00B8;
 			constexpr uintptr_t PrevThrottle = 0x00C0;
-			constexpr uintptr_t Bitfields_00C4 = 0x00C4;  // Multiple: bPrevCarAccelerating, bPrevCarIdling, bCanThrottleEngage
+			constexpr uintptr_t Bitfields_00C4 = 0x00C4;  // Multiple: bCanThrottleEngage, bPrevCarAccelerating, bPrevCarIdling
 		}
 
 		namespace ThumbnailRenderer_TA {
 			constexpr uintptr_t CameraRotation = 0x0060;
 			constexpr uintptr_t CameraTranslation = 0x006C;
 			constexpr uintptr_t CameraFOV = 0x0078;
-			constexpr uintptr_t Bitfields_007C = 0x007C;  // Multiple: bAutoZoomCamera, bDisableLightEnvironment, CompressionNone, bSkipBackground, bSkipScene
+			constexpr uintptr_t Bitfields_007C = 0x007C;  // Multiple: CompressionNone, bAutoZoomCamera, bDisableLightEnvironment, bSkipBackground, bSkipScene
 			constexpr uintptr_t ProductRotation = 0x0080;
 			constexpr uintptr_t ProductTranslation = 0x008C;
 			constexpr uintptr_t ScenePrefab = 0x0098;
@@ -29069,7 +29069,7 @@ namespace Offsets {
 		}
 
 		namespace TourConfig_TA {
-			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bEnableUI, bNextMatchPushNotificationsEnabled, bEnableRewards, bHideBetaUI, bAllowTeamMemberCheckIns
+			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bAllowTeamMemberCheckIns, bEnableRewards, bEnableUI, bHideBetaUI, bNextMatchPushNotificationsEnabled
 			constexpr uintptr_t CheckInWindowMinutes = 0x007C;
 			constexpr uintptr_t CreateFutureMinutes = 0x0080;
 			constexpr uintptr_t ActivityWindowMinutes = 0x0084;
@@ -29279,7 +29279,7 @@ namespace Offsets {
 		namespace TourServerInfo_TA {
 			constexpr uintptr_t InfoName = 0x0060;
 			constexpr uintptr_t NumAllowedSpectators = 0x0068;
-			constexpr uintptr_t Bitfields_006C = 0x006C;  // Multiple: bUsesTieBreakerRules, bRestoreInterruptedMatches
+			constexpr uintptr_t Bitfields_006C = 0x006C;  // Multiple: bRestoreInterruptedMatches, bUsesTieBreakerRules
 			constexpr uintptr_t GameUpdateClass = 0x0070;
 		}
 
@@ -29311,7 +29311,7 @@ namespace Offsets {
 			constexpr uintptr_t SeriesRoundLengths = 0x0158;
 			constexpr uintptr_t SeriesLength = 0x0168;
 			constexpr uintptr_t FinalSeriesLength = 0x016C;
-			constexpr uintptr_t Bitfields_0170 = 0x0170;  // Multiple: bPublic, bIsMultiGameMode
+			constexpr uintptr_t Bitfields_0170 = 0x0170;  // Multiple: bIsMultiGameMode, bPublic
 			constexpr uintptr_t MinPlayersPerTeam = 0x0174;
 			constexpr uintptr_t MatchExpireTimestamp = 0x0178;
 			constexpr uintptr_t Platforms = 0x0180;
@@ -29431,7 +29431,7 @@ namespace Offsets {
 			constexpr uintptr_t ActivePlaylist = 0x00A8;
 			constexpr uintptr_t CurrentActivePlaylistIndex = 0x00B8;
 			constexpr uintptr_t CurrentUnshuffledPlaylistIndex = 0x00BC;
-			constexpr uintptr_t Bitfields_00C0 = 0x00C0;  // Multiple: bShufflePlay, bPlaytestStarted
+			constexpr uintptr_t Bitfields_00C0 = 0x00C0;  // Multiple: bPlaytestStarted, bShufflePlay
 		}
 
 		namespace TrainingMetricsConfig_TA {
@@ -29477,7 +29477,7 @@ namespace Offsets {
 
 		namespace TurnTableActor_TA {
 			constexpr uintptr_t RotateComponent = 0x02D0;
-			constexpr uintptr_t Bitfields_02D8 = 0x02D8;  // Multiple: bIsSwapping, bInReveal, bCarLocked, bMultiDrop
+			constexpr uintptr_t Bitfields_02D8 = 0x02D8;  // Multiple: bCarLocked, bInReveal, bIsSwapping, bMultiDrop
 			constexpr uintptr_t SwapCarName = 0x02DC;
 			constexpr uintptr_t LiftItemName = 0x02E4;
 			constexpr uintptr_t LockCarName = 0x02EC;
@@ -29494,7 +29494,7 @@ namespace Offsets {
 		}
 
 		namespace Tutorial_Dodge_TA {
-			constexpr uintptr_t Bitfields_0248 = 0x0248;  // Multiple: bDidDodge, bBallHitGoal, bCheckFailOnLand
+			constexpr uintptr_t Bitfields_0248 = 0x0248;  // Multiple: bBallHitGoal, bCheckFailOnLand, bDidDodge
 			constexpr uintptr_t Dodges = 0x024C;
 			constexpr uintptr_t MaxDodges = 0x0250;
 		}
@@ -29515,7 +29515,7 @@ namespace Offsets {
 			constexpr uintptr_t Messages = 0x00C0;
 			constexpr uintptr_t MessageIndex = 0x00D0;
 			constexpr uintptr_t DisplayMessageStartTime = 0x00D4;
-			constexpr uintptr_t Bitfields_00D8 = 0x00D8;  // Multiple: bEndTutorialOnFinalMessage, bCompleteTutorialOnFinalMessage, bInitialMessagesFinished, bFadeAudio, bSkipFadeIn, bFadeTransitionComplete, bTutorialStarted, bActionNameToDetectPressed, bCarTouched, bCompleteOnBallTouch, bFailTutorialOnOtherCarHitBall, bDestroyBallsOnFadeIn, bDestroyBotsOnFadeIn, bHasBot, bFoundBot, bStartWithSecondaryCamActive, bStartWithBoostMeterDisabled, bBotCanPlay, bStartBotOnAllMessagesDisplayed, bBallCanHitPlayersGoal, bCompleteOnLastBallTouched, bCompleteOnHitGoal, bFailOnHitGoal, bFreezeCarOnSpawn, bCanEverDodge, bCanEverDoubleJump, bTutorialFinished, bPauseDuringMessages, bCanResetTutorial, bCanSkipTutorial, bShowGameFinishMessage, bSkipped
+			constexpr uintptr_t Bitfields_00D8 = 0x00D8;  // Multiple: bActionNameToDetectPressed, bBallCanHitPlayersGoal, bBotCanPlay, bCanEverDodge, bCanEverDoubleJump, bCanResetTutorial, bCanSkipTutorial, bCarTouched, bCompleteOnBallTouch, bCompleteOnHitGoal, bCompleteOnLastBallTouched, bCompleteTutorialOnFinalMessage, bDestroyBallsOnFadeIn, bDestroyBotsOnFadeIn, bEndTutorialOnFinalMessage, bFadeAudio, bFadeTransitionComplete, bFailOnHitGoal, bFailTutorialOnOtherCarHitBall, bFoundBot, bFreezeCarOnSpawn, bHasBot, bInitialMessagesFinished, bPauseDuringMessages, bShowGameFinishMessage, bSkipFadeIn, bSkipped, bStartBotOnAllMessagesDisplayed, bStartWithBoostMeterDisabled, bStartWithSecondaryCamActive, bTutorialFinished, bTutorialStarted
 			constexpr uintptr_t Bitfields_00DC = 0x00DC;  // Multiple: bQuit, bReset, bTLog
 			constexpr uintptr_t CorrectAnswer = 0x00E0;
 			constexpr uintptr_t IncorrectAnswer = 0x0120;
@@ -29544,7 +29544,7 @@ namespace Offsets {
 		}
 
 		namespace UIConfig_TA {
-			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bReportServerButton, bTournamentTeamColorSection, bShowCurrencyRechargeButton, bCrateRouletteEnabled, bPsyNetFriendListEnabled, bShowStatGraphOptions, bUseCoherentBrowser, bRankedSportsEnabled, bShowStarterBundles, bPurchaseProTier, bUse1LVLIcon, bShowAnthems
+			constexpr uintptr_t Bitfields_0078 = 0x0078;  // Multiple: bCrateRouletteEnabled, bPsyNetFriendListEnabled, bPurchaseProTier, bRankedSportsEnabled, bReportServerButton, bShowAnthems, bShowCurrencyRechargeButton, bShowStarterBundles, bShowStatGraphOptions, bTournamentTeamColorSection, bUse1LVLIcon, bUseCoherentBrowser
 			constexpr uintptr_t ClubInvitationLimit = 0x007C;
 			constexpr uintptr_t MainMenuBG = 0x0080;
 			constexpr uintptr_t MainMenuTeamColors = 0x0088;
@@ -29727,7 +29727,7 @@ namespace Offsets {
 			constexpr uintptr_t VehicleSim = 0x07B0;
 			constexpr uintptr_t StickyForce = 0x07B8;
 			constexpr uintptr_t AutoFlip = 0x07C0;
-			constexpr uintptr_t Bitfields_07C8 = 0x07C8;  // Multiple: bDriving, bReplicatedHandbrake, bJumped, bDoubleJumped, bOnGround, bSuperSonic, bPodiumMode, bHasPostMatchCelebration
+			constexpr uintptr_t Bitfields_07C8 = 0x07C8;  // Multiple: bDoubleJumped, bDriving, bHasPostMatchCelebration, bJumped, bOnGround, bPodiumMode, bReplicatedHandbrake, bSuperSonic
 			constexpr uintptr_t Input = 0x07CC;
 			constexpr uintptr_t ReplicatedThrottle = 0x07EC;
 			constexpr uintptr_t ReplicatedSteer = 0x07ED;
@@ -29766,7 +29766,7 @@ namespace Offsets {
 		}
 
 		namespace VideoSettingsSave_TA {
-			constexpr uintptr_t Bitfields_00C8 = 0x00C8;  // Multiple: bVsync, bShowWeatherFX, bShowLightShafts, bShowLensFlares, bEnableHDRSideBySideVisualizer, bUncappedFramerate
+			constexpr uintptr_t Bitfields_00C8 = 0x00C8;  // Multiple: bEnableHDRSideBySideVisualizer, bShowLensFlares, bShowLightShafts, bShowWeatherFX, bUncappedFramerate, bVsync
 			constexpr uintptr_t HDRBrightnessScale = 0x00CC;
 			constexpr uintptr_t HDRPaperWhiteScale = 0x00D0;
 			constexpr uintptr_t HDRGammaScale = 0x00D4;
@@ -29815,7 +29815,7 @@ namespace Offsets {
 		namespace VoteActor_TA {
 			constexpr uintptr_t Subject = 0x0268;
 			constexpr uintptr_t TimeRemaining = 0x026C;
-			constexpr uintptr_t Bitfields_0270 = 0x0270;  // Multiple: bUnanimousVote, bAllowSplitscreenVoters, bFilterIdleBannedPlayers, bFinished
+			constexpr uintptr_t Bitfields_0270 = 0x0270;  // Multiple: bAllowSplitscreenVoters, bFilterIdleBannedPlayers, bFinished, bUnanimousVote
 			constexpr uintptr_t Voters = 0x0278;
 			constexpr uintptr_t ReplicatedVoters = 0x0288;
 		}

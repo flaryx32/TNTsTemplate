@@ -275,7 +275,7 @@ namespace Functions {
 			const std::string CloseLogFile = "Function Core.FileSystem.CloseLogFile";
 			const std::string DeleteDirectoryTree = "Function Core.FileSystem.DeleteDirectoryTree";
 			const std::string DeleteFile = "Function Core.FileSystem.DeleteFile";
-			const std::string DeleteFileW = "Function Core.FileSystem.DeleteFileW";
+			//const std::string DeleteFileW = "Function Core.FileSystem.DeleteFileW";
 			const std::string FindFiles = "Function Core.FileSystem.FindFiles";
 			const std::string GetFileExtension = "Function Core.FileSystem.GetFileExtension";
 			const std::string GetFileExtensionWithoutDot = "Function Core.FileSystem.GetFileExtensionWithoutDot";
@@ -289,10 +289,6 @@ namespace Functions {
 			const std::string LoadFileToString = "Function Core.FileSystem.LoadFileToString";
 			const std::string SaveBytesToFile = "Function Core.FileSystem.SaveBytesToFile";
 			const std::string SaveStringToFile = "Function Core.FileSystem.SaveStringToFile";
-		}
-
-		namespace Function {
-			const std::string FindFunction = "Function Core.Function.FindFunction";
 		}
 
 		namespace HelpCommandlet {
@@ -799,7 +795,7 @@ namespace Functions {
 			const std::string Contains = "Function Core.StringObjectMap.Contains";
 			const std::string Get = "Function Core.StringObjectMap.Get";
 			const std::string GetObject = "Function Core.StringObjectMap.GetObject";
-			const std::string GetObjectW = "Function Core.StringObjectMap.GetObjectW";
+			//const std::string GetObjectW = "Function Core.StringObjectMap.GetObjectW";
 			const std::string Remove = "Function Core.StringObjectMap.Remove";
 			const std::string Set = "Function Core.StringObjectMap.Set";
 			const std::string TryGet = "Function Core.StringObjectMap.TryGet";
@@ -1624,7 +1620,7 @@ namespace Functions {
 			const std::string DrawRotatedTile = "Function Engine.Canvas.DrawRotatedTile";
 			const std::string DrawScaledIcon = "Function Engine.Canvas.DrawScaledIcon";
 			const std::string DrawText = "Function Engine.Canvas.DrawText";
-			const std::string DrawTextW = "Function Engine.Canvas.DrawTextW";
+			//const std::string DrawTextW = "Function Engine.Canvas.DrawTextW";
 			const std::string DrawTexture = "Function Engine.Canvas.DrawTexture";
 			const std::string DrawTextureDoubleLine = "Function Engine.Canvas.DrawTextureDoubleLine";
 			const std::string DrawTextureDoubleLineW = "Function Engine.Canvas.DrawTextureDoubleLineW";
@@ -3084,7 +3080,7 @@ namespace Functions {
 			const std::string DrawHUD = "Function Engine.HUD.DrawHUD";
 			const std::string DrawRoute = "Function Engine.HUD.DrawRoute";
 			const std::string DrawText = "Function Engine.HUD.DrawText";
-			const std::string DrawTextW = "Function Engine.HUD.DrawTextW";
+			//const std::string DrawTextW = "Function Engine.HUD.DrawTextW";
 			const std::string GetFontSizeIndex = "Function Engine.HUD.GetFontSizeIndex";
 			const std::string Init = "Function Engine.HUD.Init";
 			const std::string Message = "Function Engine.HUD.Message";
@@ -3310,7 +3306,7 @@ namespace Functions {
 			const std::string GetFloatValue = "Function Engine.JsonObject.GetFloatValue";
 			const std::string GetIntValue = "Function Engine.JsonObject.GetIntValue";
 			const std::string GetObject = "Function Engine.JsonObject.GetObject";
-			const std::string GetObjectW = "Function Engine.JsonObject.GetObjectW";
+			//const std::string GetObjectW = "Function Engine.JsonObject.GetObjectW";
 			const std::string GetStringValue = "Function Engine.JsonObject.GetStringValue";
 			const std::string HasKey = "Function Engine.JsonObject.HasKey";
 			const std::string SetBoolValue = "Function Engine.JsonObject.SetBoolValue";
@@ -6358,7 +6354,7 @@ namespace Functions {
 			const std::string DestroyClass = "Function Engine.ScriptGroup_ORS.DestroyClass";
 			const std::string DestroyObject = "Function Engine.ScriptGroup_ORS.DestroyObject";
 			const std::string GetObject = "Function Engine.ScriptGroup_ORS.GetObject";
-			const std::string GetObjectW = "Function Engine.ScriptGroup_ORS.GetObjectW";
+			//const std::string GetObjectW = "Function Engine.ScriptGroup_ORS.GetObjectW";
 			const std::string GetOrCreateObject = "Function Engine.ScriptGroup_ORS.GetOrCreateObject";
 			const std::string RemoveAllClasses = "Function Engine.ScriptGroup_ORS.RemoveAllClasses";
 			const std::string RemoveClass = "Function Engine.ScriptGroup_ORS.RemoveClass";
@@ -7960,7 +7956,7 @@ namespace Functions {
 			const std::string GetFloat = "Function GFxUI.GFxObject.GetFloat";
 			const std::string GetInt = "Function GFxUI.GFxObject.GetInt";
 			const std::string GetObject = "Function GFxUI.GFxObject.GetObject";
-			const std::string GetObjectW = "Function GFxUI.GFxObject.GetObjectW";
+			//const std::string GetObjectW = "Function GFxUI.GFxObject.GetObjectW";
 			const std::string GetPosition = "Function GFxUI.GFxObject.GetPosition";
 			const std::string GetString = "Function GFxUI.GFxObject.GetString";
 			const std::string GetText = "Function GFxUI.GFxObject.GetText";
@@ -11144,7 +11140,7 @@ namespace Functions {
 			const std::string GetObjectIndexW = "Function ProjectX.GFxDataStore_X.GetObjectIndexW";
 			const std::string GetObjectRow = "Function ProjectX.GFxDataStore_X.GetObjectRow";
 			const std::string GetObjectRowW = "Function ProjectX.GFxDataStore_X.GetObjectRowW";
-			const std::string GetObjectW = "Function ProjectX.GFxDataStore_X.GetObjectW";
+			//const std::string GetObjectW = "Function ProjectX.GFxDataStore_X.GetObjectW";
 			const std::string GetRowCount = "Function ProjectX.GFxDataStore_X.GetRowCount";
 			const std::string GetValue = "Function ProjectX.GFxDataStore_X.GetValue";
 			const std::string PrintData = "Function ProjectX.GFxDataStore_X.PrintData";
@@ -13440,7 +13436,7 @@ namespace Functions {
 			const std::string SendMessage = "Function ProjectX.PartyMessageQueue_X.SendMessage";
 			const std::string SendMessageServiceDelegate = "Function ProjectX.PartyMessageQueue_X.SendMessageServiceDelegate";
 			const std::string SendMessageServiceDelegateW = "Function ProjectX.PartyMessageQueue_X.SendMessageServiceDelegateW";
-			const std::string SendMessageW = "Function ProjectX.PartyMessageQueue_X.SendMessageW";
+			//const std::string SendMessageW = "Function ProjectX.PartyMessageQueue_X.SendMessageW";
 			const std::string SetPaused = "Function ProjectX.PartyMessageQueue_X.SetPaused";
 			const std::string __PartyMessageQueue_X__CancelAll_0x1 = "Function ProjectX.PartyMessageQueue_X.__PartyMessageQueue_X__CancelAll_0x1";
 		}
@@ -13903,7 +13899,7 @@ namespace Functions {
 			const std::string RemoveDisabledError = "Function ProjectX.PsyNetConnection_X.RemoveDisabledError";
 			const std::string RemoveHeader = "Function ProjectX.PsyNetConnection_X.RemoveHeader";
 			const std::string SendMessage = "Function ProjectX.PsyNetConnection_X.SendMessage";
-			const std::string SendMessageW = "Function ProjectX.PsyNetConnection_X.SendMessageW";
+			//const std::string SendMessageW = "Function ProjectX.PsyNetConnection_X.SendMessageW";
 			const std::string SendPingMessage = "Function ProjectX.PsyNetConnection_X.SendPingMessage";
 			const std::string SendRequest = "Function ProjectX.PsyNetConnection_X.SendRequest";
 			const std::string SetAuthDisabledError = "Function ProjectX.PsyNetConnection_X.SetAuthDisabledError";
@@ -13936,7 +13932,7 @@ namespace Functions {
 			const std::string CopyHeadersToRequest = "Function ProjectX.PsyNetMessengerHttp_X.CopyHeadersToRequest";
 			const std::string HandleWebRequestComplete = "Function ProjectX.PsyNetMessengerHttp_X.HandleWebRequestComplete";
 			const std::string SendMessage = "Function ProjectX.PsyNetMessengerHttp_X.SendMessage";
-			const std::string SendMessageW = "Function ProjectX.PsyNetMessengerHttp_X.SendMessageW";
+			//const std::string SendMessageW = "Function ProjectX.PsyNetMessengerHttp_X.SendMessageW";
 		}
 
 		namespace PsyNetMessengerWebSocket_X {
@@ -13956,7 +13952,7 @@ namespace Functions {
 			const std::string IsConnected = "Function ProjectX.PsyNetMessengerWebSocket_X.IsConnected";
 			const std::string QueueMessage = "Function ProjectX.PsyNetMessengerWebSocket_X.QueueMessage";
 			const std::string SendMessage = "Function ProjectX.PsyNetMessengerWebSocket_X.SendMessage";
-			const std::string SendMessageW = "Function ProjectX.PsyNetMessengerWebSocket_X.SendMessageW";
+			//const std::string SendMessageW = "Function ProjectX.PsyNetMessengerWebSocket_X.SendMessageW";
 			const std::string SendMessageWithTask = "Function ProjectX.PsyNetMessengerWebSocket_X.SendMessageWithTask";
 			const std::string SendMessageWithTaskW = "Function ProjectX.PsyNetMessengerWebSocket_X.SendMessageWithTaskW";
 			const std::string SendQueuedMessages = "Function ProjectX.PsyNetMessengerWebSocket_X.SendQueuedMessages";
@@ -13972,7 +13968,7 @@ namespace Functions {
 			const std::string Dispose = "Function ProjectX.PsyNetMessenger_X.Dispose";
 			const std::string EventMessageReceived = "Function ProjectX.PsyNetMessenger_X.EventMessageReceived";
 			const std::string SendMessage = "Function ProjectX.PsyNetMessenger_X.SendMessage";
-			const std::string SendMessageW = "Function ProjectX.PsyNetMessenger_X.SendMessageW";
+			//const std::string SendMessageW = "Function ProjectX.PsyNetMessenger_X.SendMessageW";
 			const std::string eventDispose = "Function ProjectX.PsyNetMessenger_X.eventDispose";
 		}
 
@@ -38286,4 +38282,4 @@ namespace Functions {
 
 } // namespace Functions
 
-// Summary: 3126 classes with 28851 functions across 10 modules
+// Summary: 3125 classes with 28850 functions across 10 modules
