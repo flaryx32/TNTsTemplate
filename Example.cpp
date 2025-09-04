@@ -66,7 +66,7 @@ void ExampleModule::PlayerTickCalled(const PostEvent& event) {
     localPlayerPRI = localPlayerController->PRI;
 
     TArray<ACar_TA*> cars = CurrentGameEvent->Cars;
-    TArray<ABall_TA*> balls = CurrentGameEvent->GameBalls
+    TArray<ABall_TA*> balls = CurrentGameEvent->GameBalls;
 
     for (APlayerController_TA* localPlayer : localPlayers) {
         // example for getting Car/PRI
@@ -81,7 +81,7 @@ void ExampleModule::PlayerTickCalled(const PostEvent& event) {
     for (ACar_TA* car : cars) {
         if (!car) continue;
 
-        FVector carLocation = car->Location
+        FVector carLocation = car->Location;
 
         FVector boostCircleLocation = carLocation;
         boostCircleLocation.Z += 100.0f; 
